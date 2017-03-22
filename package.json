@@ -1,0 +1,12 @@
+{
+    "devDependencies": {
+        "jasmine": "^2.5.3",
+        "tiunit": "git+ssh://git@github.com/aca-mobile/ti-unit.git#1.1.1"
+    },
+    "dependencies": {
+        "istanbul": "^0.4.5"
+    },
+    "scripts": {
+        "test": "istanbul cover --include-all-sources   -x **/Resources/** -x **/build/** -x **/spec/** -x **/plugins/** jasmine"
+    }
+}

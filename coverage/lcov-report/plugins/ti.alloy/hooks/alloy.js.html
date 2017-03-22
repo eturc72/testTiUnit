@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for plugins/ti.alloy/hooks/alloy.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">plugins/ti.alloy/hooks/</a> alloy.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/93</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/53</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/17</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/88</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * Alloy
+ * Copyright (c) 2012 by Appcelerator, Inc. All Rights Reserved.
+ * See LICENSE for more information on licensing.
+ */
+&nbsp;
+<span class="cstat-no" title="statement not covered" >exports.cliVersion = '&gt;=3.X';</span>
+<span class="cstat-no" title="statement not covered" >exports.version = '1.0.0';</span>
+<span class="cstat-no" title="statement not covered" >var SILENT = true;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >exports.init = <span class="fstat-no" title="function not covered" >function (logger, config, cli, appc) {</span></span>
+<span class="cstat-no" title="statement not covered" >	var path = require('path'),</span>
+		fs = require('fs'),
+		afs = appc.fs,
+		i18n = appc.i18n(__dirname),
+		__ = i18n.__,
+		__n = i18n.__n,
+		pkginfo = appc.pkginfo.package(module),
+		exec = require('child_process').exec,
+		spawn = require('child_process').spawn,
+		parallel = appc.async.parallel;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		if(!process.env.sdk) {</span>
+<span class="cstat-no" title="statement not covered" >			process.env.sdk = cli.sdk.name;</span>
+		}
+&nbsp;
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >	function run(deviceFamily, deployType, target, finished, silent) {</span></span>
+<span class="cstat-no" title="statement not covered" >		var appDir = path.join(cli.argv['project-dir'], 'app');</span>
+<span class="cstat-no" title="statement not covered" >		if (!afs.exists(appDir)) {</span>
+<span class="cstat-no" title="statement not covered" >			logger.info(__('Project not an Alloy app, continuing'));</span>
+<span class="cstat-no" title="statement not covered" >			finished();</span>
+<span class="cstat-no" title="statement not covered" >			return;</span>
+		}
+<span class="cstat-no" title="statement not covered" >		logger.info(__('Found Alloy app in %s', appDir.cyan));</span>
+&nbsp;
+		// TODO: Make this check specific to a TiSDK version
+		// create a .alloynewcli file to tell old plugins not to run
+<span class="cstat-no" title="statement not covered" >		var buildDir = path.join(cli.argv['project-dir'], 'build');</span>
+<span class="cstat-no" title="statement not covered" >		if (!afs.exists(buildDir)) {</span>
+<span class="cstat-no" title="statement not covered" >			fs.mkdirSync(buildDir);</span>
+		}
+<span class="cstat-no" title="statement not covered" >		fs.writeFileSync(path.join(buildDir, '.alloynewcli'), '');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		var cRequire = afs.resolvePath(__dirname, '..', 'Alloy', 'commands', 'compile', 'index.js'),</span>
+			config = {
+				platform: /(?:iphone|ipad)/.test(cli.argv.platform) ? 'ios' : cli.argv.platform,
+				version: '0',
+				simtype: 'none',
+				devicefamily: /(?:iphone|ios)/.test(cli.argv.platform) ? deviceFamily : 'none',
+				deploytype: deployType || cli.argv['deploy-type'] || 'development',
+				target: target
+			};
+<span class="cstat-no" title="statement not covered" >		if(silent) {</span>
+			// turn off all logging output for code analyzer build hook
+<span class="cstat-no" title="statement not covered" >			config.noBanner = 'true';</span>
+<span class="cstat-no" title="statement not covered" >			config.logLevel = '-1';</span>
+		}
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		config = Object.keys(config).map(<span class="fstat-no" title="function not covered" >function (c) {</span></span>
+<span class="cstat-no" title="statement not covered" >			return c + '=' + config[c];</span>
+		}).join(',');
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		if (afs.exists(cRequire)) {</span>
+			// we're being invoked from the actual alloy directory!
+			// no need to subprocess, just require() and run
+<span class="cstat-no" title="statement not covered" >			var origLimit = Error.stackTraceLimit;</span>
+<span class="cstat-no" title="statement not covered" >			Error.stackTraceLimit = Infinity;</span>
+<span class="cstat-no" title="statement not covered" >			try {</span>
+<span class="cstat-no" title="statement not covered" >				require(cRequire)({}, {</span>
+					config: config,
+					outputPath: cli.argv['project-dir'],
+					_version: pkginfo.version
+				});
+			} catch (e) {
+<span class="cstat-no" title="statement not covered" >				logger.error(__('Alloy compiler failed'));</span>
+<span class="cstat-no" title="statement not covered" >				e.toString().split('\n').forEach(<span class="fstat-no" title="function not covered" >function (line) {</span></span>
+<span class="cstat-no" title="statement not covered" >					if (line) { <span class="cstat-no" title="statement not covered" >logger.error(line); </span>}</span>
+				});
+<span class="cstat-no" title="statement not covered" >				process.exit(1);</span>
+			}
+<span class="cstat-no" title="statement not covered" >			Error.stackTraceLimit = origLimit;</span>
+<span class="cstat-no" title="statement not covered" >			finished();</span>
+		} else {
+			// we have no clue where alloy is installed, so we're going to subprocess
+			// alloy and hope it's in the system path or a well known place
+<span class="cstat-no" title="statement not covered" >			var paths = {};</span>
+<span class="cstat-no" title="statement not covered" >			var locatorCmd = process.platform === 'win32' ? 'where' : 'which';</span>
+<span class="cstat-no" title="statement not covered" >			parallel(this, ['alloy', 'node'].map(<span class="fstat-no" title="function not covered" >function (bin) {</span></span>
+<span class="cstat-no" title="statement not covered" >				return <span class="fstat-no" title="function not covered" >function (done) {</span></span>
+<span class="cstat-no" title="statement not covered" >					var envName = 'ALLOY_' + (bin === 'node' ? 'NODE_' : '') + 'PATH';</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >					paths[bin] = process.env[envName];</span>
+<span class="cstat-no" title="statement not covered" >					if (paths[bin]) {</span>
+<span class="cstat-no" title="statement not covered" >						done();</span>
+					} else <span class="cstat-no" title="statement not covered" >if (process.platform === 'win32' &amp;&amp; bin === 'alloy') {</span>
+<span class="cstat-no" title="statement not covered" >						paths.alloy = 'alloy.cmd';</span>
+<span class="cstat-no" title="statement not covered" >						done();</span>
+					} else {
+<span class="cstat-no" title="statement not covered" >						exec(locatorCmd + ' ' + bin, <span class="fstat-no" title="function not covered" >function (err, stdout, strerr) {</span></span>
+<span class="cstat-no" title="statement not covered" >							if (!err) {</span>
+<span class="cstat-no" title="statement not covered" >								paths[bin] = stdout.trim();</span>
+<span class="cstat-no" title="statement not covered" >								done();</span>
+							} else {
+<span class="cstat-no" title="statement not covered" >								parallel(this, [</span>
+									'/usr/local/bin/' + bin,
+									'/opt/local/bin/' + bin,
+									path.join(process.env.HOME, 'local/bin', bin),
+									'/opt/bin/' + bin,
+									'/usr/bin/' + bin
+								].map(<span class="fstat-no" title="function not covered" >function (p) {</span>
+<span class="cstat-no" title="statement not covered" >									return <span class="fstat-no" title="function not covered" >function (cb) {</span></span>
+<span class="cstat-no" title="statement not covered" >										if (afs.exists(p)) { <span class="cstat-no" title="statement not covered" >paths[bin] = p; </span>}</span>
+<span class="cstat-no" title="statement not covered" >										cb();</span>
+									};
+								}), done);
+							}
+						});
+					}
+				};
+			}), <span class="fstat-no" title="function not covered" >function () {</span>
+&nbsp;
+				// compose alloy command execution
+<span class="cstat-no" title="statement not covered" >				var cmd = [paths.node, paths.alloy, 'compile', appDir, '--config', config];</span>
+<span class="cstat-no" title="statement not covered" >				if (cli.argv['no-colors'] || cli.argv['color'] === false) { <span class="cstat-no" title="statement not covered" >cmd.push('--no-colors'); </span>}</span>
+&nbsp;
+				// process each line of output from alloy
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >				function checkLine(line) {</span></span>
+<span class="cstat-no" title="statement not covered" >					var re = new RegExp(</span>
+						'^(?:\u001b\\[\\d+m)?\\[?(' +
+						logger.getLevels().join('|') +
+						')\\]?\s*(?:\u001b\\[\\d+m)?(.*)', 'i'
+					);
+<span class="cstat-no" title="statement not covered" >					if (line) {</span>
+<span class="cstat-no" title="statement not covered" >						var m = line.match(re);</span>
+<span class="cstat-no" title="statement not covered" >						if (m) {</span>
+<span class="cstat-no" title="statement not covered" >							logger[m[1].toLowerCase()](m[2].trim());</span>
+						} else {
+<span class="cstat-no" title="statement not covered" >							logger.debug(line);</span>
+						}
+					}
+				}
+&nbsp;
+				// execute alloy in os-specific manner
+<span class="cstat-no" title="statement not covered" >				var child;</span>
+<span class="cstat-no" title="statement not covered" >				if (process.platform === 'win32' &amp;&amp; paths.alloy === 'alloy.cmd') {</span>
+<span class="cstat-no" title="statement not covered" >					cmd.shift();</span>
+<span class="cstat-no" title="statement not covered" >					logger.info(__('Executing Alloy compile: %s',</span>
+						['cmd','/s','/c'].concat(cmd).join(' ').cyan));
+&nbsp;
+					// arg processing from https://github.com/MarcDiethelm/superspawn
+<span class="cstat-no" title="statement not covered" >					child = spawn('cmd', [['/s', '/c', '"' +</span>
+						cmd.map(<span class="fstat-no" title="function not covered" >function(a) {</span>
+<span class="cstat-no" title="statement not covered" >							if (/^[^"].* .*[^"]/.test(a)) <span class="cstat-no" title="statement not covered" >return '"'+a+'"'; <span class="cstat-no" title="statement not covered" ></span></span>return a;</span>
+						}).join(" ") + '"'].join(" ")], {
+							stdio: 'inherit',
+							windowsVerbatimArguments: true
+						}
+					);
+				} else {
+<span class="cstat-no" title="statement not covered" >					logger.info(__('Executing Alloy compile: %s', cmd.join(' ').cyan));</span>
+<span class="cstat-no" title="statement not covered" >					child = spawn(cmd.shift(), cmd);</span>
+<span class="cstat-no" title="statement not covered" >					child.stdout.on('data', <span class="fstat-no" title="function not covered" >function (data) {</span></span>
+<span class="cstat-no" title="statement not covered" >						data.toString().split('\n').forEach(checkLine);</span>
+					});
+<span class="cstat-no" title="statement not covered" >					child.stderr.on('data', <span class="fstat-no" title="function not covered" >function (data) {</span></span>
+<span class="cstat-no" title="statement not covered" >						data.toString().split('\n').forEach(checkLine);</span>
+					});
+				}
+&nbsp;
+				// handle the completion of alloy, success or otherwise
+<span class="cstat-no" title="statement not covered" >				child.on('exit', <span class="fstat-no" title="function not covered" >function (code) {</span></span>
+<span class="cstat-no" title="statement not covered" >					if (code) {</span>
+<span class="cstat-no" title="statement not covered" >						logger.error(__('Alloy compiler failed'));</span>
+<span class="cstat-no" title="statement not covered" >						process.exit(1);</span>
+					} else {
+<span class="cstat-no" title="statement not covered" >						logger.info(__('Alloy compiler completed successfully'));</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >						afs.exists(path.join(cli.argv["project-dir"], 'build', 'i18n')) &amp;&amp; process.argv.push('--i18n-dir', 'build');</span>
+<span class="cstat-no" title="statement not covered" >						afs.exists(path.join(cli.argv["project-dir"], 'build', 'platform')) &amp;&amp; (cli.argv['platform-dir'] = 'build/platform');</span>
+					}
+<span class="cstat-no" title="statement not covered" >					finished();</span>
+				});
+&nbsp;
+			});
+		}
+	}
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	cli.addHook('build.pre.compile', <span class="fstat-no" title="function not covered" >function (build, finished) {</span></span>
+<span class="cstat-no" title="statement not covered" >		var deployType = build.deployType,</span>
+			target = build.target;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		run(build.deviceFamily, deployType, target, finished);</span>
+	});
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	cli.addHook('codeprocessor.pre.run', <span class="fstat-no" title="function not covered" >function (build, finished) {</span></span>
+<span class="cstat-no" title="statement not covered" >		run('none', 'development', undefined, finished, SILENT);</span>
+	});
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Mar 22 2017 15:49:43 GMT-0400 (EDT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>
