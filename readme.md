@@ -6,7 +6,7 @@
 
 1.	Copy package.json from [repo TBD] and paste it at the root location of your project
 2.	Go to your terminal and cd to project root location
-3.	Run “npm install” in the terminal
+3.	Run ```npm install``` in the terminal
 4.	Create a directory named “spec” under the root location of your project
 5.	Navigate to node_modules/tiunit/ , copy helpers directory and paste it under “spec”
 6.	Navigate to node_modules/tiunit/support, copy parser.json it under “spec/support”
@@ -154,3 +154,7 @@ If you want to use your own api.jsca, the path (folders only) to your local api.
 }
 ```
 (it's best to exclude parser.json in your .gitignore file)
+
+### Execute your tests
+Go to your terminal and cd to project root location
+Run ``` npm test``` in the terminal
