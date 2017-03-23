@@ -150,7 +150,7 @@ If you want to use your own api.jsca, the path (folders only) to your local api.
 
 ```sh
 {
-  "path": "/Applications/Appcelerator\\ Studio/plugins/com.appcelerator.titanium.core_3.1.2.<find this number by navigation to the pligin dir>/resources/jsca"
+  "path": "/Applications/Appcelerator\\ Studio/plugins/com.appcelerator.titanium.core_3.1.2.<find this number by navigation to the plugins dir under /Applications/Appcelerator\\ Studio/plugins >/resources/jsca"
 }
 ```
 (it's best to exclude parser.json in your .gitignore file)
