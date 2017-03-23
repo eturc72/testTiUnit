@@ -4,6 +4,9 @@ describe('test begin...', function() {
      */
     require('./global.js');
 
+    /**
+     * Global configurations.
+     */
     var config = require('./config.json');
 
     /*
@@ -22,7 +25,7 @@ describe('test begin...', function() {
     // Generate the mock for $
     $ = require('tiunit/mockcontroller').createControllerMock(config.rootDir + '/app/controllers/index.js');
 
-    // mocking $.label.text
+    // mocking of $.label.text
     $.label = {
         text: 'hello world'
     };
