@@ -1,0 +1,14 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for images
+
+'#images': {
+    layout: 'vertical',
+    height: '100%',
+    width: '100%'
+},
+
+'#pdp_image_scroller': {
+    height: '100%',
+    width: '100%'
+}

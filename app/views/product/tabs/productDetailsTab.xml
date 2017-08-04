@@ -1,0 +1,12 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for default PDP tab
+-->
+<Alloy>
+    <View id="base_product">
+        <Require id="promotions" src="product/components/promotions"/>
+        <Require id="variations" src="product/components/variations"/>
+        <Require id="options" src="product/components/options"/>
+        <Require id="cart_add" src="product/components/cartAdd"/>
+    </View>
+</Alloy>

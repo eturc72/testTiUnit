@@ -1,0 +1,30 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for prompting signature in dialog
+
+'#payment_signature_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+// This is put on top of paymentTerminal so we don't need a black background and opacity
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768
+},
+
+'#contents': {
+    layout: 'vertical',
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#padding_container': {
+    layout: 'vertical',
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    left: 50,
+    right: 50
+}

@@ -1,0 +1,21 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for the customer search
+-->
+<Alloy>
+    <View id="search" class="search">
+        <View id="backdrop"/>
+        <View class="search_contents" id="search_contents">
+            <View id="customer_header_container" class="customer_search_button_container">
+                <Label id="customer_lookup_label" class="title_text" accessibilityValue="customer_lookup_label"/>
+            </View>
+            <View id="search_form_container" class="search_form_container">
+                <TextField id="search_textfield" accessibilityLabel="search_textfield_drawer"/>
+                <Button id="search_button" titleid="_Search" accessibilityValue="search_button_drawer"/>
+            </View>
+            <View id="search_results_container" class="search_results_container" visible="false">
+                <Label id="results_error" class="error" accessibilityValue="results_error" />
+            </View>
+        </View>
+    </View>
+</Alloy>

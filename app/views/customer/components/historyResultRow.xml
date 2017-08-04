@@ -1,0 +1,34 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for history tile row
+-->
+<Alloy>
+    <TableViewRow id= "history_result_row">
+        <View id="history_tile_container" class="history_tile_container">
+            <View class="image_column">
+                <ImageView id="product_image" class="image_container" accessibilityValue="product_image" image="{imageUrl}"/>
+            </View>
+            <View class="orderdetails_container">
+                <View class="labeled_value" top="35">
+                    <Label id="date_label" class="label" accessibilityValue="date_label"/>
+                    <Label id="order_date" class="text" text="{creationDate}" accessibilityValue="order_date"/>
+                </View>
+                <View class="labeled_value">
+                    <Label id="status_label" class="label" accessibilityValue="status_label"/>
+                    <Label id="order_status" class="text" text="{order_status}" accessibilityValue="order_status"/>
+                </View>
+                <View class="labeled_value">
+                    <Label id="total_label" class="label" accessibilityValue="total_label"/>
+                    <Label id="order_total" class="text" text="{totalNetPrice}" accessibilityValue="order_total"/>
+                </View>
+                <View class="labeled_value">
+                    <Label id="number_label" class="label" accessibilityValue="number_label"/>
+                    <Label id="order_number" class="text" text="{orderNo}" accessibilityValue="order_number"/>
+                </View>
+            </View>
+            <View class="orderbutton_container">
+                <Button titleid=">" id="order_detail_button" accessibilityValue="order_detail_button"/>
+            </View>
+        </View>
+    </TableViewRow>
+</Alloy>

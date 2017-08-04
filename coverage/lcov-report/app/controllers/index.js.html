@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>12/12</span>
+        <span class='fraction'>0/396</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>2/2</span>
+        <span class='fraction'>0/174</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>2/2</span>
+        <span class='fraction'>0/94</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>12/12</span>
+        <span class='fraction'>0/396</span>
       </div>
     </div>
   </div>
-  <div class='status-line high'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -69,65 +69,2852 @@
 24
 25
 26
-27</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493
+494
+495
+496
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510
+511
+512
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532
+533
+534
+535
+536
+537
+538
+539
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+550
+551
+552
+553
+554
+555
+556
+557
+558
+559
+560
+561
+562
+563
+564
+565
+566
+567
+568
+569
+570
+571
+572
+573
+574
+575
+576
+577
+578
+579
+580
+581
+582
+583
+584
+585
+586
+587
+588
+589
+590
+591
+592
+593
+594
+595
+596
+597
+598
+599
+600
+601
+602
+603
+604
+605
+606
+607
+608
+609
+610
+611
+612
+613
+614
+615
+616
+617
+618
+619
+620
+621
+622
+623
+624
+625
+626
+627
+628
+629
+630
+631
+632
+633
+634
+635
+636
+637
+638
+639
+640
+641
+642
+643
+644
+645
+646
+647
+648
+649
+650
+651
+652
+653
+654
+655
+656
+657
+658
+659
+660
+661
+662
+663
+664
+665
+666
+667
+668
+669
+670
+671
+672
+673
+674
+675
+676
+677
+678
+679
+680
+681
+682
+683
+684
+685
+686
+687
+688
+689
+690
+691
+692
+693
+694
+695
+696
+697
+698
+699
+700
+701
+702
+703
+704
+705
+706
+707
+708
+709
+710
+711
+712
+713
+714
+715
+716
+717
+718
+719
+720
+721
+722
+723
+724
+725
+726
+727
+728
+729
+730
+731
+732
+733
+734
+735
+736
+737
+738
+739
+740
+741
+742
+743
+744
+745
+746
+747
+748
+749
+750
+751
+752
+753
+754
+755
+756
+757
+758
+759
+760
+761
+762
+763
+764
+765
+766
+767
+768
+769
+770
+771
+772
+773
+774
+775
+776
+777
+778
+779
+780
+781
+782
+783
+784
+785
+786
+787
+788
+789
+790
+791
+792
+793
+794
+795
+796
+797
+798
+799
+800
+801
+802
+803
+804
+805
+806
+807
+808
+809
+810
+811
+812
+813
+814
+815
+816
+817
+818
+819
+820
+821
+822
+823
+824
+825
+826
+827
+828
+829
+830
+831
+832
+833
+834
+835
+836
+837
+838
+839
+840
+841
+842
+843
+844
+845
+846
+847
+848
+849
+850
+851
+852
+853
+854
+855
+856
+857
+858
+859
+860
+861
+862
+863
+864
+865
+866
+867
+868
+869
+870
+871
+872
+873
+874
+875
+876
+877
+878
+879
+880
+881
+882
+883
+884
+885
+886
+887
+888
+889
+890
+891
+892
+893
+894
+895
+896
+897
+898
+899
+900
+901
+902
+903
+904
+905
+906
+907
+908
+909
+910
+911
+912
+913
+914
+915
+916
+917
+918
+919
+920
+921
+922
+923
+924
+925
+926
+927
+928
+929
+930
+931
+932
+933
+934
+935
+936
+937
+938
+939
+940
+941
+942
+943
+944
+945
+946
+947
+948
+949
+950
+951
+952
+953
+954
+955
+956</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">2×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
-<span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">function doClick(e) {
-    Ti.UI.createAlertDialog({
-        message: $.label.text,
-        ok: 'Okay',
-        title: 'File Deleted'
-    }).show();
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// ©2013-2017 salesforce.com, inc. All rights reserved.
+/**
+ * controllers/index.js - main application startup controller
+ */
+&nbsp;
+//---------------------------------------------------
+// ## VARIABLES
+&nbsp;
+// Runs through a list of actions that are necessary for successful application launch
+<span class="cstat-no" title="statement not covered" >var animation = require('alloy/animation');</span>
+<span class="cstat-no" title="statement not covered" >require('reporter');</span>
+<span class="cstat-no" title="statement not covered" >var analytics = require('analyticsBase');</span>
+<span class="cstat-no" title="statement not covered" >var logger = require('logging')('application:index', getFullControllerPath($.__controllerPath));</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >var validateAppSettings = require('Validations').validateAppSettings;</span>
+<span class="cstat-no" title="statement not covered" >var validateNetwork = require('Validations').validateNetwork;</span>
+<span class="cstat-no" title="statement not covered" >var validateStorefront = require('Validations').validateStorefront;</span>
+<span class="cstat-no" title="statement not covered" >var validateDevicesStartup = require('Validations').validateDevicesStartup;</span>
+<span class="cstat-no" title="statement not covered" >var loadConfigurations = require('appConfiguration').loadConfigurations;</span>
+<span class="cstat-no" title="statement not covered" >var showActivityIndicator = require('dialogUtils').showActivityIndicator;</span>
+<span class="cstat-no" title="statement not covered" >var countryConfig = require('config/countries').countryConfig;</span>
+<span class="cstat-no" title="statement not covered" >var geolocation = require('./geolocation');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >var notifyReadDelay = 250;</span>
+<span class="cstat-no" title="statement not covered" >var notifyDelayStartup = 10000;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >var appSettings = require('appSettings');</span>
+<span class="cstat-no" title="statement not covered" >var EAUtils = require('EAUtils');</span>
+<span class="cstat-no" title="statement not covered" >var storePasswordHelpers = require('storePasswordHelpers');</span>
+&nbsp;
+// in an effort to avoid calling this multiple times based on this:
+//http://docs.appcelerator.com/titanium/3.0/#!/guide/Coding_Best_Practices
+<span class="cstat-no" title="statement not covered" >Alloy.Platform = Ti.Platform.osname;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >var loading = false,</span>
+    appIndexController,
+    refreshing = false;
+&nbsp;
+//---------------------------------------------------
+// ## APP LISTENERS
+&nbsp;
+<span class="cstat-no" title="statement not covered" >$.listenTo(Alloy.eventDispatcher, 'app:startup', init);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >$.listenTo(Alloy.eventDispatcher, 'app:login', doAppLogin);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >$.listenTo(Alloy.eventDispatcher, 'configurations:prelogin', onConfigsPreLogin);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >$.listenTo(Alloy.eventDispatcher, 'configurations:postlogin', onConfigsPostLogin);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >$.listenTo(Alloy.eventDispatcher, 'configurations:store_availability.max_distance_search', loadAllStores);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >$.listenTo(Alloy.eventDispatcher, 'configurations:store_availability.distance_unit', loadAllStores);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >$.listenTo(Alloy.eventDispatcher, 'associate_logout', onAssociateLogout);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >$.listenTo(Alloy.eventDispatcher, 'tests:run', onTestsRun);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >Ti.Network.addEventListener('change', networkDidChange);</span>
+&nbsp;
+//---------------------------------------------------
+// ## FUNCTIONS FOR VIEW/CONTROLLER LIFECYCLE
+&nbsp;
+/**
+ * INIT - implements first time launching pre-flight checklist
+ * called when app:startup is triggered
+ *
+ * @return {Deferred} promise
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function init() {</span></span>
+<span class="cstat-no" title="statement not covered" >    var deferred = new _.Deferred();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (loading) {</span>
+<span class="cstat-no" title="statement not covered" >        deferred.reject();</span>
+<span class="cstat-no" title="statement not covered" >        return deferred.promise();</span>
+    }
+<span class="cstat-no" title="statement not covered" >    loading = true;</span>
+    // in case failure occurs during startup we want to remove any previous notify messages
+<span class="cstat-no" title="statement not covered" >    removeNotify();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    allowAppSleep(true);</span>
+&nbsp;
+    // get the local db settings for startup configuration (store id)
+<span class="cstat-no" title="statement not covered" >    loadConfigurations(true).done(<span class="fstat-no" title="function not covered" >function() {</span></span>
+        // check for restart of the app and move back to index if needed
+<span class="cstat-no" title="statement not covered" >        if ($.appIndex) {</span>
+<span class="cstat-no" title="statement not covered" >            switchToIndex().always(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >                doStartupValidations().done(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >                    deferred.resolve();</span>
+                }).fail(<span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >                    deferred.reject();</span>
+                });
+            });
+        } else {
+<span class="cstat-no" title="statement not covered" >            doStartupValidations().done(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >                deferred.resolve();</span>
+            }).fail(<span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >                deferred.reject();</span>
+            });
+        }
+    }).fail(<span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >        deferred.reject();</span>
+<span class="cstat-no" title="statement not covered" >        failStartup(_L('Unable to load application settings.'));</span>
+    });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return deferred.promise();</span>
 }
 &nbsp;
-$.index.open();
+//---------------------------------------------------
+// ## FUNCTIONS
 &nbsp;
-function isNetworkPresent() {
-    if (_.isEqual(Ti.Network.NETWORK_NONE, Ti.Network.getNetworkType())) {
-        Ti.API.warn('Please connect to a network and try again');
-        console.log('The network is not present');
-        return false;
+/**
+ * doStartupValidations - where all the application validations are done to check for readiness of starting app
+ *
+ * @return {Deferred} promise
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function doStartupValidations() {</span></span>
+<span class="cstat-no" title="statement not covered" >    var deferred = new _.Deferred();</span>
+<span class="cstat-no" title="statement not covered" >    logger.info('Doing startup');</span>
+<span class="cstat-no" title="statement not covered" >    if (Alloy.CFG.languageSelected) {</span>
+<span class="cstat-no" title="statement not covered" >        Ti.Locale.setLanguage(Alloy.CFG.languageSelected);</span>
+    }
+<span class="cstat-no" title="statement not covered" >    validateAppSettings().fail(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        failStartup(_L('Unable to validate application settings.'));</span>
+<span class="cstat-no" title="statement not covered" >        deferred.reject();</span>
+    }).done(<span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >        validateNetwork().fail(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >            failStartup(_L('Unable to connect to a network.'));</span>
+<span class="cstat-no" title="statement not covered" >            deferred.reject();</span>
+        }).done(<span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >            validateStorefront().fail(<span class="fstat-no" title="function not covered" >function(responseText) {</span></span>
+<span class="cstat-no" title="statement not covered" >                failStartup(_L('Unable to connect to storefront.'), responseText);</span>
+<span class="cstat-no" title="statement not covered" >                deferred.reject();</span>
+            }).done(<span class="fstat-no" title="function not covered" >function() {</span>
+                // storefront is required for stores in welcome dialog, validate devices requires store id
+<span class="cstat-no" title="statement not covered" >                welcomeMessage().always(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >                    validateDevicesStartup().fail(<span class="fstat-no" title="function not covered" >function(response) {</span></span>
+<span class="cstat-no" title="statement not covered" >                        failStartup(response.faultDescription, response);</span>
+<span class="cstat-no" title="statement not covered" >                        deferred.reject();</span>
+                    }).done(<span class="fstat-no" title="function not covered" >function() {</span>
+                        // Validations passed so now load the application requirements and start app
+<span class="cstat-no" title="statement not covered" >                        loadModels(_L('Loading Countries...'), 'countriesStates').fail(<span class="fstat-no" title="function not covered" >function() {</span></span>
+                            // failure message handled in loadModels
+<span class="cstat-no" title="statement not covered" >                            deferred.reject();</span>
+                        }).done(<span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >                            notify(_L('Initializing Application...'), {</span>
+                                timeout : notifyDelayStartup
+                            });
+<span class="cstat-no" title="statement not covered" >                            startApplication();</span>
+<span class="cstat-no" title="statement not covered" >                            deferred.resolve();</span>
+                        });
+                    });
+                });
+            });
+        });
+    });
+<span class="cstat-no" title="statement not covered" >    return deferred.promise();</span>
+}
+&nbsp;
+/**
+ * showKioskMessage - will display the kiosk message on the splash screen
+ *
+ * @param {Boolean} enable if true then show the message
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function showKioskMessage(enable) {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (EAUtils.isSymbolBasedLanguage() || EAUtils.isLatinBasedLanguage()) {</span>
+<span class="cstat-no" title="statement not covered" >        $.kiosk_message.setFont(Alloy.Styles.calloutFont);</span>
+    }
+    // ensure the message is translated to the correct language when we show the screen
+<span class="cstat-no" title="statement not covered" >    $.kiosk_message.setText(_L('Touch Screen to Begin'));</span>
+<span class="cstat-no" title="statement not covered" >    if (enable) {</span>
+<span class="cstat-no" title="statement not covered" >        $.kiosk_message.show();</span>
     } else {
-        Ti.App.fireEvent('bar');
-        console.log('The network is present');
-        return true;
+<span class="cstat-no" title="statement not covered" >        $.kiosk_message.hide();</span>
     }
 }
 &nbsp;
-module.exports = {
-    isNetworkPresent: isNetworkPresent,
-    doClick: doClick
-};
+/**
+ * failStartup - presents a dialog to the user when there is a problem starting the application
+ *
+ * @param {String} message is the reason for the startup failure
+ * @param {Object} fault is the error that came back from the request
+ * @param {boolean} loginOnly if true will only restart login and not the app
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function failStartup(message, fault, loginOnly) {</span></span>
+<span class="cstat-no" title="statement not covered" >    loading = false;</span>
+<span class="cstat-no" title="statement not covered" >    removeNotify();</span>
+<span class="cstat-no" title="statement not covered" >    var messageString = _L('Reason: ') + message;</span>
+    // if the fault returns stores in the response then we need a popover that can present the stores to the user to pick from
+<span class="cstat-no" title="statement not covered" >    if (fault &amp;&amp; fault.stores) {</span>
+<span class="cstat-no" title="statement not covered" >        Alloy.Dialog.showCustomDialog({</span>
+            controllerPath : 'components/startupPopover',
+            initOptions : {
+                message : messageString,
+                fault : fault
+            },
+            continueEvent : 'startupPopover:dismiss',
+            continueFunction : <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >                Alloy.eventDispatcher.trigger('app:startup');</span>
+            },
+            cancelEvent : 'startupPopover:appConfiguration',
+            cancelFunction : <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >                showAppConfigurationDialog();</span>
+            }
+        });
+    } else {
+<span class="cstat-no" title="statement not covered" >        if (_.isString(fault)) {</span>
+<span class="cstat-no" title="statement not covered" >            messageString += '\n\n' + _L('Message: ') + fault;</span>
+        }
+<span class="cstat-no" title="statement not covered" >        Alloy.Dialog.showConfirmationDialog({</span>
+            messageString : messageString,
+            titleString : _L('Unable to start the application'),
+            okButtonString : _L('Retry'),
+            cancelButtonString : _L('Configuration'),
+            cancelFunction : <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >                showAppConfigurationDialog(loginOnly);</span>
+            },
+            okFunction : <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >                removeNotify();</span>
+<span class="cstat-no" title="statement not covered" >                if (loginOnly) {</span>
+<span class="cstat-no" title="statement not covered" >                    Alloy.eventDispatcher.trigger('app:login');</span>
+                } else {
+<span class="cstat-no" title="statement not covered" >                    Alloy.eventDispatcher.trigger('app:startup');</span>
+                }
+            }
+        });
+    }
+}
+&nbsp;
+/**
+ * showAppConfigurationDialog - present the application configuration dialog on start up fail
+ *
+ * @param {Boolean} isLogin - is it a login
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function showAppConfigurationDialog(isLogin) {</span></span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Dialog.showCustomDialog({</span>
+        controllerPath : 'support/components/appConfigurationDialog',
+        continueEvent : 'appConfigurationDialog:dismiss',
+        continueFunction : <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >            if (isLogin) {</span>
+<span class="cstat-no" title="statement not covered" >                Alloy.eventDispatcher.trigger('app:login');</span>
+            } else {
+<span class="cstat-no" title="statement not covered" >                Alloy.eventDispatcher.trigger('app:startup');</span>
+            }
+        }
+    });
+}
+&nbsp;
+/**
+ * welcomeMessage - present the welcome dialog to the user to pick the startup settings
+ *
+ * @return {Deferred} promise
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function welcomeMessage() {</span></span>
+<span class="cstat-no" title="statement not covered" >    var deferred = new _.Deferred();</span>
+    /* Checking if the country and the store id has been set on the startup
+     (This is in case you select the country and not the store id and quit the app, it should show the startup
+     wizard once the app is started again)*/
+<span class="cstat-no" title="statement not covered" >    if (appSettings.dbExists() &amp;&amp; Alloy.CFG.countrySelected &amp;&amp; countryConfig[Alloy.CFG.countrySelected] &amp;&amp; Alloy.CFG.store_id &amp;&amp; Alloy.CFG.appCurrency) {</span>
+<span class="cstat-no" title="statement not covered" >        deferred.resolve();</span>
+<span class="cstat-no" title="statement not covered" >        return deferred.promise();</span>
+    }
+<span class="cstat-no" title="statement not covered" >    loading = false;</span>
+<span class="cstat-no" title="statement not covered" >    removeNotify();</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Dialog.showCustomDialog({</span>
+        controllerPath : 'components/welcomePopover',
+        continueEvent : 'welcomePopover:dismiss',
+        continueFunction : <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >            deferred.resolve();</span>
+        }
+    });
+<span class="cstat-no" title="statement not covered" >    return deferred.promise();</span>
+}
+&nbsp;
+/**
+ * presentLogin - display the appropriate login screen for the app
+ *
+ * @param {Object} event
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function presentLogin(event) {</span></span>
+    // need to get the theme for login and kiosk username/password and want this to happen before app:login is triggered
+<span class="cstat-no" title="statement not covered" >    loadConfigurations().done(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        var continueLogin = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >            if (loadStartupModules()) {</span>
+<span class="cstat-no" title="statement not covered" >                Alloy.eventDispatcher.trigger('configurations:prelogin');</span>
+<span class="cstat-no" title="statement not covered" >                removeNotify();</span>
+<span class="cstat-no" title="statement not covered" >                if (isKioskMode()) {</span>
+<span class="cstat-no" title="statement not covered" >                    validateKioskCredentials();</span>
+                } else {
+<span class="cstat-no" title="statement not covered" >                    if (!Alloy.CFG.country_configuration || !Alloy.CFG.country_configuration[Alloy.CFG.countrySelected] || !Alloy.CFG.country_configuration[Alloy.CFG.countrySelected].list_price_book) {</span>
+<span class="cstat-no" title="statement not covered" >                        failStartup(String.format(_L('Price book mapping missing from Endless Aisle Preferences for the value \'%s\'.'), Alloy.CFG.countrySelected));</span>
+                    } else {
+<span class="cstat-no" title="statement not covered" >                        presentAssociateLogin(event);</span>
+                    }
+                }
+            }
+        };
+<span class="cstat-no" title="statement not covered" >        if (Alloy.CFG.navigation.use_mega_menu) {</span>
+            // bootstrapModels depends on having Alloy.CFG.image_service set from BM, so need to load this after loadConfigurations is called
+<span class="cstat-no" title="statement not covered" >            loadModels(null, 'bootstrapModels', true).done(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >                continueLogin();</span>
+            });
+        } else {
+<span class="cstat-no" title="statement not covered" >            continueLogin();</span>
+        }
+    }).fail(<span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >        failStartup(_L('Unable to load application settings.'));</span>
+    });
+}
+&nbsp;
+/**
+ * presentAssociateLogin - will display the login panel at startup
+ *
+ * @param {Object} info
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function presentAssociateLogin(info) {</span></span>
+<span class="cstat-no" title="statement not covered" >    var associate_login = Alloy.Dialog.showCustomDialog({</span>
+        controllerPath : 'associate/login',
+        initOptions : info,
+        ignoreHideAuxillary : true,
+        fadeOut : true,
+        continueEvent : 'login:dismiss',
+        continueFunction : <span class="fstat-no" title="function not covered" >function(event) {</span>
+<span class="cstat-no" title="statement not covered" >            $.backdrop.setOpacity(0);</span>
+<span class="cstat-no" title="statement not covered" >            if (event) {</span>
+<span class="cstat-no" title="statement not covered" >                var location = info ? info.location : null;</span>
+<span class="cstat-no" title="statement not covered" >                var promise = postLogin(event.employee_id, location);</span>
+<span class="cstat-no" title="statement not covered" >                showActivityIndicator(promise);</span>
+            }
+        }
+    });
+<span class="cstat-no" title="statement not covered" >    $.backdrop.animate({</span>
+        opacity : 0.5,
+        duration : 500
+    }, <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >        animation.popIn(associate_login.getView());</span>
+    });
+}
+&nbsp;
+/**
+ * postAuthorization - This function contains logic which is to be executed after kiosk manager authorization, but before
+ * the authorization check logs out.
+ *
+ * @param dialog - the authorization dialog will be passed to this callback function
+ *
+ * @return {Deferred} promise
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function postAuthorization(dialog) {</span></span>
+<span class="cstat-no" title="statement not covered" >    var cfgSettings = Alloy.createModel('cfgSettings');</span>
+<span class="cstat-no" title="statement not covered" >    var promise = cfgSettings.loadKioskServerConfigs(Alloy.CFG.store_id);</span>
+<span class="cstat-no" title="statement not covered" >    promise.done(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        var serverSettings = cfgSettings.getSettings();</span>
+<span class="cstat-no" title="statement not covered" >        if (serverSettings) {</span>
+<span class="cstat-no" title="statement not covered" >            appSettings.setSetting('kiosk_mode.username', serverSettings.kiosk_mode.username);</span>
+<span class="cstat-no" title="statement not covered" >            appSettings.setSetting('kiosk_mode.password', serverSettings.kiosk_mode.password);</span>
+        }
+<span class="cstat-no" title="statement not covered" >        Alloy.CFG.kiosk_mode.associate_credentials_entered = true;</span>
+        // manager credentials were just entered for kiosk enablement.
+<span class="cstat-no" title="statement not covered" >        storePasswordHelpers.checkStorePasswordWarning(true).always(<span class="fstat-no" title="function not covered" >function() {</span></span>
+            // even though we have a failure we still want the app to continue
+<span class="cstat-no" title="statement not covered" >            showKioskMessage(true);</span>
+        });
+    });
+<span class="cstat-no" title="statement not covered" >    promise.fail(<span class="fstat-no" title="function not covered" >function(model) {</span></span>
+<span class="cstat-no" title="statement not covered" >        dialog.showErrorMessage(_L('Unable to retrieve kiosk settings'));</span>
+    });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return promise;</span>
+}
+&nbsp;
+/**
+ * validateKioskCredentials - Validates the credentials for kiosk mode before presenting the kiosk welcome screen
+ *
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function validateKioskCredentials() {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (Alloy.CFG.kiosk_mode.associate_credentials_entered) {</span>
+<span class="cstat-no" title="statement not covered" >        showKioskMessage(true);</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >        Alloy.Dialog.showCustomDialog({</span>
+            controllerPath : 'associate/authorization',
+            initOptions : {
+                subTitleText : _L('Associate Login To Enable Kiosk'),
+                successMessage : _L('Manager Credentials Accepted'),
+                showCancelButton : false,
+                postAuthorizationFunction : postAuthorization
+            },
+            continueEvent : 'authorization:dismiss',
+            continueFunction : <span class="fstat-no" title="function not covered" >function(result) {</span>
+<span class="cstat-no" title="statement not covered" >                if (result &amp;&amp; !result.result) {</span>
+<span class="cstat-no" title="statement not covered" >                    failStartup(_L('Unable to login kiosk user.'), null, true);</span>
+                }
+            }
+        });
+    }
+}
+&nbsp;
+/**
+ * kioskLogin - happens when click on backdrop to continue with kiosk login
+ *
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function kioskLogin() {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (!$.kiosk_message.getVisible()) {</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    logger.info('kioskLogin');</span>
+    // change back to default in case we restart, plus this indicates you tapped
+<span class="cstat-no" title="statement not covered" >    showKioskMessage(false);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    var deferred = new _.Deferred();</span>
+<span class="cstat-no" title="statement not covered" >    showActivityIndicator(deferred);</span>
+<span class="cstat-no" title="statement not covered" >    var loginInfo = {</span>
+        employee_id : Alloy.CFG.kiosk_mode.username,
+        passcode : Alloy.CFG.kiosk_mode.password
+    };
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.associate.loginAssociate(loginInfo).done(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        postLogin(Alloy.CFG.kiosk_mode.username).always(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >            deferred.resolve();</span>
+        });
+    }).fail(<span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >        deferred.resolve();</span>
+        // only need to restart login here
+<span class="cstat-no" title="statement not covered" >        failStartup(_L('Unable to login kiosk user.'), null, true);</span>
+    });
+}
+&nbsp;
+/**
+ * postLogin - Once kiosk or associate login is complete then fire login analytics and navigate to application
+ *
+ * @param employee_code - employee id
+ * @param location - route location
+ * @return {Deferred} promise
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function postLogin(employee_code, location) {</span></span>
+<span class="cstat-no" title="statement not covered" >    var deferred = new _.Deferred();</span>
+    // an oAuth token is needed for anything related to baskets or customers, so fetch one now
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.authorizationToken.fetchToken(Alloy.CFG.storefront_host).done(<span class="fstat-no" title="function not covered" >function(model) {</span></span>
+<span class="cstat-no" title="statement not covered" >        Alloy.Models.basket.getBasket({</span>
+            c_eaEmployeeId : employee_code
+        }).done(<span class="fstat-no" title="function not covered" >function() {</span>
+            // load one last time b/c the login dialog or kiosk click could be sitting open for a while
+<span class="cstat-no" title="statement not covered" >            loadConfigurations().done(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >                analytics.fireAnalyticsEvent({</span>
+                    category : _L('Users'),
+                    action : _L('Associate Login'),
+                    label : employee_code
+                });
+<span class="cstat-no" title="statement not covered" >                analytics.fireUserEvent({</span>
+                    category : _L('Users'),
+                    action : _L('Associate Login'),
+                    userId : employee_code
+                });
+<span class="cstat-no" title="statement not covered" >                analytics.fireAnalyticsEvent({</span>
+                    category : _L('Store'),
+                    action : _L('Login'),
+                    label : Alloy.Models.storeInfo.getId()
+                });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                switchToAppIndex().always(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >                    setTimeout(<span class="fstat-no" title="function not covered" >function() {</span></span>
+                        // For auth redirection usage
+<span class="cstat-no" title="statement not covered" >                        if (location &amp;&amp; location.route != 'associate_login') {</span>
+<span class="cstat-no" title="statement not covered" >                            logger.info('Redirecting to ' + JSON.stringify(location));</span>
+<span class="cstat-no" title="statement not covered" >                            Alloy.Router.navigate(location);</span>
+                        } else {
+<span class="cstat-no" title="statement not covered" >                            Alloy.Router.navigateToHome();</span>
+                        }
+<span class="cstat-no" title="statement not covered" >                        Alloy.eventDispatcher.trigger('app:ready');</span>
+<span class="cstat-no" title="statement not covered" >                        deferred.resolve();</span>
+                    }, 0);
+                });
+&nbsp;
+                // do this after appIndex has been created, which is done in switchToAppIndex
+<span class="cstat-no" title="statement not covered" >                Alloy.eventDispatcher.trigger('configurations:postlogin');</span>
+&nbsp;
+            }).fail(<span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >                deferred.resolve();</span>
+<span class="cstat-no" title="statement not covered" >                failStartup(_L('Unable to load application settings.'), null, true);</span>
+            });
+        }).fail(<span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >            deferred.resolve();</span>
+<span class="cstat-no" title="statement not covered" >            failStartup(_L('Unable to start the application'), null, true);</span>
+        }).always(<span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >            deferred.resolve();</span>
+        });
+    }).fail(<span class="fstat-no" title="function not covered" >function(fault) {</span>
+<span class="cstat-no" title="statement not covered" >        deferred.resolve();</span>
+<span class="cstat-no" title="statement not covered" >        if (fault &amp;&amp; (fault.isBadLogin() || fault.isEmptyClientCredentials())) {</span>
+<span class="cstat-no" title="statement not covered" >            handleAuthorizationTokenError(fault);</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >            failStartup(_L('Unable to start the application'), null, true);</span>
+        }
+    });
+<span class="cstat-no" title="statement not covered" >    return deferred.promise();</span>
+}
+&nbsp;
+/**
+ * loadModels - will load models required for startup
+ *
+ * @param {String} label the label for the notify message while loading
+ * @param {String} modelName the model file name
+ * @param {Boolean} login if true will only restart login and not the app
+ * @return {Deferred} promise
+ * @api private
+ *
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function loadModels(label, modelName, login) {</span></span>
+<span class="cstat-no" title="statement not covered" >    var deferred = new _.Deferred();</span>
+<span class="cstat-no" title="statement not covered" >    login = login || false;</span>
+<span class="cstat-no" title="statement not covered" >    if (label) {</span>
+<span class="cstat-no" title="statement not covered" >        notify(label, {</span>
+            timeout : notifyDelayStartup
+        });
+    }
+<span class="cstat-no" title="statement not covered" >    setTimeout(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        logger.trace('Loading ' + modelName);</span>
+<span class="cstat-no" title="statement not covered" >        require(modelName).done(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >            logger.trace('Done loading ' + modelName);</span>
+<span class="cstat-no" title="statement not covered" >            deferred.resolve();</span>
+        }).fail(<span class="fstat-no" title="function not covered" >function(model) {</span>
+<span class="cstat-no" title="statement not covered" >            var fault = null;</span>
+<span class="cstat-no" title="statement not covered" >            if (model &amp;&amp; model.has('fault')) {</span>
+<span class="cstat-no" title="statement not covered" >                var faultAttrs = model.get('fault');</span>
+<span class="cstat-no" title="statement not covered" >                fault = faultAttrs.message ? faultAttrs.message : null;</span>
+            }
+<span class="cstat-no" title="statement not covered" >            failStartup(String.format(_L('Unable to load \'%s\'.'), modelName), fault, login);</span>
+<span class="cstat-no" title="statement not covered" >            deferred.reject();</span>
+        });
+    }, notifyReadDelay);
+<span class="cstat-no" title="statement not covered" >    return deferred.promise();</span>
+}
+&nbsp;
+/**
+ * startApplication - is called after all validations are done and application can be launched
+ *
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function startApplication() {</span></span>
+<span class="cstat-no" title="statement not covered" >    setTimeout(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        loading = false;</span>
+<span class="cstat-no" title="statement not covered" >        Alloy.TopController = $;</span>
+<span class="cstat-no" title="statement not covered" >        Alloy.TopWindow = $.index;</span>
+<span class="cstat-no" title="statement not covered" >        Alloy.eventDispatcher.trigger('app:login');</span>
+        // fired to doAppLogin
+    }, notifyReadDelay);
+}
+&nbsp;
+/**
+ * doAppLogin - is called when app:login is fired and app needs to present login to user
+ *
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function doAppLogin(event) {</span></span>
+<span class="cstat-no" title="statement not covered" >    logger.info('doAppLogin - app:login fired');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Globals.resetCookies();</span>
+<span class="cstat-no" title="statement not covered" >    allowAppSleep(true);</span>
+<span class="cstat-no" title="statement not covered" >    if ($.appIndex) {</span>
+        // moving from appIndex back to index
+<span class="cstat-no" title="statement not covered" >        switchToIndex().always(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >            presentLogin(event);</span>
+        });
+    } else {
+        // during first time startup
+<span class="cstat-no" title="statement not covered" >        presentLogin(event);</span>
+    }
+}
+&nbsp;
+/**
+ * onTouchApp - event listener for touchstart on the appIndex.
+ * This does not capture events for when a field is clicked on.
+ *
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function onTouchApp() {</span></span>
+<span class="cstat-no" title="statement not covered" >    logger.info('*** touchstart on topwindow');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.eventDispatcher.trigger('session:renew');</span>
+}
+&nbsp;
+/**
+ * switchToIndex - will move back to index from appIndex
+ *
+ * @return {Deferred} promise
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function switchToIndex() {</span></span>
+<span class="cstat-no" title="statement not covered" >    logger.info('switchToIndex called');</span>
+<span class="cstat-no" title="statement not covered" >    var deferred = new _.Deferred();</span>
+    // tell DialogMgr to use $.index instead of $.appIndex
+<span class="cstat-no" title="statement not covered" >    Alloy.Dialog.setWindow($.index);</span>
+<span class="cstat-no" title="statement not covered" >    $.index.open();</span>
+<span class="cstat-no" title="statement not covered" >    $.appIndex.removeEventListener('touchstart', onTouchApp);</span>
+    // switch from appIndex back to index
+<span class="cstat-no" title="statement not covered" >    animation.crossFade($.appIndex, $.index, 500, <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        logger.info('closing and deinit appIndex');</span>
+<span class="cstat-no" title="statement not covered" >        $.appIndex.close();</span>
+<span class="cstat-no" title="statement not covered" >        appIndexController.deinit();</span>
+<span class="cstat-no" title="statement not covered" >        $.appIndex = null;</span>
+<span class="cstat-no" title="statement not covered" >        deferred.resolve();</span>
+    });
+<span class="cstat-no" title="statement not covered" >    return deferred.promise();</span>
+}
+&nbsp;
+/**
+ * switchToAppIndex - will move from index to appIndex
+ *
+ * @return {Deferred} promise
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function switchToAppIndex() {</span></span>
+<span class="cstat-no" title="statement not covered" >    logger.info('switchToAppIndex called');</span>
+<span class="cstat-no" title="statement not covered" >    var deferred = new _.Deferred();</span>
+<span class="cstat-no" title="statement not covered" >    allowAppSleep(false);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    logger.info('creating new appIndexController');</span>
+<span class="cstat-no" title="statement not covered" >    appIndexController = Alloy.createController('appIndex');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.AppWindow = $.appIndex = appIndexController.getView();</span>
+    // tell DialogMgr to use $.appIndex instead of $.index
+<span class="cstat-no" title="statement not covered" >    Alloy.Dialog.setWindow($.appIndex);</span>
+<span class="cstat-no" title="statement not covered" >    appIndexController.init();</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Router = appIndexController.router;</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.ViewManager = appIndexController.viewManager;</span>
+<span class="cstat-no" title="statement not covered" >    $.appIndex.open();</span>
+<span class="cstat-no" title="statement not covered" >    $.appIndex.addEventListener('touchstart', onTouchApp);</span>
+<span class="cstat-no" title="statement not covered" >    animation.crossFade($.index, $.appIndex, 100, <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        $.index.close();</span>
+<span class="cstat-no" title="statement not covered" >        deferred.resolve();</span>
+    });
+<span class="cstat-no" title="statement not covered" >    return deferred.promise();</span>
+}
+&nbsp;
+/**
+ * networkDidChange - Simple network listener to let users know
+ *
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function networkDidChange() {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (Ti.Network.online) {</span>
+<span class="cstat-no" title="statement not covered" >        removeNotify(_L('Network is unavailable'));</span>
+<span class="cstat-no" title="statement not covered" >        notify(_L('Network is now available'));</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >        notify(_L('Network is unavailable'), {</span>
+            preventAutoClose : true
+        });
+    }
+}
+&nbsp;
+/**
+ * executeModelTests - executes model tests
+ *
+ * @param testNames - name of tests to run
+ * @param junit_file_location - test location
+ * @param logFunc - function for logging
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function executeModelTests(testNames, junit_file_location, logFunc) {</span></span>
+<span class="cstat-no" title="statement not covered" >    setTimeout(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        var behave = require('behave');</span>
+<span class="cstat-no" title="statement not covered" >        var testsToLoad = testNames || Alloy.CFG.active_tests;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (testsToLoad &amp;&amp; testsToLoad.length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >            _.each(testsToLoad, <span class="fstat-no" title="function not covered" >function(testName) {</span></span>
+<span class="cstat-no" title="statement not covered" >                try {</span>
+<span class="cstat-no" title="statement not covered" >                    var spec = require('spec/' + testName);</span>
+<span class="cstat-no" title="statement not covered" >                    spec.define();</span>
+                } catch(exception) {
+<span class="cstat-no" title="statement not covered" >                    if ( exception instanceof Error &amp;&amp; exception.code === 'MODULE_NOT_FOUND')</span>
+<span class="cstat-no" title="statement not covered" >                        notify(testName + ' is not a test that can be executed.');</span>
+                    else
+<span class="cstat-no" title="statement not covered" >                        throw exception;</span>
+                }
+            });
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        behave.run(junit_file_location, logFunc);</span>
+    }, 1000);
+}
+&nbsp;
+/**
+ * onConfigsPreLogin - Aloy.CFG has been loaded from all sources and pre login
+ * Loading models post configuration as some of these depend on Alloy.CFG.image_service coming from BM
+ *
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function onConfigsPreLogin() {</span></span>
+<span class="cstat-no" title="statement not covered" >    logger.info('onConfigsPreLogin called');</span>
+    // Declare global storage for bootstrap objects
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.product = Alloy.Models.product || Alloy.createModel('product');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.productSearch = Alloy.Models.productSearch || Alloy.createModel('productSearch');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.category = Alloy.Models.category || Alloy.createModel('category');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.customer = Alloy.Models.customer || Alloy.createModel('customer');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.associate = Alloy.Models.associate || Alloy.createModel('associate');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.basket = Alloy.Models.basket || Alloy.createModel('baskets');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.customerAddress = Alloy.Models.customerAddress || Alloy.createModel('customerAddress');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.customerOrder = Alloy.Models.customerOrder || Alloy.createModel('baskets');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Collections.customerOrderHistory = Alloy.Collections.customerOrderHistory || Alloy.createCollection('customerOrderHistory');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.storeInfo = Alloy.Models.storeInfo || Alloy.createModel('store');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.authorizationToken = Alloy.Models.authorizationToken || Alloy.createModel('authorizationToken');</span>
+&nbsp;
+    // Global Collections
+<span class="cstat-no" title="statement not covered" >    Alloy.Collections.allStores = Alloy.Collections.allStores || Alloy.createCollection('store');</span>
+&nbsp;
+    // Basis for audit trail
+<span class="cstat-no" title="statement not covered" >    Alloy.Collections.history = Alloy.Collections.history || Alloy.createCollection('history');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Collections.customer = Alloy.Collections.customer || Alloy.createCollection('customer');</span>
+}
+&nbsp;
+/**
+ * loadStartupModules - load the modules required at startup
+ *
+ * @return {Boolean} boolean - verify success or failure
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function loadStartupModules() {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (Alloy.CFG.devices.payment_terminal_module &amp;&amp; !Alloy.paymentTerminal) {</span>
+        // enables listeners for payment terminal
+<span class="cstat-no" title="statement not covered" >        Alloy.paymentTerminal = loadModule(Alloy.CFG.devices.payment_terminal_module);</span>
+<span class="cstat-no" title="statement not covered" >        if (Alloy.paymentTerminal) {</span>
+<span class="cstat-no" title="statement not covered" >            if (!_.isFunction(Alloy.paymentTerminal.supports)) {</span>
+                // paymentTerminals will always return something when loading lib module, need to check further
+<span class="cstat-no" title="statement not covered" >                failStartup(String.format(_L('Unable to load \'%s\'.'), Alloy.CFG.devices.payment_terminal_module));</span>
+                // set to null in case of retry
+<span class="cstat-no" title="statement not covered" >                Alloy.paymentTerminal = null;</span>
+<span class="cstat-no" title="statement not covered" >                return false;</span>
+            }
+        } else {
+<span class="cstat-no" title="statement not covered" >            return false;</span>
+        }
+    }
+<span class="cstat-no" title="statement not covered" >    if (Alloy.CFG.enable_barcode_scanner &amp;&amp; !Alloy.barcodeScanner) {</span>
+        // enables listeners for barcode scanner
+<span class="cstat-no" title="statement not covered" >        Alloy.barcodeScanner = loadModule('barcodeScanner');</span>
+<span class="cstat-no" title="statement not covered" >        if (!Alloy.barcodeScanner) {</span>
+<span class="cstat-no" title="statement not covered" >            return false;</span>
+        }
+    }
+<span class="cstat-no" title="statement not covered" >    if (Alloy.CFG.printer_availability &amp;&amp; !Alloy.receiptPrinter) {</span>
+        // enables listeners for receipt printer
+<span class="cstat-no" title="statement not covered" >        Alloy.receiptPrinter = loadModule(Alloy.CFG.devices.printer_module);</span>
+<span class="cstat-no" title="statement not covered" >        if (!Alloy.receiptPrinter) {</span>
+<span class="cstat-no" title="statement not covered" >            return false;</span>
+        }
+    }
+<span class="cstat-no" title="statement not covered" >    if (Alloy.CFG.payment_entry === 'web') {</span>
+<span class="cstat-no" title="statement not covered" >        var safariDialog = loadModule('ti.safaridialog');</span>
+<span class="cstat-no" title="statement not covered" >        if (safariDialog) {</span>
+<span class="cstat-no" title="statement not covered" >            var isSupported = safariDialog.isSupported();</span>
+<span class="cstat-no" title="statement not covered" >            logger.info('ti.safaridialog.isSupported() ' + isSupported);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            if (!isSupported) {</span>
+<span class="cstat-no" title="statement not covered" >                failStartup(_L('This version of iOS is not supported.  Please upgrade to a supported version.'));</span>
+<span class="cstat-no" title="statement not covered" >                return false;</span>
+            }
+        } else {
+            // loadModule handles the error, but we don't want an exception trying to use safariDialog
+<span class="cstat-no" title="statement not covered" >            return false;</span>
+        }
+    }
+<span class="cstat-no" title="statement not covered" >    return true;</span>
+}
+&nbsp;
+/**
+ * loadModule - loads the module and checks for problems
+ *
+ * @param {String} moduleName - name of the module to load
+ * @return {Object} module - what was loaded
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function loadModule(moduleName) {</span></span>
+<span class="cstat-no" title="statement not covered" >    var module = null;</span>
+<span class="cstat-no" title="statement not covered" >    try {</span>
+<span class="cstat-no" title="statement not covered" >        logger.info('loading module: "' + moduleName + '"');</span>
+<span class="cstat-no" title="statement not covered" >        module = require(moduleName);</span>
+<span class="cstat-no" title="statement not covered" >        if (!module) {</span>
+<span class="cstat-no" title="statement not covered" >            failStartup(String.format(_L('Unable to load \'%s\'.'), moduleName));</span>
+        }
+    } catch(ex) {
+<span class="cstat-no" title="statement not covered" >        logger.error('cannot load module: "' + moduleName + '", exception: ' + ex);</span>
+<span class="cstat-no" title="statement not covered" >        failStartup(ex);</span>
+    }
+<span class="cstat-no" title="statement not covered" >    return module;</span>
+}
+&nbsp;
+/**
+ * onConfigsPostLogin - Aloy.CFG has been loaded from all sources and post login, which could have been sitting idle
+ *
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function onConfigsPostLogin() {</span></span>
+<span class="cstat-no" title="statement not covered" >    logger.info('onConfigsPostLogin called');</span>
+    // only if store information is required should it be fetched. If there are other reasons to fetch the store info,
+    // add them here
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.storeInfo.getStore(Alloy.CFG.store_id).done(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        var collectingBillingAddress = Alloy.CFG.collect_billing_address || Alloy.CFG.devices.payment_terminal_module === 'webDevice';</span>
+<span class="cstat-no" title="statement not covered" >        if (!collectingBillingAddress || Alloy.CFG.printer_availability || Alloy.CFG.store_availability.enabled) {</span>
+            // after the agent has logged in, get the store info
+<span class="cstat-no" title="statement not covered" >            loadAllStores();</span>
+        }
+<span class="cstat-no" title="statement not covered" >        if (Alloy.Models.storeInfo.getLatitude() == null &amp;&amp; Alloy.Models.storeInfo.getLongitude() == null) {</span>
+            // if store latitude and longitude are not provided by bussiness mananger, use GPS for current location
+<span class="cstat-no" title="statement not covered" >            getCurrentLocation();</span>
+        }
+    });
+&nbsp;
+}
+&nbsp;
+/**
+ * loadAllStores - loads all stores from server
+ *
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function loadAllStores() {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (Alloy.CFG.store_availability.enabled) {</span>
+<span class="cstat-no" title="statement not covered" >        Alloy.Collections.allStores.reset([]);</span>
+<span class="cstat-no" title="statement not covered" >        Alloy.Collections.allStores.getAllStores().done(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >            logger.info('retrieved allStores');</span>
+<span class="cstat-no" title="statement not covered" >            logger.secureLog(JSON.stringify(Alloy.Collections.allStores.models, null, 2));</span>
+        }).fail(<span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >            logger.error('failure retrieving allStores');</span>
+        });
+    }
+}
+&nbsp;
+/**
+ * onAssociateLogout - associate has logged out and we need to unload things that may need to be reloaded based on configuration chagnes
+ *
+ * @param private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function onAssociateLogout() {</span></span>
+<span class="cstat-no" title="statement not covered" >    Alloy.eventDispatcher.trigger('configurations:unload');</span>
+<span class="cstat-no" title="statement not covered" >    if (Alloy.CFG.store_availability.enabled) {</span>
+<span class="cstat-no" title="statement not covered" >        Alloy.Collections.allStores.reset([]);</span>
+    }
+}
+&nbsp;
+/**
+ * onTestsRun - a model test is being requested to run
+ *
+ * @param {Object} event
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function onTestsRun(event) {</span></span>
+<span class="cstat-no" title="statement not covered" >    var behaveLogger = require('behaveLoggerExt');</span>
+<span class="cstat-no" title="statement not covered" >    executeModelTests(event.tests, event.junit_file_location, behaveLogger.getLoggerFunction());</span>
+}
+&nbsp;
+/**
+ * handleAuthorizationTokenError - handle an error when fetching the oauth token
+ *
+ * @param {Object} fault
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function handleAuthorizationTokenError(fault) {</span></span>
+<span class="cstat-no" title="statement not covered" >    var title = _L('Unable to start the application');</span>
+<span class="cstat-no" title="statement not covered" >    var message = _L('Unable to start the application');</span>
+<span class="cstat-no" title="statement not covered" >    if (fault) {</span>
+<span class="cstat-no" title="statement not covered" >        if (fault.isBadLogin()) {</span>
+<span class="cstat-no" title="statement not covered" >            title = _L('Store password incorrect');</span>
+<span class="cstat-no" title="statement not covered" >            message = _L('The password for the store is incorrect. Please contact your admininstrator to fix this problem.');</span>
+        } else <span class="cstat-no" title="statement not covered" >if (fault.isEmptyClientCredentials()) {</span>
+<span class="cstat-no" title="statement not covered" >            title = _L('Client Credentials Not Set Up');</span>
+<span class="cstat-no" title="statement not covered" >            message = _L('The client credentials are not set up correctly. Please contact your admininstrator to fix this problem.');</span>
+        }
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    Alloy.Dialog.showConfirmationDialog({</span>
+        messageString : message,
+        titleString : title,
+        okButtonString : _L('Restart App'),
+        hideCancel : true,
+        okFunction : <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >            removeNotify();</span>
+<span class="cstat-no" title="statement not covered" >            restartAppAfterTokenFailure();</span>
+        }
+    });
+}
+&nbsp;
+/**
+ * restartAppAfterTokenFailure - restart the app after an oauth failure
+ *
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function restartAppAfterTokenFailure() {</span></span>
+<span class="cstat-no" title="statement not covered" >    var deferred = new _.Deferred();</span>
+<span class="cstat-no" title="statement not covered" >    showActivityIndicator(deferred);</span>
+&nbsp;
+    // if this is an order, try to cancel the order
+<span class="cstat-no" title="statement not covered" >    if (Alloy.Models.basket.getOrderNumber()) {</span>
+<span class="cstat-no" title="statement not covered" >        logger.info('has order number');</span>
+<span class="cstat-no" title="statement not covered" >        Alloy.Models.basket.simpleAbandonOrder().always(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >            doLogout(deferred);</span>
+        });
+    } else {
+<span class="cstat-no" title="statement not covered" >        doLogout(deferred);</span>
+    }
+}
+&nbsp;
+/**
+ * doLogout - logout the app
+ *
+ * @param {Deferred} deferred - to resolve when logout is complete
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function doLogout(deferred) {</span></span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Collections.history.reset([]);</span>
+    // clean up the server basket
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.basket.clear();</span>
+<span class="cstat-no" title="statement not covered" >    delete Alloy.Models.basket.shippingMethods;</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.basket.trigger('basket_sync');</span>
+<span class="cstat-no" title="statement not covered" >    Alloy.Models.associate.logout().always(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >        logger.info('associateLogout done()');</span>
+<span class="cstat-no" title="statement not covered" >        Alloy.eventDispatcher.trigger('associate_logout');</span>
+        // Should hide everything again and set login to trigger home action
+<span class="cstat-no" title="statement not covered" >        if (Alloy.Router) {</span>
+<span class="cstat-no" title="statement not covered" >            Alloy.Router.navigateToHome();</span>
+        }
+<span class="cstat-no" title="statement not covered" >        Alloy.eventDispatcher.trigger('app:login', {});</span>
+<span class="cstat-no" title="statement not covered" >        deferred.resolve();</span>
+    });
+}
+&nbsp;
+/**
+ * getCurrentLocation - called to fetch the current location of the device.
+ *
+ * @api private
+ */
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function getCurrentLocation() {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (!Alloy.CFG.enable_address_autocomplete) {</span>
+<span class="cstat-no" title="statement not covered" >        return;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    geolocation.getCurrentLocation(<span class="fstat-no" title="function not covered" >function(coordinates) {</span></span>
+<span class="cstat-no" title="statement not covered" >        Alloy.CFG.latitudeOnStartup = coordinates.latitude;</span>
+<span class="cstat-no" title="statement not covered" >        Alloy.CFG.longitudeOnStartup = coordinates.longitude;</span>
+    });
+}
+&nbsp;
+//---------------------------------------------------
+// ## CONSTRUCTOR
+&nbsp;
+<span class="cstat-no" title="statement not covered" >$.index.open();</span>
+<span class="cstat-no" title="statement not covered" >Alloy.Dialog.setWindow($.index);</span>
+<span class="cstat-no" title="statement not covered" >init().done(<span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (Ti.App.deployType !== 'production' &amp;&amp; Alloy.CFG.perform_tests) {</span>
+<span class="cstat-no" title="statement not covered" >        executeModelTests(undefined, Alloy.CFG.junit_file_location);</span>
+    }
+});
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Mar 22 2017 17:13:24 GMT-0400 (EDT)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Aug 04 2017 10:38:29 GMT-0400 (EDT)
 </div>
 </div>
 <script src="../../prettify.js"></script>

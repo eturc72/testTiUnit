@@ -1,0 +1,121 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for category refinement panel
+
+'.categoryRefinementPanel': {
+    layout: 'absolute',
+    visible: false,
+    top: 0,
+    left: 450,
+    bottom: 0,
+    right: 0,
+    width: 626,
+    zIndex: 2
+},
+
+'.vertical_shadow_separator_right': {
+    left: 306,
+    top: 0,
+    width: 8,
+    backgroundImage: Alloy.Styles.leftShadowImage,
+    zIndex: 4,
+    height: '100%'
+},
+
+'.vertical_shadow_separator_left': {
+    left: 0,
+    top: 0,
+    width: 8,
+    backgroundImage: Alloy.Styles.rightShadowImage,
+    zIndex: 4,
+    height: '100%'
+},
+
+'#selectedCategoriesTable': {
+    left: 8,
+    top: 0,
+    width: 298,
+    color: Alloy.Styles.color.text.dark,
+    zIndex: 4,
+    separatorStyle: Ti.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+
+'#subcategoriesTable': {
+    left: 306,
+    top: 0,
+    width: 260,
+    backgroundColor: Alloy.Styles.color.background.light,
+    color: Alloy.Styles.color.text.dark,
+    zIndex: 3,
+    separatorStyle: Ti.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+
+'#selectedCategoriesTableHeader': {
+    height: 61,
+    layout: 'absolute',
+    backgroundColor: Alloy.Styles.color.background.light
+},
+
+'#selectedCategoriesTableHeaderLabel': {
+    height: 61,
+    font: Alloy.Styles.bigAccentFont,
+    color: Alloy.Styles.color.text.darkest,
+    backgroundColor: Alloy.Styles.color.background.light,
+    left: 22,
+    textid: '_Product_Categories'
+},
+
+'#subcategoriesTableHeader': {
+    layout: 'horizontal',
+    height: 61,
+    font: Alloy.Styles.buttonFont,
+    backgroundColor: Alloy.Styles.color.background.light
+},
+
+'#subcategoriesTableHeaderLabel': {
+    height: 61,
+    font: Alloy.Styles.smallAccentFont,
+    color: Alloy.Styles.color.text.darkest,
+    backgroundColor: Alloy.Styles.color.background.light,
+    left: 13,
+    textid: '_Subcategories_of'
+},
+
+'#subcategoriesTableHeaderCalloutLabel': {
+    height: 61,
+    font: Alloy.Styles.smallAccentFont,
+    color: Alloy.Styles.accentColor,
+    backgroundColor: Alloy.Styles.color.background.light,
+    left: 4,
+    textid: '_All_Departments'
+},
+
+'.subcategoriesTableRow': {
+    height: 45,
+    font: Alloy.Styles.buttonFont,
+    indentionLevel: 1,
+    color: Alloy.Styles.color.text.dark
+},
+
+'.categoryTableRow': {
+    height: 65,
+    font: Alloy.Styles.buttonFont,
+    indentionLevel: 1,
+    backgroundImage: Alloy.Styles.categoryPathMiddleImage,
+    color: Alloy.Styles.color.text.dark
+},
+
+'.subcategoriesTableSelectedRow': {
+    height: 65,
+    font: Alloy.Styles.buttonFont,
+    indentionLevel: 1,
+    backgroundImage: Alloy.Styles.categoryPathEndImage,
+    color: Alloy.Styles.color.text.lightest
+},
+
+'.categoryTableSelectedRow': {
+    height: 55,
+    color: Alloy.Styles.color.background.light,
+    indentionLevel: 1,
+    font: Alloy.Styles.buttonFont
+}

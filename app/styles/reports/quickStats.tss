@@ -1,0 +1,42 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for sales reports quick stats
+
+'.container': {
+    height: Ti.UI.FILL,
+    width: Ti.UI.FILL
+},
+
+'TableViewRow': {
+    height: 100
+},
+
+'.value': {
+    top: '20%',
+    font: Alloy.Styles.quickStatsValueFont,
+    color: Alloy.Styles.accentColor,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+'.title': {
+    font: Alloy.Styles.quickStatsTitleFont,
+    color: Alloy.Styles.color.text.black,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    top: '55%'
+},
+
+'.shadow': {
+    shadowColor:Alloy.Styles.shadowGrayColor,
+    shadowOffset: {
+        x: 1,
+        y: 0
+    },
+    shadowRadius: 2
+},
+
+'.horizontalSeparator': {
+    backgroundColor:Alloy.Styles.accentColor,
+    width: '30%',
+    height: 1,
+    bottom: 0
+}

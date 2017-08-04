@@ -1,0 +1,84 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for startup popover for store
+
+'#popover_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#popover_container': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    width: '50%',
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#startup_title': {
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.titleFont,
+    height:Ti.UI.SIZE,
+    top: 20,
+    textid: '_Unable_to_start_the_application'
+},
+
+'.message': {
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.messageFont,
+    width: Ti.UI.FILL,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    height: Ti.UI.SIZE,
+    left: 50,
+    right: 50,
+    top: 50
+},
+
+'#store_input': {
+    top: 20,
+    left: 50,
+    right: 50,
+    layout: 'horizontal',
+    width: Ti.UI.FILL,
+    height: 42
+},
+
+'#store_selection': {
+    left: 10,
+    top: 4,
+    width: Ti.UI.FILL
+},
+
+'#store_id_label': {
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.appFont,
+    paddingLeft: 4,
+    width: Ti.UI.SIZE,
+    textid: '_Store_ID_',
+    height: Ti.UI.SIZE
+},
+
+'#buttons_container':{
+    top: 50,
+    bottom: 20,
+    layout: 'horizontal',
+    width: 450,
+    height: 50
+},
+
+'#app_info_button': {
+    titleid: '_Configuration',
+    left: 0
+},
+
+'#ok_button': {
+    titleid: '_Retry',
+    left:50
+}

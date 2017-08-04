@@ -1,0 +1,14 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for customer order history
+-->
+<Alloy>
+    <Collection src="customerOrderHistory" />
+    <Collection id="orders" src="customerOrderHistory" instance="true" />
+    <View class="history_contents" id="history_contents">
+        <Label id="empty_label" accessibilityValue="empty_label"/>
+        <TableView id="history_container" dataCollection="$.orders" dataTransform="transformOrder" dataFilter="filterOrders" separatorStyle="transparent">
+            <Require src="customer/components/historyResultRow" />
+        </TableView>
+    </View>
+</Alloy>

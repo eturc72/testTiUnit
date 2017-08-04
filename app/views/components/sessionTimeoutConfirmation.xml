@@ -1,0 +1,17 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for kiosk reset
+-->
+<Alloy>
+    <View id="session_timeout_confirmation_window">
+        <View id="backdrop"/>
+        <View id="session_timeout_confirmation_container">
+            <Label id="title" accessibilityValue="kiosk_reset_title"/>
+            <Label id="message" accessibilityValue="kiosk_reset_message"/>
+            <View id="session_timeout_button_container">
+                <Button id="continue_button" class='secondary_button' accessibilityValue="kiosk_reset_cancel_button"/>
+                <Button id="end_session_button" class='primary_button' accessibilityValue="kiosk_reset_ok_button"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

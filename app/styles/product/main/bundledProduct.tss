@@ -1,0 +1,39 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for the bundled product PDP
+
+'#name': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    left: 0,
+    font: Alloy.Styles.productCalloutFont
+},
+
+'.text': {
+    font: Alloy.Styles.detailValueFont,
+    color: Alloy.Styles.color.text.mediumdark
+},
+
+'#bundled_product': {
+    height: Ti.UI.SIZE,
+    layout: 'vertical',
+    top: 0
+},
+
+'.horizontal_container': {
+    height: Ti.UI.SIZE,
+    layout: 'horizontal'
+},
+
+'#vertical_container': {
+    height: Ti.UI.SIZE,
+    layout: 'vertical'
+},
+
+'#product_image': {
+    height: 75,
+    width: 75
+},
+
+'#quantity_label': {
+    textid: '_Quantity_'
+}

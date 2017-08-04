@@ -1,0 +1,18 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for radio_button
+
+'.radio_button': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE
+},
+
+'.radio_text': {
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.detailTextFont,
+    layout: 'horizontal'
+},
+
+'#radio_button_image': {
+    image: Alloy.Styles.radioButtonOnImage
+}

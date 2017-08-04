@@ -1,0 +1,41 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for the customer addresses page
+
+'#addresses_contents': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    width: '100%',
+    left: 0
+},
+
+'#address_list': {
+    bottom: 200,
+    layout: 'vertical',
+    contentHeight: 'auto',
+    showVerticalScrollIndicator: 'true',
+    showHorizontalScrollIndicator: 'true'
+},
+
+'.new_address_row': {
+    height: 104
+},
+
+'#no_addresses': {
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.tabFont,
+    width: 0,
+    height: 0,
+    visible: false
+},
+
+'.new_address_button': {
+    width: 351,
+    height: 42,
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    color: Alloy.Styles.buttons.primary.color,
+    font: Alloy.Styles.buttonFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    top: 30,
+    bottom: 30
+}

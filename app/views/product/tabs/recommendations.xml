@@ -1,0 +1,18 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for recommendations tab
+-->
+<Alloy>
+    <View id="no_recommendations_container">
+        <Label id="no_recommendations_label" accessibilityValue="no_recommendations_label"/>
+    </View>
+    <View id="container">
+        <Label id="recommendations_tab_header" accessibilityValue="recommendations_tab_header_label"/>
+        <View id="recommendations_container">
+            <View id="recommendations_scroller_container"/>
+        </View>
+        <View id="paging">
+            <View id="paging_container"/>
+        </View>
+    </View>
+</Alloy>

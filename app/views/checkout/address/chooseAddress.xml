@@ -1,0 +1,20 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for choosing a shipping or billing address.
+-->
+<Alloy>
+    <Collection src="customerAddress" id="addresses" instance="true"/>
+    <View id="shipping_window">
+        <View id="address_contents">
+            <TableView id="address_container" dataCollection="$.addresses" dataTransform="transformAddress" separatorStyle="transparent">
+                <Require src="checkout/address/customerAddress"/>
+            </TableView>
+            <Label id="addresses_msg" accessibilityValue="addresses_msg"/>
+        </View>
+        <View id="button_container" class="button_container">
+            <Button id="add_address_button" class="secondary_button" accessibilityValue="add_address_button"/>
+            <!-- accessibilityValue is set in the controller for this button -->
+            <Button id="next_button" class="primary_button" enabled="false"/>
+        </View>
+    </View>
+</Alloy>

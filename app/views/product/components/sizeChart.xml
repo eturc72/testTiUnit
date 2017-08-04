@@ -1,0 +1,10 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for PDP size chart dialog
+-->
+<Alloy>
+    <View id="size_chart_window" accessibilityLabel="size_chart_window">
+        <View id="backdrop" />
+        <WebView id="size_chart" willHandleTouches="false"/>
+    </View>
+</Alloy>

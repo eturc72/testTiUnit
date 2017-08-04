@@ -1,0 +1,16 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for simluate credit card dialog
+-->
+<Alloy>
+    <View id="simulate_payment_window">
+        <View id="backdrop"/>
+        <View id="card_container">
+            <Label id="title" accessibilityLabel="balance_title"/>
+            <ScrollView id="button_container">
+                <Button class="payment_button" id="swipe_button" titleid="Swipe"/>
+            </ScrollView>
+            <Button class="simulate_button" id="cancel_button" titleid="Cancel"/>
+        </View>
+    </View>
+</Alloy>

@@ -1,0 +1,10 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for select widget dropdown
+-->
+<Alloy>
+    <View id="hitBox"  class="select_list" onClick="handleHitBoxClick">
+        <Label id="select_list_title" class="select_list_title"/>
+        <ImageView id="select_list_image" class="down_arrow"/>
+    </View>
+</Alloy>

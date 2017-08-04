@@ -1,0 +1,13 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for sales reports quick stats
+-->
+<Alloy>
+    <TableViewRow id="quick_stat_row">
+        <View id="container" class="container">
+            <Label id="value" accessibilityValue="quick_stats_value" text="{value}" class="value shadow"/>
+            <Label id="title" accessibilityValue="quick_stats_title" text="{title}" class="title"/>
+            <View class="horizontalSeparator"/>
+        </View>
+    </TableViewRow>
+</Alloy>

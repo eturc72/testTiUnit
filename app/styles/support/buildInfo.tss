@@ -1,0 +1,76 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for build info in admin dashboard
+
+'#build_info_main': {
+    layout: 'horizontal',
+    width: '100%',
+    height: '100%'
+},
+
+'#data_column': {
+    layout: 'vertical',
+    width: '70%',
+    height: '100%'
+},
+
+'#action_column': {
+    layout: 'vertical',
+    width: '28%',
+    height: '100%'
+},
+
+'#vertical_border': {
+    width: 2,
+    height: Ti.UI.FILL,
+    backgroundColor: Alloy.Styles.color.border.darkest
+},
+
+'.section_class': {
+    top: 15,
+    left: 20,
+    height: Ti.UI.SIZE,
+    layout: 'vertical'
+},
+
+'.title_class': {
+    font: Alloy.Styles.detailLabelFont,
+    color: Alloy.Styles.accentColor,
+    left: 0,
+    bottom: 10
+},
+
+'.text_class': {
+    font: Alloy.Styles.detailValueFont,
+    left: 0
+},
+
+'#action_title': {
+    textid: '_Actions_'
+},
+
+'#cache_text': {
+    textid: '_CacheText'
+},
+
+'#clear_cache': {
+    titleid: '_Clear_Cache'
+},
+
+'#password_text': {
+    textid: '_ChangeStorePasswordText',
+    top: 20
+},
+
+'#change_store_password': {
+    titleid: '_Change_Store_Password_Menu'
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.6,
+    backgroundColor: Alloy.Styles.color.background.black
+}

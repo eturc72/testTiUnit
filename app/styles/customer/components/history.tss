@@ -1,0 +1,22 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for customer order history
+
+'#history_contents': {
+    layout: 'vertical',
+    height: 650,
+    width: '100%',
+    top: 0
+},
+
+'#history_container': {
+    layout: 'vertical'
+},
+
+'#empty_label': {
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.tabFont,
+    text: '',
+    top: 0,
+    height: 0
+}

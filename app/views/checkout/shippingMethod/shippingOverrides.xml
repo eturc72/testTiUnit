@@ -1,0 +1,24 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for shipping overrides
+-->
+<Alloy>
+    <View id="shipping_overrides_window">
+        <View id="backdrop"/>
+        <View id="shipping_overrides_container">
+            <View id="shipping_overrides_header">
+                <Button id="cancel_button" titleid="_Cancel" accessibilityValue="cancel_button_shipping_override"/>
+                <Label id="shipping_overrides_label" accessibilityValue="shipping_overrides_label"/>
+                <Button id="apply_button" titleid="_Apply" accessibilityValue="apply_button_shipping_override"/>
+            </View>
+            <View>
+                <View id="show_overrides">
+                    <Require src="checkout/cart/productPriceOverrides" id="overrides"/>
+                </View>
+                <View id="manager_override_already_exists" visible="false">
+                    <Label id="manager_override_label" accessibilityValue="manager_override_label"/>
+                </View>
+            </View>
+        </View>
+    </View>
+</Alloy>

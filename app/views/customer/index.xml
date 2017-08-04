@@ -1,0 +1,84 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for customer index page - customer overview data on left, functional tabs on left
+-->
+<Alloy>
+    <Collection id="customerAddresses" src="customerAddress" instance="true"/>
+    <Model src="customer"/>
+    <View id="index" class="customer">
+        <View layout="horizontal">
+            <View class="left_column">
+                <View class="customer_header_container">
+                    <Label id="customer_index_header_label" class="title_text" accessibilityValue="customer_index_header_label"/>
+                </View>
+                <View class="profile_container">
+                    <View class="profile_fullname_view" id="profile_fullname_view">
+                        <Label id="profile_fullname" class="profile_text" accessibilityValue="profile_fullname"/>
+                    </View>
+                    <View class="primary_info_view">
+                        <Label id="primary_info_view_email_text" class="email_text" accessibilityValue="primary_info_view_email_text"/>
+                        <Label id="profile_email" text="{customer.email}" class="email_text" accessibilityValue="profile_email"/>
+                    </View>
+                    <View class="primary_info_view">
+                        <Label id="primary_info_view_login_text" class="email_text" accessibilityValue="primary_info_view_login_text"/>
+                        <Label id="profile_login" text="{customer.login}" class="email_text" accessibilityValue="profile_login"/>
+                    </View>
+                    <View class="secondary_info_view">
+                        <View class="profile_labelled_view">
+                            <Label id="profile_labelled_view_birthday_text" class="regular_text" accessibilityValue="profile_labelled_view_birthday_text"/>
+                            <Label id="profile_birthday" text="{customer.birthday}" class="regular_text" accessibilityValue="profile_birthday"/>
+                        </View>
+                        <View class="profile_labelled_view">
+                            <Label id="profile_labelled_view_last_visit_text" class="regular_text" accessibilityValue="profile_labelled_view_last_visit_text"/>
+                            <Label id="profile_last_visit" class="regular_text" text="{customer.last_visit}" accessibilityValue="profile_last_visit"/>
+                        </View>
+                        <View class="profile_labelled_view">
+                            <Label id="profile_labelled_view_last_login_text" class="regular_text" accessibilityValue="profile_labelled_view_last_login_text"/>
+                            <Label id="profile_last_login" class="regular_text" text="{customer.last_login}" accessibilityValue="profile_last_login"/>
+                        </View>
+                        <View class="profile_labelled_view">
+                            <Label id="profile_labelled_view_customer_text" class="regular_text" accessibilityValue="profile_labelled_view_customer_text"/>
+                            <Label id="profile_customer_no" text="{customer.customer_no}" class="regular_text" accessibilityValue="profile_customer_no"/>
+                        </View>
+                    </View>
+                    <Button id="shop_label" titleid="_Return_to_Shopping" accessibilityValue="shop_label"/>
+                </View>
+            </View>
+            <View backgroundColor="#eeeeee" height="100%" width="2"/>
+            <View class="right_column">
+                <View class="header_container">
+                    <Button titleid="_Profile_Tab" id="newProfile_tab_button" class="customer_header_button" accessibilityValue="profile_tab_button"/>
+                    <Button titleid="_Addresses" id="addresses_tab_button" class="customer_header_button" accessibilityValue="addresses_tab_button"/>
+                    <Button titleid="_History" id="history_tab_button" class="customer_header_button" accessibilityValue="history_tab_button"/>
+                </View>
+                <View id="customer_tab_group" class="customer_tabgroup">
+                    <View id="customer_overview_tab" class="customer_tabs">
+                        <View>
+                            <Require id="customer_addresses" src="customer/components/addresses" type="view"/>
+                        </View>
+                    </View>
+                    <View id="customer_profile_tab" class="customer_tabs">
+                        <View>
+                            <Require id="customer_profile" src="customer/components/profile" type="view"/>
+                        </View>
+                    </View>
+                    <View id="customer_history_tab" class="customer_tabs">
+                        <View>
+                            <Require id="customer_history" src="customer/components/history" type="view"/>
+                        </View>
+                    </View>
+                    <View id="customer_edit_address_tab" class="customer_tabs">
+                        <View>
+                            <Require id="customer_address" src="customer/components/address" type="view"/>
+                        </View>
+                    </View>
+                    <View id="customer_edit_profile_tab" class="customer_tabs">
+                        <View>
+                            <Require id="edit_customer_profile" src="customer/components/editProfile" type="view"/>
+                        </View>
+                    </View>
+                </View>
+            </View>
+        </View>
+    </View>
+</Alloy>

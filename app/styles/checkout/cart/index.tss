@@ -1,0 +1,194 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for cart
+
+'#cart': {
+    layout: 'vertical'
+},
+
+'#selectorRow': {
+    layout: 'horizontal',
+    width: '100%',
+    height: 51
+},
+
+'#cart_button': {
+    left: 200,
+    top: 12,
+    width: 150,
+    height: 27,
+    color: Alloy.Styles.buttons.primary.color,
+    font: Alloy.Styles.smallButtonFont,
+    backgroundImage: Alloy.Styles.buttonLeftOnImage,
+    titleid: '_Cart_Items__0'
+},
+
+'#cart_contents': {
+    layout: 'vertical'
+},
+
+'#saved_products_button': {
+    top: 12,
+    width: 150,
+    height: 27,
+    color: Alloy.Styles.buttons.primary.color,
+    font: Alloy.Styles.smallButtonFont,
+    backgroundImage: Alloy.Styles.buttonRightOffImage,
+    titleid: '_Saved_Items__0'
+},
+
+'#contents_container': {
+    backgroundColor: Alloy.Styles.color.background.white,
+    top: 0,
+    height: '100%'
+},
+
+'.pli_container': {
+    top: 0,
+    layout: 'absolute',
+    width: '100%',
+    height: '100%'
+},
+
+'#saved_products_container': {
+    top: 0,
+    layout: 'vertical',
+    width: '100%',
+    height: '100%'
+},
+
+
+'#approaching_discount_container': {
+    layout: 'vertical',
+    width: '100%',
+    height: 60
+},
+
+'.approaching_discount_label': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    backgroundImage: Alloy.Styles.accentUpperLowerBorderImage,
+    top: 10,
+    height: 40,
+    color: Alloy.Styles.color.text.mediumdark,
+    font: Alloy.Styles.productFont
+},
+
+'.no_products': {
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.tabFont,
+    top: 50
+},
+
+'.cart_table': {
+    top: 5,
+    height: '100%',
+    separatorStyle: 'transparent'
+},
+
+'#no_products_label': {
+    textid: '_There_are_no_items_in_your_cart_'
+},
+
+'.no_products_container': {
+    height: '100%',
+    width: '100%',
+    layout: 'absolute',
+    top: 30,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#no_saved_products_label': {
+    textid: '_There_are_no_saved_items_'
+},
+
+'#selectorRow': {
+    layout: 'horizontal',
+    width: '100%',
+    height: 51
+},
+
+'#wish_list_button': {
+    left: 1,
+    top: 12,
+    width: 150,
+    height: 27,
+    color: Alloy.Styles.buttons.primary.color,
+    font: Alloy.Styles.smallButtonFont,
+    backgroundImage: Alloy.Styles.buttonRightOffImage,
+    titleid: '_Wish_list__0'
+},
+
+'#wish_list_products_container': {
+    top: 0,
+    layout: 'vertical',
+    width: '100%',
+    height: 600
+},
+
+'#wish_list_products_table': {
+    top: 5,
+    height:Ti.UI.FILL,
+    width:Ti.UI.FILL
+},
+
+'.wish_list_selector_container': {
+    top: 5,
+    width:Ti.UI.FILL,
+    height: 50,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#no_wish_list_products_label': {
+    textid: '_There_are_no_items_in_this_wish_list',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+'#no_wish_list_products_container': {
+    height: 0,
+    width: Ti.UI.FILL,
+    top: 0,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#email_wish_list_button': {
+    titleid: '_Email_Wish_List',
+    width: 200,
+    right: 20
+},
+
+'#more_menu_popover': {
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+
+'#menu_container': {
+    backgroundColor: Alloy.Styles.color.background.white,
+    rowSeparatorInsets: {
+        left: 1,
+        right: 1
+    },
+    tableSeparatorInsets: {
+        left: 1,
+        right: 1
+    },
+    top: 0,
+    rowHeight: 50,
+    height: '100%',
+    width: 250,
+    height: 100,
+    separatorColor: Alloy.Styles.color.background.darkGray
+},
+
+'.menu_row_style': {
+    selectedBackgroundColor: Alloy.Styles.color.background.lightGray,
+    backgroundColor: Alloy.Styles.color.background.white,
+    height: 50
+},
+
+'.menu_row_label_style': {
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.textFieldFont,
+    height: 50,
+    width: '100%',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}

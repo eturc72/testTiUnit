@@ -1,0 +1,19 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for customer address tile
+-->
+<Alloy>
+    <View class="address_tile">
+        <View class="default_address_column" id="default_address_column" />
+
+        <View id="address_column">
+            <Label id="address_name" text="{address_name}" class="big_text" accessibilityValue="address_name"/>
+            <Label id="address_display" class="profile_text" accessibilityValue="address_display"/>
+        </View>
+
+        <View id="button_column">
+            <Button id="address_edit_button" titleid="_Edit" class="link_button" accessibilityValue="address_edit_button"/>
+            <Button id="address_delete_button" titleid="_Delete" class="delete_button" accessibilityValue="address_delete_button"/>
+        </View>
+    </View>
+</Alloy>

@@ -1,0 +1,86 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for payment failure
+
+'#no_payment_terminal_window': {
+    left: 0,
+    top: 0,
+    width: 1024,
+    height: 768,
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#no_payment_terminal_container': {
+    layout: 'vertical',
+    left: 112,
+    top: 84,
+    width: 800,
+    height: 600,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#title': {
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.titleFont,
+    top: 20,
+    textid: '_No_Connection_To_Payment_Device'
+},
+
+'#message': {
+    font: Alloy.Styles.appFont,
+    color: Alloy.Styles.color.text.mediumdark,
+    top: 20,
+    width: 740,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+'#image': {
+    top: 20,
+    height: 363
+},
+
+'#button_container': {
+    layout: 'horizontal',
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    bottom: 20
+},
+
+'#ok_button': {
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    color: Alloy.Styles.buttons.primary.color,
+    width: 150,
+    height: 40,
+    top: 10,
+    left: 15,
+    titleid: '_OK'
+},
+
+'#test_connection_button': {
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    color: Alloy.Styles.buttons.primary.color,
+    width: 150,
+    height: 40,
+    top: 10,
+    left: 15,
+    titleid: '_Test_Payment_Device_Connection'
+},
+
+'#bluetoothDevicePicker[if=Alloy.CFG.devices.bluetoothDevicePicker]': {
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    color: Alloy.Styles.buttons.primary.color,
+    width: 150,
+    height: 40,
+    top: 10,
+    left: 15,
+    titleid: '_Scan_for_Devices'
+}

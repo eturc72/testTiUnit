@@ -1,0 +1,15 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for add to wish list on PDP
+
+'#add_to_wish_list': {
+    style: Ti.UI.iOS.SystemButtonStyle.PLAIN,
+    backgroundColor: Alloy.Styles.color.background.white,
+    color: Alloy.Styles.accentColor,
+    selectedColor: Alloy.Styles.color.background.lightGray,
+    width: 163,
+    height: 35,
+    left: 0,
+    font: Alloy.Styles.buttonFont,
+    titleid: '_Add_to_Wish_List'
+}

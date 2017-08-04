@@ -1,0 +1,8 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+-->
+
+<resources>
+    <string name="appname" context="home.icon">Endless Aisle</string>
+    <string name="NSCameraUsageDescription" context="dialog.msg">カメラを使用してバーコードをスキャンできますか。</string>
+</resources>

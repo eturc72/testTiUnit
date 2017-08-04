@@ -1,0 +1,15 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for product browsing
+-->
+<Alloy>
+    <View id="index" class="search" layout="absolute">
+        <Require id="searchHeader" src="search/components/searchHeader" type="view"/>
+        <Require id="megaMenu" src="components/megaMenu" type="view" if="Alloy.CFG.navigation.use_mega_menu"/>
+        <View class="contents" id="contents">
+            <View id="scrollableContainer" showPagingControl="0">
+                <ScrollableView id="scrollableHits" showPagingControl="0"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

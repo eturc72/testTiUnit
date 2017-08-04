@@ -1,0 +1,16 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for PDP promotions
+
+'#promotions': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    top: 0
+},
+
+'.webview_container': {
+    width: '100%',
+    willHandleTouches: false,
+    layout: 'horizontal',
+    height: 35
+}

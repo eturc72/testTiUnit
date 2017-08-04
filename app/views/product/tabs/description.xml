@@ -1,0 +1,7 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for description tab on PDP
+-->
+<Alloy>
+    <WebView id="product_description" accessibilityValue="product_description"/>
+</Alloy>

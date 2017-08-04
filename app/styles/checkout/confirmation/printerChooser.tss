@@ -1,0 +1,58 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for printer choosing
+
+'#printer_chooser_container': {
+    layout: 'vertical',
+    top: 10,
+    left: 0,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE
+},
+
+'#printer_label_container': {
+    layout: 'horizontal',
+    left: 0,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE
+},
+
+'#print_label': {
+    font: Alloy.Styles.detailTextFont,
+    left: 0,
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    color: Alloy.Styles.color.text.dark,
+    textid: '_Printer_'
+},
+
+'#chosen_printer_label': {
+    font: Alloy.Styles.detailTextFont,
+    color: Alloy.Styles.color.text.dark,
+    left: 10,
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE
+},
+
+'#printer_table': {
+    top: 10,
+    separatorStyle: 'transparent',
+    borderWidth: 1,
+    height: 150,
+    width: Ti.UI.FILL,
+    borderColor: Alloy.Styles.color.border.dark
+},
+
+'#printer_list_item': {
+    left: 5,
+    font: Alloy.Styles.detailValueFont,
+    color: Alloy.Styles.color.text.darkest,
+    height: 42,
+    width: Ti.UI.FILL
+},
+
+'#printer_table_row': {
+    selectionStyle: Ti.UI.iOS.TableViewCellSelectionStyle.NONE,
+    width: '100%',
+    layout: 'vertical'
+}

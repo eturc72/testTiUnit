@@ -1,0 +1,15 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for printer chooser dialog
+-->
+<Alloy>
+    <View id="printer_chooser_window">
+        <View id="backdrop"/>
+        <View id="print_container">
+            <Button titleid="_Print" id="print_button" accessibilityValue="printer_dialog_print_button"/>
+            <View id="printer_container">
+                <Require src="checkout/confirmation/printerChooser" id="printer_chooser"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

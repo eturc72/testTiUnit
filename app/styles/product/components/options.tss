@@ -1,0 +1,17 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for PDP options
+
+'#options': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    top: 10
+},
+
+'.item_container': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    left: 0,
+    top: 15,
+    width: Ti.UI.SIZE
+}

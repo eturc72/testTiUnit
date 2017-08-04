@@ -1,0 +1,136 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for create account
+
+'#create_account_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#create_account_container': {
+    layout: 'vertical',
+    width: 675,
+    left: 175,
+    height: 414,
+    top: 75,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#create_account_header': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: '100%',
+    top: 13
+},
+
+'#create_account_header_label': {
+    font: Alloy.Styles.headlineFont,
+    color: Alloy.Styles.accentColor,
+    textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+    left: 95,
+    width: 200,
+    top: 3,
+    textid: '_Create_Account'
+},
+
+'#create_button': {
+    width: 146,
+    height: 35,
+    left: 55,
+    titleid: '_Create'
+},
+
+'#skip_button': {
+    width: 146,
+    left: 15,
+    height: 35,
+    titleid: '_Skip'
+},
+
+'#create_account_details_container': {
+    layout: 'vertical',
+    top: 15
+},
+
+'#create_account_question_label': {
+    font: Alloy.Styles.headlineFont,
+    color: Alloy.Styles.color.text.dark,
+    textid: '_Would_you_like_to_create_a_new_account_'
+},
+
+'.create_account_text': {
+    height: 55,
+    width: 445,
+    font: Alloy.Styles.textFieldFont,
+    borderColor: Alloy.Styles.color.border.light,
+    borderWidth: 1,
+    backgroundColor: Alloy.Styles.color.background.white,
+    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+    autocorrect: false,
+    paddingLeft: 18,
+    clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS
+},
+
+'#first_name': {
+    top: 15,
+    hintText: L( '_First_Name_'),
+    autocorrect: false,
+    autocapitalization:Ti.UI.TEXT_AUTOCAPITALIZATION_WORDS
+},
+
+'#last_name': {
+    top: 10,
+    hintText: L( '_Last_Name_'),
+    autocorrect: false,
+    autocapitalization:Ti.UI.TEXT_AUTOCAPITALIZATION_WORDS
+},
+
+'#email': {
+    top: 10,
+    keyboardType: Ti.UI.KEYBOARD_TYPE_EMAIL,
+    autocorrect: false,
+    hintText: L( '_Email_Address_')
+},
+
+'#error_message': {
+    color: Alloy.Styles.color.text.red,
+    font: Alloy.Styles.calloutCopyFont,
+    visible: false,
+    top: 20
+},
+
+'.error_label': {
+    color: Alloy.Styles.color.text.red,
+    height: 18,
+    top: 3,
+    font: Alloy.Styles.detailLabelFont
+},
+
+'#save_address_switch': {
+    width: 85,
+    value: 1
+},
+
+'#save_address_container': {
+    layout: 'horizontal',
+    width: 275,
+    height: Ti.UI.SIZE,
+    left: 115,
+    top: 10
+},
+
+'#save_address_label': {
+    font: Alloy.Styles.switchLabelFont,
+    width: 175,
+    left: 0,
+    color: Alloy.Styles.color.text.dark,
+    textid: '_Save_Shipping_Address'
+}

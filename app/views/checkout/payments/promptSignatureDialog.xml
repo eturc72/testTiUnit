@@ -1,0 +1,14 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for prompting signature in dialog
+-->
+<Alloy>
+    <View id="payment_signature_window">
+        <View id="backdrop"/>
+        <View id="contents">
+            <View id="padding_container">
+                <Require id="prompt_signature" src="checkout/payments/promptSignature"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

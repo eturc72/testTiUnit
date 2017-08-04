@@ -1,0 +1,29 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for gift card balance details
+-->
+<Alloy>
+    <View id="payment_failure_window">
+        <View id="backdrop"/>
+        <View id="payment_failure_container">
+            <Label id="title" accessibilityValue="balance_title" />
+            <Label id="message" accessibilityValue="balance_message" />
+            <View id="current_balance_container" class="balance_container">
+                <Label id="current_balance_label" class="balance_label" accessibilityValue="current_balance_label"/>
+                <Label id="current_balance_value" class="balance_value" accessibilityValue="current_balance_value"/>
+            </View>
+            <View id="amount_applied_container" class="balance_container">
+                <Label id="amount_applied_label" class="balance_label" accessibilityValue="amount_applied_label"/>
+                <Label id="amount_applied_value" class="balance_value" accessibilityValue="amount_applied_value"/>
+            </View>
+            <View id="remaining_balance_container" class="balance_container">
+                <Label id="remaining_balance_label" class="balance_label" accessibilityValue="remaining_balance_label"/>
+                <Label id="remaining_balance_value" class="balance_value" accessibilityValue="remaining_balance_value" />
+            </View>
+            <View id="button_container">
+                <Button id="cancel_button" accessibilityValue="balance_cancel_button" titleid="_Cancel"/>
+                <Button id="ok_button" accessibilityValue="balance_ok_button" titleid="_Apply"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

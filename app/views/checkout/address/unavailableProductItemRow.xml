@@ -1,0 +1,17 @@
+<!--
+// ©2017 salesforce.com, inc. All rights reserved.
+// TableViewRow for rendering a row of unavailable product line item in the store pickup popover
+-->
+<Alloy>
+    <TableViewRow id="product_item_row">
+        <View id="product_line_item_container" >
+            <Label id="stock_availability_label" text="{stock_availability_message}"/>
+            <View id="item_container" >
+                <Require id="product_item" src="checkout/cart/productItem" scaleDown="true"/>
+            </View>
+            <View id="edit_delete_button_container">
+                <Button id="delete_button" class="round_button" accessibilityValue="delete_button"/>
+            </View>
+        </View>
+    </TableViewRow>
+</Alloy>

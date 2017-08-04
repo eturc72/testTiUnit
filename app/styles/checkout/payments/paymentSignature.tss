@@ -1,0 +1,117 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for payment signature
+
+'#payment_signature_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#payment_container': {
+    layout: 'vertical',
+    width: 911,
+    left: 56,
+    height: 371,
+    top: 173,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'.payment_button': {
+    height: 40,
+    font: Alloy.Styles.smallButtonFont,
+    width: 60,
+    left: 10
+},
+
+'#button_container': {
+    layout: 'horizontal',
+    top: 37
+},
+
+'.main_contents': {
+    height: 576,
+    layout: 'vertical'
+},
+
+'#receipt_question_container': {
+    height: 576,
+    layout: 'horizontal'
+},
+
+'#payment_confirmation_container': {
+    width: '33%',
+    layout: 'vertical'
+},
+
+
+'#thank_you_label': {
+    font: Alloy.Styles.bigTitleFont,
+    color: Alloy.Styles.accentColor,
+    top: 34,
+    textid: '_Thank_You_'
+},
+
+'#payment_confirmation_line1': {
+    top: 43,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    height: Ti.UI.SIZE,
+    textid: '_Payment_has_been_accepted_and_your_order_is_complete_'
+},
+
+'.payment_confirmation_label': {
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.appFont
+},
+
+'#divider': {
+    backgroundColor: Alloy.Styles.color.background.medium,
+    width: 2,
+    height: 300,
+    top: 35,
+    left: 15
+},
+
+'#question_container': {
+    layout: 'vertical'
+},
+
+'#receipt_question_label': {
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.calloutFont,
+    top: 34,
+    left: 34,
+    right: 34
+},
+
+'.receipt_button': {
+    width: 128,
+    height: 35
+},
+
+'#email_button_container': {
+    width: Ti.UI.SIZE
+},
+
+'#email_button': {
+    top: 0
+},
+
+'#print_container': {
+    layout: 'vertical',
+    left: 10,
+    right: 20,
+    width: Ti.UI.SIZE
+},
+
+'#print_button': {
+    left: 0,
+    titleid: '_Print'
+}

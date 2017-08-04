@@ -1,0 +1,37 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for notify growl
+
+'#growl_popover_container': {
+    layout: 'absolute',
+    height: 100,
+    width: 500,
+    bottom: 70,
+    borderRadius: 10,
+    borderColor: Alloy.Styles.notifyGrowl.borderColor,
+    touchEnabled: true,
+    opacity: 0.7,
+    backgroundColor: Alloy.Styles.notifyGrowl.backgroundColor
+},
+
+'#growl_label': {
+    font: Alloy.Styles.notifyGrowlFont,
+    color: Alloy.Styles.notifyGrowl.color,
+    height: Ti.UI.FILL,
+    width: Ti.UI.FILL,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    top: 0,
+    bottom: 0,
+    left: 20,
+    right: 20
+},
+
+'#close_button': {
+    width: 32,
+    height: 32,
+    right: 2,
+    top: 2,
+    zIndex: 1,
+    visible: false,
+    backgroundImage: Alloy.Styles.closeButtonClearImage
+}

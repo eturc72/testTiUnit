@@ -1,0 +1,63 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for recommendations tab
+
+'#no_recommendations_label': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: Alloy.Styles.color.text.mediumdark,
+    font: Alloy.Styles.buttonFont,
+    top: 50,
+    textid: '_There_are_no_recommendations_for_this_product_'
+},
+
+'#container': {
+    layout: 'vertical',
+    left: 7
+},
+
+'#recommendations_tab_header': {
+    textid: '_Recommendations_For_You',
+    left: 0,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    font: Alloy.Styles.buttonFont,
+    top: 32
+},
+
+'#recommendations_container': {
+    layout: 'vertical',
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    top: 20
+},
+
+'#recommendations_scroller_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE
+},
+
+'#paging': {
+    layout: 'composite',
+    width: '100%',
+    height: 60,
+    left: 0,
+    bottom: 30
+},
+
+// Used in the controller file with Ti.UI.create
+'.page_view': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    width: '100%'
+},
+
+'.row_view': {
+    layout: 'horizontal',
+    width: Ti.UI.SIZE
+},
+
+'.recommended_scroller': {
+    showPagingControl: false,
+    height: Ti.UI.SIZE,
+    overlayEnabled: false
+}

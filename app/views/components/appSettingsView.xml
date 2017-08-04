@@ -1,0 +1,7 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for app settings view component
+-->
+<Alloy>
+    <ScrollView id="app_settings"/>
+</Alloy>

@@ -1,0 +1,63 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for associate login
+-->
+<Alloy>
+    <View class="associate_login_window" id="associate_login_window">
+        <View id="contents" class="contents">
+            <Label id="login_title" class="title" accessibilityValue="login_title"/>
+            <Label id="login_subtitle_label" class="subtitle" accessibilityValue="login_subtitle_label"/>
+            <Label id="login_error_label" class="error_label" accessibilityValue="login_error_label"/>
+            <TextField id="employee_code" class="textfield" accessibilityLabel="employee_code"/>
+            <TextField id="employee_pin" class="textfield" accessibilityLabel="employee_pin"/>
+            <Label id="forgot_password_label" accessibilityValue="forgot_password_label"/>
+            <Button id="login_button" class="button" accessibilityValue="login_button"/>
+            <View id="storefront_view">
+                <Label id="storefront_label" />
+                <Label id="change_country_label" accessibilityValue="change_country_label"/>
+            </View>
+        </View>
+        <View id="country_selector" class="contents">
+            <Label id="country_label" class="title" accessibilityValue="country_label"/>
+            <View id="country_view">
+                <Require id="country_dropdown_view" src="components/countryDropDown" type="view"/>
+            </View>
+            <View id="language_view">
+                <Require id="language_dropdown_view" src="components/languageDropDown" type="view"/>
+            </View>
+            <View id="assoc_button_container" class="buttons">
+                <Button id="country_cancel_button" class="button cancel_button" accessibilityValue="country_cancel_button"/>
+                <Button id="country_apply_button" class="button" accessibilityValue="country_apply_button"/>
+            </View>
+        </View>
+        <View id="associate" class="contents">
+            <Label id="assoc_title" class="title" accessibilityValue="assoc_title"/>
+            <Label id="assoc_subtitle_label" class="subtitle" accessibilityValue="assoc_subtitle_label"/>
+            <Label id="assoc_error_label" class="error_label" accessibilityValue="password_reset_associate_error_label"/>
+            <TextField id="assoc_code" class="textfield" accessibilityLabel="password_reset_associate_id"/>
+            <View id="assoc_button_container" class="buttons">
+                <Button id="assoc_cancel_button" class="button cancel_button" accessibilityValue="password_reset_associate_cancel"/>
+                <Button id="assoc_button" class="button" accessibilityValue="password_reset_associate_ok"/>
+            </View>
+        </View>
+        <View id="manager" class="contents">
+            <Require id="manager_view" src="associate/authorization" type="view"/>
+        </View>
+        <View id="new_password" class="contents">
+            <Label id="new_password_title" class="title" accessibilityValue="new_password_title"/>
+            <Label id="new_password_subtitle_label" class="subtitle" accessibilityValue="new_password_subtitle_label"/>
+            <Label id="new_password_error_label" class="error_label" accessibilityValue="new_password_error_label"/>
+            <TextField id="password" class="textfield" accessibilityLabel="reset_new_password"/>
+            <TextField id="password_verify" class="textfield" accessibilityLabel="reset_new_password_verify"/>
+            <View class="buttons">
+                <Button id="new_password_cancel_button" class="button cancel_button" accessibilityValue="new_password_cancel_button"/>
+                <Button id="new_password_button" class="button" accessibilityValue="new_password_button"/>
+            </View>
+        </View>
+        <View id="success" class="contents">
+            <Label id="success_title" class="title" accessibilityValue="success_title"/>
+            <Label id="success_subtitle_label" class="subtitle" accessibilityValue="success_subtitle_label"/>
+            <Button id="success_ok_button" class="button" accessibilityValue="success_ok_button"/>
+        </View>
+    </View>
+</Alloy>

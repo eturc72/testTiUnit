@@ -1,0 +1,69 @@
+// 2017 salesforce.com, inc. All rights reserved.
+
+// Style file for alternate shipping options
+
+'#container': {
+    height: 60,
+    width: '100%',
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#picker_container': {
+    height: '100%',
+    width: '100%',
+    layout: 'horizontal',
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'.shipping_option_wrapper': {
+    left: 0,
+    width: '33.3%',
+    height: '100%',
+    backgroundColor: Alloy.Styles.color.background.white,
+    layout: 'horizontal',
+    bubbleParent: false
+},
+
+'.shipping_option_checkbox': {
+    left: 10,
+    top: 15,
+    height: 25,
+    width: 25
+},
+
+'.checked_option': {
+    image: Alloy.Styles.roundCheckboxDarkGray,
+    checked: true
+},
+
+'.unchecked_option': {
+    image: Alloy.Styles.unselectedRoundCheckboxDarkGray,
+    checked: false
+},
+
+'.shipping_option_label': {
+    left: 10,
+    top: 15,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font: Alloy.Styles.unselectedTabFont
+},
+
+
+'#ship_to_address_label': {
+    textid: '_Ship_to_address'
+},
+
+'#ship_to_current_store_label': {
+    textid: '_Ship_here'
+},
+
+'#dif_store_pickup_label': {
+    textid: '_Pick_up_elsewhere'
+},
+
+'#separator': {
+    backgroundColor: Alloy.Styles.color.border.medium,
+    width: '95%',
+    height: 1,
+    bottom: 0
+}

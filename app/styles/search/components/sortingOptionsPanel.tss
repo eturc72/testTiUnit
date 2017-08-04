@@ -1,0 +1,49 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for sorting options panel
+
+'.sortingOptionsPanel': {
+    layout: 'absolute',
+    visible: false,
+    top: 0,
+    left: 752,
+    bottom: 0,
+    right: 0,
+    zIndex: 2
+},
+
+'.vertical_shadow_separator_left': {
+    left: 0,
+    top: 0,
+    width: 8,
+    backgroundImage: Alloy.Styles.rightShadowImage,
+    zIndex: 4,
+    height: '100%'
+},
+
+'#sortingOptionsTable': {
+    top: 0,
+    left: 8,
+    width: 264,
+    backgroundColor: Alloy.Styles.color.background.light,
+    separatorStyle: Ti.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE,
+    color: Alloy.Styles.color.text.dark,
+    zIndex: 4,
+    borderWidth: 1,
+    borderColor: Alloy.Styles.color.border.lightest
+},
+
+'#sortingOptionsTableHeader': {
+    height: 61,
+    width: '100%',
+    layout: 'absolute',
+    backgroundColor: Alloy.Styles.color.background.light
+},
+
+'#sortingOptionsTableHeaderLabel': {
+    height: 61,
+    font: Alloy.Styles.smallAccentFont,
+    left: 13,
+    color: Alloy.Styles.color.text.darkest,
+    backgroundColor: Alloy.Styles.color.background.transparent
+}

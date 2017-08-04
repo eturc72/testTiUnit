@@ -1,0 +1,7 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for block_header component
+-->
+<Alloy>
+    <Label id="block_header" class="block_header" accessibilityValue="block_header"/>
+</Alloy>

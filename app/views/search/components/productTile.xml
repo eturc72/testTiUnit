@@ -1,0 +1,24 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for product tiles
+-->
+<Alloy>
+    <View id="productTile" onClick="handleProductTileClick">
+        <!-- onClick is workaround for click event not propogating to parent for STR-3174/AC-4385 -->
+        <ImageView id="tile_image" onClick="handleProductTileClick" />
+        <View id="tile_caption">
+            <Label id="tile_name" />
+            <View layout="absolute" >
+                <View id="price_container" class="price_container">
+                    <View id="list_price_container" class="list_price_container">
+                        <Label id="list_price" class="list_price" accessibilityValue="list_price" />
+                    </View>
+                    <View id="sale_price_container" class="list_price_container">
+                        <Label id="sale_price" class="list_price" accessibilityValue="sale_price" />
+                    </View>
+                </View>
+                <View id="swatch_container"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

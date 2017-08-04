@@ -1,0 +1,77 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for saved product item row
+
+'.pli_row': {
+    top: 20,
+    height: 173,
+    width: 650,
+    layout: 'horizontal',
+    left: 32,
+    backgroundImage: Alloy.Styles.customerBorderImage
+},
+
+'.separator': {
+    left: 0,
+    top: 25,
+    layout: 'horizontal',
+    font: Alloy.Styles.calloutCopyFont,
+    width: '95%',
+    backgroundColor: Alloy.Styles.tabs.backgroundColorDisabled,
+    height: 1
+},
+
+'#button_container': {
+    layout: 'vertical',
+    left: 20
+},
+
+'.button': {
+    backgroundImage: Alloy.Styles.secondaryButtonImage,
+    width: 140,
+    height: 28,
+    color: Alloy.Styles.buttons.secondary.color,
+    font: Alloy.Styles.switchLabelFont
+},
+
+'.top_button': {
+    top: 20
+},
+
+'.not_top_button': {
+    top: 9
+},
+
+'#productItemRowTable': {
+    layout: 'vertical',
+    selectionStyle: Ti.UI.iOS.TableViewCellSelectionStyle.NONE,
+    top: 0
+},
+
+'#divider': {
+    layout: 'horizontal',
+    width: 650,
+    height: 30
+},
+
+'#edit_delete_button_container': {
+    top: 10,
+    left: 0,
+    height: Ti.UI.SIZE,
+    width: '100%'
+},
+
+'.round_button': {
+    height: 55,
+    width: 55
+},
+
+'#delete_button': {
+    backgroundImage: Alloy.Styles.deleteButtonIcon
+},
+
+'#more_menu_button': {
+    font: Alloy.Styles.threeDotsButtonFont,
+    title: '• • •',
+    color: Alloy.Styles.color.text.white
+}

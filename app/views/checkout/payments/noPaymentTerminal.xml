@@ -1,0 +1,19 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for payment failure
+-->
+<Alloy>
+    <View id="no_payment_terminal_window">
+        <View id="backdrop"/>
+        <View id="no_payment_terminal_container">
+            <Label id="title" accessibilityValue="no_payment_terminal_title"/>
+            <Label id="message" accessibilityValue="no_payment_terminal_message"/>
+            <ImageView id="image" accessibilityValue="no_payment_terminal_image"/>
+            <View id="button_container">
+                <Button id="test_connection_button" accessibilityValue="no_payment_terminal_test_conn_button"/>
+                <Button id="ok_button" accessibilityValue="no_payment_terminal_ok_button"/>
+                <Button id="bluetoothDevicePicker" accessibilityValue="bluetooth_button" platform="ios" if="Alloy.CFG.devices.bluetoothDevicePicker"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

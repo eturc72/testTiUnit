@@ -1,0 +1,102 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for search attributes refinement panel
+
+'.attributesRefinementPanel': {
+    layout: 'absolute',
+    visible: false,
+    top: 0,
+    left: 450,
+    bottom: 0,
+    right: 0,
+    zIndex: 2
+},
+
+'.vertical_shadow_separator_right': {
+    left: 315,
+    top: 0,
+    width: 8,
+    backgroundImage: Alloy.Styles.leftShadowImage,
+    zIndex: 4,
+    height: '100%'
+},
+
+'.vertical_shadow_separator_left': {
+    left: 0,
+    top: 0,
+    width: 8,
+    backgroundImage: Alloy.Styles.rightShadowImage,
+    zIndex: 4,
+    height: '100%'
+},
+
+'#refinementsTable': {
+    top: 0,
+    left: 8,
+    width: 307,
+    height: 643,
+    backgroundColor: Alloy.Styles.color.background.light,
+    color: Alloy.Styles.color.text.dark,
+    zIndex: 4,
+    opacity: 0.95,
+    separatorStyle: Ti.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+
+'#appliedFiltersTable': {
+    top: 0,
+    left: 306,
+    width: 265,
+    backgroundColor: Alloy.Styles.color.background.light,
+    color: Alloy.Styles.color.text.dark,
+    zIndex: 3,
+    borderWidth: 1,
+    borderColor: Alloy.Styles.color.border.lightest,
+    rowHeight: 50,
+    font:Alloy.Styles.buttonFont,
+    separatorStyle: Ti.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+},
+
+'#refinementsTableHeader': {
+    height: 50,
+    width: '100%',
+    layout: 'absolute',
+    backgroundColor: Alloy.Styles.color.background.light
+},
+
+'#refinementsTableHeaderLabel': {
+    height: 50,
+    font: Alloy.Styles.bigAccentFont,
+    left: 22,
+    color: Alloy.Styles.color.text.mediumdark,
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#appliedFiltersTableHeader': {
+    height: 60,
+    width: '100%',
+    layout: 'absolute',
+    backgroundColor: Alloy.Styles.color.background.light
+},
+
+'#appliedFiltersTableHeaderLabel': {
+    height: 60,
+    font: Alloy.Styles.smallAccentFont,
+    left: 25,
+    color: Alloy.Styles.color.text.mediumdark,
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#appliedFiltersTableHeaderButton': {
+    right: 8,
+    top: 13,
+    width: 96,
+    height: 32,
+    color: Alloy.Styles.color.text.mediumdark,
+    backgroundColor: Alloy.Styles.color.background.medium,
+    borderColor: Alloy.Styles.color.border.dark
+},
+
+'#appliedFiltersTableHeaderButtonLabel': {
+    font: Alloy.Styles.buttonFont,
+    color: Alloy.Styles.color.text.mediumdark
+}

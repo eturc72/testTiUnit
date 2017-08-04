@@ -1,0 +1,113 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for date picker in reports
+
+'.outterContainer': {
+    backgroundColor: Alloy.Styles.color.background.transparentBlack30Percent
+},
+
+'.container': {
+    height: Ti.UI.SIZE,
+    width: 730,
+    backgroundColor: Alloy.Styles.color.background.white,
+    layout: 'vertical'
+},
+
+'.pickerContainer': {
+    top: 0,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.FILL,
+    backgroundColor: Alloy.Styles.color.background.white,
+    layout: 'horizontal'
+},
+
+'.pickerWrapper': {
+    left: 30,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    layout: 'vertical',
+    backgroundColor: Alloy.Styles.color.background.white,
+    top: 30,
+    bottom: 10
+},
+
+'Picker': {
+    top: 0,
+    width: 320
+},
+
+'.title': {
+    color: Alloy.Styles.accentColor,
+    top: 15,
+    font: Alloy.Styles.bigButtonFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+'.horizontalSeparator': {
+    backgroundColor: Alloy.Styles.accentColor,
+    width: 320,
+    height: 1,
+    top: 15
+},
+
+'.controlsWrapper': {
+    top: 0,
+    height: 70,
+    width: '100%',
+    layout: 'horizontal'
+},
+
+'.shadow': {
+    viewShadowColor: Alloy.Styles.shadowGrayColor,
+    viewShadowOffset: {
+        x: 0,
+        y: 0
+    },
+    viewShadowRadius: 2
+},
+
+'.cbutton': {
+    left: '23%',
+    top: '20%',
+    height: '50%',
+    width: '15%',
+    font: Alloy.Styles.bigButtonFont,
+    color: Alloy.Styles.buttons.primary.color,
+    backgroundColor: Alloy.Styles.accentColor
+},
+
+'.titleView': {
+    top: 0,
+    height: Ti.UI.SIZE,
+    width: 320,
+    backgroundColor: Alloy.Styles.color.background.white,
+    layout: 'vertical',
+    bottom: 10
+},
+
+'#date_range_msg_container': {
+    height:Ti.UI.SIZE,
+    width:Ti.UI.FILL,
+    bottom: 10
+},
+
+'.dateRangeMsg': {
+    font: Alloy.Styles.appFont,
+    color: Alloy.Styles.color.text.dark
+},
+
+'#title_from': {
+    textid: '_From'
+},
+
+'#title_to': {
+    textid: '_To'
+},
+
+'#cancel': {
+    titleid: '_Cancel'
+},
+
+'#go': {
+    titleid: '_Apply'
+}

@@ -1,0 +1,16 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for medium swatch refinement
+
+'#mediumSwatchRefinementHeader': {
+    height: 50,
+    layout: 'absolute',
+    backgroundColor: Alloy.Styles.color.background.light
+},
+
+'#mediumSwatchRefinementHeaderLabel': {
+    font: Alloy.Styles.calloutCopyFont,
+    color: Alloy.Styles.color.text.dark,
+    left: 22
+}
+

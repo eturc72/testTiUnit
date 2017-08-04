@@ -1,0 +1,23 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for product pricing on PDP
+
+'#pricing': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    top: 8
+},
+
+'#list_price_container': {
+    height: Ti.UI.SIZE,
+    width: 0
+},
+
+'#list_price': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    left: 0
+},
+
+'#sales_price': {
+    left: 0
+}

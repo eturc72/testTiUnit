@@ -1,0 +1,60 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for the coupon section on the cart
+
+'.promotions_view': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE
+},
+
+'#coupon_form': {
+    layout: 'horizontal',
+    height: 35,
+    top: 22,
+    left: 22,
+    bottom: 22
+},
+
+'.coupon_text_field': {
+    paddingLeft: 10,
+    color: Alloy.Styles.color.text.black,
+    width: 170,
+    height: 35,
+    font: Alloy.Styles.textFieldFont,
+    borderColor: Alloy.Styles.color.border.dark,
+    borderWidth: 1,
+    backgroundColor: Alloy.Styles.color.background.white,
+    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+    autocorrect: false
+},
+
+'.coupon_apply_button': {
+    left: 10,
+    color: Alloy.Styles.buttons.secondary.color,
+    backgroundImage: Alloy.Styles.buttons.secondary.backgroundImage,
+    width: 110,
+    height: 35,
+    font: Alloy.Styles.buttonFont
+},
+
+'#instruction_view': {
+    height: 40
+},
+
+'.promo_text': {
+    top: 0,
+    color: Alloy.Styles.color.text.medium,
+    font: Alloy.Styles.detailLabelFont
+},
+
+'#coupon_table': {
+    left: 10,
+    top: 0,
+    height: 340,
+    width: 320
+},
+
+'#instruction_label': {
+    textid: '_Enter_Promo_Code_for_additional_discounts_'
+}
+

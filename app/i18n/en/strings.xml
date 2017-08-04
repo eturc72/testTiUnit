@@ -1,0 +1,859 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="___Requires_Logout" context="adminDashboard.appSettings.info">* Requires Logout</string>
+  <string name="__d_Customer" context="customer.customerSearch.header.msg">%d Customer</string>
+  <string name="__d_Customers" context="customer.customerSearch.header.msg">%d Customers</string>
+  <string name="__d_item_s__are_available_for_pre_order_" context="productDetails.info">%d item(s) are available for pre-order.</string>
+  <string name="__d_Item_s__In_Stock_" context="productDetails.info">%d item(s) in stock.</string>
+  <string name="__d_item_is_unavailable" context="different.store.pickup.search.label">%d item is unavailable</string>
+  <string name="__d_items_are_unavailable" context="different.store.pickup.search.label">%d items are unavailable</string>
+  <string name="__d_minute" context="adminDashboard.appSettings.Sesion Timeout.select">%d minute</string>
+  <string name="__d_minutes" context="adminDashboard.appSettings.Sesion Timeout.select">%d minutes</string>
+  <string name="__d_Product" context="productSearch.header.msg">%d Product</string>
+  <string name="__d_Products" context="productSearch.header.msg">%d Products</string>
+  <string name="__d_saved_products_retrieved_from_your_cart" context="customerSearch.notification.info">%d saved products retrieved from your cart.</string>
+  <string name="__d_second" context="adminDashboard.appSettings.Sesion Timeout.select">%d second</string>
+  <string name="__d_seconds" context="adminDashboard.appSettings.Sesion Timeout.select">%d seconds</string>
+  <string name="__d_Order" context="order.search.header.msg" >%d Order</string>
+  <string name="__d_Orders" context="order.search.header.msg" >%d Orders</string>
+  <string name="__s____s_Surcharge" context="checkout.shippingMethod.info">%s + %s Surcharge</string>
+  <string name="__s__" context="label with no info">%s: </string>
+  <string name="__s___s" context="label with info">%s: %s</string>
+  <string name="__s__Change_" context="login.button">%s (Change)</string>
+  <string name="__s_added_to_Wish_List_" context="checkout.cart.cartItems.notification.msg && productDetails.details.notification.msg">'%s' added to wish list.</string>
+  <string name="__s_added_to_Wish_List__s_" context="checkout.cart.cartItems.notification.msg && productDetails.details.notification.msg">'%s' added to wish list '%s'.</string>
+  <string name="__s_does_not_have_a_wish_list"  context="productDetails.details.dialog.msg">'%s' does not have a wish list.</string>
+  <string name="__s_off_for___s_" context="checkout.cart.info">%s off for '%s'</string>
+  <string name="___s__is_already_logged_in_" context="customer.search.login.alert.msg">'%s' is already logged in.</string>
+  <string name="__s_to_go_for___s_" context="checkout.cart.info">%s to go for '%s'</string>
+  <string name="__s_updated_in_Wish_List_" context="checkout.cart.notification.info && productDetails.notification.info">'%s' updated in wish list.</string>
+  <string name="__s_updated_in_Wish_List__s_" context="checkout.cart.notification.info && productDetails.notification.info">'%s' updated in wish list '%s'.</string>
+  <string name="__select_printer_" context="checkout.confirmation.info">&lt;select printer&gt;</string>
+  <string name="__Type__LAN" context="startup.notification.msg">Type: LAN</string>
+  <string name="__Type__MOBILE" context="startup.notification.msg">Type: Mobile</string>
+  <string name="__Type__UNKNOWN" context="startup.notification.msg">Type: Unknown</string>
+  <string name="__Type__WIFI" context="startup.notification.msg">Type: WIFI</string>
+  <string name="_1_saved_product_retrieved_from_your_cart" context="customerSearch.customer.notification.msg">1 saved product retrieved from your cart.</string>
+  <string name="_A_manager_override_has_already_been_applied__Click_Remove_to_remove_the_override_and_continue_to_the_override_screen_" context="checkout.cart.override.dialog.info">A manager override has already been applied. Tap "Remove" to remove the override and continue to override screen.</string>
+  <string name="_A_price_override_has_been_applied_to_this_item__Replacing_the_item_will_remove_the_override_" context="productDetails.details.dialog.info" >A price override has been applied to this item. Replacing the item will remove the override.</string>
+  <string name="_A_price_override_has_been_applied_to_this_item__Saving_the_item_will_remove_the_override_" context="checkout.cart.dialog.info">A price override has been applied to this item. Saving the item will remove the override.</string>
+  <string name="_A_restart_is_required_" context="adminDashboard.appSettings.notification.msg">A restart is required. You must manually restart the application to see the Welcome dialog and to modify settings again.</string>
+  <string name="_A_shipping_override_has_been_applied__Changing_shipping_methods_will_remove_the_override_"  context="checkout.cart.ShipMethods.dialog.info">A shipping override has been applied. Changing shipping methods will remove the override.</string>
+  <string name="_A_shipping_override_has_been_applied" context="checkout.cart.ShipMethods.info">A shipping override has been applied.</string>
+  <string name="_Accept" context="checkout.confirmation.SignatureDialog.button">Accept</string>
+  <string name="_According_to_the_USPS_database___">According to the USPS database, the address you have entered may have an error or may be missing some critical information. Please select which version of the address you would like to use, or you can cancel and edit your address.</string>
+  <string name="_Account_successfully_created_" context="customer.createCustomer.notification.msg" >Account was successfully created.</string>
+  <string name="_Actions_" context="adminDashboard.appSettings.heading">Actions</string>
+  <string name="_Add_Address"  context="customer.address.enterAddress.title" >Add Address</string>
+  <string name="_Add_All_To_Basket" context="analytics.msg">Add All To Basket</string>
+  <string name="_Add_All_to_Cart" context="productDetails.details.button">Add All to Cart</string>
+  <string name="_Add_New_Address" context="checkout.shippingAddress.button && customer.profile.button && checkout.billingaddress.button">Add New Address</string>
+  <string name="_Add_To_Basket" context="analytics.msg">Add To Basket</string>
+  <string name="_Add_to_Cart" context="checkout.cart.saveditems.button && productDetails.details.button && checkout.cart.wishlist.button">Add to Cart</string>
+  <string name="_Add_to_Wish_List" context="checkout.cart.saveditems.button && productDetails.details.button && checkout.cart.cartItems.button">Add to Wish List</string>
+  <string name="_Added_Payment_Device__" context="adminDashboard.devices.adyen.msg">Added Payment Device: </string>
+  <string name="_Adding_product_to_cart" context="productDetails.details.log.msg">Adding product to cart</string>
+  <string name="_Address" context="checkout.cart.tabs">Address </string>
+  <string name="_Address_" context="enterAddress.field.hint.msg">Address*</string>
+  <string name="_Address___s__successfully_deleted_" context="customer.address.enterAddress.notification.msg">Address '%s' was successfully deleted.</string>
+  <string name="_Address_successfully_saved_" context="customer.address.enterAddress.notification.msg">Address was successfully saved.</string>
+  <string name="_Address_You_Entered" context="addressVerification.dialog.header">Address You Entered</string>
+  <string name="_Addresses" context="customer.tabs">Addresses</string>
+  <string name="_Address_Form" context="address.form.dialog.title">Address Form</string>
+  <string name="_Adjustment_Reason" context="checkout.cart.override.select && checkout.shipping.override.select">Adjustment Reason</string>
+  <string name="_Admin" context="header.button">Admin</string>
+  <string name="_Admin_Dashboard" context="header.admin.title">Admin Dashboard</string>
+  <string name="_Adyen_Information" context="adminDashboard.devices.adyen.heading">Adyen Information</string>
+  <string name="_Adyen_Library_Version__" context="adminDashboard.devices.adyen.msg">Adyen Library Version: </string>
+  <string name="_Alert" context="adminDashboard.devices.dialog.title">Alert</string>
+  <string name="_All_Departments" context="categoryselect.button">All Departments</string>
+  <string name="_All_fields_must_have_a_password_" context="dialog.error">All fields must have a password.</string>
+  <string name="_All_items_are_unavailable" context="different.store.pickup.search.label">All items are unavailable</string>
+  <string name="_Amount_Off" context="checkout.cart.override.label && checkout.shipping.override.label">Amount Off</string>
+  <string name="_Amount_off_cannot_be_greater_than_the_base_price" context="checkout.cart.override.error && checkout.shipping.override.error">Amount off cannot be greater than the base price.</string>
+  <string name="_Amount_off_must_be_a_number" context="checkout.cart.override.error && checkout.shipping.override.error">Amount off must be a number.</string>
+  <string name="_Amount_to_be_applied_to_order_" context="checkout.cart.payments.dialog.label">Amount to be applied to order:</string>
+  <string name="_An_error_occurred_validating_the_device_" context="startup.notification.msg">An error occurred validating the device.</string>
+  <string name="_App_Settings" context="adminDashboard.tabs">App Settings</string>
+  <string name="_Application_Cache_Cleared" context="adminDashboard.configuration.notification.msg">Application Cache Cleared</string>
+  <string name="_Application_Information" context="adminDashboard.devices.adyen.heading">Application Information</string>
+  <string name="_Application_Name__" context="adminDashboard.devices.adyen.msg">Application Name: </string>
+  <string name="_Application_settings_applied_" context="adminDashboard.appSettings.notification.msg">Application settings applied.</string>
+  <string name="_Application_settings_cleared_" context="adminDashboard.appSettings.notification.msg">Application settings cleared.</string>
+  <string name="_Applied_Filters" context="productGrid.filterRefinementPanel.heading">Applied Filters</string>
+  <string name="_Apply" context="adminDashboard.appSettings.button">Apply</string>
+  <string name="_ApplyConfigText" context="adminDashboard.appSettings.info">Tap "Apply" to commit the changes; leave this screen to discard changes.</string>
+  <string name="_Approve" context="checkout.confirmation.dialog.button">Approve</string>
+  <string name="_Approve_Signature" context="checkout.confirmation.dialog.msg">Approve Signature</string>
+  <string name="_Approved" context="checkout.confirmation.dialog.title">Approved</string>
+  <string name="_Are_you_sure_you_want_to_leave__you_might_lose_the_data_filled_in_the_form_if_you_continue_" context="address.form.dialog.msg">Are you sure you want to leave? You might lose the data filled in the form if you continue.</string>
+  <string name="_Associate" context="header.button">Associate</string>
+  <string name="_Associate_" context="epsonReceipt.msg">Associate:</string>
+  <string name="_Associate_Authorization" context="authorization.dialog.title">Associate Authorization</string>
+  <string name="_Associate_Credentials_Accepted" context="welcomeDialog.kiosk.credential.acceptmsg">Associate Credentials Accepted</string>
+  <string name="_Associate_Does_Not_Have_Permission_To_Enable_Kiosk_Mode" context="welcomeDialog.kiosk.credential.rejectmsg">Associate does not have proper administrator permissions to enable kiosk mode.</string>
+  <string name="_Associate_ID" context="login.field.hint.msg">Associate ID</string>
+  <string name="_Associate_Logged_Out" context="header.notification.msg">Associate Logged Out</string>
+  <string name="_Associate_Login" context="login.title">Associate Login</string>
+  <string name="_Associate_Login_Kiosk" context="login.title">Manager Credentials</string>
+  <string name="_Associate_Login_Successful" context="kiosk.categoryGrid.notification.msg" >Associate Login Successful</string>
+  <string name="_Associate_Login_To_Enable_Kiosk" context="welcomeDialog.kiosk.credential.enable.msg">To enable kiosk mode</string>
+  <string name="_Associates" context="salesReports.Ranks.tabs">Associates</string>
+  <string name="_Authentication_error" context="salesReport.error">Authentication Error</string>
+  <string name="_Authorize" context="login.dialog.button">Authorize</string>
+  <string name="_Availability_" context="productDetails.details.msg">Availability:</string>
+  <string name="_Back" context="welcomeDialog.button">Back</string>
+  <string name="_Back_Order" context="productDetails.details.msg">Back Order</string>
+  <string name="_Back_Order__d_item_s__" context="productDetails.details.msg">Back order %d item(s).</string>
+  <string name="_Balance_Due__" context="checkout.payments.msg">Balance Due: </string>
+  <string name="_Base_URL__" context="adminDashboard.configuration.msg">Base URL: </string>
+  <string name="_Base_Version__" context="adminDashboard.configuration.msg">Base Version: </string>
+  <string name="_Basket" context="analytics.msg">Basket</string>
+  <string name="_Basket_Error" context="shipping.override.error.title">Basket Error</string>
+  <string name="_Being_Processed" context="checkout.confirmation.msg">Being Processed</string>
+  <string name="_Billing" context="checkout.tabs" >Billing</string>
+  <string name="_Billing_Address" context="analytics.msg">Billing Address</string>
+  <string name="_Birthday__" context="customer.profile.msg">Birthday: </string>
+  <string name="_Bluetooth" context="adminDashboard.devices.adyen.radio">Bluetooth</string>
+  <string name="_Bad_URL" context="salesReports.error">Bad URL</string>
+  <string name="_Board" context="adminDashboard.devices.adyen.button">Board</string>
+  <string name="_Both_fields_must_have_a_password" context="login.error">Both fields must have a password.</string>
+  <string name="_BreadCrumbSeparator" context="productSearch.header.info">></string>
+  <string name="_By_tapping_on__Continue___the_cart_will_be_cleared_and_you_will_logout_the_current_customer_you_are_logged_in_as_" context="customer.search.profile.msg">By tapping on "Continue", the cart will be cleared and the current customer will be logged out.</string>
+  <string name="_CacheText" context="adminDashboard.configuration.msg">Delete the locally stored catalog and product data on this iPad.</string>
+  <string name="_Cancel" context="login.ManagerWindow.button">Cancel</string>
+  <string name="_Cannot_login_as___s__" context="customer.login.error">Cannot log in as '%s'.</string>
+  <string name="_Cancel_Order" context="checkout.payments.button">Cancel Order</string>
+  <string name="_Cannot_save_address_" context="customer.enterAddress.error">Cannot save address.</string>
+  <string name="_Cannot_save_billing_address_" context="checkout.billing.enterAddress.error">Cannot save billing address.</string>
+  <string name="_Cannot_save_shipping_address_or_email_" context="checkout.shipping.enterAddress.error">Cannot save shipping address or email.</string>
+  <string name="_Cannot_validate_device" context="adminDashboard.devices.verifone.label">Cannot validate device</string>
+  <string name="_Capturing_Data" context="adminDashboard.devices.verifone.header">Capturing Data</string>
+  <string name="_Card_number_entered_is_invalid__Please_cancel_payment_and_try_again_" context="adminDashboard.devices.verifone.msg">The provided credit card number is invalid. Please cancel the payment and try again.</string>
+  <string name="_Card_was_declined__Please_try_another_card_" context="checkout.payments.error">Card was declined. Please try another card.</string>
+  <string name="_Cart" context="analytics.msg">Cart</string>
+  <string name="_Cart_Tab" context="checkout.tabs">Cart</string>
+  <string name="_Cart_Cleared" context="header.notification.msg">Cart Cleared</string>
+  <string name="_Cart_Items___d" context="checkout.cart.tabs">Cart Items: %d</string>
+  <string name="_Change" context="dialog.button">Change</string>
+  <string name="_ChangeStorePasswordText" context="adminDashboard.configuration.msg">Change the password for the Business Manager store user.</string>
+  <string name="_Change_Password" context="login.dialog.title">Change Password</string>
+  <string name="_Change_Store_Password" context="dialog.title">Change Store Password</string>
+  <string name="_Change_Store_Password_Menu" context="hamburgermenu.button && admindashboard.button">Change Store Password</string>
+  <string name="_Checkout" context="checkout.button">Checkout</string>
+  <string name="_Check_Configuration" context="adminDashboard.devices.adyen.info">Check Configuration</string>
+  <string name="_China" context="welcomeDialog.select">China</string>
+  <string name="_Chinese" context="welcomeDialog.select">Chinese</string>
+  <string name="_City_" context="enterAddress.select">City*</string>
+  <string name="_Clear" context="checkout.confirmation.dialog.Button">Clear</string>
+  <string name="_Clear_App_Settings" context="adminDashboard.appSettings.button">Clear App Settings</string>
+  <string name="_Clear_Cache" context="adminDashboard.configuration.button">Clear Cache</string>
+  <string name="_Clear_Cart" context="hamburgermenu.button">Clear Cart</string>
+  <string name="_Clear_Results" context="adminDashboard.test.button">Clear Results</string>
+  <string name="_ClearChangesText" context="adminDashboard.appSettings.msg">Remove the settings database and restore configuration to coded defaults. The Welcome dialog will appear at startup once cleared.</string>
+  <string name="_Client_Credentials_Not_Set_Up" context="appStartup.errorDialog.title">Client Credentials Not Set Up</string>
+  <string name="_Client_ID__" context="adminDashboard.configuration.msg">Client ID: </string>
+  <string name="_Client_Version__" context="adminDashboard.buildInfo.label">Client Version: </string>
+  <string name="_Color_" context="productGrid.filterRefinementPanel.msg">Color:</string>
+  <string name="_Config_Settings_" context="adminDashboard.configuration.heading">Config Settings:</string>
+  <string name="_Configuration" context="adminDashboard.tabs && startupPopover.dialog.button">Configuration</string>
+  <string name="_Configuration_Error" context="startup.error.title">Configuration Error</string>
+  <string name="_Confirm" context="addressVerification.button">Confirm</string>
+  <string name="_Confirm_Current_Customer_Logout" context="customer.search.profile.logout.title">Confirm Current Customer Logout</string>
+  <string name="_Confirm_Phone_Number" context="checkout.shipping.dialog.label">Confirm Phone Number</string>
+  <string name="_Confirmation" context="checkout.tabs">Confirmation</string>
+  <string name="_Connection_to_payment_device_was_successful_" context="checkout.payments.notification.msg">Connection to payment device was successful.</string>
+  <string name="_Console" context="adminDashboard.devices.verifone.label">Console</string>
+  <string name="_Continue"  context="sessionTimeoutConfirmation.dialog.button">Continue</string>
+  <string name="_Could_not_cancel_the_order_" context="associateLogout.cancelOrder.error.msg">Could not cancel the order.</string>
+  <string name="_Could_not_delete_address___s__" context="customer.address.notification.msg">Could not delete address '%s'.</string>
+  <string name="_Could_not_find_any_customers_matching" context="customer.error">Could not find any customers matching '%s'.</string>
+  <string name="_Could_not_find_any_customers_matching___s__" context="customer.search.error.msg">Could not find any customers matching '%s'.</string>
+  <string name="_Could_not_get___s__profile_information" context="customer.error">Could not get '%s' profile information.</string>
+  <string name="_Could_not_remove_coupon_" context="checkout.cart.notification.msg">Could not remove coupon.</string>
+  <string name="_Could_not_remove_override_" context="checkout.shippingoverride.notification.msg">Could not remove the override.</string>
+  <string name="_Could_not_retrieve_order___s__" context="customer.order.error">Could not retrieve order '%s'.</string>
+  <string name="_Could_not_retrieve_orders_for_id_or_email___s__" context="order.search.error.msg">Could not retrieve orders for ID or email '%s'.</string>
+  <string name="_Could_not_save_customer_address_data_" context="checkout.address.enterAddress.notification.msg">Could not save customer address data.</string>
+  <string name="_Country_" context="enterAddress.field.hint.msg">Country*</string>
+  <string name="_Country__" context="welcomeDialog.field.msg">Country: </string>
+  <string name="_Country_Settings_" context="adminDashboard.label">Country Settings: </string>
+  <string name="_Country_Message_" context="welcomeDialog.msg">To choose the store, first select a country.</string>
+  <string name="_Coupon_" context="checkout.cart.msg">Coupon </string>
+  <string name="_Coupon___s__could_not_be_applied_" context="checkout.cart.notification.msg">Coupon '%s' could not be applied.</string>
+  <string name="_Coupon___s__is_already_in_your_cart_" context="checkout.cart.notification.msg">Coupon '%s' is already in your cart.</string>
+  <string name="_Coupon___s__is_invalid_" context="checkout.cart.notification.msg">Coupon '%s' is invalid.</string>
+  <string name="_Coupon_Applied_" context="epsonReceipt.msg">Coupon Applied:</string>
+  <string name="_Create" context="customer.createCustomer.dialog.button">Create</string>
+  <string name="_Create_Account" context="customer.createCustomer.dialog.title">Create Account</string>
+  <string name="_Create_Customer" context="hamburgermenu.button">Create Customer</string>
+  <string name="_Create_Customer_Title" context="hamburgermenu.createCustomer.alert.dialog.title">Create Customer</string>
+  <string name="_Create_New_User" context="analytics.msg">Create New User</string>
+  <string name="_Create_Order" context="checkout.shippingMethods.button">Create Order</string>
+  <string name="_Create_User" context="analytics.msg">Create User</string>
+  <string name="_Credit_Card" context="checkout.payments.tabs">Credit Card</string>
+  <string name="_Currency__" context="adminDashboard.label">Currency: </string>
+  <string name="_Current_Country__" context="login.button">Current Country: </string>
+  <string name="_Current_Password" context="field.hint.msg">Current Password</string>
+  <string name="_Custom" context="salesReports.tabs">Custom</string>
+  <string name="_Custom_1" context="customer.tabs">Custom 1</string>
+  <string name="_Customer_Address" context="analytics.msg">Customer Address</string>
+  <string name="_Customer_Addresses" context="analytics.msg">Customer Addresses</string>
+  <string name="_Customer_address_name___s__is_already_in_use_" context="enterAddress.error">Customer address name '%s' is already in use.</string>
+  <string name="_Customer_Details" context="customer.profile.heading">Customer Details</string>
+  <string name="_Customer_Edit_Profile" context="analytics.msg">Customer Edit Profile</string>
+  <string name="_Customer_History" context="analytics.msg">Customer History</string>
+  <string name="_Customer_Login" context="analytics.msg">Customer Login</string>
+  <string name="_Customer_must_be_logged_in_to_add_to_wish_list__Please_look_up_customer_" context="productDetails.details.dialog.error">Customer must be logged in to add to wish list. Please look up customer.</string>
+  <string name="_Customer_Number__" context="customer.details.msg">Customer Number: </string>
+  <string name="_Customer_Profile" context="analytics.msg">Customer Profile</string>
+  <string name="_Customer_profile_data_successfully_saved_" context="customer.profile.notification.msg">Customer profile data successfully saved.</string>
+  <string name="_Customer_Search" context="analytics.msg">Customer Search</string>
+  <string name="_Customer_Search_Label" context="customer.search.page.title">Customer Search</string>
+  <string name="_Customer_Search_Button" context="header.button && hamburgermenu.button">Customer Search</string>
+  <string name="_Customers_Tab" context="search.tab">Customers</string>
+  <string name="_Date_" context="epsonReceipt.msg">Date:</string>
+  <string name="_Date_Ordered_" context="customer.history.msg">Date Ordered:</string>
+  <string name="_Days_since_last_login__" context="customer.details.msg">Days Since Last Login: </string>
+  <string name="_Days_since_last_visit__" context="customer.details.msg">Days Since Last Visit: </string>
+  <string name="_Decline" context="checkout.dialog.button">Decline</string>
+  <string name="_Delete" context="checkout.cart.button">Delete</string>
+  <string name="_Delete_Address" context="customer.address.dialog.title">Delete Address</string>
+  <string name="_Delete_Coupon" context="checkout.cart.dialog.title" >Delete Coupon</string>
+  <string name="_Delete_Item" context="checkout.cart.dialog.title">Delete Item</string>
+  <string name="_Description" context="productDetails.tabs">Description</string>
+  <string name="_Details" context="productDetails.tabs">Details</string>
+  <string name="_Details_for_gift_card_ending_in_" context="checkout.payments.dialog.msg">Details for gift card ending in:</string>
+  <string name="_Device_Boarded_Successfully" context="adminDashboard.devices.adyen.notification.msg">Device Boarded Successfully</string>
+  <string name="_Device_Error" context="adminDashboard.devices.adyen.error">Device Error</string>
+  <string name="_Device_Name__" context="adminDashboard.devices.verifone.label">Device Name: </string>
+  <string name="_Device_Information" context="adminDashboard.devices.verifone.label">Device Information</string>
+  <string name="_Device_Version__" context="adminDashboard.devices.adyen.msg">Device Version: </string>
+  <string name="_Device_Platform__" context="adminDashboard.devices.adyen.msg">Device Platform: </string>
+  <string name="_Device_Status__" context="adminDashboard.devices.adyen.msg">Device Status: </string>
+  <string name="_Discard_Changes" context="adminDashboard.appSettings.dialog.title">Discard Changes</string>
+  <string name="_Disconnected" context="adminDashboard.devices.adyen.info">Disconnected</string>
+  <string name="_Discount_" context="checkout.orderSummary.msg">Discount:</string>
+  <string name="_Discounts" context="checkout.orderSummary.msg">Discounts</string>
+  <string name="_Dismiss" context="dialog.button">Dismiss</string>
+  <string name="_Distance_Unit_" context="adminDashboard.appSettings.Label">Distance Unit:</string>
+  <string name="_Do_you_really_want_to_delete_this_address_" context="customer.address.dialog.msg">Do you really want to delete address '%s'?</string>
+  <string name="_Do_you_really_want_to_delete_this_coupon_" context="checkout.cart.dialog.msg">Do you really want to delete coupon '%s'?</string>
+  <string name="_Do_you_really_want_to_delete_this_item_" context="checkout.cart.dialog.msg">Do you really want to delete item '%s'?</string>
+  <string name="_DNS_lookup_error___Host_name_cannot_be_resolved_"  context="salesReports.error">DNS lookup error: host name cannot be resolved.</string>
+  <string name="_Edit" context="customer.profile.button">Edit</string>
+  <string name="_Edit_Profile" context="customer.profile.editProfile.title">Edit Profile</string>
+  <string name="_Effective_Loggable_Categories" context="adminDashboard.logs.Label">Effective Loggable Categories</string>
+  <string name="_Email" context="checkout.confirmation.dialog.button">Email</string>
+  <string name="_Email__" context="epsonReceipt.msg && customer.msg">Email: </string>
+  <string name="_Email_Address_" context="customer.createCustomer.field.hint.msg && checkout.address.enterAddress.field.hint.msg">Email Address*</string>
+  <string name="_Email_Configs" context="adminDashboard.appSettings.button">Email Configs</string>
+  <string name="_Email_Receipt" context="checkout.confirmation.button">Email Receipt</string>
+  <string name="_Email_Test_Results" context="adminDashboard.tests.button">Email Test Results</string>
+  <string name="_Email_of_configuration_has_been_sent_" context="adminDashboard.sppSettings.notificaiton.msg">Email of configuration has been sent.</string>
+  <string name="_Email_of_testing_log_has_been_sent_" context="adminDashboard.tests.notificaiton.msg">Email of testing log has been sent.</string>
+  <string name="_Email_of_testing_log_was_not_sent_" context="adminDashboard.tests.notificaiton.msg">Email of testing log was not sent.</string>
+  <string name="_Email_Wish_List" context="checkout.cart.wishList.button">Email Wish List</string>
+  <string name="_Emailing_receipt" context="checkout.confirmation.notificaiton.msg">Emailing receipt...</string>
+  <string name="_EmailLogText" context="adminDashboard.logs.msg">Send log to the support email list on the server.</string>
+  <string name="_EmailTestsText" context="adminDashboard.tests.msg">Send test results to the support email list on the server.</string>
+  <string name="_EmailText" context="adminDashboard.appSettings.msg">Send configurations to the support email list on the server.</string>
+  <string name="_Encryption_Type__" context="adminDashboard.devices.msg">Encryption Type: </string>
+  <string name="_End_date_cannot_be_before_start_date_" context="salesReport.Custom.error">End date cannot be before start date.</string>
+  <string name="_End_Session" context="sessionTimeoutConfirmation.dialog.button">End Session</string>
+  <string name="_End_Session_Message" context="sessionTimeoutConfirmation.dialog.msg">Session ending in %d seconds because of inactivity. Would you like to continue shopping?</string>
+  <string name="_Ending_In_" context="epsonReceipt.msg">Ending In:</string>
+  <string name="_Endless_Aisle_configuration_on_failed_start_up" context="appConfigurationDialog.email.subject">Endless Aisle configuration on failed start up</string>
+  <string name="_English" context="welcomeDialog.select">English</string>
+  <string name="_Enter_Associate_ID" context="login.dialog.subtitle">Enter Associate ID</string>
+  <string name="_Enter_Associate_Credentials_Kiosk" context="dialog.subtitle.msg">Enter associate credentials to display menu.</string>
+  <string name="_Enter_current_and_new_password_for___s_" context="dialog.label">Enter current and new password for '%s'</string>
+  <string name="_Enter_email_address" context="checkout.shipping.error" >Enter email address.</string>
+  <string name="_Enter_email_here" context="checkout.shipping.field.hint.msg">Enter email here.</string>
+  <string name="_Enter_First_and_Last_Name_or_Email" context="customer.customerSearch.field.hint.msg">Enter First and Last Name or Email</string>
+  <string name="_Enter_the_adyen_payment_portal_credentials_" context="adminDashboard.devices.adyen.msg">Enter the Adyen payment portal credentials.</string>
+  <string name="_Enter_Manager_Credentials_Admin" context="dialog.subtitle.msg">Enter manager credentials to show Admin Dashboard.</string>
+  <string name="_Enter_Manager_Credentials_Password" context="dialog.subtitle.msg">Enter manager credentials to change password.</string>
+  <string name="_Enter_Manager_Credentials_Store" context="dialog.subtitle.msg">Enter manager credentials to change store password.</string>
+  <string name="_Enter_Manager_ID" context="login.dialog.field.hint.msg">Enter Manager ID</string>
+  <string name="_Enter_Manager_Password" context="login.dialog.field.hint.msg">Enter Manager Password</string>
+  <string name="_Enter_New_Password" context="field.hint.msg">Enter New Password</string>
+  <string name="_Enter_Order_ID_or_Customer_Email" context="header.search.field.hint.msg">Enter Order ID or Customer Email</string>
+  <string name="_Enter_Promo_Code_for_additional_discounts_" context="checkout.cart.msg">Enter Promo Code for additional discounts.</string>
+  <string name="_Enter_Search_Term_or_UPC_Code" context="header.productSearch.field.hint.msg">Enter Search Term or UPC Code</string>
+  <string name="_Enter_your_credentials" context="login.msg">Enter your credentials</string>
+  <string name="_Enter_zip_code_for_store_pickup" context="address.form.zipcode.field.hint.msg">Enter zip code for store pickup</string>
+  <string name="_Error" context="checkout.payments.dialog.msg">Error</string>
+  <string name="_Error__" context="enterAddress.error">Error: </string>
+  <string name="_Error_applying_credit_card___Please_try_again_" context="checkout.payments.dialog.msg">Error applying credit card.\nPlease try again.</string>
+  <string name="_Error_applying_credit_card___The_order_has_not_been_confirmed_on_server_" context="checkout.payments.dialog.msg">Error applying credit card.\nThe order has not been confirmed on the server.</string>
+  <string name="_Error_applying_gift_card___Please_try_again_" context="checkout.payments.dialog.msg">Error applying gift card.\nPlease try again.</string>
+  <string name="_Error_applying_gift_card___The_order_has_not_been_confirmed_on_server_" context="checkout.payments.dialog.msg">Error applying gift card.\nThe order has not been confirmed on the server.</string>
+  <string name="_Error_cancelling_transaction_with_payment_provider__s" context="checkout.payment.paymentTerminal.error">An error occurred while trying to cancel the transaction with the payment provider. Please contact your responsible department to cancel the payment for order number: %s</string>
+  <string name="_Error_changing_password" context="login.dialog.error">An error occurred while changing the password.</string>
+  <string name="_Error_creating_account" context="customer.createCustomer.dialog.error">An error occurred while creating the account.</string>
+  <string name="_Error_details_heading" context="salesReports.dialog.error">Error Details and System Configuration</string>
+  <string name="_Error_logging_in_associate" context="kiosk.login.error">An error occurred while logging in the associate.</string>
+  <string name="_Error_logging_in_manager" context="login.dialog.error">An error occurred while logging in the manager.</string>
+  <string name="_Error_in_application" context="Popover.error">An error occurred in the application.</string>
+  <string name="_Error_sending_email" context="checkout.payments.paymentSignature.notification.error && checkout.confirmation.notification.error">An error occurred sending email.</string>
+  <string name="_Ethernet" context="adminDashboard.devices.adyen.radio">Ethernet</string>
+  <string name="_EMV_Version__" context="adminDashboard.devices.verifone.msg">EMV Version: </string>
+  <string name="_Exit" context="kiosk.header.button">Exit</string>
+  <string name="_Expires_in__d_Day" context="hamburgermenu.msg">Expires in %d Day</string>
+  <string name="_Expires_in__d_Days" context="hamburgermenu.msg">Expires in %d Days</string>
+  <string name="_Failure_to_connect_to_host" context="salesReports.error">Failed to connect to host.</string>
+  <string name="_Failure_to_load_current_customer_product_lists_" context="model.customer.productlist.error.msg">Failure to load current customer product lists.</string>
+  <string name="_File_requested_does_not_exist_on_the_host" context="salesReports.error">Requested file does not exist on the host.</string>
+  <string name="_Filter" context="productGrid.header.select">Filter</string>
+  <string name="_Filter_Options" context="productGrid.header.select.title">Filter Options</string>
+  <string name="_Find_Customer" context="header.button">Find Customer</string>
+  <string name="_First_Name" context="customer.editProfile.field.hint.msg">First Name</string>
+  <string name="_First_Name__" context="customer.profile.msg">First Name: </string>
+  <string name="_First_Name_" context="customer.createCustomer.field.hint.msg">First Name*</string>
+  <string name="_Fixed_Price" context="checkout.priceOverride.radio">Fixed Price</string>
+  <string name="_Fixed_price_must_be_a_number" context="checkout.priceOverride.error">Fixed price must be a number.</string>
+  <string name="_Font_Size" context="epsonPrinter.label">Font Size</string>
+  <string name="_For_low_bandwidth_connections_disable_this_feature_" context="adminDashboard.appSettings.msg">For low bandwidth connections, disable this feature.</string>
+  <string name="_Forgot_Password" context="login.button">Forgot Password?</string>
+  <string name="_Framework_Revision__" context="adminDashboard.devices.msg">Framework Revision: </string>
+  <string name="_France" context="welcomeDialog.select">France</string>
+  <string name="_French" context="welcomeDialog.select">French</string>
+  <string name="_Free_Shipping_to_this_Store" context="checkout.shippingMethod.Label">Free Shipping to this Store</string>
+  <string name="_Free_Shipping_to_the_Store" context="checkout.shippingMethod.Label">Free Shipping to the Store</string>
+  <string name="_From" context="salesReports.custom.select">From</string>
+  <string name="_German" context="welcomeDialog.select">German</string>
+  <string name="_Germany" context="welcomeDialog.select">Germany</string>
+  <string name="_Gift_Card" context="epsonReceipt.info && checkout.payments.label">Gift Card</string>
+  <string name="_Gift_card_balance_" context="checkout.paments.dialog.msg">Gift Card Balance:</string>
+  <string name="_Gift_Message_" context="checkout.payments.msg">Gift Message:</string>
+  <string name="_Go_Back" context="different.store.pickup..shipping.form.button">Go Back</string>
+  <string name="_Hardware_Revision__" context="adminDashboard.devices.msg">Hardware Revision: </string>
+  <string name="_Hide_Details" context="Popover.Button">Hide Details</string>
+  <string name="_Hi___s" context="hamburgermenu.header.title">Hi, %s</string>
+  <string name="_History" context="customer.tabs">History</string>
+  <string name="_Home" context="analytics.msg">Home</string>
+  <string name="_Host__" context="adminDashboard.configuration.msg">Host: </string>
+  <string name="_Hostname" context="adminDashboard.devices.adyen.label">Hostname</string>
+  <string name="_How_would_you_like_to_receive_your_receipt_" context="checkout.confirmation.dialog.msg">How would you like to receive your receipt?</string>
+  <string name="_Identify_Payment_Device" context="adminDashboard.devices.adyen.msg">Identify Payment Device</string>
+  <string name="_Image_not_available" context="product.zoom.dialog.msg">Image not available</string>
+  <string name="_Image_Zoom_" context="adminDashboard.appSettings.label">Image Zoom:</string>
+  <string name="_In_Stock" context="productDetails.details.info">In Stock</string>
+  <string name="_Initializing___" context="adminDashboard.devices.adyen.msg">Initializing...</string>
+  <string name="_Initialized" context="adminDashboard.devices.adyen.msg">Initialized</string>
+  <string name="_Initializing_Application___" context="startup.notification.msg">Initializing application...</string>
+  <string name="_Invalid" context="adminDashboard.appSettings.select">Invalid</string>
+  <string name="_Invalid_Attribute_Combination" context="productDetails.details.info">Not available for this combination of selections.</string>
+  <string name="_Invalid_email_address" context="enterAddress.error">Invalid email address</string>
+  <string name="_Invalid_email_address_" context="checkout.address.enterAddress.error">Invalid email address.</string>
+  <string name="_Invalid_phone_number_" context="enterAddress.error">Invalid phone number.</string>
+  <string name="_Invalid_zip_code_" context="enterAddress.error">Invalid zip code.</string>
+  <string name="_Inventory" context="productDetails.tabs">Inventory</string>
+  <string name="_is_not_a_test_that_can_be_executed_" context="adminDashboard.test.notification.msg"> is not a test that can be executed.</string>
+  <string name="_Is_the_billing_address_the_same_as_the_shipping_address_" context="checkout.shippingAddress.dialog.msg">Is the billing address the same as the shipping address?</string>
+  <string name="_Is_the_billing_person_the_same_as_the_shipping_person_" context="checkout.billingAddress.dialog.msg">Is the billing person the same as the shipping person?</string>
+  <string name="_Is_this_a_gift_" context="checkout.shipMethods.Label">Is this a gift?</string>
+  <string name="_Italy" context="welcomeDialog.select">Italy</string>
+  <string name="_Item__" context="productDetails.details.msg && customer.order.msg && checkout.cart.msg">Item No. </string>
+  <string name="_Item___s__is_not_available_in_quantity__d_" context="checkout.cart.msg">Item '%s' is not available in quantity %d.</string>
+  <string name="_Item_added_to_the_cart" context="productDetails.details.notification.msg">Item added to the cart.</string>
+  <string name="_Item_could_not_be_added_to_the_cart" context="productDetails.details.notification.msg" >Item could not be added to the cart.</string>
+  <string name="_Item_could_not_be_replaced_in_the_cart" context="productDetails.details.notification.msg">Item could not be replaced in the cart.</string>
+  <string name="_Item_could_not_be_updated_in_the_cart" context="productDetails.details.notification.msg">Item could not be updated in the cart.</string>
+  <string name="_Item_Price_" context="checkout.cart.msg">Item Price:</string>
+  <string name="_Item_replaced_in_the_cart" context="productDetails.details.notification.msg">Item replaced in the cart.</string>
+  <string name="_Item_updated_in_the_cart" context="productDetails.details.notification.msg">Item updated in the cart.</string>
+  <string name="_Items_added_to_the_cart" context="productDetails.details.notification.msg">Items added to the cart.</string>
+  <string name="_Items_could_not_be_added_to_the_cart" context="productDetails.details.notification.msg">Items could not be added to the cart.</string>
+  <string name="_Items_could_not_be_replaced_in_the_cart" context="productDetails.details.notification.msg">Items could not be replaced in the cart.</string>
+  <string name="_Items_could_not_be_updated_in_the_cart" context="productDetails.details.notification.msg">Items could not be updated in the cart.</string>
+  <string name="_Items_replaced_in_the_cart" context="productDetails.details.notification.msg">Items replaced in the cart.</string>
+  <string name="_Items_Sold" context="salesReports.tabs">Items Sold</string>
+  <string name="_Items_updated_in_the_cart" context="productDetails.details.notification.msg">Items updated in the cart.</string>
+  <string name="_Japan" context="welcomeDialog.select">Japan</string>
+  <string name="_Japanese" context="welcomeDialog.select">Japanese</string>
+  <string name="_Kilometer" context="store.msg">kilometer</string>
+  <string name="_Kilometers" context="adminDashboard.appSettings.select">kilometers</string>
+  <string name="_Kiosk_Mode_" context="adminDashboard.appSettings.msg">Kiosk Mode:</string>
+  <string name="_Kiosk_Mode_Description_"  context="adminDashboard.appSettings.msg">Allows customers to shop on their own without associates (with limited functionality).</string>
+  <string name="_Language"  context="welcomeDialog.field.msg">Language: </string>
+  <string name="_Large"  context="adminDashboard.devices.epson.radio">Large</string>
+  <string name="_Last_100_lines_of_console_log"  context="adminDashboard.logs.heading">Last 100 Lines of Console Log</string>
+  <string name="_Last_5"  context="productDetails.inventory.Button">Last 5</string>
+  <string name="_Last_Name" context="customer.editProfile.field.hint.msg">Last Name</string>
+  <string name="_Last_Name__" context="customer.profile.msg">Last Name: </string>
+  <string name="_Last_Name_" context="customer.createCustomer.field.hint.msg">Last Name*</string>
+  <string name="_Light"  context="barcodeScanner.msg">Light</string>
+  <string name="_List_Price_"  context="checkout.cart.msg">List Price:</string>
+  <string name="_List_Price_Book__" context="adminDashboard.label">List Price Book: </string>
+  <string name="_Load_Configuration" context="adminDashboard.devices.adyen.msg">Load configuration</string>
+  <string name="_Loading_Countries___" context="startup.notification.msg">Loading countries...</string>
+  <string name="_Locale__" context="adminDashboard.configuration.msg">Locale: </string>
+  <string name="_Locale_URL__" context="adminDashboard.configuration.msg">Locale URL: </string>
+  <string name="_Loggable_Categories" context="adminDashboard.logs.Label">Loggable Categories</string>
+  <string name="_Logging_In___" context="adminDashboard.devices.adyen.info">Logging in...</string>
+  <string name="_Logging_in_____d_complete___Please_wait_" context="adminDashboard.devices.adyen.info">Logging in... %d complete. Please wait.</string>
+  <string name="_Logging_In" context="adminDashboard.devices.adyen.msg">Logging In</string>
+  <string name="_Logged_In" context="adminDashboard.devices.adyen.msg">Logged In</string>
+  <string name="_Login" context="login.button">Login</string>
+  <string name="_Login__" context="customer.customerDetails.msg">Login: </string>
+  <string name="_Login_attempt_failed__Re_enter_your_ID_and_password_" context="login.error">Login attempt failed. Please re-enter your ID and password.</string>
+  <string name="_Login_and_Shop_For_Customer" context="customer.createCustomer.check">Login and Shop For Customer</string>
+  <string name="_Login_failed_with_an_error_" context="adminDashboard.devices.adyen.error">Login failed with an error: </string>
+  <string name="_Login_Successful" context="kiosk.login.notification.msg">Login Successful</string>
+  <string name="_Login_successful___Loading_Adyen_information_" context="kiosk.login.notification.msg">Login successful. Loading Adyen information...</string>
+  <string name="_LoginAlreadyInUseException" context="createCustomer.error.msg">The login name is already in use.</string>
+  <string name="_Logout" context="adminDashboard.devices.adyen.Button">Log Out</string>
+  <string name="_Logout_Associate" context="header.select">Log Out Associate</string>
+  <string name="_Logout_Customer" context="header.button && hamburgermenu.button">Log Out Customer</string>
+  <string name="_Logout_Now" context="adminDashboard.appSettings.dialog.Button">Log Out Now</string>
+  <string name="_Logout_Required" context="adminDashboard.appSettings.dialog.title">Logout Required</string>
+  <string name="_Logout_Required_Text" context="adminDashboard.appSettings.dialog.Button">A change you made requires logging out of the app to take effect.</string>
+  <string name="_Logout_Successful" context="adminDashboard.devices.adyen.notification.msg">Logout Successful</string>
+  <string name="_Logs" context="adminDashboard.tabs">Logs</string>
+  <string name="_Make_Preferred_Address" context="customer.address.enterAddress.radio.msg">Make Preferred Address</string>
+  <string name="_Manager_Approval_" context="checkout.cart.dialog.msg">Manager Approval:</string>
+  <string name="_Manager_Authorization" context="checkout.cart.dialog.title">Manager Authorization</string>
+  <string name="_Manager_Credentials_Accepted" context="welcomeDialog.kiosk.credential.manageracceptmsg">Manager Credentials Accepted</string>
+  <string name="_Manager_ID" context="checkout.cart.dialog.field.hint.msg">Manager ID</string>
+  <string name="_Manual_Entry" context="adminDashboard.devices.Button">Manual Entry</string>
+  <string name="_Manual_Entry__on_" context="checkout.cart.payments.button">Manual Entry (on)</string>
+  <string name="_Manufacturer__" context="adminDashboard.devices.msg">Manufacturer: </string>
+  <string name="_Maximum_range_of_90_days_allowed_" context="salesReports.Custom.error">Maximum range of 90 days allowed.</string>
+  <string name="_Merchant_Account_" context="adminDashboard.devices.adyen.msg">Merchant Account:</string>
+  <string name="_Merchant_Account__" context="adminDashboard.devices.adyen.msg">Merchant Account: </string>
+  <string name="_Message__" context="errorPopover.field">Message: </string>
+  <string name="_Message__optional_" context="address.form.textarea.title">Message (optional)</string>
+  <string name="_Method_" context="checkout.shipping.shippingDetails.msg">Method:</string>
+  <string name="_Method___" context="checkout.shipping.shippingDetails.msg">Method:  </string>
+  <string name="_Mile" context="store.msg">mile</string>
+  <string name="_Miles" context="adminDashboard.appSettings.select">miles</string>
+  <string name="_Missing_Phone_Number" context="addressVerification.dialog.error">Missing Phone Number</string>
+  <string name="_Model_Tests" context="adminDashboard.tests.header">Model Tests</string>
+  <string name="_Model_Number__" context="adminDashboard.devices.msg">Model Number: </string>
+  <string name="_Modify_Address" context="address.editAddress.title">Modify Address</string>
+  <string name="_Month" context="salesReports.tabs">Month</string>
+  <string name="_My_Store"  context="salesReports.sideMenu.button">My Store</string>
+  <string name="_n_a" context="productDetails.info">n/a</string>
+  <string name="_Network_detected" context="startup.notification.info">Network detected.</string>
+  <string name="_Network_is_unavailable" context="notification.error">Network is unavailable.</string>
+  <string name="_Network_is_now_available" context="notification.info">Network is now available.</string>
+  <string name="_Network_offline" context="startup.notification.info">Network offline.</string>
+  <string name="_Never" context="customer.info">Never</string>
+  <string name="_New_password_cannot_be_the_same_as_current_password" context="storePassword.dialog.error">New password cannot be the same as current password.</string>
+  <string name="_New_Price" context="checkout.cart.override.msg">New Price</string>
+  <string name="_Next" context="checkout.address.chooseShipping.button && checkout.address.enterShipping.button">Next</string>
+  <string name="_Next_5" context="productDetails.inventory.link">Next 5</string>
+  <string name="_Nickname" context="checkout.address.enterAddress.field.hint && customer.address.field.hint">Nickname</string>
+  <string name="_No" context="checkout.billingSame.dialog.button">No</string>
+  <string name="_No_Connection_To_Payment_Device" context="checkout.payments.noPaymentTerminal.title">No Connection to Payment Device</string>
+  <string name="_No_Connection_To_Payment_Device_Message_Adyen" context="checkout.payments.noPaymentTerminal.info">No connected payment device was found. Please be sure that your payment device is on, connected, and ready. The device should display the Adyen logo, date and time, battery level, and bluetooth icon. If nothing is displayed on the payment device screen, it may be asleep. Press the checkmark button to wake the device.</string>
+  <string name="_No_Connection_To_Payment_Device_Message_Verifone" context="checkout.payments.noPaymentTerminal.info">No connected payment device was found. Please be sure that your payment device is on, connected, and ready. If nothing is displayed on the payment device screen, it may not be powered on.</string>
+  <string name="_No_device_configuration_found_in_config_json_for_device_type_" context="adminDashboard.devices.notification.error">No device configuration found in config.json for device type:</string>
+  <string name="_No_device_type_defined__Unable_to_render_view_for_support_dashboard_" context="adminDashboard.devices.notification.error">No device type defined. Unable to render view for support dashboard.</string>
+  <string name="_No_results_found_Try_a_new_search_or_click_the_home_button_to_browse_catalog" context="productSearch.info">No results found.\nTry a new search or tap the Home button to browse the catalog.</string>
+  <string name="_No_results_found_for___s__Try_a_new_search_or_click_the_home_button_to_browse_catalog" context="productSearch.info">No results found for '%s'.\nTry a new search or tap the Home button to browse the catalog.</string>
+  <string name="_No_Digital_Stores_found_" context="startup.info">No Digital Stores found.</string>
+  <string name="_No_more_stores_available" context="different.store.pickup.search.msg">No more stores available.</string>
+  <string name="_No_stores_found" context="different.store.pickup.search.msg">No stores found</string>
+  <string name="_No_tests_have_been_run" context="adminDashboard.test.info">No tests have been run.</string>
+  <string name="_None" context="checkout.overrides.radio">None</string>
+  <string name="_Not_Boarded" context="adminDashboard.devices.adyen.info">Not Boarded</string>
+  <string name="_Not_Applied" context="checkout.summary.info">Not Applied</string>
+  <string name="_Not_Implemented_Yet_" context="adminDashboard.logs.notification.info">Not Implemented Yet!</string>
+  <string name="_Not_selected" context="adminDashboard.devices.adyen.info">Not selected</string>
+  <string name="_No_Value" context="text.msg">---</string>
+  <string name="_OCAPI_Settings_" context="adminDashboard.configuration.msg">OCAPI Settings:</string>
+  <string name="_OK" context="button">OK</string>
+  <string name="_Only__d_left_in_stock" context="checkout.storePickup.unavailableItem.msg">Only %d left in stock</string>
+  <string name="_Option_Price_" context="checkout.cart.msg">Option Price:</string>
+  <string name="_Order_created__Payment_pending" context="customer.order.msg">Order created, payment pending</string>
+  <string name="_Order_Date__" context="customer.history.msg">Order Date: </string>
+  <string name="_Order_Details" context="customer.order.heading">Order Details</string>
+  <string name="_Order_Discount_" context="epsonReceipt.msg">Order Discount:</string>
+  <string name="_ORDER_LOCATOR_CODE" context="epsonReceipt.title">Order Locator Code</string>
+  <string name="_Order_No_" context="checkout.payments.paymentSignature.msg">Order No:</string>
+  <string name="_Order_Number_" context="customer.history.msg">Order Number:</string>
+  <string name="_Order_Number__" context="customer.order.msg">Order Number: </string>
+  <string name="_Order_Search_Button" context="hamburgermenu.button">Order Search</string>
+  <string name="_Order_Search" context="order.search.page.title">Order Search</string>
+  <string name="_Order_Status_" context="customer.history.msg">Order Status:</string>
+  <string name="_Order_Summary" context="checkout.summary.heading && customer.order.summary.heading">Order Summary</string>
+  <string name="_ORDER_SUMMARY" context="epsonReceipt.title">Order Summary</string>
+  <string name="_Order_Total" context="checkout.summary.msg">Order Total</string>
+  <string name="_Order_Total_" context="customer.history.msg && epsonReceipt.msg">Order Total:</string>
+  <string name="_Orders_Tab" context="search.tab">Orders</string>
+  <string name="_Other" context="enterAddress.select">Other</string>
+  <string name="_Other_Views_" context="productDetails.imageZoom.heading">Other Views:</string>
+  <string name="_Override" context="checkout.cart.button">Override</string>
+  <string name="_Override_" context="checkout.cart.msg">Override:</string>
+  <string name="_Out_of_stock" context="checkout.storePickup.unavailableItem.msg">Out of stock</string>
+  <string name="_Page_timeout_occured" context="salesReport.error">Page timed out.</string>
+  <string name="_Password" context="login.field.hint">Password</string>
+  <string name="_Password_" context="adminDashboard.devices.adyen.label">Password:</string>
+  <string name="_Password_does_not_meet_minimum_criteria" context="login.error">Password does not meet minimum criteria.</string>
+  <string name="_Password_Successfully_Changed" context="login.msg">Password Successfully Changed</string>
+  <string name="_Passwords_do_not_match" context="dialog.error">Passwords do not match.</string>
+  <string name="_Pay_for_this_transaction_through_the_web" context="checkout.payments.dialog.msg">Pay for this transaction through the web. To cancel the order, tap the "Cancel Order" button.</string>
+  <string name="_Pay_Now" context="checkout.payments.button">Pay Now</string>
+  <string name="_Pay_Through_Web" context="checkout.payments.dialog.title && analytics.msg">Pay Through Web</string>
+  <string name="_Pay_with_one_card" context="checkout.payments.tabs">Pay with One Card</string>
+  <string name="_Pay_with_multiple_cards" context="checkout.payments.tabs">Pay with Multiple Cards</string>
+  <string name="_Payment" context="customer.order.summary.heading">Payment</string>
+  <string name="_Payment_Approved" context="checkout.payments.message">Payment has been successfully approved.</string>
+  <string name="_Payment_Declined" context="checkout.payments.title">Payment Declined</string>
+  <string name="_Payment_Error" context="checkout.payments.title">Payment Error</string>
+  <string name="_PAYMENT_DETAILS" context="epsonReceipt.title">Payment Details</string>
+  <string name="_Payment_Device_Already_Registered__" context="adminDashboard.devices.adyen.notification.msg">Payment Device Already Registered: </string>
+  <string name="_Payment_Device_Connected" context="header.notification.info">Payment device is connected.</string>
+  <string name="_Payment_has_been_accepted_and_your_order_is_complete_" context="checkout.payments.paymentSignature.msg">Payment has been accepted and your order is complete.</string>
+  <string name="_Payment_Status" context="checkou.payments.title">Payment Status</string>
+  <string name="_Payment_Terminal" context="checkout.payments.noPaymentTerminal.dialog.title">Payment Terminal</string>
+  <string name="_Payment_Terminal_Tab" context="adminDashboard.tabs">Payment Terminal</string>
+  <string name="_Payment_Terminal_Info_Message" context="checkout.payments.msg">Tap "Pay Now" before swiping, inserting card, or accepting a contactless payment.</string>
+  <string name="_Payment_transaction_cancelled_" context="checkout.confirmation.notification.msg">Payment transaction cancelled.</string>
+  <string name="_Payment_transaction_not_finalized_" context="checkout.payments.notification.error">Payment transaction not finalized.</string>
+  <string name="_Payment_was_already_approved" context="checkout.payments.transactionComplete.msg">The payment was already approved.</string>
+  <string name="_Payments" context="checkout.tabs">Payments</string>
+  <string name="_Payments_Heading" context="checkout.paymentSummary.heading">Payments</string>
+  <string name="_Payments_could_not_be_authorized" context="checkout.payments.notification.error">Payments could not be authorized</string>
+  <string name="_Percentage_Off" context="checkout.cart.productPriceOverrides.label">Percentage Off</string>
+  <string name="_Percentage_off_cannot_be_greater_than" context="checkout.cart.productPriceOverrides.error">Percentage off cannot be greater than %d%.</string>
+  <string name="_Percentage_off_cannot_be_greater_than_100_" context="checkout.cart.productPriceOverrides.error">Percentage off cannot be greater than 100%.</string>
+  <string name="_Percentage_off_must_be_a_number" context="checkout.cart.productPriceOverrides.error">Percentage off must be a number.</string>
+  <string name="_Perpetual_Stock" context="productDetails.inventory.msg">In Stock</string>
+  <string name="_Phone_" context="checkout.address.dialog.field.hint && enterAddress.field.hint">Phone*</string>
+  <string name="_Please_add_the_address_configuration_for_the__s_in_addressConfig_js" context="startup.dialog.error">Please add the address config for the '%s' in addressConfig.js.</string>
+  <string name="_Please_add_the_currency_configuration_for_the___s__in_currencyConfig" context="startup.dialog.error">Please add the currency configuration for the '%s' in currencyConfig.</string>
+  <string name="_Please_approve_this_signature_to_complete_the_transaction" context="checkout.confirmation.dialog.msg">Please approve this signature to complete the transaction.</string>
+  <string name="_Please_contact_your_manager_or_support_" context="salesReports.error">Please contact your manager or Support.</string>
+  <string name="_Please_help_us_resolve_the_problem_by_telling_us_what_you_were_doing_" context="errorPopover.dialog.msg">Please help us resolve the problem by telling us what you were doing.</string>
+  <string name="_Please_enter_a_number_greater_than_0" context="checkout.cart.productPriceOverride.error">Please enter a number greater than 0.</string>
+  <string name="_Please_enter_a_valid_email_address_" context="checkout.createAccount.error">Please enter a valid email address.</string>
+  <string name="_Please_fill_in_all_the_required_fields_" context="customer.editProfile.notification.error">Please fill in all the required fields.</string>
+  <string name="_Please_process_payment_through_the_payment_terminal_" context="checkout.payment.paymentTerminal.msg">Please process payment through the payment terminal.</string>
+  <string name="_Please_provide_a_first_name_" context="customer.profile.error">Please provide a first name.</string>
+  <string name="_Please_provide_a_last_name_" context="customer.profile.error">Please provide a last name.</string>
+  <string name="_Please_provide_a_valid_phone_number_" context="checkout.address.dialog.msg">Please provide a valid phone number.</string>
+  <string name="_Please_provide_your_signature_to_complete_your_transaction" context="checkout.payments.paymentSignature.msg">Please provide your signature to complete your transaction.</string>
+  <string name="_Please_reload" context="salesReports.notification.error">Please reload the report.</string>
+  <string name="_Please_try_the_transaction_again___s" context="checkout.payments.adyen.error">Please try the transaction again. %s</string>
+  <string name="_Please_try_again_in_a_few_minutes_" context="salesReports.notification.error">Please try again in a few minutes.</string>
+  <string name="_Possible_Statuses" context="adminDashboard.devices.adyen.msg">Possible Statuses</string>
+  <string name="_Postal_Code_" context="enterAddress.field.hint.msg">Postal Code*</string>
+  <string name="_Pre_Order" context="productDetails.details.msg">Pre-Order</string>
+  <string name="_Pre_Settling" context="adminDashboard.devices.adyen.msg">Pre-Settling</string>
+  <string name="_Post_Settling" context="adminDashboard.devices.adyen.msg">Post-Settling</string>
+  <string name="_Previous" context="keyboard.toolbar.button">Previous</string>
+  <string name="_Price" context="checkout.cart.productPriceOverrides.dialog.label">Price</string>
+  <string name="_Price_book_mapping_missing_from_Endless_Aisle_Preferences_for_the_value___s__" context="startup.dialog.error">Price book mapping missing from Endless Aisle Preferences for the value '%s'.</string>
+  <string name="_Price_Override" context="checkout.shippingMethod.button">Price Override</string>
+  <string name="_Price_Override_" context="epsonReceipt.msg">Price Override:</string>
+  <string name="_Price_Override_Pct_Off" context="epsonReceipt.info">off</string>
+  <string name="_Price_Overrides" context="checkout.cart.productPriceAdustments.dialog.title">Price Overrides</string>
+  <string name="_Print" context="checkout.printerChooser.dialog.button && checkout.payments.paymentSignature.dialog.button">Print</string>
+  <string name="_Print_Receipt" context="checkout.confirmation.button">Print Receipt</string>
+  <string name="_Printer_" context="checkout.printerChooser.dialog.label">Printer:</string>
+  <string name="_Printer_Language" context="adminDashboard.devices.epson.heading">Printer Language</string>
+  <string name="_Printing_Receipt___" context="epsonReceipt.notification.info">Printing receipt...</string>
+  <string name="_Product_Categories" context="productGrid.header.categoryRefinementPanel.title">Product Categories</string>
+  <string name="_Product_Detail" context="analytics.msg">Product Detail</string>
+  <string name="_Product_Rating_" context="productDetails.details.label">Product Rating:</string>
+  <string name="_Product_Search" context="analytics.msg">Product Search</string>
+  <string name="_Search_Button" context="header.button && hamburgermenu.button">Product Search</string>
+  <string name="_Product_View" context="analytics.msg">Product View</string>
+  <string name="_PRODUCT_SUMMARY" context="epsonReceipt.title">Product Summary</string>
+  <string name="_Products" context="analytics.msg && productGrid.header.msg">Products</string>
+  <string name="_Products_Tab" context="search.tab">Products</string>
+  <string name="_Profile" context="customerSearch.button">Profile</string>
+  <string name="_Profile_Tab" context="customer.tabs">Profile</string>
+  <string name="_Provide_a_phone_number_for_the_billing_address_" context="checkout.address.dialog.msg">Provide a phone number for the billing address.</string>
+  <string name="_Provide_a_phone_number_for_the_shipping_address_" context="checkout.address.dialog.msg">Please provide a phone number for the shipping address.</string>
+  <string name="_Provide_a_phone_number_for_this_order__customer_s_phone_number_shown__" context="checkout.address.dialog.msg">Please provide a phone number for this order (customer's phone number shown).</string>
+  <string name="_Provide_a_phone_number_for_this_order__store_phone_number_shown__" context="checkout.address.dialog.msg">Please provide a phone number for this order (store phone number shown).</string>
+  <string name="_Provide_country_first_" context="enterAddress.error">Provide country first.</string>
+  <string name="_Purchased_Quantity___d" context="checkout.cart.label">Purchased Quantity: %d</string>
+  <string name="_Quantity_" context="checkout.cart.msg && customer.order.msg && productDetails.details.label">Quantity:</string>
+  <string name="_Quarter" context="salesReports.tabs">Quarter</string>
+  <string name="_Quick_Stats" context="salesReports.heading">Quick Stats</string>
+  <string name="_Ranks" context="salesReports.tabs">Ranks</string>
+  <string name="_Receipt_Printer" context="adminDashboard.tabs">Receipt Printer</string>
+  <string name="_receipt_promotional_message" context="epsonPrinter.info">Thank you for shopping with us!</string>
+  <string name="_Reason__" context="startup.dialog.label">Reason: </string>
+  <string name="_Reason_Code__" context="checkout.payments.dialog.label">Reason Code: </string>
+  <string name="_Recommendations" context="productDetails.tabs">Recommendations</string>
+  <string name="_Recommendations_For_You" context="productDetails.recommendations.heading">Recommendations For You</string>
+  <string name="_Recommended_Address" context="addressVerification.heading">Recommended Address</string>
+  <string name="_Register_Payment_Device" context="adminDashboard.devices.adyen.info">Register Payment Device</string>
+  <string name="_Registart" context="adminDashboard.devices.verifone.button">Registart</string>
+  <string name="_Registart_Heading" context="adminDashboard.devices.verifone.heading">Registart</string>
+  <string name="_Registart_is_necessary_to_initiate_VSP_encryption_between_server_and_client_" context="adminDashboard.devices.verifone.info">Registart is necessary to initiate VSP encryption between server and client.</string>
+  <string name="_Reload_Console" context="adminDashboard.logs.button">Reload Console</string>
+  <string name="_Remaining_gift_card_balance_" context="checkout.payments.gcBalanceDetails.dialog.label">Remaining Gift Card Balance:</string>
+  <string name="_Remove" context="checkout.cart.productPriceAdjustments.button && checkout.shippingMethod.shippingOverrides.button">Remove</string>
+  <string name="_RemoveAllEthernetDevices" context="adminDashboard.devices.adyen.button">Remove All Ethernet Devices</string>
+  <string name="_Removed_All_Payment_Devices" context="adminDashboard.devices.adyen.notification.info">Removed All Payment Devices</string>
+  <string name="_Repeat_New_Password" context="field.hint.msg">Repeat New Password</string>
+  <string name="_Replace_in_Cart" context="productDetails.details.button">Replace in Cart</string>
+  <string name="_Replace_in_Wish_List" context="productDetails.details.link">Replace in Wish List</string>
+  <string name="_RequiredSymbol" context="adminDashboard.appSettings.info">*</string>
+  <string name="_Reset_Password" context="login.button">Reset Password</string>
+  <string name="_Reset_Session" context="header.dialog.title">Reset Session</string>
+  <string name="_Reset_Session_Message" context="header.dialog.msg">Are you sure you want to end this shopping session?</string>
+  <string name="_Restart_App" context="startup.dialog.button">Restart App</string>
+  <string name="_Retry" context="startup.dialog.button">Retry</string>
+  <string name="_Retrying_attempt_to_complete_order" context="checkout.payment.paymentTerminal.msg">Retrying to complete the order.</string>
+  <string name="_Return_to_Shopping" context="customer.button">Return to Shopping</string>
+  <string name="_Return_Value_" context="epsonReceipt.msg">Return Value:</string>
+  <string name="_Sales" context="reports.tabs">Sales</string>
+  <string name="_Sales_Dashboard" context="hamburgermenu.button">Sales Dashboard</string>
+  <string name="_Sale_Price_" context="checkout.cart.label">Sale Price:</string>
+  <string name="_Sale_Price_Book__" context="adminDashboard.label">Sale Price Book: </string>
+  <string name="_Sales_Report_Dashboard_" context="reports.title">Sales Report Dashboard (%s)</string>
+  <string name="_Sales_Tax" context="checkout.orderTotalSummary.label">Sales Tax</string>
+  <string name="_Sales_Tax_" context="epsonReceipt.msg && checkout.orderSummary.msg">Sales Tax:</string>
+  <string name="_Same_Address" context="checkout.dialog.title">Same Address</string>
+  <string name="_Same_Person" context="checkout.billing.dialog.title">Same Person</string>
+  <string name="_Save" context="customer.address.button">Save</string>
+  <string name="_Save_Address_to_Profile" context="checkout.address.enterShippingAddress.check">Save Address to Profile</string>
+  <string name="_Save_for_Later" context="checkout.cart.button">Save for Later</string>
+  <string name="_Save_Shipping_Address" context="checkout.createAccount.select">Save Shipping Address</string>
+  <string name="_Saved_Items__0" context="checkout.cart.tabs">Saved Items: 0</string>
+  <string name="_Saved_Items___d" context="checkout.cart.tabs">Saved Items: %d</string>
+  <string name="_Scan_for_Devices" context="checkout.payments.noPaymentTerminal.button">Scan for Devices</string>
+  <string name="_Search" context="analytics.msg">Search</string>
+  <string name="_Search_Distance_" context="adminDashboard.appSettings.label">Search Distance:</string>
+  <string name="_Search_Products" context="header.field">Search Products</string>
+  <string name="_Search_Results" context="productGrid.categoryRefinementPanel.heading">Search Results</string>
+  <string name="_Search_stores_by_zip_code_below" context="different.store.pickup.search.msg">Search stores by zip code below</string>
+  <string name="_Select__s" context="productDetails.details.select">Select %s</string>
+  <string name="_Select_a_variation_first" context="productDetails.notification.info">Please select a variation first.</string>
+  <string name="_Select_Country" context="startup.dialog.msg">Select Country</string>
+  <string name="_Select_Country_and_Language" context="login.dialog.title">Select Country and Language</string>
+  <string name="_Select_Language" context="startup.dialog.msg">Select Language</string>
+  <string name="_Select_Option" context="adminDashboard.appSettings.select">Select Option</string>
+  <string name="_Select_Store_ID" context="startup.dialog.select">Select Store ID</string>
+  <string name="_Select_Store_ID_to_connect_to_and_then_retry_" context="startup.dialog.info">Select store ID to connect to and then retry.</string>
+  <string name="_Select_Wish_List" context="checkout.cart.wishList.select">Select Wish List</string>
+  <string name="_Selecting_Create_Order_will_reserve_your_inventory" context="checkout.shipMethod.info">Selecting "Create Order" will reserve your inventory.</string>
+  <string name="_Selecting_the_device_pairs_the_device_with_the_EA_application__If_the_device_status_does_not_change_to__Initializing__when_the_device_is_selected__suspend___resume_the_device_" context="adminDashboard.devices.adyen.info">Selecting the device pairs the device with the Endless Aisle application. If the device status does not change to "Initializing" when the device is selected, suspend and resume the device.</string>
+  <string name="_Send" context="checkout.cart.emailCollectorDialog.button">Send</string>
+  <string name="_Send_Log_Via_Email" context="adminDashboard.logs.button">Email Log</string>
+  <string name="_Sending_console_logs_to_server" context="adminDashboard.logs.notification.info">Sending console logs to server...</string>
+  <string name="_Serial_Number__"  context="adminDashboard.devices.verifone.label">Serial Number: </string>
+  <string name="_Server_call_failed__Please_try_again_" context="notification.error">Server call failed. Please try again.</string>
+  <string name="_Server_Version__" context="adminDashboard.buildInfo.label">Server Version: </string>
+  <string name="_Server_Supported_Version__" context="adminDashboard.buildInfo.label">Server Supported Client Version: </string>
+  <string name="_Server_Supported_Versions__" context="adminDashboard.buildInfo.label">Server Supported Client Versions: </string>
+  <string name="_Session_Timeout_" context="adminDashboard.appSettings.label">Session Timeout:</string>
+  <string name="_Settings_related_to_Store_Inventory_" context="adminDashboard.appSettings.description">Settings related to store inventory on product details "Inventory" tab.</string>
+  <string name="_Ship_Methods" context="checkout.tabs">Ship Methods</string>
+  <string name="_Ship_to_address" context="checkout.address.chooseShippingAddress.label">Ship to address</string>
+  <string name="_Ship_here" context="checkout.address.chooseShippingAddress.label">Ship here</string>
+  <string name="_Shipping" context="checkout.tabs">Shipping</string>
+  <string name="_Shipping_" context="customer.order.summary.msg">Shipping:</string>
+  <string name="_Shipping_Address" context="analytics.msg">Shipping Address</string>
+  <string name="_Shipping_Details" context="checkout.shippingSummary.heading && customer.order.summary.heading">Shipping Details</string>
+  <string name="_SHIPPING_DETAILS" context="epsonReceipt.title">Shipping Details</string>
+  <string name="_Shipping_Discount" context="checkout.orderTotalSummary.label">Shipping Discount</string>
+  <string name="_Shipping_Discount_" context="customer.order.summary.msg">Shipping Discount:</string>
+  <string name="_Shipping_Method_" context="epsonReceipt.msg">Shipping Method:</string>
+  <string name="_Shipping_Methods" context="analytics.msg">Shipping Methods</string>
+  <string name="_Shipping_Method_Error" context="checkout.different.store.pickup.title">Shipping Method Error</string>
+  <string name="_Shipping_Overrides" context="checkout.shippingMethod.shippingOverrides.info">Shipping Overrides</string>
+  <string name="_Shop_For" context="customerSearch.button">Shop For</string>
+  <string name="_Show_Details" context="errorPopover.button">Show Details</string>
+  <string name="_Signature" context="checkout.payments.paymentSignature.title">Signature</string>
+  <string name="_Simulate_Payments_" context="adminDashboard.appSettings.label">Simulate Payments:</string>
+  <string name="_Site_URL__" context="adminDashboard.configuration.msg">Site URL: </string>
+  <string name="_Skip" context="checkout.createAccount.button">Skip</string>
+  <string name="_Small" context="adminDashboard.devices.epson.radio">Small</string>
+  <string name="_Sorry__you_don_t_have_permissions_for_this_request" context="adminDashboard.error">Sorry, you don't have permissions for this request.</string>
+  <string name="_Sorting_Options" context="productGrid.header.sortOptionsPanel.header">Sorting Options</string>
+  <string name="_Starting_test_execution__" context="adminDashboard.test.notification.info">Starting test execution: </string>
+  <string name="_State_" context="enterAddress.field">State*</string>
+  <string name="_Status__" context="customer.order.msg">Status: </string>
+  <string name="_Step_1__Configuration" context="adminDashboard.devices.adyen.description">Step 1: Configuration</string>
+  <string name="_Step_2__Login_to_Adyen_Portal" context="adminDashboard.devices.adyen.description">Step 2: Login to Adyen Portal</string>
+  <string name="_Step_3__Select_Device_" context="adminDashboard.devices.adyen.description">Step 3: Select Device and Board</string>
+  <string name="_Stopped" context="adminDashboard.devices.adyen.info">Stopped</string>
+  <string name="_Stopped__Device_not_paired_with_App_Initializing__Device_paired_with_App__awaiting_login_Not_Boarded__App_logged_into_adyen__device_not_registered_Initialized__Ready_for_Use" context="adminDashboard.devices.adyen.description">Stopped: Device not paired with app.\nInitializing: Device paired with app; awaiting login.\nNot boarded: app logged into Adyen; device not registered.\nDisconnected: Device registered; not reachable.\nInitialized: Ready for use.</string>
+  <string name="_Store" context="analytics.msg">Store</string>
+  <string name="_Store_password_incorrect" context="appStartup.errorDialog.title">Store Password Incorrect</string>
+  <string name="_Store_password_has_been_changed_successfully_" context="notify.msg">Store password has been changed successfully.</string>
+  <string name="_Store_pickup_shipping_methods_have_not_been_configured" context="checkout.different.store.pickup.error">Store pickup shipping methods have not been configured on server.</string>
+  <string name="_Stores" context="salesReports.tabs">Stores</string>
+  <string name="_Store_ID_" context="adminDashboard.appSettings.label && welcomeDialog.label && epsonReceipt.msg">Store ID:</string>
+  <string name="_STORE_INVENTORY" context="adminDashboard.appSettings.heading">Store Inventory</string>
+  <string name="_Store_Configuration" context="adminDashboard.devices.adyen.info">Store Configuration</string>
+  <string name="_Pick_up_elsewhere" context="checkout.address.chooseShippingAddress.label">Pick up elsewhere</string>
+  <string name="_Storefront_Settings_" context="adminDashboard.configuration.label">Storefront Settings:</string>
+  <string name="_Subcategories_of" context="productGrid.header.categoryRefinement.header">Subcategories of</string>
+  <string name="_Subnet" context="adminDashboard.devices.epson.heading">Subnet</string>
+  <string name="_Subtotal" context="checkout.orderTotalSummary.info">Subtotal</string>
+  <string name="_Subtotal_" context="epsonReceipt.msg && customer.order.summary.msg">Subtotal:</string>
+  <string name="_Success" context="login.info">Success</string>
+  <string name="_Supported_Currencies__" context="adminDashboard.devices.adyen.msg">Supported Currencies: </string>
+  <string name="_Supported_Payment_Methods__" context="adminDashboard.devices.adyen.msg">Supported Payment Methods: </string>
+  <string name="_Surcharge" context="checkout.cart.productPriceOverrides.info">Surcharge</string>
+  <string name="_Swipe_Card" context="adminDashboard.devices.verifone.button">Swipe Card</string>
+  <string name="_Test" context="adminDashboard.test.button">Test</string>
+  <string name="_Test_Tab" context="adminDashboard.tabs">Test</string>
+  <string name="_Test_currently_in_progress" context="adminDashboard.tests.info">Test currently in progress</string>
+  <string name="_Test_Payment_Device_Connection" context="checkout.payments.noPaymentTerminal.button">Test Connection</string>
+  <string name="_Testing_Results_" context="adminDashboard.tests.info">Test Results:</string>
+  <string name="_TestsText" context="adminDashboard.tests.info">Model tests will test connectivity to the Demandware platform. Select a model test to execute it.</string>
+  <string name="_Thank_You_" context="checkout.payments.paymentSignature.info">Thank you!</string>
+  <string name="_The_amount_of_time_before_the_application_logs_out_the_associate_" context="adminDashboard.appSettings.description">The amount of time before the associate is logged out by the app.</string>
+  <string name="_The_associate_ID_is_required" context="login.error">The associate ID is required.</string>
+  <string name="_The_client_credentials_are_not_set_up_correctly__Please_contact_your_admininstrator_to_fix_this_problem_" context="appstartup.error.msg">The client credentials are not set up correctly. Please contact your admininstrator to fix this problem.</string>
+  <string name="_The_current_customer_needs_to_be_logged_out_before_creating_a_new_one__Tap_on__Continue__to_logout_the_customer_and_create_a_new_customer_" context="hamburgermenu.createCustomer.alert.dialog.msg">The current customer needs to be logged out before you can create a new one. Tap on "Continue" to log out the customer and create a new customer.</string>
+  <string name="_The_current_user_password_is_invalid_" context="storepassword.error">The current user password is invalid.</string>
+  <string name="_The_customer_needs_to_be_logged_out_before_you_can_continue__Please_try_again_" context="notify.error">The customer needs to be logged out before you can continue. Please try again.</string>
+  <string name="_The_expected_in_stock_date_is__s_" context="productDetails.details.info">The expected in-stock date is %s.</string>
+  <string name="_The_Gift_Card_is_not_recognized_by_the_gift_card_processor__Please_try_again_or_choose_a_different_payment_method_" context="checkout.payments.error">The gift card is not recognized by the gift card processor. Please try again or choose a different payment method.</string>
+  <string name="_The_manager_ID_and_Password_are_required" context="login.error">The manager ID and password are required.</string>
+  <string name="_The_password_for_the_store_is_incorrect__Please_contact_your_admininstrator_to_fix_this_problem_" context="appstartup.error.msg">Either the password for the store is incorrect or the client ID is not configured correctly. Please contact your admininstrator to fix this problem.</string>
+  <string name="_The_password_was_recently_used_and_is_not_valid_for_reuse_" context="storepassword.error">The password was recently used and is not valid for reuse.</string>
+  <string name="_The_provided_new_password_does_not_meet_the_acceptance_criteria_" context="storepassword.error">The provided new password does not meet the acceptance criteria.</string>
+  <string name="_The_order_needs_to_be_cancelled_before_you_can_continue__Please_try_again_" context="confirmation.dialog.error">The order needs to be cancelled before you can continue. Please try again.</string>
+  <string name="_The_remaining_items_are_available_for_pre_order_" context="productDetails.details.info">The remaining items are available for pre-order.</string>
+  <string name="_The_remaining_items_are_available_on_back_order_" context="productDetails.details.info">The remaining items are available on back order.</string>
+  <string name="_The_remaining_items_are_currently_not_available__Please_adjust_the_quantity_" context="productDetails.details.info">The remaining items are currently not available. Please adjust the quantity.</string>
+  <string name="_The_request_timed_out_" context="confirmation.dialog.title">Request Timed Out</string>
+  <string name="_The_sales_report_failed_to_load__The_following_error_was_returned_from_the_server_" context="salesReports.error">The sales report failed to load. The following error was returned from the server.</string>
+  <string name="_The_store_id_to_connect_to_at_startup_" context="adminDashboard.appSettings.description">The store ID to connect to at startup.</string>
+  <string name="_The_store_password_will_expire_in__d_days__A_Store_Manager_must_change_the_password_before_it_expires_" context="dialog.msg">The store password will expire in %d days. A Store Manager must change the password before it expires.</string>
+  <string name="_The_user_cannot_be_found_" context="storepassword.error">The user cannot be found.</string>
+  <string name="_The_user_is_locked_" context="storepassword.error">The user is locked.</string>
+  <string name="_There_are_no_items_in_your_cart_" context="checkout.cart.info">There are no items in your cart.</string>
+  <string name="_There_are_no_items_in_this_wish_list" context="checkout.cart.wishList.info">There are no items in this wish list.</string>
+  <string name="_There_are_no_orders_" context="customer.history.info">There are no orders.</string>
+  <string name="_There_are_no_recommendations_for_this_product_" context="productDetails.recommendations.info">There are no recommendations for this product.</string>
+  <string name="_There_are_no_saved_addresses_" context="checkout.address.chooseShippingAddress.info && customer.addresses.info">There are no saved addresses.</string>
+  <string name="_There_are_no_saved_items_" context="checkout.cart.info">There are no saved items.</string>
+  <string name="_There_is_no_store_availability_information_for_this_product_" context="productDetails.inventory.info">There is no store availability information for this product.</string>
+  <string name="_There_is_no_corresponding_key_for_the_value___s__in_countryConfig" context="startup.error">There is no corresponding key for the value '%s' in countryConfig.</string>
+  <string name="_There_is_no_corresponding_language_definition_for_the_value___s__in_languageConfig" context="startup.error">There is no corresponding language definition for the value '%s' in languageConfig.</string>
+  <string name="_There_was_a_problem_clearing_the_cart__Please_try_again_" context="confirmation.dialog.error">There was a problem clearing the cart. Please try again.</string>
+  <string name="_This_associate_does_not_have_permission_to_log_on" context="login.error">This associate does not have permission to log in.</string>
+  <string name="_This_field_is_required_" context="enterAddress.error">This field is required.</string>
+  <string name="_This_item_is_currently_not_available_" context="productDetails.details.info">This item is currently not available.</string>
+  <string name="_This_manager_does_not_have_administrative_privileges_" context="authorization.error">This manager does not have administrative privileges.</string>
+  <string name="_This_manager_is_not_allowed_to_change_passwords" context="login.error">This manager is not allowed to change passwords.</string>
+  <string name="_This_manager_is_not_allowed_to_do_overrides" context="checkout.cart.productPriveOverrides.error">This manager is not allowed to perform overrides.</string>
+  <string name="_This_manager_is_not_allowed_to_authorize_password_changes_" context="login.password.change.error">This manager is not allowed to authorize password changes.</string>
+  <string name="_This_transaction_has_already_been_cancelled_" context="checkout.dialog.error">This transaction has already been cancelled.</string>
+  <string name="_This_transaction_has_been_cancelled_and_payment_cannot_be_applied_" context="checkout.dialog.error">This transaction has been cancelled and payment cannot be applied.</string>
+  <string name="_This_version_of_iOS_is_not_supported___Please_upgrade_to_a_supported_version_" context="startup.dialog.msg">This version of iOS is not supported. Please upgrade to a supported version.</string>
+  <string name="_Timeout__" context="adminDashboard.configuration.label">Timeout: </string>
+  <string name="_To" context="salesReports.datePickers.header">To</string>
+  <string name="_Today" context="salesReports.tabs">Today</string>
+  <string name="_Token_Not_Valid" context="adminDashboard.devices.adyen.info">Token Not Valid</string>
+  <string name="_Token_Valid" context="adminDashboard.devices.adyen.info">Token Valid</string>
+  <string name="_Total_" context="customer.order.summary.msg">Total:</string>
+  <string name="_Touch_Screen_to_Begin" context="splashscreen.button">Touch Screen\nto Begin</string>
+  <string name="_Trigger_a_solicited_swipe__to_test_basic_functionality_" context="adminDashboard.devices.verifone.description">Trigger a solicited swipe, to test basic functionality.</string>
+  <string name="_Unable_to_add_item_to_the_cart" context="productDetails.details.notification.error">Unable to add item to the cart.</string>
+  <string name="_Unable_to_add_items_to_the_cart" context="productDetails.details.notification.error">Unable to add items to the cart.</string>
+  <string name="_Unable_to_apply_a_product_price_override" context="checkout.cart.productPriceAdjustments.notification.error">Unable to apply a product price override.</string>
+  <string name="_Unable_to_apply_a_shipping_price_override" context="checkout.shippingMethod.shippingOverrides.notification.error">Unable to apply a shipping price override.</string>
+  <string name="_Unable_to_cancel_order_" context="confirmation.dialog.title">Unable to Cancel Order</string>
+  <string name="_Unable_to_capture_signature_" context="checkout.confirmation.notification.msg">Unable to capture signature. Please try another card.</string>
+  <string name="_Unable_to_clear_the_cart_" context="confirmation.dialog.title">Unable to Clear Cart</string>
+  <string name="_Unable_to_complete_order__Retry_" context="">Unable to complete the order. Would you like to retry or cancel?</string>
+  <string name="_Unable_to_connect_to_a_network_" context="startup.dialog.error">Unable to connect to a network.</string>
+  <string name="_Unable_to_connect_to_payment_device_" context="checkout.payments.noPaymentTerminal.dialog.error">Unable to connect to payment device.</string>
+  <string name="_Unable_to_connect_to_storefront_" context="startup.dialog.error">Unable to connect to the storefront.</string>
+  <string name="_Unable_to_create_account_" context="createAccount.error">Unable to create account.</string>
+  <string name="_Unable_to_create_order_" context="checkout.dialog.error">Unable to create the order.</string>
+  <string name="_Unable_to_delete_item_" context="notify.error">Unable to delete item.</string>
+  <string name="_Unable_to_get_nearest_stores_" context="checkout.shipping.differentStorePickup.error">Unable to get nearest stores.</string>
+  <string name="_Unable_to_load___s__" context="startup.dialog.error && adminDashboard.appSettings.dialog.error">Unable to load '%s'.</string>
+  <string name="_Unable_to_load_the_configurations_from_the_server" context="startup.dialog.error">Unable to load the configurations from the server.</string>
+  <string name="_Unable_to_load_application_settings_" context="startup.dialog.error">Unable to load application settings.</string>
+  <string name="_Unable_to_login_kiosk_user_" context="startup.dialog.error">Unable to login kiosk user.\n\nPlease contact your administrator.</string>
+  <string name="_Unable_to_obtain_store_password_expiration_" context="notify.error">Unable to obtain store password expiration.</string>
+  <string name="_Unable_to_open_product_override_dialog_" context="override.dialog.error">Unable to open the product override dialog.</string>
+  <string name="_Unable_to_load_images_" context="checkout.shipping.differentStorePickup.error">Unable to load images.</string>
+  <string name="_Unable_to_load_store_availability_" context="checkout.shipping.differentStorePickup.error">Unable to load store availability.</string>
+  <string name="_Unable_to_logout_customer_" context="dialog.error.title">Unable to Log Out Customer</string>
+  <string name="_Unable_to_registart_device_" context="notify.error">Unable to registart device.</string>
+  <string name="_Unable_to_remove_product_price_override" context="checkout.cart.productPriceAdjument.notification.error">Unable to remove product price override.</string>
+  <string name="_Unable_to_remove_shipping_override" context="shipping.override.error">Unable to remove existing shipping override after store pickup was selected.</string>
+  <string name="_Unable_to_retrieve_kiosk_settings" context="enableKiosk.dialog.error">Unable to retrieve kiosk settings.</string>
+  <string name="_Unable_to_save_item_" context="notify.error">Unable to save item.</string>
+  <string name="_Unable_to_search_customers_" context="dialog.error">Unable to search customers.</string>
+  <string name="_Unable_to_search_orders_" context="dialog.error">Unable to search orders.</string>
+  <string name="_Unable_to_search_products_" context="dialog.error">Unable to search products.</string>
+  <string name="_Unable_to_change_the_store_password_" context="dialog.error.msg">Unable to change the store password.</string>
+  <string name="_Unable_to_change_the_store_password_for_all_stores_" context="dialog.error.msg">Unable to change the store password for all stores.</string>
+  <string name="_Unable_to_set_the_gift_message_" context="giftmessage.error">Unable to save the gift message.</string>
+  <string name="_Unable_to_start_the_application" context="startup.dialog.title">Unable to Start Application</string>
+  <string name="_Unable_to_update_the_store_password_" context="notify.error">Unable to update the store password.</string>
+  <string name="_Unable_to_validate_application_settings_" context="startup.dialog.error">Unable to validate application settings.</string>
+  <string name="_Universally_Unique_Identifier_" context="adminDashboard.buildInfo.uuid.label">Universally Unique Identifier:</string>
+  <string name="_Unknown_Availability" context="productDetails.inventory.info">Unknown Availability</string>
+  <string name="_Unknown_error_occured" context="salesReports.error">Unknown error occured.</string>
+  <string name="_Unknown_Stock_Level" context="productDetails.inventory.info">Unknown Stock Level</string>
+  <string name="_Unsorted" context="productGrid.header.select">Unsorted</string>
+  <string name="_Update_Address_in_Profile" context="checkout.address.check">Update Address in Profile</string>
+  <string name="_URL_contains_an_unsupported_scheme" context="salesReports.error">URL contains an unsupported scheme.</string>
+  <string name="_Used_for_development_" context="adminDashboard.appSettings.description">During development, this allows for testing of payment processing without using cards.</string>
+  <string name="_Username_" context="adminDashboard.devices.adyen.label">User Name: </string>
+  <string name="_Username__" context="adminDashboard.devices.adyen.msg">User Name: </string>
+  <string name="_Users" context="analytics.msg">Users</string>
+  <string name="_United_States" context="welcomeDialog.select">United States</string>
+  <string name="_VALID_DEVICE" context="adminDashboard.devices.verifone.info">Valid Device</string>
+  <string name="_Validating_Devices___" context="startup.notification.info">Validating device...</string>
+  <string name="_Validating_Network___" context="startup.notification.info">Validating network...</string>
+  <string name="_Validating_Settings___" context="startup.notification.info">Validating settings...</string>
+  <string name="_Validating_Storefront___" context="startup.notification.info">Validating storefront...</string>
+  <string name="_VERIFY_YOUR_ADDRESS" context="addressVerification.title">VERIFY YOUR ADDRESS</string>
+  <string name="_Versions_" context="adminDashboard.buildInfo.label">Versions:</string>
+  <string name="_Version_Mismatch" context="dialog.error.title">Version Mismatch</string>
+  <string name="_Version_Mismatch_Error" context="error.msg">The server you are connecting to does not support this client version. Please update your application.\n\nClient Version: %s\n Server Version: %s\n Supported Versions: %s\n</string>
+  <string name="_Version_Information" context="adminDashboard.devices.verifone.label">Version Information</string>
+  <string name="_Verifying_Token" context="adminDashboard.devices.adyen.info">Verifying Token</string>
+  <string name="_View_Customer_Profile" context="header.customer.button">View Customer Profile</string>
+  <string name="_View_Size_Chart" context="productDetails.details.link">View Size Chart</string>
+  <string name="_VSP_Version__" context="adminDashboard.devices.verifone.label">VSP Version: </string>
+  <string name="_Warning" context="dialog.title">Warning</string>
+  <string name="_Waiting_for_Adyen_Info____" context="adminDashboard.devices.adyen.info">Waiting for Adyen info ...</string>
+  <string name="_Waiting_for_device_information___" context="adminDashboard.devices.verifone.info">Waiting for device information...</string>
+  <string name="_We_were_unable_to_validate_your_address___" context="addressVerification.info">We were unable to validate your address. If you are sure the address below is valid, tap "Continue", otherwise you can tap "Cancel" and edit your address.</string>
+  <string name="_WEB_ORDER" context="epsonReceipt.title">Web Order</string>
+  <string name="_Web_Order_Number___" context="epsonReceipt.msg">Web Order Number: </string>
+  <string name="_Week" context="salesReports.tabs">Week</string>
+  <string name="_Welcome_Kiosk_Message_" context="welcomeDialog.info">Enable Kiosk Mode if the device will be set up as a kiosk.</string>
+  <string name="_Welcome_Message_" context="welcomeDialog.info">To start the application, select a store.</string>
+  <string name="_Welcome_Message_change_later" context="welcomeDialog.info">To change settings later, use the Admin Dashboard.</string>
+  <string name="_Welcome_to_Endless_Aisle" context="welcomeDialog.title">Welcome to Endless Aisle</string>
+  <string name="_Wish_List_Title" context="wishlist.title">Wish List</string>
+  <string name="_Wish_List" context="checkout.cart.tabs">Wish List</string>
+  <string name="_Wish_List_Button" context="hamburgermenu.button">Wish List</string>
+  <string name="_Wish_List___d" context="checkout.cart.tabs">Wish List: %d</string>
+  <string name="_Would_you_like_to_create_a_new_account_" context="checkout.confirmation.createAccount.msg">Would you like to create a new account?</string>
+  <string name="_XPI_Version__" context="adminDashboard.devices.verifone.label">XPI Version: </string>
+  <string name="_Yes" context="checkout.billingSame.dialog.button">Yes</string>
+  <string name="_You_are_editing_an_address__Are_you_sure_you_want_to_discard_the_changes_" context="customer.editAddress.dialog.info">You are editing an address. Are you sure you want to discard the changes?</string>
+  <string name="_You_are_adding_an_address__Are_you_sure_you_want_to_discard_the_changes_" context="customer.editAddress.dialog.info">You are adding an address. Are you sure you want to discard the changes?</string>
+  <string name="_You_have_modified_settings__Are_you_sure_you_want_to_discard_the_changes_" context="adminDashboard.appSettings.dialog.info">You have modified settings. Are you sure you want to discard the changes?</string>
+  <string name="_You_have__d_characters_left_out_of_250" context="checkout.shippingMethod.info">You have %d characters left out of 250.</string>
+  <string name="_You_must_provide_a_hostname_" context="adminDashboard.devices.adyen.msg">You must provide a hostname.</string>
+  <string name="_You_must_provide_either_a_search_term_or_UPC_code_for_a_product_search_" context="search.dialog.product.msg">You must provide either a search term or UPC code for a product search.</string>
+  <string name="_You_must_provide_either_a_first_last_name_or_an_email_for_a_customer_search_" context="customerSearch.info">You must provide either a first/last name or an email for a customer search.</string>
+  <string name="_You_must_provide_either_an_order_ID_or_a_customer_email_for_an_order_search_" context="search.dialog.order.msg">You must provide either an order ID or a customer email for an order search.</string>
+  <string name="_You_must_provide_employee_code_and_pin_" context="login.info && kioskManager.login.info">You must provide the employee code and PIN.</string>
+  <string name="_You_must_provide_manager_code_and_pin_" context="checkout.cart.overrides.info && adminDashboard.info">You must provide the manager code and PIN.</string>
+  <string name="_Your_Wish_List__s_has_been_emailed_" context="checkout.cart.wishList.info">Your wish list '%s' has been emailed.</string>
+  <string name="_Your_Wish_List_has_been_emailed_" context="checkout.cart.wishList.info">Your wish list has been emailed.</string>
+  <string name="_Your_email_failed_to_be_sent__Please_try_again_later_" context="checkout.cart.wishList.error && appConfigurationDialog.error">Your email failed to be sent. Please try again later.</string>
+  <string name="_Your_email_was_successfully_sent_" context="appConfigurationDialog.msg">Your email was successfully sent.</string>
+  <string name="_Your_receipt_has_been_emailed" context="checkout.payments.dialog.msg">Your receipt has been emailed.</string>
+</resources>

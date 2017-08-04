@@ -1,0 +1,20 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for single shipping method
+-->
+<Alloy>
+    <TableViewRow method_id="{method_id}" id="singleShippingMethod">
+        <View id="single_shipping_method">
+            <View id="standard_shipping_container">
+                <ImageView id="radio_button" accessibilityValue="radio_button"/>
+                <View id="method_container">
+                    <View id="method_name_and_price">
+                        <Label id="method_name" text="{name}" class="radio_button_label" accessibilityValue="method_name"/>
+                        <Label id="method_price" text="{price}" class="shipping_method_time_label" accessibilityValue="method_price"/>
+                    </View>
+                    <Label id="method_description" text="{description}" class="method_description shipping_method_time_label" accessibilityValue="method_description"/>
+                </View>
+            </View>
+        </View>
+    </TableViewRow>
+</Alloy>

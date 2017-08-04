@@ -1,0 +1,28 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for search attributes refinement panel
+-->
+<Alloy>
+    <View class="attributesRefinementPanel">
+        <View class="vertical_shadow_separator_left" />
+        <TableView id="refinementsTable">
+            <HeaderView>
+                <View id="refinementsTableHeader">
+                    <Label id="refinementsTableHeaderLabel" accessibilityValue="refinementsTableHeaderLabel" textid="_Filter_Options"/>
+                </View>
+            </HeaderView>
+            <!-- refinements will get added here -->
+        </TableView>
+        <View class="vertical_shadow_separator_right" />
+        <TableView id="appliedFiltersTable">
+            <HeaderView>
+                <View id="appliedFiltersTableHeader">
+                    <Label id="appliedFiltersTableHeaderLabel" accessibilityValue="appliedFiltersTableHeaderLabel" textid="_Applied_Filters"/>
+                    <View id="appliedFiltersTableHeaderButton">
+                        <Label id="appliedFiltersTableHeaderButtonLabel" accessibilityValue="appliedFiltersTableHeaderButtonLabel" textid="_Clear"/>
+                    </View>
+                </View>
+            </HeaderView>
+        </TableView>
+    </View>
+</Alloy>

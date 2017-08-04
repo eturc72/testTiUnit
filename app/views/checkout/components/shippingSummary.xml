@@ -1,0 +1,21 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for basket shipping details
+-->
+<Alloy>
+    <Model id="shipping_address" src="shippingAddress" instance="true" />
+    <Model id="shippingMethod" src="shippingMethod" instance="true" />
+    <View id="shipping_address_container" class="shipping_address_container">
+        <View class="shipping_details_label_container" id="shipping_details_label_container">
+            <Label id="shipping_details_label" accessibilityValue="shipping_details_label"/>
+        </View>
+        <Label id="address_display" text="{$.shipping_address.addressLabel}" accessibilityValue="summary_address_display"/>
+        <Label id="phone" text="{$.shipping_address.phone}" accessibilityValue="phone"/>
+        <Label id="email_address_label" accessibilityValue="email_address_label"/>
+        <View id="shipping_method_details_container" class="shipping_method_details_container">
+            <Label id="method_label" accessibilityValue="method_label"/>
+            <Label text="{$.shippingMethod.name}" id="shipping_type" class="shipping_type_label" accessibilityValue="shipping_type"/>
+        </View>
+        <Require src="components/orders/giftMessage" id="giftMessage"/>
+    </View>
+</Alloy>

@@ -1,0 +1,7 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for default PDP tab
+
+'#base_product': {
+    layout: 'vertical'
+}

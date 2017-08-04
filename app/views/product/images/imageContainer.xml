@@ -1,0 +1,18 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for the image container
+-->
+<Alloy>
+    <View id="color_container" >
+        <View id="image_view" >
+            <View id="large_image_container" >
+                <VideoPlayer id="pdp_video_player" accaccessibilityLabel="pdp_video_player" if="Alloy.CFG.product.enable_video_player" onPlaybackstate="handlePlaybackStateChange" />
+                <Button id="video_play_button" accessibilityValue="video_play_button" onClick="playProductVideo" if="Alloy.CFG.product.enable_video_player" />
+                <ImageView id="large_image_view" accessibilityValue="large_image_view"/>
+            </View>
+        </View>
+        <ScrollView id="alt_scroll_container">
+            <View id="alt_container"/>
+        </ScrollView>
+    </View>
+</Alloy>

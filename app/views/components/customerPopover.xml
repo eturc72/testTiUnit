@@ -1,0 +1,13 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for customer popover from header
+-->
+<Alloy>
+    <View id="popover_window">
+        <View id="backdrop"/>
+        <View id="popover_container">
+            <Button titleid="_View_Customer_Profile" id="profile_button" accessibilityValue="profile_button"/>
+            <Button titleid="_Logout_Customer" id="logout_button" accessibilityValue="logout_button"/>
+        </View>
+    </View>
+</Alloy>

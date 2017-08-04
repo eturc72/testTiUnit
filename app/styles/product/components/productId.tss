@@ -1,0 +1,27 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for product id display
+
+'#pdp_product_id': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: '100%',
+    left: 0
+},
+
+'.pdp_label_text': {
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.detailTextFont,
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE
+},
+
+'#product_id_label': {
+    textid: '_Item__'
+},
+
+'#product_id': {
+    width: 240,
+    left: 3,
+    ellipsize: true
+}

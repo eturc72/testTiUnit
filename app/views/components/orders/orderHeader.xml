@@ -1,0 +1,27 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for order header
+-->
+<Alloy>
+    <Model id="customer_order" src="baskets" instance="true"/>
+    <View id="order_header_container">
+        <View id="order_summary_container">
+            <View id="order_date_container" class="labelled_text">
+                <Label id="date_label" class="label_title" accessibilityValue="date_label"/>
+                <Label text="{$.customer_order.creation_date}" class="text_big_data" accessibilityValue="creation_date"/>
+            </View>
+            <View id="order_status_container" class="labelled_text">
+                <Label id="status_label" class="label_title" accessibilityValue="status_label"/>
+                <Label id="order_status_label" text="{$.customer_order.status}" class="text_data" accessibilityValue="order_status"/>
+            </View>
+            <View id="order_number_container" class="labelled_text">
+                <Label id="number_label" class="label_title" accessibilityValue="order_number_label"/>
+                <Label text="{$.customer_order.order_no}" class="text_data" accessibilityValue="order_detail_number"/>
+            </View>
+        </View>
+        <View id="order_button_container">
+            <Button id="email_button" titleid="_Email_Receipt" class="receipt_button" accessibilityValue="email_button"/>
+            <Button id="print_button" titleid="_Print_Receipt" class="receipt_button" accessibilityValue="print_button"/>
+        </View>
+    </View>
+</Alloy>

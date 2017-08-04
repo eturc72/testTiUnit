@@ -1,0 +1,13 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for small swatch refinement
+-->
+<Alloy>
+    <TableViewSection id="smallSwatchRefinement">
+        <HeaderView>
+            <View id="smallSwatchRefinementHeader">
+                <Label id="smallSwatchRefinementHeaderLabel" accessibilityValue="small_swatch_refinement_label"/>
+            </View>
+        </HeaderView>
+    </TableViewSection>
+</Alloy>

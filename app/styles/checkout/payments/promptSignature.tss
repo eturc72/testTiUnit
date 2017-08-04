@@ -1,0 +1,61 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for prompting signature
+
+'#contents': {
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    layout: 'vertical'
+},
+
+'#signature_label': {
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.calloutFont,
+    height: Ti.UI.SIZE,
+    top: 20,
+    textid: '_Signature'
+},
+
+'#signature_explanation_label': {
+    color: Alloy.Styles.color.text.mediumdark,
+    font: Alloy.Styles.textFieldFont,
+    top: 36,
+    width: 615,
+    height: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    textid: '_Please_provide_your_signature_to_complete_your_transaction'
+},
+
+'#signature_view': {
+    height: 150,
+    width: 615
+},
+
+'#signature_line': {
+    top: 0,
+    width: 615,
+    height: 2,
+    backgroundColor: Alloy.Styles.tabs.backgroundColorDisabled
+},
+
+'#accept_button': {
+    left: 20,
+    titleid: '_Accept'
+},
+
+'#clear_button': {
+    left: 20,
+    titleid: '_Clear'
+},
+
+'#cancel_button': {
+    titleid: '_Cancel'
+},
+
+'#signature_button_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    top: 40,
+    bottom: 20
+}

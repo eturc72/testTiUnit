@@ -1,0 +1,24 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for PDP size chart dialog
+
+'#size_chart_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#size_chart': {
+    top: 75,
+    left: 128,
+    width: 768,
+    backgroundColor: Alloy.Styles.color.background.white,
+    height: 600
+}

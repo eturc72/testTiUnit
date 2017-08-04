@@ -1,0 +1,115 @@
+// ©2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for authorization dialog/view
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.25,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+"#auth_window": {
+    zIndex: 101,
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+"#enter_manager_authorization": {
+    layout: 'vertical',
+    width: 465,
+    left: 280,
+    height: 340,
+    top: 75,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+"#top_container": {
+    height: Ti.UI.SIZE,
+    width: '100%',
+    top: 0,
+    layout: 'vertical'
+},
+
+".dialog_text": {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP,
+    left: 32,
+    right: 32,
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE
+},
+
+"#title": {
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.titleFont,
+    top: 26
+},
+
+"#subtitle": {
+    color: Alloy.Styles.color.text.medium,
+    font: Alloy.Styles.appFont,
+    visible: false,
+    height: 0,
+    bottom: 1
+},
+
+"#error": {
+    color: Alloy.Styles.color.text.red,
+    font: Alloy.Styles.calloutCopyFont,
+    visible: false,
+    bottom: 20,
+    height: 0
+},
+
+"#submit_button": {
+    left: 20,
+    width: 190
+},
+
+"#cancel_button": {
+    width: 190
+},
+
+"#content_view": {
+    top: 10,
+    height: Titanium.UI.SIZE,
+    width: Titanium.UI.SIZE,
+    layout: 'vertical'
+},
+
+"#buttons": {
+    height: Titanium.UI.SIZE,
+    width: Titanium.UI.SIZE,
+    layout: 'horizontal',
+    bottom: 20
+},
+
+"#inner_container": {
+    height: '100%',
+    width: '100%',
+    layout: 'fixed'
+},
+
+".manager_field": {
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.dialogFieldFont,
+    left: 32,
+    right: 32,
+    width: Ti.UI.FILL,
+    height: 55,
+    borderColor: Alloy.Styles.color.border.light,
+    passwordMask: true,
+    paddingLeft: 18,
+    keyboardType: Ti.UI.KEYBOARD_TYPE_NUMBERS_PUNCTUATION,
+    returnKeyType: Ti.UI.RETURNKEY_GO
+},
+
+"#manager_id": {
+    top: 3
+},
+
+"#manager_password": {
+    top: 15
+}

@@ -1,0 +1,41 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for welcome dialog at startup
+-->
+<Alloy>
+    <View id="popover_window">
+        <View id="backdrop"/>
+        <View id="popover_container">
+            <Label id="welcome_title" accessibilityValue="welcome_confirm_title"/>
+            <Label id="welcome_message" accessibilityValue="welcome_message"/>
+            <Label id="country_message" />
+            <View id="startup_config">
+                <Require id="app_settings_view" src="components/appSettingsView" type="view"/>
+                <Label id="kiosk_message" accessibilityValue="kiosk_message"/>
+                <View id="kiosk_config"/>
+                <Label id="change_settings" accessibilityValue="change_settings"/>
+                <View id="welcome_button_container">
+                    <Button id="back_button" class="secondary_button" accessibilityValue="welcome_back_button"/>
+                    <Button id="ok_button" class="primary_button" accessibilityValue="welcome_ok_button"/>
+                </View>
+            </View>
+            <View id="country_config">
+                <View id="country_dropdown">
+                    <Label id="country_label" accessibilityValue="country_label"/>
+                    <View id="country_view">
+                        <Require id="country_dropdown_view" src="components/countryDropDown" type="view"/>
+                    </View>
+                </View>
+            </View>
+            <View id="language_config">
+                <View id="language_dropdown">
+                    <Label id="language_label" accessibilityValue="country_label"/>
+                    <View id="language_view">
+                        <Require id="language_dropdown_view" src="components/languageDropDown" type="view"/>
+                    </View>
+                </View>
+                <Button id="next_button" class="primary_button" accessibilityValue="next_button"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

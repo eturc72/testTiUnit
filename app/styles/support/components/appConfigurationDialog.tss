@@ -1,0 +1,54 @@
+// ©2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for appConfigurationDialog
+
+'#background_window': {
+    width: '100%',
+    height: '100%'
+},
+
+'#backdrop': {
+    width: '100%',
+    height: '100%',
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#container': {
+    top: 20,
+    layout: 'vertical',
+    width: '60%',
+    height: '80%',
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#title': {
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.titleFont,
+    height: '7%',
+    top: 0,
+    textid: '_Configuration'
+},
+
+'#configs_wrapper': {
+    top: 0,
+    width: '100%',
+    height: '80%',
+    layout: 'vertical',
+    scrollingEnabled: true,
+    showVerticalScrollIndicator: true
+},
+
+'#buttons_wrapper': {
+    top: '1.5%',
+    width: '80%',
+    height: '10%'
+},
+
+'.dialog_button': {
+    width: '50%'
+},
+
+'#retry_button': {
+    titleid: '_Retry'
+}

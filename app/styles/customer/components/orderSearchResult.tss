@@ -1,0 +1,140 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for order search results
+
+'#search_results': {
+    top: 55,
+    layout: 'vertical'
+},
+
+'.customer_results_header': {
+    backgroundColor: Alloy.Styles.color.background.medium,
+    width: '100%',
+    height: 44,
+    layout: 'horizontal'
+},
+
+'.breadcrumbs_back_button': {
+    image: Alloy.Styles.backButtonImage,
+    width: 44,
+    height: 44,
+    style: Ti.UI.iOS.SystemButtonStyle.PLAIN,
+    borderWidth: 1,
+    borderColor: Alloy.Styles.color.border.medium
+},
+
+'.vertical_separator': {
+    width: 1,
+    backgroundColor: Alloy.Styles.color.background.dark,
+    height: '100%',
+    left: 0
+},
+
+'#search_results_count': {
+    color: Alloy.Styles.color.text.dark,
+    left: 20,
+    font: Alloy.Styles.detailLabelFont
+},
+
+'#search_results_container': {
+    width: '100%'
+},
+
+'#results_error': {
+    width: '100%'
+},
+
+'#results_contents': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE
+},
+
+'#lookup_window': {
+    layout: 'vertical',
+    width: 655,
+    height: 170
+},
+
+'.search_form_container': {
+    layout: 'horizontal',
+    height: 57,
+    width: 653
+},
+
+
+'#order_lookup_label': {
+    color: Alloy.Styles.color.text.mediumdark,
+    left: 0,
+    top: 30,
+    font: Alloy.Styles.headlineFont,
+    textid: '_Order_Search'
+},
+
+'#search_textfield': {
+    borderColor: Alloy.Styles.color.border.dark,
+    borderWidth: 1,
+    color: Alloy.Styles.color.text.dark,
+    left: 0,
+    top: 0,
+    bottom: 10,
+    width: 455,
+    font: Alloy.Styles.textFieldFont,
+    paddingLeft: 18,
+    height: 55,
+    autocorrect: false,
+    clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+    keyboardType: Ti.UI.KEYBOARD_TYPE_EMAIL,
+    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+    returnKeyType: Ti.UI.RETURNKEY_SEARCH
+},
+
+'#search_button': {
+    width: 156,
+    right: 0,
+    top: 0,
+    height: 55,
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    font: Alloy.Styles.bigButtonFont,
+    color: Alloy.Styles.buttons.primary.color,
+    titleid: '_Search'
+},
+
+'#results_table_container': {
+    layout: 'vertical',
+    height: 475,
+    width: '65%',
+    top: 0
+},
+
+'#results_container': {
+    separatorStyle: 'transparent',
+    layout: 'vertical'
+},
+
+'.error': {
+    color: Alloy.Styles.color.text.red,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    font: Alloy.Styles.headlineFont
+},
+
+'#history_contents': {
+    layout: 'vertical',
+    height: 650,
+    width: '100%',
+    top: 0
+},
+
+'#padding_one': {
+    height: 5
+},
+
+'#padding_two': {
+    width: 18
+},
+
+'#line_separator': {
+    backgroundColor: Alloy.Styles.color.background.separatorColor,
+    width: '100%',
+    height: 1,
+    top: 0
+}

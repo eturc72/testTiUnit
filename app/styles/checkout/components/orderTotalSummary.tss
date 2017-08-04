@@ -1,0 +1,104 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for order totals
+
+'#order_totals_container': {
+    layout: 'vertical',
+    top: 10,
+    height: Ti.UI.SIZE
+},
+
+'.summary_label': {
+    color: Alloy.Styles.color.text.red,
+    left: 0,
+    font: Alloy.Styles.featuredProductFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'.order_summary_right': {
+    font: Alloy.Styles.sectionTitleFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+    color: Alloy.Styles.color.text.mediumdark,
+    right: 5
+},
+
+'.order_summary_left': {
+    font: Alloy.Styles.sectionTitleFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark
+},
+
+'.order_summary_label': {
+    width: '60%'
+},
+
+'.order_summary_value': {
+    width: '35%'
+},
+
+'.order_summary_red': {
+    color: Alloy.Styles.color.text.medium
+},
+
+'.order_summary_row': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    left: 20
+},
+
+'#order_total_details': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    backgroundColor: Alloy.Styles.color.background.dark,
+    top: 15,
+    height: 40
+},
+
+'.order_total_label': {
+    color: Alloy.Styles.color.text.white,
+    left: 20,
+    top: 7,
+    font: Alloy.Styles.calloutCopyFont
+},
+
+'.order_total_value': {
+    color: Alloy.Styles.color.text.white,
+    width: '30%',
+    top: 7,
+    font: Alloy.Styles.calloutCopyFont
+},
+
+'.checkout_button': {
+    width: '90%',
+    height: 40,
+    top: 20
+},
+
+'.vertical_padding': {
+    top: 5
+},
+
+'#subtotal_label': {
+    textid: '_Subtotal'
+},
+
+'#discounts_label': {
+    textid: '_Discounts'
+},
+
+'#shipping_label': {
+    textid: '_Shipping'
+},
+
+'#shipping_discount_label': {
+    textid: '_Shipping_Discount'
+},
+
+'#sales_tax_label': {
+    textid: '_Sales_Tax'
+},
+
+'#order_total_label': {
+    textid: '_Order_Total'
+}
+

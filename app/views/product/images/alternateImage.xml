@@ -1,0 +1,9 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for the alternate image
+-->
+<Alloy>
+    <View id="alt_image_container">
+        <ImageView id="small_image_view" accessibilityValue="small_image_view"/>
+    </View>
+</Alloy>

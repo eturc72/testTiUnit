@@ -1,0 +1,9 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for dropdown on select widgets
+-->
+<Alloy>
+    <View id="container" class="container">
+        <TableView id="menuBox" onClick="handleMenuBoxClick"/>
+    </View>
+</Alloy>

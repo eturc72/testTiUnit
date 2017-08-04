@@ -1,0 +1,37 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for category tile
+
+'#categoryTile': {
+    layout: 'absolute',
+    backgroundColor: Alloy.Styles.color.background.light,
+    borderColor: Alloy.Styles.color.border.lightest,
+    borderWidth: 1,
+    width: 282,
+    height: 282
+},
+
+'#tile_name': {
+    left: 20,
+    font: Alloy.Styles.productFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'#name_container': {
+    bottom: 15,
+    left: 0,
+    color: Alloy.Styles.color.text.black,
+    backgroundColor: Alloy.Styles.color.background.light,
+    opacity: 0.9,
+    width: 160,
+    height: 40,
+    borderColor: Alloy.Styles.color.border.light,
+    borderWidth: 1
+},
+
+'#tile_image': {
+    top: 5,
+    left: 5,
+    right: 5,
+    bottom: 5
+}

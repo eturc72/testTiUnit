@@ -1,0 +1,17 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for prompting signature
+-->
+<Alloy>
+    <View id="contents">
+        <Label id="signature_label" accessibilityValue="signature_label"/>
+        <Label id="signature_explanation_label" accessibilityValue="signature_explanation_label"/>
+        <View id="signature_view"/>
+        <View id="signature_line"/>
+        <View id="signature_button_container">
+            <Button id="cancel_button" class="secondary_button" accessibilityValue="cancel_button"/>
+            <Button id="clear_button" class="secondary_button" accessibilityValue="clear_button"/>
+            <Button id="accept_button" class="primary_button" accessibilityValue="accept_button"/>
+        </View>
+    </View>
+</Alloy>

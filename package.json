@@ -1,12 +1,17 @@
 {
-    "devDependencies": {
-        "jasmine": "^2.5.3",
-        "tiunit": "git+ssh://git@github.com/aca-mobile/ti-unit.git#1.1.1"
-    },
-    "dependencies": {
-        "istanbul": "^0.4.5"
-    },
-    "scripts": {
-        "test": "istanbul cover --include-all-sources   -x **/Resources/** -x **/build/** -x **/spec/** -x **/plugins/** jasmine"
-    }
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "tiunit": "git+ssh://git@github.com/aca-mobile/ti-unit.git#1.1.1"
+  },
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "istanbul": "^0.4.5",
+    "jasmine-console-reporter": "^1.2.7",
+    "proxyquire": "^1.8.0",
+    "sinon": "^3.0.0",
+    "underscore": "^1.8.3"
+  },
+  "scripts": {
+    "test": "istanbul cover --include-all-sources   -x **/Resources/** -x **/build/** -x **/spec/** -x **/plugins/** jasmine"
+  }
 }

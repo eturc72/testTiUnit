@@ -1,0 +1,20 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// View file for product item row
+-->
+<Alloy>
+    <TableViewRow id="productItemRowTable" contains_product_image="true" product_id="{row_id}">
+        <View id="product_line_item_container" class="pli_row" contains_product_image="true">
+            <Require id="product_item" src="checkout/cart/productItem"/>
+            <View id="button_container">
+                <View id="edit_delete_button_container">
+                    <Button id="edit_button" class="round_button" accessibilityLabel="edit_button"/>
+                    <Button id="delete_button" class="round_button" accessibilityLabel="delete_button"/>
+                </View>
+                <Button id="override_button" class="button not_top_button" accessibilityValue="override_button"/>
+                <Button id="more_menu_button" class="button not_top_button" accessibilityValue="menu_button"/>
+            </View>
+        </View>
+    </TableViewRow>
+</Alloy>

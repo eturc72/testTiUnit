@@ -1,0 +1,12 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for associate popover from header
+-->
+<Alloy>
+    <View id="popover_window">
+        <View id="backdrop"/>
+        <View id="popover_container">
+            <Button titleid="_Logout_Associate" id="logout_button" accessibilityValue="logout_button"/>
+        </View>
+    </View>
+</Alloy>

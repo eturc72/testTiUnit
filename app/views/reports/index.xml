@@ -1,0 +1,85 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for sales reports
+-->
+<Alloy>
+    <Collection id="quickStatsCollection" src="quickStats" instance="true"/>
+    <View class="salesReportDashboardContainer" id="sales_report_dashboard_container">
+        <View id="backdrop" class="backdrop"/>
+        <View id="sales_dashboard" class="dashboard">
+            <View id="title_bar" class="titlebar">
+                <Label id="dashboard_title" class="dashboardTitle" accessibilityValue="dashboard_title"/>
+                <Button id="hamburger_menu" class="hamburgerMenu" onClick="revealAssociateList" if="Alloy.Models.associate.hasStoreLevelSalesReportsPrivileges()" accessibilityLabel="sales_hamburger_menu"/>
+                <Button id="close_icon" class="closeIcon" accessibilityLabel="close_icon"/>
+            </View>
+            <View id="side_panel" class="sidePanel" if="Alloy.Models.associate.hasStoreLevelSalesReportsPrivileges()">
+                <TableView id="assoc_table" class="assocTable" onClick="handleAssociateSelect">
+                    <SearchBar platform="ios" accessibilityLabel="assoc_table_search_bar" id="assoc_table_search_bar"/>
+                </TableView>
+            </View>
+            <View id="chart_area" class="chartArea">
+                <View id="chart_control_panel" class="chartControlPanel shadow">
+                    <View id="date_filter_control" class="controlButtons shadow ">
+                        <Button id="today" class="cbutton" accessibilityValue="filter_today"/>
+                        <Button id="week" class="cbutton sbuttonSelected" accessibilityValue="filter_week"/>
+                        <Button id="month" class="cbutton" accessibilityValue="filter_month"/>
+                        <Button id="quarter" class="cbutton" accessibilityValue="filter_quarter"/>
+                        <Button id="custom_date" class="cbutton" accessibilityValue="filter_custom_date"/>
+                    </View>
+                    <View class="dateFilterInfoView" id="date_filter_info_view">
+                        <Label id="date_range_info" class="dateInfo" accessibilityValue="date_range_info"/>
+                    </View>
+                </View>
+                <View id="chart_container" class="chartContainer shadow">
+                    <View id="chart_panel" class="chartPanel">
+                        <View  id="scrollable_view_control" class="scrollableViewControl shadow">
+                            <Button class="scrollableViewControlButton sbuttonSelected" id="sales_web_view_control" accessibilityValue="sales_web_view_control"/>
+                            <Button class="scrollableViewControlButton" if="Alloy.CFG.sales_reports.enabled_charts.items_sold" id="items_sold_view_control" accessibilityValue="items_sold_view_control"/>
+                            <Button class="scrollableViewControlButton" if="Alloy.CFG.sales_reports.enabled_charts.ranks" id="ranks_web_view_control" accessibilityValue="ranks_web_view_control"/>
+                        </View>
+                        <ScrollableView id="scrollable_web_view_container" class="scrollableWebViewContainer">
+                            <View id="sales_view">
+                                <WebView onLoad="onMainChartLoad" onError="showWebViewLoadError" onBeforeload="showActivityIndicatorForPrimaryAndSecondaryWebView" id="sales_web_view" class="chart" urlPageName="Alloy.CFG.sales_reports.url_page_names.sales" accessibilityLabel="sales_web_view"/>
+                                <View id="sales_web_view_activity_indicator_wrapper" class="activityIndicatorBackdrop">
+                                    <Label id="sales_web_view_error_msg" accessibilityValue="sales_web_view_error_msg" class="errorMsg"/>
+                                    <ActivityIndicator id="sales_web_view_activity_indicator" accessibilityLabel="sales_web_view_activity_indicator" class="activityIndicator"/>
+                                </View>
+                                <Button id="reload_sales_chart_button" onClick="reloadSalesChart" class="reloadButton" accessibilityValue="reload_sales_chart_button"/>
+                            </View>
+                            <View id="items_sold_view" if="Alloy.CFG.sales_reports.enabled_charts.items_sold">
+                                <WebView  onLoad="hideActivityIndicator" onError="showWebViewLoadError"  id="items_sold_web_view" class="chart" onBeforeload="showActivityIndicator" urlPageName="Alloy.CFG.sales_reports.url_page_names.items_sold" accessibilityLabel="items_sold_web_view"/>
+                                <View id="items_sold_web_view_activity_indicator_wrapper" class="activityIndicatorBackdrop">
+                                    <Label id="items_sold_web_view_error_msg" accessibilityValue="items_sold_web_view_error_msg" class="errorMsg"/>
+                                    <ActivityIndicator accessibilityLabel="items_sold_web_view_activity_indicator" id="items_sold_web_view_activity_indicator" class="activityIndicator"/>
+                                </View>
+                                <Button id="reload_product_sold_chart_button" onClick="reloadItemsSoldChart" class="reloadButton " accessibilityValue="reload_product_sold_chart_button"/>
+                            </View>
+                            <View id="rank_view" class="rankView" if="Alloy.CFG.sales_reports.enabled_charts.ranks">
+                                <View id="rank_view_control_container" class="rankViewControlContainer" if="Alloy.Models.associate.hasStoreLevelSalesReportsPrivileges()">
+                                    <View id="rank_view_control" class="rankViewControl shadow" onClick="rankViewControlClickHandler">
+                                        <Button id="associates_ranking" onClick="onRankViewControlClick" class="rankViewControlButton sbuttonSelected"  accessibilityValue="associates_ranking"/>
+                                        <Button id="stores_ranking" onClick="onRankViewControlClick" class="rankViewControlButton" accessibilityValue="stores_ranking"/>
+                                    </View>
+                                </View>
+                                <WebView onLoad="hideActivityIndicator" id="ranking_web_view" onBeforeload="showActivityIndicator" onError="showWebViewLoadError" class="chart rankViewChart" urlPageName="Alloy.CFG.sales_reports.url_page_names.ranks.associates" accessibilityLabel="ranking_web_view"/>
+                                <View id="ranking_web_view_activity_indicator_wrapper" class="activityIndicatorBackdrop">
+                                    <Label id="ranking_web_view_error_msg" accessibilityLabel="ranking_web_view_error_msg" class="errorMsg"/>
+                                    <ActivityIndicator class="activityIndicator" id="ranking_web_view_activity_indicator" accessibilityLabel="ranking_web_view_activity_indicator"/>
+                                </View>
+                                <Button id="reload_rank_chart_button" onClick="reloadRankChart" class="reloadButton" accessibilityLabel="reload_rank_chart_button"/>
+                            </View>
+                        </ScrollableView>
+                    </View>
+                </View>
+                <View id="quick_stat_panel" class="quickStatPanel shadow">
+                    <Label id="quick_stat_panel_title" class="dashTitle" accessibilityValue="quick_stat_panel_title"/>
+                    <View class="horizontalSeparator  qPanelTitleSeparator"/>
+                    <TableView id="quick_stats_container"  class="quickStatsContainer" dataCollection="$.quickStatsCollection">
+                        <Require src="reports/quickStats"/>
+                    </TableView>
+                </View>
+                <View id="sales_dashboard_overlay" class="enableArea" onClick="hideAssociateList" if="Alloy.Models.associate.hasStoreLevelSalesReportsPrivileges()"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

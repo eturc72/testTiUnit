@@ -1,0 +1,18 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for store availability tab
+-->
+<Alloy>
+    <Collection id="storeInventoryData" src="store" instance="true"/>
+    <View id="store_availability_container">
+        <Label id="no_store_availability_label" accessibilityValue="no_store_availability_label"/>
+        <View id="variation_container"/>
+        <TableView id="store_availability_view" dataCollection="$.storeInventoryData" dataTransform="transformStoreDetail">
+            <Require src="product/components/storeDetail" id="store_detail"/>
+        </TableView>
+        <View id="store_availability_controls">
+            <Button id="last_btn" class="paging_btn" titleid="_Last_5" accessibilityValue="last_btn"/>
+            <Button id="next_btn" class="paging_btn" titleid="_Next_5" accessibilityValue="next_btn"/>
+        </View>
+    </View>
+</Alloy>

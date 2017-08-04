@@ -1,26 +1,199 @@
-/*
+// ©2013-2017 salesforce.com, inc. All rights reserved.
 
-This is your global styles file. Selectors and rules you define
-here will be applied throughout your app. However, these rules
-have the lowest priority of any style settings.
+// TSS file for application styles
 
-For more information, see the "Style Priorities" section of
-http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Styles_and_Themes
-
-For example, the following would apply to all labels, windows,
-and text fields (depending on platform) in your app unless you
-overrode the settings with other TSS, XML, or JS settings:
-
-'Label[platform=android,windows]': {
-	color: '#000' // all platforms except Android and Windows default to black
-}
+/* width classes */
 
 'Window': {
-	backgroundColor: '#fff' // white background instead of default transparent or black
-}
+    tabBarHidden: 1,
+    navBarHidden: 1,
+    backgroundColor: Alloy.Styles.color.background.white,
+    statusBarStyle: Ti.UI.iOS.StatusBar.LIGHT_CONTENT
+},
 
-'TextField[platform=android]': {
-	height: Ti.UI.SIZE
-}
+'#contents': {
+    backgroundColor: Alloy.Styles.color.background.white
+},
 
+'Label': {
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    color: Alloy.Styles.color.text.darkest,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'.form_field': {
+    height: 30
+},
+
+'.form_fields': {
+    layout: 'horizontal'
+},
+
+'.height_zero': {
+    height: 0,
+    visible: false
+},
+
+'.block_header': {
+    font: Alloy.Styles.calloutFont
+},
+
+/**
+*  TSS Related to Required Fields
 */
+'.required_star': {
+    color: Alloy.Styles.color.text.red,
+    font: Alloy.Styles.smallerAccentFont
+},
+
+'.required_field_label': {
+    font: Alloy.Styles.smallerAccentFont
+},
+
+'.required_field_label_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE
+},
+
+'.tab_button': {
+    width: 207,
+    height: 49,
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.buttonFont,
+    style: Ti.UI.iOS.SystemButtonStyle.PLAIN,
+    backgroundColor: Alloy.Styles.tabs.backgroundColorDisabled
+},
+
+'.primary_button': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: Alloy.Styles.buttons.primary.color,
+    disabledColor: Alloy.Styles.buttons.primary.disabledColor,
+    backgroundImage: Alloy.Styles.buttons.primary.backgroundImage,
+    backgroundDisabledImage: Alloy.Styles.buttons.primary.backgroundDisabledImage,
+    height: 40,
+    width: 200
+},
+
+'.secondary_button': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    backgroundImage: Alloy.Styles.buttons.secondary.backgroundImage,
+    backgroundDisabledImage: Alloy.Styles.buttons.secondary.backgroundDisabledImage,
+    color: Alloy.Styles.buttons.secondary.color,
+    disabledColor: Alloy.Styles.buttons.secondary.disabledColor,
+    height: 40,
+    width: 200
+},
+
+'.horizontal_separator': {
+    width: '100%',
+    backgroundColor: Alloy.Styles.color.background.dark,
+    height: 1,
+    left: 0,
+    top: 10
+},
+
+'.vertical_separator': {
+    width: 1,
+    backgroundColor: Alloy.Styles.color.background.dark,
+    height: '100%',
+    top: 0
+},
+
+'.admin_action_button': {
+    font: Alloy.Styles.smallButtonFont,
+    width: Ti.UI.FILL,
+    height: 30,
+    top: 10,
+    bottom: 20
+},
+
+/* Font usages exposed as classes */
+
+'.appFont': {
+    font: Alloy.Styles.appFont
+},
+
+'.titleFont': {
+    font: Alloy.Styles.titleFont
+},
+
+'.calloutFont': {
+    font: Alloy.Styles.calloutFont
+},
+
+'.subtitleFont': {
+    font: Alloy.Styles.subtitleFont
+},
+
+'.headlineFont': {
+    font: Alloy.Styles.headlineFont
+},
+
+'.productFont': {
+    font: Alloy.Styles.productFont
+},
+
+'.smallAccentFont': {
+    font: Alloy.Styles.smallAccentFont
+},
+
+'.smallerAccentFont': {
+    font: Alloy.Styles.smallerAccentFont
+},
+
+'.bigAccentFont': {
+    font: Alloy.Styles.bigAccentFont
+},
+
+'.productCalloutFont': {
+    font: Alloy.Styles.productCalloutFont
+},
+
+'.featuredProductFont': {
+    font: Alloy.Styles.featuredProductFont
+},
+
+'.calloutCopyFont': {
+    font: Alloy.Styles.calloutCopyFont
+},
+
+'.textFieldFont': {
+    font: Alloy.Styles.textFieldFont
+},
+
+'.dialogFieldFont': {
+    font: Alloy.Styles.dialogFieldFont
+},
+
+'.detailTextFont': {
+    font: Alloy.Styles.detailTextFont
+},
+
+'.detailLabelFont': {
+    font: Alloy.Styles.detailLabelFont
+},
+
+'.detailValueFont': {
+    font: Alloy.Styles.detailValueFont
+},
+
+'.lineItemFont': {
+    font: Alloy.Styles.lineItemFont
+},
+
+'.priceCalloutFont': {
+    font: Alloy.Styles.priceCalloutFont
+},
+
+'.sectionTitleFont': {
+    font: Alloy.Styles.sectionTitleFont
+},
+
+'.buttonFont': {
+    font: Alloy.Styles.buttonFont
+},
+
+'.bigButtonFont': {
+    font: Alloy.Styles.bigButtonFont
+}

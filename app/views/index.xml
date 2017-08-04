@@ -1,5 +1,11 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for main index
+-->
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
-	</Window>
+    <Window id="index">
+        <ImageView id="background" onClick="kioskLogin"/>
+        <Label id="kiosk_message" onClick="kioskLogin"/>
+        <View id="backdrop"/>
+    </Window>
 </Alloy>

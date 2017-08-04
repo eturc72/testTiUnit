@@ -1,0 +1,44 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for checkout
+-->
+<Alloy>
+    <View id="checkout_container">
+        <View id="left_column">
+            <View id="header_container">
+                <Require id="header" src="checkout/components/header"/>
+            </View>
+            <View id="checkout_tab_group">
+                <View id="cart_tab" class="checkout_tabs">
+                    <Require id="cart" src="checkout/cart/index"/>
+                </View>
+                <View id="address_tab" class="checkout_tabs">
+                    <Require id="shipping_address" src="checkout/address/index" addressType="shipping"/>
+                </View>
+                <View id="billing_address_tab" class="checkout_tabs">
+                    <Require id="billing_address" src="checkout/address/index" addressType="billing"/>
+                </View>
+                <View id="shipping_methods_tab" class="checkout_tabs">
+                    <Require id="shipping_method" src="checkout/shippingMethod/index"/>
+                </View>
+                <View id="payments_tab" class="checkout_tabs">
+                    <Require id="payments" src="checkout/payments/index"/>
+                </View>
+                <View id="confirmation_tab" class="checkout_tabs">
+                    <Require id="confirmation" src="checkout/confirmation/index"/>
+                </View>
+            </View>
+        </View>
+        <View id="divider" />
+        <View id="right_column_container">
+            <View id="right_column">
+                <Label id="order_summary_label"/>
+                <Require id="order_totals" src="checkout/components/orderTotalSummary"/>
+                <Require id="promotions" src="checkout/components/promotionSummary"/>
+                <Require id="basket_shipping_details" src="checkout/components/shippingSummary"/>
+                <Require id="entered_payments" src="checkout/components/paymentSummary"/>
+            </View>
+            <Button id="checkout_button" accessibilityValue="checkout_button" />
+        </View>
+    </View>
+</Alloy>

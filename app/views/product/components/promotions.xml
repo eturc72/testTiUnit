@@ -1,0 +1,7 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for PDP promotions
+-->
+<Alloy>
+    <View id="promotions"/>
+</Alloy>

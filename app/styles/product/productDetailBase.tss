@@ -1,0 +1,114 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for product detail base controller
+
+'#product_order_details_view': {
+    layout: 'absolute',
+    top: 0,
+    left: 0
+},
+
+'#vertical_shadow_separator_left': {
+    left: 392,
+    top: 0,
+    width: 8,
+    backgroundImage: Alloy.Styles.rightShadowImage,
+    zIndex: 3,
+    height: '100%'
+},
+
+'#tab_page_container': {
+    layout: 'vertical',
+    left: 27,
+    width: 596,
+    height: Ti.UI.FILL // fill in the rest below the tab buttons
+},
+
+'#right_column': {
+    top: 0,
+    left: 400,
+    layout: 'vertical',
+    width: 623,
+    height: '100%',
+    zIndex: 4
+},
+
+'#left_column': {
+    top: 0,
+    left: 0,
+    layout: 'vertical',
+    width: 400,
+    zIndex: 2,
+    height: '100%'
+},
+
+'#breadcrumb_bar': {
+    layout: 'horizontal',
+    height: 49,
+    backgroundColor: Alloy.Styles.tabs.backgroundColorDisabled,
+    width: '100%'
+},
+
+'#breadcrumbs_back_button': {
+    image: Alloy.Styles.backButtonImage,
+    width: 49,
+    height: 49,
+    style: Ti.UI.iOS.SystemButtonStyle.PLAIN
+},
+
+'#pdp_tab_buttons': {
+    layout: 'horizontal',
+    height: 49
+},
+
+'#details_button': {
+    backgroundColor: Alloy.Styles.tabs.backgroundColorEnabled,
+    titleid: '_Details'
+},
+
+'#description_button': {
+    titleid: '_Description'
+},
+
+'#store_availability_button': {
+    titleid: '_Inventory',
+    visible: false
+},
+
+'#recommendations_button': {
+    titleid: '_Recommendations'
+},
+
+'#pdp_details_tab': {
+    // default tab, this will get changed in controller based on tab switching
+    height: Ti.UI.FILL, // fill in below the header
+    width: Ti.UI.SIZE,
+    visible: true,
+    left: 7
+},
+
+'#pdp_description_tab': {
+    left: 7
+},
+
+'#pdp_header': {
+    height: Ti.UI.SIZE,
+    width: '100%'
+},
+
+'.tab_view': {
+    layout: 'vertical',
+    // this will get changed in controller based on tab switching
+    width: 0,
+    height: 0,
+    visible: false,
+    left: 0
+},
+
+'.tab_header': {
+    left: 0,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    font: Alloy.Styles.buttonFont,
+    top: 32
+}

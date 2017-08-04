@@ -1,0 +1,250 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for main app header
+
+'#header': {
+    backgroundColor: Alloy.Styles.color.background.black,
+    top: 0,
+    left: 0,
+    height: 75,
+    zIndex: 1
+},
+
+'#header_tab_container': {
+    layout: 'horizontal',
+    left: 0,
+    width: '38%'
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: 75,
+    opacity: 0.25,
+    backgroundColor: Alloy.Styles.color.background.black,
+    zIndex: 999
+},
+
+'#modal_control_container': {
+    top: 5,
+    left: '36%',
+    layout: 'horizontal',
+    width: '37%'
+},
+
+'#navigation_container': {
+    layout: 'absolute',
+    backgroundColor:Alloy.Styles.accentColor,
+    top: 20,
+    left: 0,
+    height: 55,
+    width: '100%'
+},
+
+'#home_icon': {
+    width: 60,
+    height: 45,
+    top: 5,
+    left: 5,
+    image: Alloy.Styles.homeImage,
+    accessibilityLabel: 'home_icon'
+},
+
+
+'#payment_device_icon': {
+    // This will be 0 until shown
+    width: 0,
+    height: 34,
+    top: 11,
+    left: 0,
+    image: Alloy.Styles.paymentDeviceConnectedImage,
+    accessibilityLabel: 'payment_device_icon'
+},
+
+'#product_search_icon': {
+    width: 30,
+    height: 30,
+    top: 5,
+    left: 0,
+    backgroundImage: Alloy.Styles.productSearchImage
+},
+
+'#product_search_container': {
+    top: 6,
+    height: 45,
+    width: 210,
+    left: 20,
+    layout: 'horizontal',
+    accessibilityLabel: 'product_search_container'
+},
+
+'#product_search_query': {
+    textid: '_Search_Button'
+},
+
+'#product_items_count': {
+    color: Alloy.Styles.accentColor,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    top: 6,
+    left: 2,
+    height: 32,
+    width: 40,
+    backgroundImage: Alloy.Styles.cartImage,
+    font: Alloy.Styles.detailValueFont
+},
+
+'#cart_label': {
+    color: Alloy.Styles.color.text.white,
+    shadowColor: Alloy.Styles.color.shadow.medium,
+    shadowOffset: {
+        x: 1,
+        y: 1
+    },
+    textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+    left: 2,
+    top: 7,
+    font: Alloy.Styles.calloutFont,
+    width: 140
+},
+
+'#cart_container': {
+    layout: 'horizontal',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+    width: '20%',
+    left: '80%',
+    top: 5,
+    backgroundSelectedImage: Alloy.Styles.headerButtonDownImage,
+    backgroundFocusedImage: Alloy.Styles.headerButtonDownImage,
+    height: 45
+},
+
+// ### ASSOCIATE CLASSES ###
+
+'#associate_logout_container': {
+    top: 0,
+    width: 160,
+    height: 55,
+    left: 0,
+    layout: 'vertical'
+},
+
+'#associate_logout_button': {
+    layout: 'horizontal',
+    width: 160,
+    height: 45,
+    left: 0,
+    backgroundSelectedImage: Alloy.Styles.headerButtonDownImage,
+    backgroundFocusedImage: Alloy.Styles.headerButtonDownImage,
+    top: 0
+},
+
+
+'#associate_label': {
+    width: 106
+},
+
+'#associate_icon': {
+    image: Alloy.Styles.agentImage,
+    height: 24,
+    width: 24,
+    left: 14,
+    top: 10
+},
+
+//
+// ### CUSTOMER CLASSES
+//
+'#customer_shopfor_container': {
+    layout: 'horizontal',
+    top: 0,
+    width: 210,
+    height: 55,
+    left: 0
+},
+
+'.customer_container': {
+    layout: 'horizontal',
+    top: 0,
+    width: 210,
+    height: 45,
+    left: 0,
+    backgroundSelectedImage: Alloy.Styles.headerButtonDownImage,
+    backgroundFocusedImage: Alloy.Styles.headerButtonDownImage
+},
+
+'#customer_lookup_icon': {
+    image: Alloy.Styles.customerImage,
+    height: 28,
+    width: 38,
+    left: 4,
+    top: 10
+},
+
+'#customer_icon_loggedIn': {
+    image: Alloy.Styles.customerImage,
+    height: 28,
+    width: 38,
+    left: 4,
+    top: 10
+},
+
+'#customer_lookup_label': {
+    textid: '_Customer_Search_Button'
+},
+
+'.customer_label': {
+    width: 160
+},
+
+'.header_label': {
+    font: Alloy.Styles.buttonFont,
+    shadowColor: Alloy.Styles.color.shadow.medium,
+    shadowOffset: {
+        x: 1,
+        y: 1
+    },
+    color: Alloy.Styles.color.text.white,
+    left: 10,
+    ellipsize: true,
+    height: 45
+},
+
+'#vertical_divider': {
+    image: Alloy.Styles.verticalDividerImage,
+    width: 2,
+    height: 55,
+    top: 0
+},
+
+'.wish_list_container': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+    width: 0,
+    left: '73%',
+    top: 5,
+    borderRadius: 22.5,
+    height: 0,
+    visible: false
+},
+
+'#wish_list_button': {
+    width: '76%',
+    backgroundImage: Alloy.Styles.starImageWhite,
+    color: Alloy.Styles.accentColor,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    font: Alloy.Styles.detailValueFont,
+    left: 1,
+    bottom: 4,
+    top: 2,
+    height: '96%'
+},
+
+'#hamburger_menu': {
+    left: 5,
+    top: 10,
+    width: 38,
+    height: 35,
+    backgroundImage: Alloy.Styles.hamburgerMenuImageWhite,
+    backgroundSelectedImage: Alloy.Styles.hamburgerMenuImageBlack,
+    backgroundColor: Alloy.Styles.accentColor
+}

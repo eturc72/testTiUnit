@@ -1,0 +1,787 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="___Requires_Logout" context="adminDashboard.appSettings.info">* ログアウトが必要です</string>
+  <string name="__d_Customer" context="customer.customerSearch.header.msg">%d 人の顧客</string>
+  <string name="__d_Customers" context="customer.customerSearch.header.msg">%d 人の顧客</string>
+  <string name="__d_item_s__are_available_for_pre_order_" context="productDetails.info">予約販売が可能な個数は %d 個です。</string>
+  <string name="__d_Item_s__In_Stock_" context="productDetails.info">在庫は %d 点あります。</string>
+  <string name="__d_minute" context="adminDashboard.appSettings.Sesion Timeout.select">%d 分</string>
+  <string name="__d_minutes" context="adminDashboard.appSettings.Sesion Timeout.select">%d 分</string>
+  <string name="__d_Product" context="productSearch.header.msg">商品件数: %d</string>
+  <string name="__d_Products" context="productSearch.header.msg">商品件数: %d</string>
+  <string name="__d_saved_products_retrieved_from_your_cart" context="customerSearch.notification.info">買い物カゴから %d 点の保存した商品を取得しました。</string>
+  <string name="__d_second" context="adminDashboard.appSettings.Sesion Timeout.select">%d 秒</string>
+  <string name="__d_seconds" context="adminDashboard.appSettings.Sesion Timeout.select">%d 秒</string>
+  <string name="__d_Order" context="order.search.header.msg" >%d 件の注文</string>
+  <string name="__d_Orders" context="order.search.header.msg" >%d 件の注文</string>
+  <string name="__s____s_Surcharge" context="checkout.shippingMethod.info">%s + %s 追加料金</string>
+  <string name="__s__" context="label with no info">%s:  </string>
+  <string name="__s___s" context="label with info">%s: %s</string>
+  <string name="__s__Change_" context="login.button">%s (変更)</string>
+  <string name="__s_added_to_Wish_List_" context="checkout.cart.cartItems.notification.msg && productDetails.details.notification.msg">'%s' がほしい物リストに追加されました。</string>
+  <string name="__s_added_to_Wish_List__s_" context="checkout.cart.cartItems.notification.msg && productDetails.details.notification.msg">'%s' がほしい物リスト '%s' に追加されました。</string>
+  <string name="__s_does_not_have_a_wish_list"  context="productDetails.details.dialog.msg">'%s' さんはほしい物リストを持っていません。</string>
+  <string name="__s_off_for___s_" context="checkout.cart.info">%s オフ ('%s')</string>
+  <string name="___s__is_already_logged_in_" context="customer.search.login.alert.msg">'%s' さんはすでにログインしています。</string>
+  <string name="__s_to_go_for___s_" context="checkout.cart.info">%s の対象 ('%s')</string>
+  <string name="__s_updated_in_Wish_List_" context="checkout.cart.notification.info && productDetails.notification.info">'%s' がほしい物リストで更新されました。</string>
+  <string name="__s_updated_in_Wish_List__s_" context="checkout.cart.notification.info && productDetails.notification.info">'%s' がほしい物リスト '%s' で更新されました。</string>
+  <string name="__select_printer_" context="checkout.confirmation.info">&lt;プリンタを選択&gt;</string>
+  <string name="__Type__LAN" context="startup.notification.msg">タイプ:LAN</string>
+  <string name="__Type__MOBILE" context="startup.notification.msg">タイプ:モバイル</string>
+  <string name="__Type__UNKNOWN" context="startup.notification.msg">タイプ:不明</string>
+  <string name="__Type__WIFI" context="startup.notification.msg">タイプ:WIFI</string>
+  <string name="_1_saved_product_retrieved_from_your_cart" context="customerSearch.customer.notification.msg">買い物カゴから 1 点の保存した商品を取得しました。</string>
+  <string name="_A_manager_override_has_already_been_applied__Click_Remove_to_remove_the_override_and_continue_to_the_override_screen_" context="checkout.cart.override.dialog.info">マネージャーによる調整はすでに適用されています。調整を削除して調整画面に進むには \"削除\" をタップします。</string>
+  <string name="_A_price_override_has_been_applied_to_this_item__Replacing_the_item_will_remove_the_override_" context="productDetails.details.dialog.info" >この商品に価格の調整を適用しました。商品を置換すると調整が削除されます。</string>
+  <string name="_A_price_override_has_been_applied_to_this_item__Saving_the_item_will_remove_the_override_" context="checkout.cart.dialog.info">この商品に価格の調整を適用しました。商品を保存すると調整が削除されます。</string>
+  <string name="_A_restart_is_required_" context="adminDashboard.appSettings.notification.msg">再起動が必要です。「ようこそ」のダイアログを表示して設定を再度変更するには、アプリケーションを手動で再起動する必要があります。</string>
+  <string name="_A_shipping_override_has_been_applied__Changing_shipping_methods_will_remove_the_override_"  context="checkout.cart.ShipMethods.dialog.info">配送の調整が適用されました。配送方法を変更すると、調整が削除されます。</string>
+  <string name="_A_shipping_override_has_been_applied" context="checkout.cart.ShipMethods.info">配送の調整が適用されました。</string>
+  <string name="_Accept" context="checkout.confirmation.SignatureDialog.button">受け入れる</string>
+  <string name="_According_to_the_USPS_database___">郵便サービスの住所データベースによると、入力した住所にエラーがあるか、重要な情報が欠けている可能性があります。使用する住所のバージョンを選択するか、キャンセルして住所を編集することができます。</string>
+  <string name="_Account_successfully_created_" context="customer.createCustomer.notification.msg" >アカウントが正常に作成されました。</string>
+  <string name="_Actions_" context="adminDashboard.appSettings.heading">操作</string>
+  <string name="_Add_Address"  context="customer.address.enterAddress.title" >住所の追加</string>
+  <string name="_Add_All_To_Basket" context="analytics.msg">買い物カゴにすべて入れる</string>
+  <string name="_Add_All_to_Cart" context="productDetails.details.button">買い物カゴにすべて入れる</string>
+  <string name="_Add_New_Address" context="checkout.shippingAddress.button && customer.profile.button && checkout.billingaddress.button">新しい住所を追加する</string>
+  <string name="_Add_To_Basket" context="analytics.msg">買い物カゴに入れる</string>
+  <string name="_Add_to_Cart" context="checkout.cart.saveditems.button && productDetails.details.button && checkout.cart.wishlist.button">買い物カゴに入れる</string>
+  <string name="_Add_to_Wish_List" context="checkout.cart.saveditems.button && productDetails.details.button && checkout.cart.cartItems.button">ほしい物リストに追加</string>
+  <string name="_Added_Payment_Device__" context="adminDashboard.devices.adyen.msg">追加済みの支払デバイス:  </string>
+  <string name="_Adding_product_to_cart" context="productDetails.details.log.msg">商品を買い物カゴに追加</string>
+  <string name="_Address" context="checkout.cart.tabs">住所 </string>
+  <string name="_Address_" context="enterAddress.field.hint.msg">住所*</string>
+  <string name="_Address___s__successfully_deleted_" context="customer.address.enterAddress.notification.msg">住所 '%s' は正常に削除されました。</string>
+  <string name="_Address_successfully_saved_" context="customer.address.enterAddress.notification.msg">住所は正常に保存されました。</string>
+  <string name="_Address_You_Entered" context="addressVerification.dialog.header">入力した住所</string>
+  <string name="_Addresses" context="customer.tabs">住所</string>
+  <string name="_Adjustment_Reason" context="checkout.cart.override.select && checkout.shipping.override.select">調整理由</string>
+  <string name="_Admin" context="header.button">管理者</string>
+  <string name="_Admin_Dashboard" context="header.admin.title">管理ダッシュボード</string>
+  <string name="_Adyen_Information" context="adminDashboard.devices.adyen.heading">Adyen 情報</string>
+  <string name="_Adyen_Library_Version__" context="adminDashboard.devices.adyen.msg">Adyen ライブラリのバージョン:  </string>
+  <string name="_Alert" context="adminDashboard.devices.dialog.title">警告</string>
+  <string name="_All_Departments" context="categoryselect.button">すべての部門</string>
+  <string name="_Amount_Off" context="checkout.cart.override.label && checkout.shipping.override.label">割引金額</string>
+  <string name="_Amount_off_cannot_be_greater_than_the_base_price" context="checkout.cart.override.error && checkout.shipping.override.error">割引金額を基準価格より大きくすることはできません。</string>
+  <string name="_Amount_off_must_be_a_number" context="checkout.cart.override.error && checkout.shipping.override.error">割引金額は数字でなければなりません。</string>
+  <string name="_Amount_to_be_applied_to_order_" context="checkout.cart.payments.dialog.label">注文に適用する金額: </string>
+  <string name="_An_error_occurred_validating_the_device_" context="startup.notification.msg">デバイスの検証中にエラーが発生しました。</string>
+  <string name="_App_Settings" context="adminDashboard.tabs">アプリ設定</string>
+  <string name="_Application_Cache_Cleared" context="adminDashboard.configuration.notification.msg">アプリケーションのキャッシュをクリアしました</string>
+  <string name="_Application_Information" context="adminDashboard.devices.adyen.heading">アプリケーション情報</string>
+  <string name="_Application_Name__" context="adminDashboard.devices.adyen.msg">アプリケーション名:  </string>
+  <string name="_Application_settings_applied_" context="adminDashboard.appSettings.notification.msg">アプリケーション設定を適用しました。</string>
+  <string name="_Application_settings_cleared_" context="adminDashboard.appSettings.notification.msg">アプリケーション設定をクリアしました。</string>
+  <string name="_Applied_Filters" context="productGrid.filterRefinementPanel.heading">適用されているフィルター</string>
+  <string name="_Apply" context="adminDashboard.appSettings.button">適用</string>
+  <string name="_ApplyConfigText" context="adminDashboard.appSettings.info">変更をコミットするには、\"適用\" をタップします。変更を破棄するには、この画面から移動します。</string>
+  <string name="_Approve" context="checkout.confirmation.dialog.button">Approve</string>
+  <string name="_Approve_Signature" context="checkout.confirmation.dialog.msg">署名の承認</string>
+  <string name="_Approved" context="checkout.confirmation.dialog.title">承認されました</string>
+  <string name="_Associate" context="header.button">担当者</string>
+  <string name="_Associate_" context="epsonReceipt.msg">担当者: </string>
+  <string name="_Associate_ID" context="login.field.hint.msg">担当者 ID</string>
+  <string name="_Associate_Logged_Out" context="header.notification.msg">担当者はログアウト済み</string>
+  <string name="_Associate_Login" context="login.title">担当者のログイン</string>
+  <string name="_Associate_Login_Successful" context="kiosk.categoryGrid.notification.msg" >担当者はログインに成功</string>
+  <string name="_Associates" context="salesReports.Ranks.tabs">担当者</string>
+  <string name="_Authentication_error" context="salesReport.error">認証エラー</string>
+  <string name="_Authorize" context="login.dialog.button">認証</string>
+  <string name="_Availability_" context="productDetails.details.msg">入手可能性:</string>
+  <string name="_Back" context="welcomeDialog.button">戻る</string>
+  <string name="_Back_Order" context="productDetails.details.msg">取り寄せ</string>
+  <string name="_Back_Order__d_item_s__" context="productDetails.details.msg">取り寄せ %d 商品。</string>
+  <string name="_Balance_Due__" context="checkout.payments.msg">請求金額: </string>
+  <string name="_Base_URL__" context="adminDashboard.configuration.msg">ベース URL:  </string>
+  <string name="_Base_Version__" context="adminDashboard.configuration.msg">ベースのバージョン:  </string>
+  <string name="_Basket" context="analytics.msg">買い物カゴ</string>
+  <string name="_Being_Processed" context="checkout.confirmation.msg">手配中</string>
+  <string name="_Billing" context="checkout.tabs" >請求</string>
+  <string name="_Billing_Address" context="analytics.msg">請求先住所</string>
+  <string name="_Birthday__" context="customer.profile.msg">誕生日:  </string>
+  <string name="_Bluetooth" context="adminDashboard.devices.adyen.radio">Bluetooth</string>
+  <string name="_Bad_URL" context="salesReports.error">不正な URL</string>
+  <string name="_Board" context="adminDashboard.devices.adyen.button">接続する</string>
+  <string name="_Both_fields_must_have_a_password" context="login.error">両方のフィールドにパスワードを指定する必要があります。</string>
+  <string name="_BreadCrumbSeparator" context="productSearch.header.info">></string>
+  <string name="_By_tapping_on__Continue___the_cart_will_be_cleared_and_you_will_logout_the_current_customer_you_are_logged_in_as_" context="customer.search.profile.msg">\"次に進む\" をタップすると、買い物カゴがクリアされ、現在の顧客がログアウトされます。</string>
+  <string name="_CacheText" context="adminDashboard.configuration.msg">この iPad にローカルに保存されているカタログと商品データを削除します。</string>
+  <string name="_Cancel" context="login.ManagerWindow.button">キャンセル</string>
+  <string name="_Cannot_login_as___s__" context="customer.login.error">'%s' としてログインできません。</string>
+  <string name="_Cancel_Order" context="checkout.payments.button">注文のキャンセル</string>
+  <string name="_Cannot_save_address_" context="customer.enterAddress.error">住所を保存できません。</string>
+  <string name="_Cannot_save_billing_address_" context="checkout.billing.enterAddress.error">請求先住所を保存できません。</string>
+  <string name="_Cannot_save_shipping_address_or_email_" context="checkout.shipping.enterAddress.error">配送先住所または Eメールを保存できません。</string>
+  <string name="_Cannot_validate_device" context="adminDashboard.devices.verifone.label">デバイスを検証できません</string>
+  <string name="_Capturing_Data" context="adminDashboard.devices.verifone.header">データの取得</string>
+  <string name="_Card_number_entered_is_invalid__Please_cancel_payment_and_try_again_" context="adminDashboard.devices.verifone.msg">入力されたクレジットカード番号が無効です。支払いをキャンセルしてもう一度やり直してください。</string>
+  <string name="_Card_was_declined__Please_try_another_card_" context="checkout.payments.error">カードが拒否されました。別のカードを使用してください。</string>
+  <string name="_Cart" context="analytics.msg">買い物カゴ</string>
+  <string name="_Cart_Tab" context="checkout.tabs">買い物カゴ</string>
+  <string name="_Cart_Cleared" context="header.notification.msg">買い物カゴをクリアしました</string>
+  <string name="_Cart_Items___d" context="checkout.cart.tabs">買い物カゴ内の商品: %d</string>
+  <string name="_Change_Password" context="login.dialog.title">パスワードの変更</string>
+  <string name="_Checkout" context="checkout.button">注文手続きへ</string>
+  <string name="_Check_Configuration" context="adminDashboard.devices.adyen.info">構成の確認</string>
+  <string name="_China" context="welcomeDialog.select">中国</string>
+  <string name="_Chinese" context="welcomeDialog.select">中国語</string>
+  <string name="_City_" context="enterAddress.select">市区町村*</string>
+  <string name="_Clear" context="checkout.confirmation.dialog.Button">クリア</string>
+  <string name="_Clear_App_Settings" context="adminDashboard.appSettings.button">アプリ設定のクリア</string>
+  <string name="_Clear_Cache" context="adminDashboard.configuration.button">キャッシュのクリア</string>
+  <string name="_Clear_Cart" context="hamburgermenu.button">買い物カゴのクリア</string>
+  <string name="_Clear_Results" context="adminDashboard.test.button">結果のクリア</string>
+  <string name="_ClearChangesText" context="adminDashboard.appSettings.msg">設定データベースを削除して、コードされたデフォルトに構成を戻します。アプリ設定のクリア後、再起動時に「ようこそ」のダイアログが表示されます。</string>
+  <string name="_Client_Credentials_Not_Set_Up" context="appStartup.errorDialog.title">クライアント認証情報が設定されていません</string>
+  <string name="_Client_ID__" context="adminDashboard.configuration.msg">クライアント ID: </string>
+  <string name="_Client_Version__" context="adminDashboard.buildInfo.label">クライアントのバージョン:  </string>
+  <string name="_Color_" context="productGrid.filterRefinementPanel.msg">色:</string>
+  <string name="_Config_Settings_" context="adminDashboard.configuration.heading">構成設定: </string>
+  <string name="_Configuration" context="adminDashboard.tabs">構成</string>
+  <string name="_Configuration_Error" context="startup.error.title">構成エラー</string>
+  <string name="_Confirm" context="addressVerification.button">確認</string>
+  <string name="_Confirm_Current_Customer_Logout" context="customer.search.profile.logout.title">現在の顧客のログアウトの確認</string>
+  <string name="_Confirm_Phone_Number" context="checkout.shipping.dialog.label">電話番号の確認</string>
+  <string name="_Confirmation" context="checkout.tabs">確認</string>
+  <string name="_Connection_to_payment_device_was_successful_" context="checkout.payments.notification.msg">支払デバイスへの接続に成功しました。</string>
+  <string name="_Console" context="adminDashboard.devices.verifone.label">コンソール</string>
+  <string name="_Continue"  context="sessionTimeoutConfirmation.dialog.button">次に進む</string>
+  <string name="_Could_not_cancel_the_order_" context="associateLogout.cancelOrder.error.msg">注文をキャンセルできませんでした。</string>
+  <string name="_Could_not_delete_address___s__" context="customer.address.notification.msg">住所 '%s' を削除できませんでした。</string>
+  <string name="_Could_not_find_any_customers_matching" context="customer.error">'%s' と一致する顧客が見つかりませんでした。</string>
+  <string name="_Could_not_find_any_customers_matching___s__" context="customer.search.error.msg">'%s' と一致する顧客が見つかりませんでした。</string>
+  <string name="_Could_not_get___s__profile_information" context="customer.error">'%s' プロフィール情報を取得できませんでした。</string>
+  <string name="_Could_not_remove_coupon_" context="checkout.cart.notification.msg">クーポンを削除できませんでした。</string>
+  <string name="_Could_not_remove_override_" context="checkout.shippingoverride.notification.msg">調整を削除できませんでした。</string>
+  <string name="_Could_not_retrieve_order___s__" context="customer.order.error">注文 '%s' を取得できませんでした。</string>
+  <string name="_Could_not_retrieve_orders_for_id_or_email___s__" context="order.search.error.msg">ID または Eメール '%s' の注文を取得できませんでした。</string>
+  <string name="_Could_not_save_customer_address_data_" context="checkout.address.enterAddress.notification.msg">顧客の住所データを保存できませんでした。</string>
+  <string name="_Country_" context="enterAddress.field.hint.msg">国*</string>
+  <string name="_Country__" context="welcomeDialog.field.msg">国: </string>
+  <string name="_Country_Message_" context="welcomeDialog.msg">店舗を選択するには、まず国を選択してください。</string>
+  <string name="_Coupon_" context="checkout.cart.msg">クーポン </string>
+  <string name="_Coupon___s__could_not_be_applied_" context="checkout.cart.notification.msg">クーポン '%s' を適用できませんでした。</string>
+  <string name="_Coupon___s__is_already_in_your_cart_" context="checkout.cart.notification.msg">クーポン '%s' はすでに買い物カゴに入っています。</string>
+  <string name="_Coupon___s__is_invalid_" context="checkout.cart.notification.msg">クーポン '%s' は無効です。</string>
+  <string name="_Coupon_Applied_" context="epsonReceipt.msg">適用済みクーポン: </string>
+  <string name="_Create" context="customer.createCustomer.dialog.button">作成</string>
+  <string name="_Create_Account" context="customer.createCustomer.dialog.title">アカウントの作成</string>
+  <string name="_Create_Customer" context="hamburgermenu.button">顧客の作成</string>
+  <string name="_Create_Customer_Title" context="hamburgermenu.createCustomer.alert.dialog.title">顧客の作成</string>
+  <string name="_Create_New_User" context="analytics.msg">新規ユーザーの作成</string>
+  <string name="_Create_Order" context="checkout.shippingMethods.button">注文の作成</string>
+  <string name="_Create_User" context="analytics.msg">ユーザーの作成</string>
+  <string name="_Credit_Card" context="checkout.payments.tabs">クレジットカード</string>
+  <string name="_Current_Storefront__" context="login.button">現在のストアフロント:  </string>
+  <string name="_Custom" context="salesReports.tabs">カスタム</string>
+  <string name="_Custom_1" context="customer.tabs">カスタム 1</string>
+  <string name="_Customer_Address" context="analytics.msg">顧客の住所</string>
+  <string name="_Customer_Addresses" context="analytics.msg">顧客の住所</string>
+  <string name="_Customer_address_name___s__is_already_in_use_" context="enterAddress.error">顧客の住所名 '%s' はすでに使用されています。</string>
+  <string name="_Customer_Details" context="customer.profile.heading">顧客情報</string>
+  <string name="_Customer_Edit_Profile" context="analytics.msg">顧客プロフィールの編集</string>
+  <string name="_Customer_History" context="analytics.msg">顧客の履歴</string>
+  <string name="_Customer_Login" context="analytics.msg">顧客のログイン</string>
+  <string name="_Customer_must_be_logged_in_to_add_to_wish_list__Please_look_up_customer_" context="productDetails.details.dialog.error">ほしい物リストに追加するには、顧客がログインしていることが必要です。顧客を検索してください。</string>
+  <string name="_Customer_Number__" context="customer.details.msg">顧客ナンバー: </string>
+  <string name="_Customer_Profile" context="analytics.msg">顧客プロフィール</string>
+  <string name="_Customer_profile_data_successfully_saved_" context="customer.profile.notification.msg">顧客のプロフィールデータを正常に保存しました。</string>
+  <string name="_Customer_Search" context="analytics.msg">顧客の検索</string>
+  <string name="_Customer_Search_Label" context="customer.search.page.title">顧客の検索</string>
+  <string name="_Customer_Search_Button" context="header.button && hamburgermenu.button">顧客の検索</string>
+  <string name="_Customers_Tab" context="search.tab">顧客</string>
+  <string name="_Date_" context="epsonReceipt.msg">日付: </string>
+  <string name="_Date_Ordered_" context="customer.history.msg">注文日: </string>
+  <string name="_Days_since_last_login__" context="customer.details.msg">前回のログインからの経過日数:  </string>
+  <string name="_Days_since_last_visit__" context="customer.details.msg">前回の訪問からの経過日数:  </string>
+  <string name="_Decline" context="checkout.dialog.button">拒否</string>
+  <string name="_Delete" context="checkout.cart.button">削除</string>
+  <string name="_Delete_Address" context="customer.address.dialog.title">住所の削除</string>
+  <string name="_Delete_Coupon" context="checkout.cart.dialog.title" >クーポンの削除</string>
+  <string name="_Delete_Item" context="checkout.cart.dialog.title">商品の削除</string>
+  <string name="_Description" context="productDetails.tabs">説明</string>
+  <string name="_Details" context="productDetails.tabs">詳細</string>
+  <string name="_Details_for_gift_card_ending_in_" context="checkout.payments.dialog.msg">次で終わるギフトカードの情報: </string>
+  <string name="_Device_Boarded_Successfully" context="adminDashboard.devices.adyen.notification.msg">デバイスを正常に接続しました</string>
+  <string name="_Device_Error" context="adminDashboard.devices.adyen.error">デバイスエラー</string>
+  <string name="_Device_Name__" context="adminDashboard.devices.verifone.label">デバイス名:  </string>
+  <string name="_Device_Information" context="adminDashboard.devices.verifone.label">デバイス情報</string>
+  <string name="_Device_Version__" context="adminDashboard.devices.adyen.msg">デバイスのバージョン:  </string>
+  <string name="_Device_Platform__" context="adminDashboard.devices.adyen.msg">デバイスのプラットフォーム:  </string>
+  <string name="_Device_Status__" context="adminDashboard.devices.adyen.msg">デバイスのステータス:  </string>
+  <string name="_Discard_Changes" context="adminDashboard.appSettings.dialog.title">変更の破棄</string>
+  <string name="_Disconnected" context="adminDashboard.devices.adyen.info">接続が切断されました</string>
+  <string name="_Discount_" context="checkout.orderSummary.msg">割引:</string>
+  <string name="_Discounts" context="checkout.orderSummary.msg">割引</string>
+  <string name="_Distance_Unit_" context="adminDashboard.appSettings.Label">距離の単位: </string>
+  <string name="_Do_you_really_want_to_delete_this_address_" context="customer.address.dialog.msg">住所 '%s' を削除しますか?</string>
+  <string name="_Do_you_really_want_to_delete_this_coupon_" context="checkout.cart.dialog.msg">クーポン '%s' を削除しますか?</string>
+  <string name="_Do_you_really_want_to_delete_this_item_" context="checkout.cart.dialog.msg">商品 '%s' を削除しますか?</string>
+  <string name="_DNS_lookup_error___Host_name_cannot_be_resolved_"  context="salesReports.error">DNS 検索エラー: ホスト名を解決できません。</string>
+  <string name="_Edit" context="customer.profile.button">編集</string>
+  <string name="_Edit_Profile" context="customer.profile.editProfile.title">プロフィールの編集</string>
+  <string name="_Effective_Loggable_Categories" context="adminDashboard.logs.Label">有効なログ可能カテゴリ</string>
+  <string name="_Email" context="checkout.confirmation.dialog.button">Eメール</string>
+  <string name="_Email__" context="epsonReceipt.msg && customer.msg">Eメール: </string>
+  <string name="_Email_Address_" context="customer.createCustomer.field.hint.msg && checkout.address.enterAddress.field.hint.msg">Eメールアドレス*</string>
+  <string name="_Email_Configs" context="adminDashboard.appSettings.button">構成を Eメールで送信</string>
+  <string name="_Email_Receipt" context="checkout.confirmation.button">領収書を Eメールで送信</string>
+  <string name="_Email_Test_Results" context="adminDashboard.tests.button">テスト結果を Eメールで送信</string>
+  <string name="_Email_of_configuration_has_been_sent_" context="adminDashboard.sppSettings.notificaiton.msg">構成の Eメールを送信しました。</string>
+  <string name="_Email_of_testing_log_has_been_sent_" context="adminDashboard.tests.notificaiton.msg">テストログの Eメールを送信しました。</string>
+  <string name="_Email_of_testing_log_was_not_sent_" context="adminDashboard.tests.notificaiton.msg">テストログの E メールは送信されませんでした。</string>
+  <string name="_Email_Wish_List" context="checkout.cart.wishList.button">ほしい物リストを Eメールで送信</string>
+  <string name="_Emailing_receipt" context="checkout.confirmation.notificaiton.msg">領収書の Eメールを送信中…</string>
+  <string name="_EmailLogText" context="adminDashboard.logs.msg">サーバーのサポート Eメールリストにログを送信します。</string>
+  <string name="_EmailTestsText" context="adminDashboard.tests.msg">サーバーのサポート Eメールリストにテスト結果を送信します。</string>
+  <string name="_EmailText" context="adminDashboard.appSettings.msg">サーバーのサポート Eメールリストに構成を送信します。</string>
+  <string name="_Encryption_Type__" context="adminDashboard.devices.msg">暗号化タイプ:  </string>
+  <string name="_End_date_cannot_be_before_start_date_" context="salesReport.Custom.error">終了日を開始日よりも前にすることはできません。</string>
+  <string name="_End_Session" context="sessionTimeoutConfirmation.dialog.button">セッションの終了</string>
+  <string name="_End_Session_Message" context="sessionTimeoutConfirmation.dialog.msg">アイドル状態が続いたため、%d 秒でセッションを終了します。買い物を続けますか?</string>
+  <string name="_Ending_In_" context="epsonReceipt.msg">次で終了: </string>
+  <string name="_English" context="welcomeDialog.select">英語</string>
+  <string name="_Enter_Associate_ID" context="login.dialog.subtitle">担当者 ID を入力してください</string>
+  <string name="_Enter_email_address" context="checkout.shipping.error" >Eメールアドレスを入力します。</string>
+  <string name="_Enter_email_here" context="checkout.shipping.field.hint.msg">ここに Eメールを入力します。</string>
+  <string name="_Enter_First_and_Last_Name_or_Email" context="customer.customerSearch.field.hint.msg">姓名または Eメールを入力してください</string>
+  <string name="_Enter_the_adyen_payment_portal_credentials_" context="adminDashboard.devices.adyen.msg">Adyen 支払ポータルの認証情報を入力します。</string>
+  <string name="_Enter_Manager_Credentials" context="login.dialog.subtitle">パスワードの変更を進めるには、マネージャーの認証情報を入力してください。</string>
+  <string name="_Enter_Manager_ID" context="login.dialog.field.hint.msg">マネージャー ID を入力してください</string>
+  <string name="_Enter_Manager_Password" context="login.dialog.field.hint.msg">マネージャーのパスワードを入力してください</string>
+  <string name="_Enter_New_Password" context="login.dialog.field.hint.msg">新しいパスワードを入力してください</string>
+  <string name="_Enter_Order_ID_or_Customer_Email" context="header.search.field.hint.msg">注文 ID または顧客 Eメールを入力してください</string>
+  <string name="_Enter_Promo_Code_for_additional_discounts_" context="checkout.cart.msg">さらに割引を適用するには、プロモーションコードを入力します。</string>
+  <string name="_Enter_Search_Term_or_UPC_Code" context="header.productSearch.field.hint.msg">検索用語または UPC コードを入力してください</string>
+  <string name="_Enter_your_credentials" context="login.msg">認証情報を入力してください</string>
+  <string name="_Error" context="checkout.payments.dialog.msg">エラー</string>
+  <string name="_Error__" context="enterAddress.error">エラー:  </string>
+  <string name="_Error_applying_credit_card___Please_try_again_" context="checkout.payments.dialog.msg">クレジットカードの適用でエラーが発生しました。\nもう一度やり直してください。</string>
+  <string name="_Error_applying_credit_card___The_order_has_not_been_confirmed_on_server_" context="checkout.payments.dialog.msg">クレジットカードの適用でエラーが発生しました。\n注文はまだサーバーで確定されていません。</string>
+  <string name="_Error_applying_gift_card___Please_try_again_" context="checkout.payments.dialog.msg">ギフトカードの適用中にエラーが発生しました。\nもう一度やり直してください。</string>
+  <string name="_Error_applying_gift_card___The_order_has_not_been_confirmed_on_server_" context="checkout.payments.dialog.msg">ギフトカードの適用でエラーが発生しました。\n注文はまだサーバーで確定されていません。</string>
+  <string name="_Error_cancelling_transaction_with_payment_provider__s" context="checkout.payment.paymentTerminal.errormsg">決済プロバイダーとの取引をキャンセル中にエラーが発生しました。担当部門に連絡して、次の注文番号の支払いをキャンセルしてください: %s</string>
+  <string name="_Error_changing_password" context="login.dialog.error">パスワードの変更中にエラーが発生しました。</string>
+  <string name="_Error_creating_account" context="customer.createCustomer.dialog.error">アカウントの作成中にエラーが発生しました。</string>
+  <string name="_Error_details_heading" context="salesReports.dialog.error">情報とシステム構成のエラー</string>
+  <string name="_Error_logging_in_associate" context="kiosk.login.error">担当者のログイン中にエラーが発生しました。</string>
+  <string name="_Error_logging_in_manager" context="login.dialog.error">マネージャーのログイン中にエラーが発生しました。</string>
+  <string name="_Error_in_application" context="Popover.error">アプリケーションにエラーが発生しました。</string>
+  <string name="_Error_sending_email" context="checkout.payments.paymentSignature.notification.error && checkout.confirmation.notification.error">Eメールの送信中にエラーが発生しました。</string>
+  <string name="_Ethernet" context="adminDashboard.devices.adyen.radio">Ethernet</string>
+  <string name="_EMV_Version__" context="adminDashboard.devices.verifone.msg">EMV バージョン:  </string>
+  <string name="_Exit" context="kiosk.header.button">終了</string>
+  <string name="_Failure_to_connect_to_host" context="salesReports.error">ホストに接続できませんでした。</string>
+  <string name="_Failure_to_load_current_customer_product_lists_" context="model.customer.productlist.error.msg">現在の顧客の商品リストを読み込めませんでした。</string>
+  <string name="_File_requested_does_not_exist_on_the_host" context="salesReports.error">リクエストしたファイルがホストに存在しません。</string>
+  <string name="_Filter" context="productGrid.header.select">フィルター</string>
+  <string name="_Filter_Options" context="productGrid.header.select.title">フィルターオプション</string>
+  <string name="_Find_Customer" context="header.button">顧客の検索</string>
+  <string name="_First_Name" context="customer.editProfile.field.hint.msg">名</string>
+  <string name="_First_Name__" context="customer.profile.msg">名: </string>
+  <string name="_First_Name_" context="customer.createCustomer.field.hint.msg">名*</string>
+  <string name="_Fixed_Price" context="checkout.priceOverride.radio">定額</string>
+  <string name="_Fixed_price_must_be_a_number" context="checkout.priceOverride.error">定額には数値を指定してください。</string>
+  <string name="_Font_Size" context="epsonPrinter.label">フォントサイズ</string>
+  <string name="_For_low_bandwidth_connections_disable_this_feature_" context="adminDashboard.appSettings.msg">低帯域幅の接続では、この機能を無効にしてください。</string>
+  <string name="_Forgot_Password" context="login.button">パスワードを忘れましたか?</string>
+  <string name="_Framework_Revision__" context="adminDashboard.devices.msg">フレームワークの改訂:  </string>
+  <string name="_France" context="welcomeDialog.select">フランス</string>
+  <string name="_French" context="welcomeDialog.select">フランス語</string>
+  <string name="_Free_Shipping_to_this_Store" context="checkout.shippingMethod.Label">この店舗への無料配送</string>
+  <string name="_Free_Shipping_to_the_Store" context="checkout.shippingMethod.Label">店舗への無料配送</string>
+  <string name="_From" context="salesReports.custom.select">開始日</string>
+  <string name="_German" context="welcomeDialog.select">ドイツ語</string>
+  <string name="_Germany" context="welcomeDialog.select">ドイツ</string>
+  <string name="_Gift_Card" context="epsonReceipt.info && checkout.payments.label">ギフトカード</string>
+  <string name="_Gift_card_balance_" context="checkout.paments.dialog.msg">ギフトカードの残高</string>
+  <string name="_Gift_Message_" context="checkout.payments.msg">ギフトメッセージ: </string>
+  <string name="_Hardware_Revision__" context="adminDashboard.devices.msg">ハードウェアの改訂:  </string>
+  <string name="_Hide_Details" context="Popover.Button">詳細の非表示</string>
+  <string name="_Hi___s" context="hamburgermenu.header.title">こんにちは、%s さん</string>
+  <string name="_History" context="customer.tabs">履歴</string>
+  <string name="_Home" context="analytics.msg">ホーム</string>
+  <string name="_Host__" context="adminDashboard.configuration.msg">ホスト: </string>
+  <string name="_Hostname" context="adminDashboard.devices.adyen.label">ホスト名</string>
+  <string name="_How_would_you_like_to_receive_your_receipt_" context="checkout.confirmation.dialog.msg">領収書をどのようにして受け取りますか?</string>
+  <string name="_Identify_Payment_Device" context="adminDashboard.devices.adyen.msg">支払デバイスの識別</string>
+  <string name="_Image_not_available" context="product.zoom.dialog.msg">画像はありません</string>
+  <string name="_Image_Zoom_" context="adminDashboard.appSettings.label">画像の拡大: </string>
+  <string name="_In_Stock" context="productDetails.details.info">在庫あり</string>
+  <string name="_Initializing___" context="adminDashboard.devices.adyen.msg">初期化中…</string>
+  <string name="_Initialized" context="adminDashboard.devices.adyen.msg">初期化済み</string>
+  <string name="_Initializing_Application___" context="startup.notification.msg">アプリケーションを初期化中...</string>
+  <string name="_Invalid" context="adminDashboard.appSettings.select">無効</string>
+  <string name="_Invalid_Attribute_Combination" context="productDetails.details.info">この選択の組み合わせではご利用いただけません。</string>
+  <string name="_Invalid_email_address" context="enterAddress.error">無効な Eメールアドレス</string>
+  <string name="_Invalid_email_address_" context="checkout.address.enterAddress.error">Eメールアドレスが無効です。</string>
+  <string name="_Invalid_phone_number_" context="enterAddress.error">電話番号が無効です。</string>
+  <string name="_Invalid_zip_code_" context="enterAddress.error">郵便番号が無効です。</string>
+  <string name="_Inventory" context="productDetails.tabs">在庫</string>
+  <string name="_is_not_a_test_that_can_be_executed_" context="adminDashboard.test.notification.msg"> は実行可能なテストではありません。</string>
+  <string name="_Is_the_billing_address_the_same_as_the_shipping_address_" context="checkout.shippingAddress.dialog.msg">請求先住所は配送住所と同じですか?</string>
+  <string name="_Is_this_a_gift_" context="checkout.shipMethods.Label">これはギフトですか?</string>
+  <string name="_Item__" context="productDetails.details.msg && customer.order.msg && checkout.cart.msg">商品番号 </string>
+  <string name="_Item___s__is_not_available_in_quantity__d_" context="checkout.cart.msg">商品 '%s' を %d 個購入することはできません。</string>
+  <string name="_Item_added_to_the_cart" context="productDetails.details.notification.msg">商品を買い物カゴに追加しました。</string>
+  <string name="_Item_could_not_be_added_to_the_cart" context="productDetails.details.notification.msg" >商品を買い物カゴに追加できませんでした。</string>
+  <string name="_Item_could_not_be_replaced_in_the_cart" context="productDetails.details.notification.msg">買い物カゴの商品を置換できませんでした。</string>
+  <string name="_Item_could_not_be_updated_in_the_cart" context="productDetails.details.notification.msg">買い物カゴの商品を更新できませんでした。</string>
+  <string name="_Item_Price_" context="checkout.cart.msg">商品価格: </string>
+  <string name="_Item_replaced_in_the_cart" context="productDetails.details.notification.msg">買い物カゴの商品を置換しました。</string>
+  <string name="_Item_updated_in_the_cart" context="productDetails.details.notification.msg">買い物カゴの商品を更新しました。</string>
+  <string name="_Items_added_to_the_cart" context="productDetails.details.notification.msg">商品を買い物カゴに追加しました。</string>
+  <string name="_Items_could_not_be_added_to_the_cart" context="productDetails.details.notification.msg">商品を買い物カゴに追加できませんでした。</string>
+  <string name="_Items_could_not_be_replaced_in_the_cart" context="productDetails.details.notification.msg">買い物カゴの商品を置換できませんでした。</string>
+  <string name="_Items_could_not_be_updated_in_the_cart" context="productDetails.details.notification.msg">買い物カゴの商品を更新できませんでした。</string>
+  <string name="_Items_replaced_in_the_cart" context="productDetails.details.notification.msg">買い物カゴの商品を置換しました。</string>
+  <string name="_Items_Sold" context="salesReports.tabs">販売商品</string>
+  <string name="_Items_updated_in_the_cart" context="productDetails.details.notification.msg">買い物カゴの商品を更新しました。</string>
+  <string name="_Japan" context="welcomeDialog.select">日本</string>
+  <string name="_Japanese" context="welcomeDialog.select">日本語</string>
+  <string name="_Kilometer" context="store.msg">キロメートル</string>
+  <string name="_Kilometers" context="adminDashboard.appSettings.select">キロメートル</string>
+  <string name="_Kiosk_Mode_" context="adminDashboard.appSettings.msg">キオスクモード:</string>
+  <string name="_Kiosk_Mode_Description_"  context="adminDashboard.appSettings.msg">担当者なしに、顧客が自分でショッピングできます (機能には制限があります)。</string>
+  <string name="_Language"  context="welcomeDialog.field.msg">言語: </string>
+  <string name="_Large"  context="adminDashboard.devices.epson.radio">ラージ</string>
+  <string name="_Last_100_lines_of_console_log"  context="adminDashboard.logs.heading">コンソールログの最後の 100 行</string>
+  <string name="_Last_5"  context="productDetails.inventory.Button">前の 5 つ</string>
+  <string name="_Last_Name" context="customer.editProfile.field.hint.msg">姓</string>
+  <string name="_Last_Name__" context="customer.profile.msg">姓: </string>
+  <string name="_Last_Name_" context="customer.createCustomer.field.hint.msg">姓*</string>
+  <string name="_Light"  context="barcodeScanner.msg">光</string>
+  <string name="_List_Price_"  context="checkout.cart.msg">定価:</string>
+  <string name="_Load_Configuration" context="adminDashboard.devices.adyen.msg">構成の読み込み</string>
+  <string name="_Loading_Countries___" context="startup.notification.msg">国を読み込み中...</string>
+  <string name="_Locale__" context="adminDashboard.configuration.msg">地域情報: </string>
+  <string name="_Locale_URL__" context="adminDashboard.configuration.msg">地域情報 URL:  </string>
+  <string name="_Loggable_Categories" context="adminDashboard.logs.Label">ログ可能なカテゴリ</string>
+  <string name="_Logging_In___" context="adminDashboard.devices.adyen.info">ログインしています...</string>
+  <string name="_Logging_in_____d_complete___Please_wait_" context="adminDashboard.devices.adyen.info">ログインしています...%d 完了しました。お待ちください。</string>
+  <string name="_Logging_In" context="adminDashboard.devices.adyen.msg">ログインしています</string>
+  <string name="_Logged_In" context="adminDashboard.devices.adyen.msg">ログイン済み</string>
+  <string name="_Login" context="login.button">ログイン</string>
+  <string name="_Login__" context="customer.customerDetails.msg">ログイン: </string>
+  <string name="_Login_attempt_failed__Re_enter_your_ID_and_password_" context="login.error">ログインに失敗しました。ID とパスワードを再入力してください。</string>
+  <string name="_Login_and_Shop_For_Customer" context="customer.createCustomer.check">顧客に代わってログインとお買い物をする</string>
+  <string name="_Login_failed_with_an_error_" context="adminDashboard.devices.adyen.error">エラーが発生してログインに失敗しました:  </string>
+  <string name="_Login_Successful" context="kiosk.login.notification.msg">ログイン成功</string>
+  <string name="_Login_successful___Loading_Adyen_information." context="kiosk.login.notification.msg">ログインに成功しました。Adyen 情報を読み込み中...</string>
+  <string name="_LoginAlreadyInUseException" context="createCustomer.error.msg">このログイン名はすでに使用されています。</string>
+  <string name="_Logout" context="adminDashboard.devices.adyen.Button">ログアウト</string>
+  <string name="_Logout_Associate" context="header.select">担当者のログアウト</string>
+  <string name="_Logout_Customer" context="header.button && hamburgermenu.button">顧客のログアウト</string>
+  <string name="_Logout_Now" context="adminDashboard.appSettings.dialog.Button">今すぐログアウト</string>
+  <string name="_Logout_Required" context="adminDashboard.appSettings.dialog.title">ログアウトが必要です</string>
+  <string name="_Logout_Required_Text" context="adminDashboard.appSettings.dialog.Button">変更を有効にするには、アプリからログアウトする必要があります。</string>
+  <string name="_Logout_Successful" context="adminDashboard.devices.adyen.notification.msg">ログアウト成功</string>
+  <string name="_Logs" context="adminDashboard.tabs">ログ</string>
+  <string name="_Make_Preferred_Address" context="customer.address.enterAddress.radio.msg">既定の住所にする</string>
+  <string name="_Manager_Approval_" context="checkout.cart.dialog.msg">マネージャーの許可: </string>
+  <string name="_Manager_Authorization" context="checkout.cart.dialog.title">マネージャーの承認</string>
+  <string name="_Manager_ID" context="checkout.cart.dialog.field.hint.msg">マネージャー ID</string>
+  <string name="_Manual_Entry" context="adminDashboard.devices.Button">手動入力</string>
+  <string name="_Manual_Entry__on_" context="checkout.cart.payments.button">手動入力 (オン)</string>
+  <string name="_Manufacturer__" context="adminDashboard.devices.msg">製造元: </string>
+  <string name="_Maximum_range_of_90_days_allowed_" context="salesReports.Custom.error">許容される最大範囲は 90 日間です。</string>
+  <string name="_Merchant_Account_" context="adminDashboard.devices.adyen.msg">マーチャントアカウント: </string>
+  <string name="_Merchant_Account__" context="adminDashboard.devices.adyen.msg">マーチャントアカウント:  </string>
+  <string name="_Message__" context="errorPopover.field">メッセージ:  </string>
+  <string name="_Method_" context="checkout.shipping.shippingDetails.msg">方法: </string>
+  <string name="_Method___" context="checkout.shipping.shippingDetails.msg">方法:   </string>
+  <string name="_Mile" context="store.msg">マイル</string>
+  <string name="_Miles" context="adminDashboard.appSettings.select">マイル</string>
+  <string name="_Missing_Phone_Number" context="addressVerification.dialog.error">電話番号がありません</string>
+  <string name="_Model_Tests" context="adminDashboard.tests.header">モデルのテスト</string>
+  <string name="_Model_Number__" context="adminDashboard.devices.msg">モデル番号:  </string>
+  <string name="_Modify_Address" context="address.editAddress.title">住所の変更</string>
+  <string name="_Month" context="salesReports.tabs">月</string>
+  <string name="_My_Store"  context="salesReports.sideMenu.button">マイ店舗</string>
+  <string name="_n_a" context="productDetails.info">該当なし</string>
+  <string name="_Network_detected" context="startup.notification.info">ネットワークが検出されました。</string>
+  <string name="_Network_is_unavailable" context="notification.error">ネットワークを利用できません。</string>
+  <string name="_Network_is_now_available" context="notification.info">ネットワークを利用できるようになりました。</string>
+  <string name="_Network_offline" context="startup.notification.info">ネットワークがオフラインです。</string>
+  <string name="_Never" context="customer.info">なし</string>
+  <string name="_New_Price" context="checkout.cart.override.msg">新しい価格</string>
+  <string name="_Next" context="checkout.address.chooseShipping.button && checkout.address.enterShipping.button">次へ</string>
+  <string name="_Next_5" context="productDetails.inventory.link">次の 5 つ</string>
+  <string name="_Nickname" context="checkout.address.enterAddress.field.hint && customer.address.field.hint">ニックネーム</string>
+  <string name="_No" context="checkout.billingSame.dialog.button">いいえ</string>
+  <string name="_No_Connection_To_Payment_Device" context="checkout.payments.noPaymentTerminal.title">支払デバイスへの接続なし</string>
+  <string name="_No_Connection_To_Payment_Device_Message_Adyen" context="checkout.payments.noPaymentTerminal.info">支払デバイスへの接続が見つかりませんでした。支払デバイスの電源が入っていること、接続されていること、使用の準備ができていることを確認してください。デバイスには Adyen のロゴ、日次、バッテリーレベル、Bluetooth のアイコンが表示されているはずです。支払デバイスの画面に何も表示されない場合は、デバイスがスリープ状態である可能性があります。チェックマークのボタンを押して、デバイスをウェイクアップしてください。</string>
+  <string name="_No_Connection_To_Payment_Device_Message_Verifone" context="checkout.payments.noPaymentTerminal.info">支払デバイスへの接続が見つかりませんでした。支払デバイスの電源が入っていること、接続されていること、使用の準備ができていることを確認してください。支払デバイスの画面に何も表示されない場合は、電源が入っていない可能性があります。</string>
+  <string name="_No_device_configuration_found_in_config_json_for_device_type_" context="adminDashboard.devices.notification.error">デバイスタイプの config.json にデバイス構成が見つかりません: </string>
+  <string name="_No_device_type_defined__Unable_to_render_view_for_support_dashboard_" context="adminDashboard.devices.notification.error">デバイスタイプが定義されていません。サポートダッシュボードのビューを表示できません。</string>
+  <string name="_No_results_found_Try_a_new_search_or_click_the_home_button_to_browse_catalog" context="productSearch.info">結果が見つかりませんでした。\n新しい検索を試みるか、ホームボタンをタップしてカタログを参照してください。</string>
+  <string name="_No_results_found_for___s__Try_a_new_search_or_click_the_home_button_to_browse_catalog" context="productSearch.info">'%s' と一致する結果が見つかりませんでした。\n新しい検索を試みるか、ホームボタンをタップしてカタログを参照してください。</string>
+  <string name="_No_Digital_Stores_found_" context="startup.info">Digital Store が見つかりませんでした。</string>
+  <string name="_No_tests_have_been_run" context="adminDashboard.test.info">実行されたテストはありません。</string>
+  <string name="_None" context="checkout.overrides.radio">なし</string>
+  <string name="_Not_Boarded" context="adminDashboard.devices.adyen.info">未接続</string>
+  <string name="_Not_Applied" context="checkout.summary.info">未適用</string>
+  <string name="_Not_Implemented_Yet_" context="adminDashboard.logs.notification.info">まだ実装されていません。</string>
+  <string name="_Not_selected" context="adminDashboard.devices.adyen.info">未選択</string>
+  <string name="_No_Value" context="text.msg">---</string>
+  <string name="_OCAPI_Settings_" context="adminDashboard.configuration.msg">OCAPI 設定: </string>
+  <string name="_OK" context="button">OK</string>
+  <string name="_Option_Price_" context="checkout.cart.msg">オプション価格: </string>
+  <string name="_Order_created__Payment_pending" context="customer.order.msg">注文が作成されました。支払いは保留中です。</string>
+  <string name="_Order_Date__" context="customer.history.msg">注文日: </string>
+  <string name="_Order_Details" context="customer.order.heading">注文情報</string>
+  <string name="_Order_Discount_" context="epsonReceipt.msg">注文割引: </string>
+  <string name="_ORDER_LOCATOR_CODE" context="epsonReceipt.title">注文検索コード</string>
+  <string name="_Order_No_" context="checkout.payments.paymentSignature.msg">注文番号: </string>
+  <string name="_Order_Number_" context="customer.history.msg">注文番号:</string>
+  <string name="_Order_Number__" context="customer.order.msg">注文番号: </string>
+  <string name="_Order_Search_Button" context="hamburgermenu.button">注文の検索</string>
+  <string name="_Order_Search" context="order.search.page.title">注文の検索</string>
+  <string name="_Order_Status_" context="customer.history.msg">注文ステータス:</string>
+  <string name="_Order_Summary" context="checkout.summary.heading && customer.order.summary.heading">注文の概要</string>
+  <string name="_ORDER_SUMMARY" context="epsonReceipt.title">注文の概要</string>
+  <string name="_Order_Total" context="checkout.summary.msg">注文合計</string>
+  <string name="_Order_Total_" context="customer.history.msg && epsonReceipt.msg">注文合計:</string>
+  <string name="_Orders_Tab" context="search.tab">注文</string>
+  <string name="_Other" context="enterAddress.select">その他</string>
+  <string name="_Other_Views_" context="productDetails.imageZoom.heading">その他のビュー: </string>
+  <string name="_Override" context="checkout.cart.button">調整</string>
+  <string name="_Override_" context="checkout.cart.msg">調整: </string>
+  <string name="_Page_timeout_occured" context="salesReport.error">ページがタイムアウトしました。</string>
+  <string name="_Password" context="login.field.hint">パスワード</string>
+  <string name="_Password_" context="adminDashboard.devices.adyen.label">パスワード:</string>
+  <string name="_Password_does_not_meet_minimum_criteria" context="login.error">パスワードが最低条件を満たしていません。</string>
+  <string name="_Password_Successfully_Changed" context="login.msg">パスワードは正常に変更されました</string>
+  <string name="_Passwords_do_not_match" context="login.error">パスワードが一致しません。</string>
+  <string name="_Pay_for_this_transaction_through_the_web" context="checkout.payments.dialog.msg">ウェブ経由でこの取引の支払を行います。注文をキャンセルするには、\"注文のキャンセル\" ボタンをタップします。</string>
+  <string name="_Pay_Now" context="checkout.payments.button">今すぐ支払</string>
+  <string name="_Pay_Through_Web" context="checkout.payments.dialog.title && analytics.msg">ウェブ経由で支払</string>
+  <string name="_Pay_with_one_card" context="checkout.payments.tabs">1 つのカードで支払</string>
+  <string name="_Pay_with_multiple_cards" context="checkout.payments.tabs">複数のカードで支払</string>
+  <string name="_Payment" context="customer.order.summary.heading">支払い</string>
+  <string name="_Payment_Approved" context="checkout.payments.title">支払いが正常に承認されました。</string>
+  <string name="_Payment_Declined" context="checkout.payments.title">支払いが拒否されました。</string>
+  <string name="_Payment_Error" context="checkout.payments.title">支払エラーが発生しました。</string>
+  <string name="_PAYMENT_DETAILS" context="epsonReceipt.title">支払明細書</string>
+  <string name="_Payment_Device_Already_Registered__" context="adminDashboard.devices.adyen.notification.msg">支払デバイス登録済み:  </string>
+  <string name="_Payment_Device_Connected" context="header.notification.info">支払デバイスが接続されています。</string>
+  <string name="_Payment_has_been_accepted_and_your_order_is_complete_" context="checkout.payments.paymentSignature.msg">支払いが受領され、注文が完了しました。</string>
+  <string name="_Payment_Status" context="checkou.payments.title">支払ステータス</string>
+  <string name="_Payment_Terminal" context="checkout.payments.noPaymentTerminal.dialog.title">支払ターミナル</string>
+  <string name="_Payment_Terminal_Tab" context="adminDashboard.tabs">支払ターミナル</string>
+  <string name="_Payment_Terminal_Info_Message" context="checkout.payments.msg">スワイプ、カードの挿入、または非接触型支払方法の許可を行う前に、\"今すぐ支払\" をタップしてください。</string>
+  <string name="_Payment_transaction_cancelled_" context="checkout.confirmation.notification.msg">支払取引がキャンセルされました。</string>
+  <string name="_Payment_transaction_not_finalized_" context="checkout.payments.notification.error">支払取引は完了していません。</string>
+  <string name="_Payment_was_already_approved" context="checkout.payments.transactionComplete.msg">支払いはすでに承認されています。</string>
+  <string name="_Payments" context="checkout.tabs">支払い</string>
+  <string name="_Payments_Heading" context="checkout.paymentSummary.heading">支払い</string>
+  <string name="_Payments_could_not_be_authorized" context="checkout.payments.notification.error">支払いを承認できませんでした。</string>
+  <string name="_Percentage_Off" context="checkout.cart.productPriceOverrides.label">割引率</string>
+  <string name="_Percentage_off_cannot_be_greater_than" context="checkout.cart.productPriceOverrides.error">割引率を %d% より大きくすることはできません。</string>
+  <string name="_Percentage_off_cannot_be_greater_than_100_" context="checkout.cart.productPriceOverrides.error">割引率を 100% より大きくすることはできません。</string>
+  <string name="_Percentage_off_must_be_a_number" context="checkout.cart.productPriceOverrides.error">割引率は数字でなければなりません。</string>
+  <string name="_Perpetual_Stock" context="productDetails.inventory.msg">在庫あり</string>
+  <string name="_Phone_" context="checkout.address.dialog.field.hint && enterAddress.field.hint">電話*</string>
+  <string name="_Please_add_the_address_configuration_for_the__s_in_addressConfig_js" context="startup.dialog.error">addressConfig.js に '%s' の住所構成を追加してください。</string>
+  <string name="_Please_approve_this_signature_to_complete_the_transaction" context="checkout.confirmation.dialog.msg">取引を完了するには、この署名を承認してください。</string>
+  <string name="_Please_contact_your_manager_or_support_" context="salesReports.error">マネージャーまたはサポートに連絡してください。</string>
+  <string name="_Please_help_us_resolve_the_problem_by_telling_us_what_you_were_doing_" context="errorPopover.dialog.msg">問題解決のために、実行していた作業について説明してください。</string>
+  <string name="_Please_enter_a_number_greater_than_0" context="checkout.cart.productPriceOverride.error">0 より大きい数字を入力してください。</string>
+  <string name="_Please_enter_a_valid_email_address_" context="checkout.createAccount.error">有効な Eメールアドレスを入力してください。</string>
+  <string name="_Please_fill_in_all_the_required_fields_" context="customer.editProfile.notification.error">必須フィールドすべてに入力してください。</string>
+  <string name="_Please_process_payment_through_the_payment_terminal_" context="checkout.payment.paymentTerminal.msg">支払ターミナルから支払を処理してください。</string>
+  <string name="_Please_provide_a_first_name_" context="customer.profile.error">名を入力してください。</string>
+  <string name="_Please_provide_a_last_name_" context="customer.profile.error">姓を入力してください。</string>
+  <string name="_Please_provide_a_valid_phone_number_" context="checkout.address.dialog.msg">有効な電話番号を入力してください。</string>
+  <string name="_Please_provide_your_signature_to_complete_your_transaction" context="checkout.payments.paymentSignature.msg">取引を完了するには、署名を行ってください。</string>
+  <string name="_Please_reload" context="salesReports.notification.error">レポートを再読み込みしてください。</string>
+  <string name="_Please_try_the_transaction_again___s" context="checkout.payments.adyen.errormsg">取引を再度行ってください。%s</string>
+  <string name="_Please_try_again_in_a_few_minutes_" context="salesReports.notification.error">数分後にもう一度やり直してください。</string>
+  <string name="_Possible_Statuses" context="adminDashboard.devices.adyen.msg">可能なステータス</string>
+  <string name="_Postal_Code_" context="enterAddress.field.hint.msg">郵便番号*</string>
+  <string name="_Pre_Order" context="productDetails.details.msg">予約販売</string>
+  <string name="_Pre_Settling" context="adminDashboard.devices.adyen.msg">事前決済</string>
+  <string name="_Post_Settling" context="adminDashboard.devices.adyen.msg">事後決済</string>
+  <string name="_Previous" context="keyboard.toolbar.button">前へ</string>
+  <string name="_Price" context="checkout.cart.productPriceOverrides.dialog.label">価格</string>
+  <string name="_Price_Override" context="checkout.shippingMethod.button">価格の調整</string>
+  <string name="_Price_Override_" context="epsonReceipt.msg">価格の調整: </string>
+  <string name="_Price_Override_Pct_Off" context="epsonReceipt.info">割引</string>
+  <string name="_Price_Overrides" context="checkout.cart.productPriceAdustments.dialog.title">価格の調整</string>
+  <string name="_Print" context="checkout.printerChooser.dialog.button && checkout.payments.paymentSignature.dialog.button">印刷</string>
+  <string name="_Print_Receipt" context="checkout.confirmation.button">領収書を印刷</string>
+  <string name="_Printer_" context="checkout.printerChooser.dialog.label">プリンタ: </string>
+  <string name="_Printer_Language" context="adminDashboard.devices.epson.heading">プリンタの言語</string>
+  <string name="_Printing_Receipt___" context="epsonReceipt.notification.info">領収書を印刷中…</string>
+  <string name="_Product_Categories" context="productGrid.header.categoryRefinementPanel.title">商品カテゴリ</string>
+  <string name="_Product_Detail" context="analytics.msg">商品の詳細</string>
+  <string name="_Product_Rating_" context="productDetails.details.label">商品の評価: </string>
+  <string name="_Product_Search" context="analytics.msg">商品の検索</string>
+  <string name="_Search_Button" context="header.button && hamburgermenu.button">商品の検索</string>
+  <string name="_Product_View" context="analytics.msg">商品のビュー数</string>
+  <string name="_PRODUCT_SUMMARY" context="epsonReceipt.title">商品の概要</string>
+  <string name="_Products" context="analytics.msg && productGrid.header.msg">商品</string>
+  <string name="_Products_Tab" context="search.tab">商品</string>
+  <string name="_Profile" context="customerSearch.button">プロフィール</string>
+  <string name="_Profile_Tab" context="customer.tabs">プロフィール</string>
+  <string name="_Provide_a_phone_number_for_the_billing_address_" context="checkout.address.dialog.msg">請求先住所の電話番号を入力してください。</string>
+  <string name="_Provide_a_phone_number_for_the_shipping_address_" context="checkout.address.dialog.msg">配送先住所の電話番号を入力してください。</string>
+  <string name="_Provide_a_phone_number_for_this_order__customer_s_phone_number_shown__" context="checkout.address.dialog.msg">この注文の電話番号を入力してください (表示されているのは顧客の電話番号です)。</string>
+  <string name="_Provide_a_phone_number_for_this_order__store_phone_number_shown__" context="checkout.address.dialog.msg">この注文の電話番号を入力してください (表示されているのは店舗の電話番号です)。</string>
+  <string name="_Provide_country_first_" context="enterAddress.error">まず国を入力してください。</string>
+  <string name="_Purchased_Quantity___d" context="checkout.cart.label">購入数量: %d</string>
+  <string name="_Quantity_" context="checkout.cart.msg && customer.order.msg && productDetails.details.label">数量: </string>
+  <string name="_Quarter" context="salesReports.tabs">四半期</string>
+  <string name="_Quick_Stats" context="salesReports.heading">簡易統計</string>
+  <string name="_Ranks" context="salesReports.tabs">ランク</string>
+  <string name="_Receipt_Printer" context="adminDashboard.tabs">領収書のプリンタ</string>
+  <string name="_receipt_promotional_message" context="epsonPrinter.info">当サイトから商品をご購入いただきありがとうございます!</string>
+  <string name="_Reason__" context="startup.dialog.label">理由:  </string>
+  <string name="_Reason_Code__" context="checkout.payments.dialog.label">理由コード:  </string>
+  <string name="_Recommendations" context="productDetails.tabs">推奨項目</string>
+  <string name="_Recommendations_For_You" context="productDetails.recommendations.heading">お客様への推奨項目</string>
+  <string name="_Recommended_Address" context="addressVerification.heading">推奨する住所</string>
+  <string name="_Register_Payment_Device" context="adminDashboard.devices.adyen.info">支払デバイスの登録</string>
+  <string name="_Registart" context="adminDashboard.devices.verifone.button">Registart</string>
+  <string name="_Registart_Heading" context="adminDashboard.devices.verifone.heading">Registart</string>
+  <string name="_Registart_is_necessary_to_initiate_VSP_encryption_between_server_and_client_" context="adminDashboard.devices.verifone.info">Registart はサーバーとクライアント間の VSP 暗号化を初期化するために必要です。</string>
+  <string name="_Reload_Console" context="adminDashboard.logs.button">コンソールの再読み込み</string>
+  <string name="_Remaining_gift_card_balance_" context="checkout.payments.gcBalanceDetails.dialog.label">ギフトカードの残高: </string>
+  <string name="_Remove" context="checkout.cart.productPriceAdjustments.button && checkout.shippingMethod.shippingOverrides.button">削除</string>
+  <string name="_RemoveAllEthernetDevices" context="adminDashboard.devices.adyen.button">すべての Ethernet デバイスを削除</string>
+  <string name="_Removed_All_Payment_Devices" context="adminDashboard.devices.adyen.notification.info">すべての支払デバイスを削除しました</string>
+  <string name="_Repeat_New_Password" context="login.field">新しいパスワードの再入力</string>
+  <string name="_Replace_in_Cart" context="productDetails.details.button">買い物カゴの内容の置換</string>
+  <string name="_Replace_in_Wish_List" context="productDetails.details.link">ほしい物リストの内容の置換</string>
+  <string name="_RequiredSymbol" context="adminDashboard.appSettings.info">*</string>
+  <string name="_Reset_Password" context="login.button">パスワードのリセット</string>
+  <string name="_Reset_Session" context="header.dialog.title">セッションのリセット</string>
+  <string name="_Reset_Session_Message" context="header.dialog.msg">このショッピングセッションを終了しますか?</string>
+  <string name="_Restart_App" context="startup.dialog.button">アプリの再起動</string>
+  <string name="_Retry" context="startup.dialog.button">再試行</string>
+  <string name="_Retrying_attempt_to_complete_order" context="checkout.payment.paymentTerminal.msg">注文の完了を再試行しています。</string>
+  <string name="_Return_to_Shopping" context="customer.button">買い物に戻る</string>
+  <string name="_Return_Value_" context="epsonReceipt.msg">返品額:</string>
+  <string name="_Sales" context="reports.tabs">売上</string>
+  <string name="_Sales_Dashboard" context="hamburgermenu.button">売上ダッシュボード</string>
+  <string name="_Sale_Price_" context="checkout.cart.label">セール価格: </string>
+  <string name="_Sales_Report_Dashboard_" context="reports.title">売上報告書ダッシュボード (%s)</string>
+  <string name="_Sales_Tax" context="checkout.orderTotalSummary.label">消費税</string>
+  <string name="_Sales_Tax_" context="epsonReceipt.msg && checkout.orderSummary.msg">消費税: </string>
+  <string name="_Same_Address" context="checkout.dialog.title">同じ住所</string>
+  <string name="_Save" context="customer.address.button">保存</string>
+  <string name="_Save_Address_to_Profile" context="checkout.address.enterShippingAddress.check">プロフィールに住所を保存</string>
+  <string name="_Save_for_Later" context="checkout.cart.button">後で買う</string>
+  <string name="_Save_Shipping_Address" context="checkout.createAccount.select">配送先住所の保存</string>
+  <string name="_Saved_Items__0" context="checkout.cart.tabs">保存した商品: 0</string>
+  <string name="_Saved_Items___d" context="checkout.cart.tabs">保存した商品: %d</string>
+  <string name="_Scan_for_Devices" context="checkout.payments.noPaymentTerminal.button">デバイスのスキャン</string>
+  <string name="_Search" context="analytics.msg">検索</string>
+  <string name="_Search_Distance_" context="adminDashboard.appSettings.label">検索距離: </string>
+  <string name="_Search_Products" context="header.field">商品の検索</string>
+  <string name="_Search_Results" context="productGrid.categoryRefinementPanel.heading">検索結果</string>
+  <string name="_Select__s" context="productDetails.details.select">%sの選択</string>
+  <string name="_Select_a_variation_first" context="productDetails.notification.info">まずバリエーションを選択してください。</string>
+  <string name="_Select_Country" context="startup.dialog.msg">国の選択</string>
+  <string name="_Select_Country_and_Language" context="login.dialog.title">国と言語の選択</string>
+  <string name="_Select_Language" context="startup.dialog.msg">言語の選択</string>
+  <string name="_Select_Option" context="adminDashboard.appSettings.select">オプションの選択</string>
+  <string name="_Select_Store_ID" context="startup.dialog.select">店舗 ID の選択</string>
+  <string name="_Select_Store_ID_to_connect_to_and_then_retry_" context="startup.dialog.info">接続する店舗 ID を選択して、もう一度やり直してください。</string>
+  <string name="_Select_Wish_List" context="checkout.cart.wishList.select">ほしい物リストの選択</string>
+  <string name="_Selecting_Create_Order_will_reserve_your_inventory" context="checkout.shipMethod.info">\"注文の作成\" を選択すると、在庫が予約されます。</string>
+  <string name="_Selecting_the_device_pairs_the_device_with_the_EA_application__If_the_device_status_does_not_change_to__Initializing__when_the_device_is_selected__suspend___resume_the_device_" context="adminDashboard.devices.adyen.info">デバイスを選択すると、デバイスと Endless Aisle アプリケーションがペアリングされます。デバイスを選択してもデバイスのステータスが \"初期化中\" に変わらない場合は、デバイスをいったん中断してから再開してください。</string>
+  <string name="_Send" context="checkout.cart.emailCollectorDialog.button">送信</string>
+  <string name="_Send_Log_Via_Email" context="adminDashboard.logs.button">ログを Eメールで送信</string>
+  <string name="_Sending_console_logs_to_server" context="adminDashboard.logs.notification.info">コンソールログをサーバーに送信中...</string>
+  <string name="_Serial_Number__"  context="adminDashboard.devices.verifone.label">シリアル番号:  </string>
+  <string name="_Server_call_failed__Please_try_again_" context="notification.error">サーバーの呼び出しに失敗しました。もう一度やり直してください。</string>
+  <string name="_Server_Version__" context="adminDashboard.buildInfo.label">サーバーのバージョン:  </string>
+  <string name="_Server_Supported_Version__" context="adminDashboard.buildInfo.label">サーバーでサポートされているクライアントのバージョン:  </string>
+  <string name="_Server_Supported_Versions__" context="adminDashboard.buildInfo.label">サーバーでサポートされているクライアントのバージョン:  </string>
+  <string name="_Session_Timeout_" context="adminDashboard.appSettings.label">セッションタイムアウト: </string>
+  <string name="_Settings_related_to_Store_Inventory_" context="adminDashboard.appSettings.description">商品詳細の \"在庫\" タブにある店舗在庫に関する設定。</string>
+  <string name="_Ship_Methods" context="checkout.tabs">配送方法</string>
+  <string name="_Ship_To_This_Store" context="checkout.address.chooseShippingAddress.label">この店舗に配送</string>
+  <string name="_Shipping" context="checkout.tabs.">配送</string>
+  <string name="_Shipping_" context="customer.order.summary.msg">配送: </string>
+  <string name="_Shipping_Address" context="analytics.msg">配送先住所</string>
+  <string name="_Shipping_Details" context="checkout.shippingSummary.heading && customer.order.summary.heading">配送情報</string>
+  <string name="_SHIPPING_DETAILS" context="epsonReceipt.title">配送情報</string>
+  <string name="_Shipping_Discount" context="checkout.orderTotalSummary.label">配送割引</string>
+  <string name="_Shipping_Discount_" context="customer.order.summary.msg">配送割引: </string>
+  <string name="_Shipping_Method_" context="epsonReceipt.msg">配送方法:</string>
+  <string name="_Shipping_Methods" context="analytics.msg">配送方法</string>
+  <string name="_Shipping_Overrides" context="checkout.shippingMethod.shippingOverrides.info">配送の調整</string>
+  <string name="_Shop_For" context="customerSearch.button">顧客に代わってお買い物</string>
+  <string name="_Show_Details" context="errorPopover.button">詳細を表示</string>
+  <string name="_Signature" context="checkout.payments.paymentSignature.title">署名</string>
+  <string name="_Simulate_Payments_" context="adminDashboard.appSettings.label">支払いのシミュレーション: </string>
+  <string name="_Site_URL__" context="adminDashboard.configuration.msg">サイト URL:  </string>
+  <string name="_Skip" context="checkout.createAccount.button">スキップ</string>
+  <string name="_Small" context="adminDashboard.devices.epson.radio">スモール</string>
+  <string name="_Sorry__you_don_t_have_permissions_for_this_request" context="adminDashboard.error">申し訳ありませんが、このリクエストをする許可がありません。</string>
+  <string name="_Sorting_Options" context="productGrid.header.sortOptionsPanel.header">並べ替えオプション</string>
+  <string name="_Starting_test_execution__" context="adminDashboard.test.notification.info">テスト実行の開始:  </string>
+  <string name="_State_" context="enterAddress.field">都道府県*</string>
+  <string name="_Status__" context="customer.order.msg">ステータス: </string>
+  <string name="_Step_1__Configuration" context="adminDashboard.devices.adyen.description">ステップ 1: 構成</string>
+  <string name="_Step_2__Login_to_Adyen_Portal" context="adminDashboard.devices.adyen.description">ステップ 2: Adyen ポータルにログイン</string>
+  <string name="_Step_3__Select_Device_" context="adminDashboard.devices.adyen.description">ステップ 3: デバイスを選択して接続</string>
+  <string name="_Stopped" context="adminDashboard.devices.adyen.info">停止しました</string>
+  <string name="_Stopped__Device_not_paired_with_App_Initializing__Device_paired_with_App__awaiting_login_Not_Boarded__App_logged_into_adyen__device_not_registered_Initialized__Ready_for_Use" context="adminDashboard.devices.adyen.description">停止済み: デバイスがアプリとペアリングされていません。\n初期化中: デバイスをアプリとペアリングしました。ログインを待っています。\n未接続: アプリが Adyen にログインしました。デバイスが登録されていません。\n接続が切断されました: デバイスが登録されました。アクセスできません。\n初期化済み: 使用の準備ができました。</string>
+  <string name="_Store" context="analytics.msg">実店舗</string>
+  <string name="_Store_password_incorrect" context="appStartup.errorDialog.title">店舗パスワードが正しくありません</string>
+  <string name="_Stores" context="salesReports.tabs">店舗</string>
+  <string name="_Store_ID_" context="adminDashboard.appSettings.label && welcomeDialog.label && epsonReceipt.msg">店舗 ID: </string>
+  <string name="_STORE_INVENTORY" context="adminDashboard.appSettings.heading">店舗在庫</string>
+  <string name="_Store_Configuration" context="adminDashboard.devices.adyen.info">店舗の構成</string>
+  <string name="_Storefront_Settings_" context="adminDashboard.configuration.label">ストアフロント設定: </string>
+  <string name="_Subcategories_of" context="productGrid.header.categoryRefinement.header">サブカテゴリ: </string>
+  <string name="_Subnet" context="adminDashboard.devices.epson.heading">サブネット</string>
+  <string name="_Subtotal" context="checkout.orderTotalSummary.info">小計</string>
+  <string name="_Subtotal_" context="epsonReceipt.msg && customer.order.summary.msg">小計:</string>
+  <string name="_Success" context="login.info">成功</string>
+  <string name="_Supported_Currencies__" context="adminDashboard.devices.adyen.msg">サポートされている通貨:  </string>
+  <string name="_Supported_Payment_Methods__" context="adminDashboard.devices.adyen.msg">サポートされている支払方法:  </string>
+  <string name="_Surcharge" context="checkout.cart.productPriceOverrides.info">追加料金</string>
+  <string name="_Swipe_Card" context="adminDashboard.devices.verifone.button">カードのスワイプ</string>
+  <string name="_Test" context="adminDashboard.test.button">テスト</string>
+  <string name="_Test_Tab" context="adminDashboard.tabs">テスト</string>
+  <string name="_Test_currently_in_progress" context="adminDashboard.tests.info">現在テストが進行中です</string>
+  <string name="_Test_Payment_Device_Connection" context="checkout.payments.noPaymentTerminal.button">接続のテスト</string>
+  <string name="_Testing_Results_" context="adminDashboard.tests.info">テスト結果: </string>
+  <string name="_TestsText" context="adminDashboard.tests.info">モデルテストでは、Demandware プラットフォームへの接続性がテストされます。実行するには、モデルテストを選択してください。</string>
+  <string name="_Thank_You_" context="checkout.payments.paymentSignature.info">どうもありがとうございました。</string>
+  <string name="_The_amount_of_time_before_the_application_logs_out_the_associate_" context="adminDashboard.appSettings.description">アプリで担当者がログアウトされるまでの時間。</string>
+  <string name="_The_associate_ID_is_required" context="login.error">担当者 ID が必要です。</string>
+  <string name="_The_client_credentials_are_not_set_up_correctly__Please_contact_your_admininstrator_to_fix_this_problem_" context="appstartup.error.msg">クライアント認証情報が正しく設定されていません。管理者に連絡して、この問題の修正を依頼してください。</string>
+  <string name="_The_current_customer_needs_to_be_logged_out_before_creating_a_new_one__Tap_on__Continue__to_logout_the_customer_and_create_a_new_customer_" context="hamburgermenu.createCustomer.alert.dialog.msg">現在の顧客をログアウトしないと新規顧客を作成できません。\"次に進む\" をタップして顧客をログアウトし、新規顧客を作成してください。</string>
+  <string name="_The_customer_needs_to_be_logged_out_before_you_can_continue__Please_try_again_" context="notify.error">顧客をログアウトしないと続行できません。もう一度やり直してください。</string>
+  <string name="_The_expected_in_stock_date_is__s_" context="productDetails.details.info">入荷予定日は %s です。</string>
+  <string name="_The_Gift_Card_is_not_recognized_by_the_gift_card_processor__Please_try_again_or_choose_a_different_payment_method_" context="checkout.payments.error">ギフトカードがギフトカードの処理業者によって認識されません。もう一度やり直すか、別の支払方法を選択してください。</string>
+  <string name="_The_manager_ID_and_Password_are_required" context="login.error">マネージャー ID とパスワードが必要です。</string>
+  <string name="_The_password_for_the_store_is_incorrect__Please_contact_your_admininstrator_to_fix_this_problem_" context="appstartup.error.msg">店舗のパスワードが正しくないか、クライアント ID が正しく構成されていません。管理者に連絡して、この問題の修正を依頼してください。</string>
+  <string name="_The_order_needs_to_be_cancelled_before_you_can_continue__Please_try_again_" context="confirmation.dialog.error">注文をキャンセルしないと続行できません。もう一度やり直してください。</string>
+  <string name="_The_remaining_items_are_available_for_pre_order_" context="productDetails.details.info">残りの商品については、予約販売をご利用いただけます。</string>
+  <string name="_The_remaining_items_are_available_on_back_order_" context="productDetails.details.info">残りの商品については、お取り寄せが可能です。</string>
+  <string name="_The_remaining_items_are_currently_not_available__Please_adjust_the_quantity_" context="productDetails.details.info">残りの商品については、現在ご購入いただけません。数量を変更してください。</string>
+  <string name="_The_request_timed_out_" context="confirmation.dialog.title">リクエストがタイムアウトしました。</string>
+  <string name="_The_sales_report_failed_to_load__The_following_error_was_returned_from_the_server_" context="salesReports.error">売上報告書を読み込めませんでした。サーバーから次のエラーが返されました。</string>
+  <string name="_The_store_id_to_connect_to_at_startup_" context="adminDashboard.appSettings.description">起動時に接続する店舗 ID。</string>
+  <string name="_There_are_no_items_in_your_cart_" context="checkout.cart.info">買い物カゴには商品がありません。</string>
+  <string name="_There_are_no_items_in_this_wish_list" context="checkout.cart.wishList.info">このほしい物リストには商品がありません。</string>
+  <string name="_There_are_no_orders_" context="customer.history.info">注文はありません。</string>
+  <string name="_There_are_no_recommendations_for_this_product_" context="productDetails.recommendations.info">この商品に推奨項目はありません。</string>
+  <string name="_There_are_no_saved_addresses_" context="checkout.address.chooseShippingAddress.info && customer.addresses.info">保存されている住所はありません。</string>
+  <string name="_There_are_no_saved_items_" context="checkout.cart.info">保存されている商品はありません。</string>
+  <string name="_There_is_no_store_availability_information_for_this_product_" context="productDetails.inventory.info">この商品に店舗における入手可能性情報はありません。</string>
+  <string name="_There_is_no_corresponding_key_for_the_value___s__in_countryConfig" context="startup.error">countryConfig に値 \'%s\' に対応するキーがありません。</string>
+  <string name="_There_was_a_problem_clearing_the_cart__Please_try_again_" context="confirmation.dialog.error">買い物カゴのクリアで問題が発生しました。もう一度やり直してください。</string>
+  <string name="_This_associate_does_not_have_permission_to_log_on" context="login.error">この担当者はログインする許可を付与されていません。</string>
+  <string name="_This_field_is_required_" context="enterAddress.error">このフィールドには必ず入力してください。</string>
+  <string name="_This_item_is_currently_not_available_" context="productDetails.details.info">この商品は現在ご購入いただけません。</string>
+  <string name="_This_manager_is_not_allowed_to_change_passwords" context="login.error">このマネージャーはパスワードの変更を許可されていません。</string>
+  <string name="_This_manager_is_not_allowed_to_do_overrides" context="checkout.cart.productPriveOverrides.error">このマネージャーは調整の実行を許可されていません。</string>
+  <string name="_This_transaction_has_already_been_cancelled_" context="checkout.dialog.error">この取引はすでにキャンセルされています。</string>
+  <string name="_This_transaction_has_been_cancelled_and_payment_cannot_be_applied_" context="checkout.dialog.error">この取引はキャンセルされており、支払いは適用できません。</string>
+  <string name="_This_version_of_iOS_is_not_supported___Please_upgrade_to_a_supported_version_" context="startup.dialog.msg">このバージョンの iOS はサポートされていません。サポートされているバージョンに更新してください。</string>
+  <string name="_Timeout__" context="adminDashboard.configuration.label">タイムアウト: </string>
+  <string name="_To" context="salesReports.datePickers.header">終了日</string>
+  <string name="_Today" context="salesReports.tabs">今日</string>
+  <string name="_Token_Not_Valid" context="adminDashboard.devices.adyen.info">token が有効ではありません</string>
+  <string name="_Token_Valid" context="adminDashboard.devices.adyen.info">token が有効です</string>
+  <string name="_Total_" context="customer.order.summary.msg">合計:</string>
+  <string name="_Touch_Screen_to_Begin" context="splashscreen.button">開始するには\n画面をタッチしてください</string>
+  <string name="_Trigger_a_solicited_swipe__to_test_basic_functionality_" context="adminDashboard.devices.verifone.description">基本的な機能をテストするために、要請によるスワイプをトリガします。</string>
+  <string name="_Unable_to_add_item_to_the_cart" context="productDetails.details.notification.error">買い物カゴに商品を追加できません。</string>
+  <string name="_Unable_to_add_items_to_the_cart" context="productDetails.details.notification.error">買い物カゴに商品を追加できません。</string>
+  <string name="_Unable_to_apply_a_product_price_override" context="checkout.cart.productPriceAdjustments.notification.error">商品価格の調整を適用できません。</string>
+  <string name="_Unable_to_apply_a_shipping_price_override" context="checkout.shippingMethod.shippingOverrides.notification.error">配送料の調整を適用できません。</string>
+  <string name="_Unable_to_cancel_order_" context="confirmation.dialog.title">注文をキャンセルできません。</string>
+  <string name="_Unable_to_capture_signature_" context="checkout.confirmation.notification.msg">署名をキャプチャできません。別のカードを使用してください。</string>
+  <string name="_Unable_to_clear_the_cart_" context="confirmation.dialog.title">買い物カゴをクリアできません。</string>
+  <string name="_Unable_to_complete_order__Retry_" context="">注文を完了できません。再試行しますか、またはキャンセルしますか?</string>
+  <string name="_Unable_to_connect_to_a_network_" context="startup.dialog.error">ネットワークに接続できません。</string>
+  <string name="_Unable_to_connect_to_payment_device_" context="checkout.payments.noPaymentTerminal.dialog.error">支払デバイスに接続できません。</string>
+  <string name="_Unable_to_connect_to_storefront_" context="startup.dialog.error">ストアフロントに接続できません。</string>
+  <string name="_Unable_to_create_account_" context="createAccount.error">アカウントを作成できません。</string>
+  <string name="_Unable_to_create_order_" context="checkout.dialog.error">注文を作成できません。</string>
+  <string name="_Unable_to_load___s__" context="startup.dialog.error && adminDashboard.appSettings.dialog.error">'%s' を読み込めません。</string>
+  <string name="_Unable_to_load_application_settings_" context="startup.dialog.error">アプリ設定を読み込めません。</string>
+  <string name="_Unable_to_login_kiosk_user_" context="startup.dialog.error">キオスクユーザーをログインできません。\n\n管理者に問い合わせてください。</string>
+  <string name="_Unable_to_open_product_override_dialog_" context="override.dialog.error">商品の調整のダイアログを開けません。</string>
+  <string name="_Unable_to_logout_customer_" context="dialog.error.title">顧客をログアウトできません。</string>
+  <string name="_Unable_to_registart_device_" context="notify.error">デバイスの Registart を実行できません。</string>
+  <string name="_Unable_to_remove_product_price_override" context="checkout.cart.productPriceAdjument.notification.error">商品価格の調整を削除できません。</string>
+  <string name="_Unable_to_save_item_" context="notify.error">項目を保存できません。</string>
+  <string name="_Unable_to_search_customers_" context="dialog.error">顧客を検索できません。</string>
+  <string name="_Unable_to_search_orders_" context="dialog.error">注文を検索できません。</string>
+  <string name="_Unable_to_search_products_" context="dialog.error">商品を検索できません。</string>
+  <string name="_Unable_to_set_the_gift_message_" context="giftmessage.error">ギフトメッセージを保存できません。</string>
+  <string name="_Unable_to_start_the_application" context="startup.dialog.title">アプリケーションを起動できません。</string>
+  <string name="_Unable_to_validate_application_settings_" context="startup.dialog.error">アプリケーション設定を検証できません。</string>
+  <string name="_Unknown_Availability" context="productDetails.inventory.info">不明な入手可能性</string>
+  <string name="_Unknown_error_occured" context="salesReports.error">不明なエラーが発生しました。</string>
+  <string name="_Unknown_Stock_Level" context="productDetails.inventory.info">不明な在庫レベル</string>
+  <string name="_Unsorted" context="productGrid.header.select">並べ替えなし</string>
+  <string name="_Update_Address_in_Profile" context="checkout.address.check">プロフィールの住所を更新</string>
+  <string name="_URL_contains_an_unsupported_scheme" context="salesReports.error">URL にサポートされていないスキームが含まれています。</string>
+  <string name="_Used_for_development_" context="adminDashboard.appSettings.description">これによって、開発中にカードを使用せずに支払処理をテストすることができます。</string>
+  <string name="_Username_" context="adminDashboard.devices.adyen.label">ユーザー名: </string>
+  <string name="_Username__" context="adminDashboard.devices.adyen.msg">ユーザー名: </string>
+  <string name="_Users" context="analytics.msg">ユーザー</string>
+  <string name="_United_States" context="welcomeDialog.select">米国</string>
+  <string name="_VALID_DEVICE" context="adminDashboard.devices.verifone.info">有効なデバイス</string>
+  <string name="_Validating_Devices___" context="startup.notification.info">デバイスを検証中…</string>
+  <string name="_Validating_Network___" context="startup.notification.info">ネットワークを検証中…</string>
+  <string name="_Validating_Settings___" context="startup.notification.info">設定を検証中…</string>
+  <string name="_Validating_Storefront___" context="startup.notification.info">ストアフロントを検証中…</string>
+  <string name="_VERIFY_YOUR_ADDRESS" context="addressVerification.title">住所の確認</string>
+  <string name="_Versions_" context="adminDashboard.buildInfo.label">バージョン: </string>
+  <string name="_Version_Mismatch" context="dialog.error.title">バージョンの不一致</string>
+  <string name="_Version_Mismatch_Error" context="error.msg">接続しようとしているサーバーでは、このクライアントのバージョンがサポートされていません。アプリケーションを更新してください。\n\nクライアントのバージョン: %s\n サーバーのバージョン: %s\n サポートされているバージョン: %s\n</string>
+  <string name="_Version_Information" context="adminDashboard.devices.verifone.label">バージョン情報</string>
+  <string name="_Verifying_Token" context="adminDashboard.devices.adyen.info">token を検証中</string>
+  <string name="_View_Customer_Profile" context="header.customer.button">顧客プロフィールの表示</string>
+  <string name="_View_Size_Chart" context="productDetails.details.link">サイズ表を表示する</string>
+  <string name="_VSP_Version__" context="adminDashboard.devices.verifone.label">VSP のバージョン:  </string>
+  <string name="_Waiting_for_Adyen_Info____" context="adminDashboard.devices.adyen.info">Adyen 情報を待っています...</string>
+  <string name="_Waiting_for_device_information___" context="adminDashboard.devices.verifone.info">デバイス情報を待っています...</string>
+  <string name="_We_were_unable_to_validate_your_address___" context="addressVerification.info">住所を検証できませんでした。以下の住所が確かに有効な場合は、\"次に進む\" をタップしてください。確かでない場合は、\"キャンセル\" をタップして住所を編集してください。</string>
+  <string name="_WEB_ORDER" context="epsonReceipt.title">Web 注文</string>
+  <string name="_Web_Order_Number___" context="epsonReceipt.msg">Web 注文番号:  </string>
+  <string name="_Week" context="salesReports.tabs">週</string>
+  <string name="_Welcome_Kiosk_Message_" context="welcomeDialog.info">デバイスをキオスクとしてセットアップする場合は、キオスクモードを有効にしてください。</string>
+  <string name="_Welcome_Message_" context="welcomeDialog.info">アプリケーションを起動するには、店舗を選択してください。</string>
+  <string name="_Welcome_Message_change_later" context="welcomeDialog.info">設定を後で変更する場合は、管理者ダッシュボードを使用してください。</string>
+  <string name="_Welcome_to_Endless_Aisle" context="welcomeDialog.title">Endless Aisle にようこそ</string>
+  <string name="_Wish_List_Title" context="wishlist.title">ほしい物リスト</string>
+  <string name="_Wish_List" context="checkout.cart.tabs">ほしい物リスト</string>
+  <string name="_Wish_List_Button" context="hamburgermenu.button">ほしい物リスト</string>
+  <string name="_Wish_List___d" context="checkout.cart.tabs">ほしい物リスト: %d</string>
+  <string name="_Would_you_like_to_create_a_new_account_" context="checkout.confirmation.createAccount.msg">新しいアカウントを作成しますか?</string>
+  <string name="_XPI_Version__" context="adminDashboard.devices.verifone.label">XPI のバージョン:  </string>
+  <string name="_Yes" context="checkout.billingSame.dialog.button">はい</string>
+  <string name="_You_are_editing_an_address__Are_you_sure_you_want_to_discard_the_changes_" context="customer.editAddress.dialog.info">住所を編集しています。変更を破棄しますか?</string>
+  <string name="_You_are_adding_an_address__Are_you_sure_you_want_to_discard_the_changes_" context="customer.editAddress.dialog.info">住所を追加しています。変更を破棄しますか?</string>
+  <string name="_You_have_modified_settings__Are_you_sure_you_want_to_discard_the_changes_" context="adminDashboard.appSettings.dialog.info">設定を変更しました。変更を破棄しますか?</string>
+  <string name="_You_have__d_characters_left_out_of_250" context="checkout.shippingMethod.info">最大 250 文字、残り %d 文字です。</string>
+  <string name="_You_must_provide_a_hostname_" context="adminDashboard.devices.adyen.msg">ホスト名を入力する必要があります。</string>
+  <string name="_You_must_provide_either_a_search_term_or_UPC_code_for_a_product_search_" context="search.dialog.product.msg">商品を検索するには、検索用語または UPC コードのどちらかを入力する必要があります。</string>
+  <string name="_You_must_provide_either_a_first_last_name_or_an_email_for_a_customer_search_" context="customerSearch.info">顧客を検索するには、姓名または Eメールを入力する必要があります。</string>
+  <string name="_You_must_provide_either_an_order_ID_or_a_customer_email_for_an_order_search_" context="search.dialog.order.msg">注文を検索するには、注文 ID または顧客 Eメールのどちらかを入力する必要があります。</string>
+  <string name="_You_must_provide_employee_code_and_pin_" context="login.info && kioskManager.login.info">従業員コードとパスワードを入力する必要があります。</string>
+  <string name="_You_must_provide_manager_code_and_pin_" context="checkout.cart.overrides.info && adminDashboard.info">マネージャーコードとパスワードを入力する必要があります。</string>
+  <string name="_Your_Wish_List__s_has_been_emailed_" context="checkout.cart.wishList.info">ほしい物リスト '%s' が Eメールで送信されました。</string>
+  <string name="_Your_Wish_List_has_been_emailed_" context="checkout.cart.wishList.info">ほしい物リストが Eメールで送信されました。</string>
+  <string name="_Your_email_failed_to_be_sent__Please_try_again_later_" context="checkout.cart.wishList.error">Eメールの送信に失敗しました。後でもう一度やり直してください。</string>
+  <string name="_Your_receipt_has_been_emailed" context="checkout.payments.dialog.msg">領収書を Eメールで送信しました。</string>
+</resources>

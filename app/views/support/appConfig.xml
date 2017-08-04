@@ -1,0 +1,25 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for app configuration in admin dashboard
+-->
+<Alloy>
+    <View id="app_config_main">
+        <ScrollView id="data_column">
+            <Require id="app_settings_view" src="components/appSettingsView" type="view"/>
+        </ScrollView>
+        <View id="vertical_border"/>
+        <ScrollView id="action_column">
+            <View id="action_section" class="section_class">
+                <Label id="action_title" class="title_class" accessibilityValue="action_title"/>
+                <Label id="apply_text" class="text_class" accessibilityValue="apply_text"/>
+                <Label id="requires_restart" class="text_class" accessibilityValue="requires_restart"/>
+                <Button id="apply_changes" class="admin_action_button primary_button" accessibilityValue="apply_changes" enabled="false"/>
+                <Label id="email_text" class="text_class" accessibilityValue="email_text"/>
+                <TextArea id="email_address" class="email_class" accessibilityValue="email_address"/>
+                <Button id="email_configs" class="admin_action_button primary_button" accessibilityValue="email_configs"/>
+                <Label id="clear_changes_text" class="text_class" accessibilityValue="clear_changes_text" visible="false"/>
+                <Button id="clear_changes" class="admin_action_button primary_button" accessibilityValue="clear_changes" visible="false"/>
+            </View>
+        </ScrollView>
+    </View>
+</Alloy>

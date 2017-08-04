@@ -1,0 +1,11 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for bundle PDP tab
+-->
+<Alloy>
+    <View id="bundle_product">
+        <Require id="promotions" src="product/components/promotions"/>
+        <ScrollView id="bundle_products"/>
+        <Require id="cart_add" src="product/components/cartAdd"/>
+    </View>
+</Alloy>

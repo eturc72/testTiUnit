@@ -1,0 +1,58 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for admin dashboard header
+
+'#dashboard_header': {
+    layout: 'horizontal',
+    height: 40,
+    top: 0,
+    left: 0,
+    backgroundColor: Alloy.Styles.color.background.dark
+},
+
+'#button_container': {
+    layout: 'horizontal',
+    width: '100%',
+    left: 0
+},
+
+'.dashboard_header_button': {
+    top: 0,
+    width: '16.6%',
+    height: 40,
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.detailLabelFont,
+    style: Ti.UI.iOS.SystemButtonStyle.PLAIN,
+    backgroundColor: Alloy.Styles.color.background.medium,
+    borderWidth: 1,
+    borderColor: Alloy.Styles.color.border.medium
+},
+
+'.dashboard_configuration_button': {
+    width: '16.6%'
+},
+
+'#dashboard_configuration_button': {
+    titleid: '_Configuration'
+},
+
+'#dashboard_settings_button': {
+    titleid: '_App_Settings'
+},
+
+'#dashboard_payment_terminal_button': {
+    titleid: '_Payment_Terminal_Tab'
+},
+
+'#dashboard_receipt_printer_button': {
+    titleid: '_Receipt_Printer'
+},
+
+'#dashboard_test_button': {
+    titleid: '_Test_Tab'
+},
+
+'#dashboard_logs_button': {
+    titleid: '_Logs'
+}
+

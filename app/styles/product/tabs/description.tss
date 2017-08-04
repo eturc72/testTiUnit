@@ -1,0 +1,12 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for description tab on PDP
+
+'#product_description': {
+    width: '100%',
+    height: 465,
+    top: 22,
+    willHandleTouches: false,
+    horizontalWrap: true,
+    disableBounce: true
+}

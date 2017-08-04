@@ -1,0 +1,34 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for entering a shipping method
+-->
+<Alloy>
+    <Collection id="shippingMethods" src="availableShippingMethod" instance="true" />
+    <View id="shipping_methods">
+        <ScrollView id="inner_container">
+            <View id="shipping_methods_container">
+                <TableView id="shipping_method_table" dataCollection="$.shippingMethods" dataTransform="transformShippingMethod">
+                    <Require src="checkout/shippingMethod/singleShippingMethod" />
+                </TableView>
+            </View>
+            <View id="gift_container">
+                <Label id="gift_label" accessibilityValue="gift_label"/>
+                <Switch id="gift_switch" accessibilityLabel="gift_switch" />
+            </View>
+            <View id="message_container">
+                <TextArea id="gift_text" accessibilityLabel="gift_text"/>
+                <Label id="character_left_label" accessibilityValue="character_left_label"/>
+            </View>
+        </ScrollView>
+        <View id="button_container">
+            <Button id="override_button" titleid="_Price_Override" accessibilityValue="shipping_override_button" visible="false"/>
+            <View id="create_order_container">
+                <Button id="create_order_button" titleid="_Create_Order" accessibilityValue="create_order_button"/>
+                <View id="create_order_label_container">
+                    <Label id="reserve_label" class="create_order_label" accessibilityValue="create_order_label_1"/>
+                </View>
+            </View>
+        </View>
+        <Label id="price_override_summary" visible="false" accessibilityValue="price_override_summary"/>
+    </View>
+</Alloy>

@@ -1,0 +1,43 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for cart
+-->
+<Alloy>
+    <Collection id="basketProductLineItems" src="productItem" instance="true" />
+    <Collection id="customerProductLineItems" src="productItem" instance="true"/>
+    <View id="cart">
+        <View id="cart_contents">
+            <View id="selectorRow">
+                <Button id="cart_button" accessibilityValue="cart_button"/>
+                <Button id="saved_products_button" accessibilityValue="saved_products_button"/>
+                <Button id="wish_list_button" accessibilityValue="wishlist_cart_button"/>
+            </View>
+            <View id="contents_container" layout="absolute">
+                <View id="pli_container" class="pli_container">
+                    <TableView id="cart_table" dataCollection="$.basketProductLineItems" dataTransform="transformPLI" class="cart_table">
+                        <Require src="checkout/cart/productItemRow" />
+                    </TableView>
+                    <View id="no_products_container" class="no_products_container">
+                        <Label id="no_products_label" class="no_products" accessibilityValue="no_products_label"/>
+                    </View>
+                </View>
+                <View id="saved_products_container" visible='true'>
+                    <TableView id="saved_products_table" dataCollection="$.customerProductLineItems" dataTransform="transformPLI"  class="cart_table">
+                        <Require src="checkout/cart/savedProductItemRow"/>
+                    </TableView>
+                    <View id="no_saved_products_container" class="no_products_container">
+                        <Label id="no_saved_products_label" class="no_products" accessibilityValue="no_saved_products_label"/>
+                    </View>
+                </View>
+            </View>
+            <View id="approaching_discount_container" visible="false">
+                <Label id="approaching_discount_label" class="approaching_discount_label" accessibilityValue="approaching_discount_label"/>
+            </View>
+        </View>
+    </View>
+    <Popover id="more_menu_popover" platform="ios">
+        <ContentView id="more_menu_content_view">
+            <TableView id="menu_container" onClick="handleMenuAction"/>
+        </ContentView>
+    </Popover>
+</Alloy>

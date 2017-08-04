@@ -1,0 +1,12 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for checkout address
+-->
+<Alloy>
+    <View id="container" layout="vertical">
+        <Require src="checkout/address/shippingOptionPicker" id="shipping_option_picker" type="view" if="shouldDisplayShippingOptionPicker()"/>
+        <Require src="checkout/address/chooseAddress" id="choose_address" type="view"/>
+        <Require src="checkout/address/enterAddress" id="enter_address" type="view"/>
+        <Require src="checkout/address/differentStorePickupAddress" id="different_store_pickup_address" type="view" if="shouldDisplayDifferentStorePickupAddress()"/>
+    </View>
+</Alloy>

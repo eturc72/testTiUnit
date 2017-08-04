@@ -1,0 +1,16 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for admin dashboard header
+-->
+<Alloy>
+    <View id="dashboard_header">
+        <View id="button_container">
+            <Button id="dashboard_configuration_button" class="dashboard_header_button dashboard_configuration_button" accessibilityValue="dashboard_configuration_button"/>
+            <Button id="dashboard_settings_button" class="dashboard_header_button" accessibilityValue="dashboard_settings_button"/>
+            <Button id="dashboard_payment_terminal_button" class="dashboard_header_button" accessibilityValue="dashboard_payment_terminal_button"/>
+            <Button id="dashboard_receipt_printer_button" class="dashboard_header_button" accessibilityValue="dashboard_receipt_printer_button"/>
+            <Button id="dashboard_test_button" class="dashboard_header_button" accessibilityValue="dashboard_test_button"/>
+            <Button id="dashboard_logs_button" class="dashboard_header_button" accessibilityValue="dashboard_logs_button"/>
+        </View>
+    </View>
+</Alloy>

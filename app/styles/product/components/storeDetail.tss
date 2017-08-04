@@ -1,0 +1,51 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for PDP store details
+
+'#store_row_table': {
+    selectionStyle: 'none'
+},
+
+'#store_detail_container': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE
+},
+
+'#store_detail_content_row': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE
+},
+
+'.store_container': {
+    layout: 'vertical',
+    top: 0,
+    bottom: 10,
+    width: '33%',
+    height: Ti.UI.SIZE
+},
+
+'.store_label': {
+    left: 5,
+    right: 5,
+    top: 2,
+    color: Alloy.Styles.color.text.black,
+    font: Alloy.Styles.lineItemFont
+},
+
+'.store_label_strong': {
+    left: 5,
+    right: 5,
+    top: 5,
+    color: Alloy.Styles.color.text.black,
+    font: Alloy.Styles.lineItemLabelFont
+},
+
+'#line': {
+    bottom: 2,
+    left: 10,
+    right: 10
+},
+
+'#store_container_middle': {
+    width: '34%'
+}

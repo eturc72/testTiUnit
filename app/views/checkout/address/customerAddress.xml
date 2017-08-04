@@ -1,0 +1,22 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for a customer address
+-->
+<Alloy>
+    <TableViewRow layout="vertical" address_name="{address_name}" id="customer_address">
+        <View id="address_container">
+            <View id="address_tile">
+                <View id="radio_button_container">
+                    <ImageView id="radio_button" accessibilityLabel="radio_button"/>
+                </View>
+                <View id="address_column">
+                    <Label text="{address_name}" class="big_text" id="address_name" accessibilityValue="address_name"/>
+                    <Label id="address_display" class= "profile_text" accessibilityValue="address_display" />
+                </View>
+                <View id="button_column">
+                    <Button id="edit_button" class="secondary_button" accessibilityValue="edit_button"/>
+                </View>
+            </View>
+        </View>
+    </TableViewRow>
+</Alloy>

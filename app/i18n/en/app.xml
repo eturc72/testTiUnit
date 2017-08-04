@@ -1,0 +1,9 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+-->
+
+<resources>
+    <string name="appname" context="home.icon">Endless Aisle</string>
+    <string name="NSCameraUsageDescription" context="dialog.msg">Your camera is used to scan the barcode for product search.</string>
+    <string name="NSLocationWhenInUseUsageDescription" context="dialog.msg">Your location is used for address suggestions (if enabled) and payment if using Adyen devices.</string>
+</resources>

@@ -1,0 +1,19 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for the coupon section on the cart
+-->
+<Alloy>
+    <Collection id="activeCoupons" src="couponItem" instance="true" />
+    <View id="promotions" class="promotions_view">
+        <View id="coupon_form">
+            <TextField class="coupon_text_field" id="coupon" accessibilityLabel="coupon"/>
+            <Button class="coupon_apply_button" titleid="_Apply" id="coupon_apply_button" accessibilityValue="coupon_apply_button"/>
+        </View>
+        <View id="instruction_view">
+            <Label id="instruction_label" class="promo_text" accessibilityValue="instruction_label"/>
+        </View>
+        <TableView id="coupon_table" dataCollection="$.activeCoupons" dataTransform="transformCoupons" separatorStyle="transparent">
+            <Require src="checkout/components/couponLineItem"/>
+        </TableView>
+    </View>
+</Alloy>

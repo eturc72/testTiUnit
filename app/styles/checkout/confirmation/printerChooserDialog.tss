@@ -1,0 +1,39 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for printer chooser dialog
+
+'#printer_chooser_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#print_container': {
+    layout: 'vertical',
+    width: 280,
+    height: 280,
+    top: 170,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#print_button': {
+    backgroundImage: Alloy.Styles.buttons.secondary.backgroundImage,
+    backgroundDisabledImage: Alloy.Styles.buttons.secondary.backgroundDisabledImage,
+    color: Alloy.Styles.buttons.primary.color,
+    width: 128,
+    height: 42,
+    font: Alloy.Styles.smallButtonFont,
+    top: 20
+},
+
+'#printer_container': {
+    left: 20,
+    right: 20
+}

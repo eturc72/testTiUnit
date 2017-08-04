@@ -1,15 +1,36 @@
-".container": {
-	backgroundColor:"white"
-}
+// ©2013-2017 salesforce.com, inc. All rights reserved.
 
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#000"
-}
+// TSS file for main index
 
-"#label": {
-	font: {
-		fontSize: 12
-	}
+'#index': {
+    top: 0,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#kiosk_message': {
+    zIndex: 1,
+    left: 580,
+    top: 20,
+    color: Alloy.Styles.darkAccentColor,
+    font: Alloy.Styles.bigTitleFont,
+    visible: false,
+    height: 200,
+    width: 360,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER
+},
+
+'#background': {
+    top: 0,
+    width: 1024,
+    height: 768,
+    image: Alloy.Styles.splashScreenImage
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    backgroundColor: Alloy.Styles.color.background.black,
+    opacity: 0.0,
+    layout: 'absolute'
 }

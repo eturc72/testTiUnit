@@ -1,0 +1,97 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for phone number dialog if address contains no phone number
+
+'#popover_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.25,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#popover_container': {
+    layout: 'vertical',
+    width: '50%',
+    top: 75,
+    height:Ti.UI.SIZE,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#phone_number_container': {
+    layout: 'vertical',
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    top: 20
+},
+
+'#buttons_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    top: 20,
+    bottom: 20
+},
+
+'#confirm_title': {
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.titleFont,
+    height: Ti.UI.SIZE,
+    top: 20,
+    textid: '_Missing_Phone_Number'
+},
+
+'#message': {
+    color: Alloy.Styles.color.text.mediumdark,
+    font: Alloy.Styles.messageFont,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.FILL,
+    top: 50,
+    left: 50,
+    right: 50,
+    textid: '_Provide_a_phone_number_for_the_shipping_address_',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+'#confirm_button': {
+    left: 20,
+    titleid: '_Confirm'
+},
+
+'#cancel_button': {
+    titleid: '_Cancel'
+},
+
+'.text_field': {
+    width: Ti.UI.FILL,
+    autocorrect: false,
+    top: 10,
+    left: 50,
+    right: 50,
+    maxLength: 50,
+    backgroundColor: Alloy.Styles.color.background.medium,
+    hintText: L( 'Phone*'),
+    height: 50,
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.textFieldFont,
+    returnKeyType: Ti.UI.RETURNKEY_GO,
+    keyboardType: Ti.UI.KEYBOARD_TYPE_NUMBERS_PUNCTUATION,
+    paddingLeft: 18
+},
+
+'.error': {
+    color: Alloy.Styles.color.text.red,
+    height: 0,
+    width: Ti.UI.FILL,
+    left: 50,
+    right: 50,
+    top: 2,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    font: Alloy.Styles.errorMessageFont
+}
+

@@ -1,0 +1,98 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for the edit customer profile page
+
+'.profile_container': {
+    top: 0,
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: '95%',
+    left: 20,
+    top: 40
+},
+
+'#edit_customer_profile': {
+    left: 20
+},
+
+'.field_container': {
+    layout: 'horizontal',
+    width: '100%',
+    left: 0,
+    top: 68,
+    height: 55
+},
+
+'.left_two_column_container': {
+    layout: 'vertical',
+    width: '50%'
+},
+
+'.right_two_column_container': {
+    layout: 'vertical',
+    width: '49%'
+},
+
+'.full_width': {
+    paddingLeft: 18,
+    left: 26,
+    height: 55,
+    width: 538,
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_LINE,
+    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+    keyboardType: Ti.UI.KEYBOARD_TYPE_EMAIL,
+    borderColor: Alloy.Styles.color.border.dark,
+    borderWidth: 1,
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.textFieldFont
+},
+
+'.half_width': {
+    paddingLeft: 18,
+    height: 50,
+    width: 240,
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_LINE,
+    borderColor: Alloy.Styles.color.border.dark,
+    borderWidth: 1,
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.textFieldFont
+},
+
+'.cancel_button': {
+    top: 20,
+    right: 28,
+    width: 240,
+    height: 42,
+    backgroundImage: Alloy.Styles.secondaryButtonImage,
+    font: Alloy.Styles.buttonFont,
+    color: Alloy.Styles.buttons.secondary.color
+},
+
+'.save_button': {
+    top: 20,
+    right: 28,
+    width: 240,
+    height: 42,
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    font: Alloy.Styles.buttonFont,
+    color: Alloy.Styles.buttons.primary.color
+},
+
+'.error_text': {
+    color: Alloy.Styles.color.text.red,
+    width: '100%',
+    left: 26,
+    top: 3,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font: Alloy.Styles.errorMessageFont
+},
+
+'#customer_profile_first_name': {
+    hintText: L( '_First_Name'),
+    autocorrect: false
+},
+
+'#customer_profile_last_name': {
+    hintText: L( '_Last_Name'),
+    autocorrect: false
+}

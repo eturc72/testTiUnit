@@ -1,0 +1,17 @@
+<!--
+// ©2017 salesforce.com, inc. All rights reserved.
+// TableViewRow for rendering other store list item
+-->
+<Alloy>
+    <TableViewRow id="store_row">
+        <View id="store_detail_content">
+            <Label id="store_address"  class="store_info" text="{display_name}" accessibilityValue="store_address"/>
+            <Label id="store_distance" class="store_info" text="{distance}" accessibilityValue="store_distance"/>
+        </View>
+        <View id="basket_availability_wrapper" >
+            <Label if="!isBasketAvailable()" id="unavailability_message" text="{unavailability_message}" accessibilityValue="unavailability_message" />
+            <Button if="!isBasketAvailable()" id="unavailable_basket_button"  accessibilityLabel="unavailable_basket_button" />
+            <ImageView if="isBasketAvailable()" id="store_checkbox" class="checkbox unchecked_option" accessibilityValue="select_store_checkbox" />
+        </View>
+    </TableViewRow>
+</Alloy>

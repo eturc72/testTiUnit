@@ -1,0 +1,44 @@
+// ©2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for address suggestions views
+
+'#address_autocomplete_view': {
+    backgroundColor: Alloy.Styles.color.background.white,
+    height: 0,
+    width: 0,
+    left: 620,
+    top: 85,
+    layout: 'vertical',
+    borderRadius: 10,
+    viewShadowRadius: '10',
+    viewShadowColor: Alloy.Styles.color.background.black,
+    zIndex: 0
+},
+
+'#address_suggestion_label': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    lines: 1,
+    left: 10,
+    right: 10,
+    color: Alloy.Styles.color.text.dark
+},
+
+'#address_sugestions_table_row': {
+    height: 50,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#address_sugestions_table': {
+    height: 220,
+    width: Ti.UI.FILL,
+    backgroundColor: Alloy.Styles.color.background.white,
+    visible: false
+},
+
+'#dismiss_suggestion_button': {
+    backgroundImage: Alloy.Styles.clearTextImage,
+    top: 0,
+    right: 5,
+    top: 5,
+    visible: false
+}

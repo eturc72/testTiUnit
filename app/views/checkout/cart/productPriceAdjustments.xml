@@ -1,0 +1,33 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for product price adjustment
+-->
+<Alloy>
+    <View id="product_price_adjustment_window">
+        <View id="backdrop"/>
+        <View id="product_overrides_container">
+            <View id="product_overrides_header">
+                <Button id="cancel_button" titleid="_Cancel" accessibilityValue="cancel_button_price_override"/>
+                <Label id="product_overrides_label" accessibilityValue="product_overrides_label"/>
+                <Button id="apply_button" titleid="_Apply" accessibilityValue="apply_button_price_override"/>
+            </View>
+            <View id="overrides_container">
+                <View id="product_container">
+                    <Label id="product_name_label" accessibilityValue="product_name_label"/>
+                    <View id="price_container">
+                        <Label id="original_price_label" accessibilityValue="original_price_label"/>
+                    </View>
+                    <ImageView id="product_image" accessibilityValue="product_image"/>
+                </View>
+                <View id="override_container">
+                    <View id="show_overrides" visible='false'>
+                        <Require src="checkout/cart/productPriceOverrides" id="overrides"/>
+                    </View>
+                    <View id="manager_override_already_exists" visible="false">
+                        <Label id="manager_override_label" accessibilityValue="manager_override_label"/>
+                    </View>
+                </View>
+            </View>
+        </View>
+    </View>
+</Alloy>

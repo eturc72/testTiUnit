@@ -1,0 +1,9 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for order product details
+
+'#pli_table': {
+    top: 0,
+    bottom: 0,
+    separatorStyle: 'transparent'
+}

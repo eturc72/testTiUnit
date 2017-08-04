@@ -1,0 +1,25 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for category refinement panel
+-->
+<Alloy>
+    <View class="categoryRefinementPanel">
+        <View class="vertical_shadow_separator_left"/>
+        <TableView id="selectedCategoriesTable">
+            <HeaderView>
+                <View id="selectedCategoriesTableHeader">
+                    <Label id="selectedCategoriesTableHeaderLabel" accessibilityValue="product_categories"/>
+                </View>
+            </HeaderView>
+        </TableView>
+        <View class="vertical_shadow_separator_right"/>
+        <TableView id="subcategoriesTable">
+            <HeaderView>
+                <View id="subcategoriesTableHeader">
+                    <Label id="subcategoriesTableHeaderLabel" accessibilityValue="subcategoriesTableHeaderLabel"/>
+                    <Label id="subcategoriesTableHeaderCalloutLabel" accessibilityValue="subcategoriesTableHeaderCalloutLabel"/>
+                </View>
+            </HeaderView>
+        </TableView>
+    </View>
+</Alloy>

@@ -1,0 +1,60 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for kiosk reset
+
+'#session_timeout_confirmation_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#session_timeout_confirmation_container': {
+    layout: 'vertical',
+    width: '50%',
+    height: Ti.UI.SIZE,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#title': {
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.titleFont,
+    height: Ti.UI.SIZE,
+    top: 20
+},
+
+'#message': {
+    color: Alloy.Styles.color.text.mediumdark,
+    font: Alloy.Styles.messageFont,
+    top: 50,
+    left: 50,
+    right: 50,
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+'#session_timeout_button_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    top: 50,
+    bottom: 20
+},
+
+'#continue_button': {
+    width: 200,
+    titleid: '_Continue'
+},
+
+'#end_session_button': {
+    width: 200,
+    left: 20,
+    titleid: '_End_Session'
+}

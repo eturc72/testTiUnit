@@ -1,0 +1,65 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for simluate credit card dialog
+
+'#simulate_payment_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#card_container': {
+    layout: 'vertical',
+    width: 450,
+    left: 287,
+    height: 380,
+    top: 94,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#title': {
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.titleFont,
+    top: 20,
+    // development only view and therefore not translated
+    text: 'Simulate Payments'
+},
+
+'.simulate_button': {
+    backgroundImage: Alloy.Styles.buttons.primary.backgroundImage,
+    backgroundDisabledImage: Alloy.Styles.buttons.primary.backgroundDisabledImage,
+    color: Alloy.Styles.buttons.primary.color,
+    width: 390,
+    height: 40,
+    left: 35,
+    top: 20
+},
+
+'#button_container': {
+    layout: 'vertical',
+    width: Ti.UI.FILL,
+    height: 240
+},
+
+'#cancel_button': {
+    top: 30,
+    backgroundImage: Alloy.Styles.buttons.secondary.backgroundImage,
+    backgroundDisabledImage: Alloy.Styles.buttons.secondary.backgroundDisabledImage
+},
+
+'.payment_button': {
+    backgroundImage: Alloy.Styles.buttons.primary.backgroundImage,
+    backgroundDisabledImage: Alloy.Styles.buttons.primary.backgroundDisabledImage,
+    color: Alloy.Styles.buttons.primary.color,
+    width: 390,
+    height: 40,
+    left: 35,
+    top: 20
+}

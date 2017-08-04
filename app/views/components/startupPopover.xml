@@ -1,0 +1,22 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for startup popover for store
+-->
+<Alloy>
+    <View id="popover_window">
+        <View id="backdrop"/>
+        <View id="popover_container">
+            <Label id="startup_title" accessibilityValue="startup_confirm_title"/>
+            <Label id="startup_message" accessibilityValue="startup_message" class="message"/>
+            <Label id="startup_fault" accessibilityValue="startup_fault" class="message"/>
+            <View id="store_input">
+                <Label id="store_id_label" accessibilityValue="store_id_label"/>
+                <View id="store_selection"/>
+            </View>
+            <View id="buttons_container" >
+                <Button id="app_info_button" class="secondary_button" accessibilityValue="startup_config_button"/>
+                <Button id="ok_button" class="primary_button" accessibilityValue="startup_ok_button"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

@@ -1,0 +1,27 @@
+<!--
+// ©2017 salesforce.com, inc. All rights reserved.
+// View file for authorization dialog
+-->
+
+<Alloy>
+    <View id="auth_window">
+        <View id="backdrop" />
+        <View id="enter_manager_authorization">
+            <View id="inner_container">
+                <View id="top_container">
+                    <Label id="title" class="dialog_text" accessibilityValue="manager_auth_title"/>
+                    <Label id="subtitle" class="dialog_text" accessibilityValue="manager_auth_subtitle"/>
+                    <Label id="error" class="dialog_text" accessibilityValue="manager_auth_error"/>
+                    <View id="content_view">
+                        <TextField id="manager_id" class="manager_field" accessibilityLabel="manager_id"/>
+                        <TextField id="manager_password" class="manager_field" accessibilityLabel="manager_password"/>
+                    </View>
+                </View>
+                <View id="buttons">
+                    <Button id="cancel_button" class="secondary_button" accessibilityValue="cancel_button" />
+                    <Button id="submit_button" class="primary_button" accessibilityValue="submit_button" />
+                </View>
+            </View>
+        </View>
+    </View>
+</Alloy>

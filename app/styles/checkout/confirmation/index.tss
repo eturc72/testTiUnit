@@ -1,0 +1,16 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for the confirmation window
+
+'#separator': {
+    top: 33,
+    width: '100%',
+    height: 2,
+    backgroundColor: Alloy.Styles.color.background.medium
+},
+
+'#confirmation_container': {
+    layout: 'vertical',
+    bottom: 0,
+    height: '100%'
+}

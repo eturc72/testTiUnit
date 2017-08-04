@@ -1,0 +1,20 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for generic confirmation dialog
+-->
+<Alloy>
+    <View id="confirmation_window">
+        <View id="backdrop"/>
+        <View id="confirmation_container">
+            <Label id="title" accessibilityValue="confirmation_title"/>
+            <View id="message_section">
+                <ImageView id="icon" accessibilityLabel="confirmation_icon"/>
+                <Label id="message" accessibilityValue="confirmation_message"/>
+            </View>
+            <View id="button_container">
+                <Button id="cancel_button" class="dialog_button secondary_button" accessibilityValue="confirmation_cancel_button"/>
+                <Button id="ok_button" class="dialog_button primary_button" accessibilityValue="confirmation_ok_button"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

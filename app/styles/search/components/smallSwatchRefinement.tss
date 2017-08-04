@@ -1,0 +1,15 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for small swatch refinement
+
+'#smallSwatchRefinementHeader': {
+    height: 50,
+    layout: 'absolute',
+    backgroundColor: Alloy.Styles.color.background.light
+},
+
+'#smallSwatchRefinementHeaderLabel': {
+    font: Alloy.Styles.buttonFont,
+    color: Alloy.Styles.color.text.dark,
+    left: 22
+}

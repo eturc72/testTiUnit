@@ -1,0 +1,22 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for mega menu leaf
+
+'.menu_column': {
+    layout: 'vertical',
+    width: 234
+},
+
+'.menu_leaf_container': {
+    bottom: 5,
+    height: 35,
+    left: 35,
+    width: Ti.UI.FILL,
+    layout: 'horizontal'
+},
+
+'.menu_leaf': {
+    font: Alloy.Styles.megaMenu.menuLeaf.font,
+    width: Ti.UI.SIZE,
+    color: Alloy.Styles.megaMenu.menuLeaf.color
+}

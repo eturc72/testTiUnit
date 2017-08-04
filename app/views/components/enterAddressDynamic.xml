@@ -1,0 +1,8 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for enter address dynamic form
+-->
+<Alloy>
+    <Model id="address" src="shippingAddress" instance="true"/>
+    <View id="address_window"/>
+</Alloy>

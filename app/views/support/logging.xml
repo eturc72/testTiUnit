@@ -1,0 +1,31 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for logs tab view for Admin Dashbaord
+-->
+<Alloy>
+    <View tabBarHidden="false" navBarHidden="false">
+        <View id="logging_main">
+            <View id="data_column">
+                <Label id="console_text" class="title_class" accessibilityValue="console_text"/>
+                <ScrollView id="console_scrollView">
+                    <Label id="console_tail" accessibilityValue="console_tail"/>
+                </ScrollView>
+            </View>
+            <View id="vertical_border"/>
+            <ScrollView id="action_column">
+                <View id="action_section" class="section_class">
+                    <Label id="action_title" class="title_class" accessibilityValue="action_title"/>
+                    <Label id="categories_text" class="text_class" accessibilityValue="categories_text"/>
+                    <TextField id="runtime_cats" accessibilityLabel="runtime_cats"/>
+                    <Button id="apply_runtime_cats_btn" class="admin_action_button primary_button" accessibilityValue="apply_runtime_cats_btn"/>
+                    <Label id="effective_categories_text" class="text_class" accessibilityValue="effective_categories_text"/>
+                    <Label id="effective_cats" value="--"  class="text_class" accessibilityValue="effective_cats"/>
+                    <Button id="reload_console_btn" class="admin_action_button primary_button" accessibilityValue="reload_console_btn"/>
+                    <Label id="email_text"  class="text_class" accessibilityValue="email_text"/>
+                    <TextArea id="email_address" class="email_class" accessibilityValue="email_address"/>
+                    <Button id="email_log_btn" class="admin_action_button primary_button" accessibilityValue="email_log_btn"/>
+                </View>
+            </ScrollView>
+        </View>
+    </View>
+</Alloy>

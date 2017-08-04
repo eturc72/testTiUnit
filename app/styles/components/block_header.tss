@@ -1,0 +1,10 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for block_header component
+
+'.block_header': {
+    top: 10,
+    font: Alloy.Styles.headlineFont,
+    width: '100%',
+    color: Alloy.Styles.color.text.dark
+}

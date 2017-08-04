@@ -1,0 +1,81 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for history tile row
+
+'.history_tile_container': {
+    backgroundImage: Alloy.Styles.customerBorderImage,
+    layout: 'horizontal',
+    width: '100%',
+    height: 166
+},
+
+'.image_column': {
+    left: 28,
+    right: 28,
+    top: 40,
+    height: 90,
+    width: 90
+},
+
+'.image_container': {
+    height: '100%'
+},
+
+'.orderdetails_container': {
+    layout: 'vertical',
+    height: '100%',
+    left: 0,
+    width: 430
+},
+
+'.orderbutton_container': {
+    width: 40
+},
+
+'.labeled_value': {
+    height: Ti.UI.SIZE,
+    width: '100%',
+    layout: 'horizontal'
+},
+
+'.label': {
+    left: 15,
+    font: Alloy.Styles.detailValueFont,
+    color: Alloy.Styles.color.text.mediumdark
+},
+
+'.text': {
+    left: 12,
+    font: Alloy.Styles.detailLabelFont,
+    color: Alloy.Styles.color.text.mediumdark
+},
+
+'#history_result_row': {
+    selectedBackgroundColor: Alloy.Styles.accentColor
+},
+
+'#order_detail_button': {
+    style: 'PLAIN',
+    color: Alloy.Styles.color.text.light,
+    font: Alloy.Styles.bigButtonFont
+},
+
+'#date_label': {
+    textid: '_Date_Ordered_'
+},
+
+'#order_date': {
+    font: Alloy.Styles.callcoutCopyFont
+},
+
+'#status_label': {
+    textid: '_Order_Status_'
+},
+
+'#number_label': {
+    textid: '_Order_Number_'
+},
+
+'#total_label': {
+    textid: '_Order_Total_'
+}

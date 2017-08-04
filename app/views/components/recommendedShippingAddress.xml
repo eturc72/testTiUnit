@@ -1,0 +1,20 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for a recommended shipping address
+-->
+<Alloy>
+    <TableViewRow layout="vertical" id="recommendedShippingAddress">
+        <View id="address_container">
+            <View id="address_tile">
+                <View id="radio_button_container">
+                    <ImageView id="radio_button" accessibilityValue="radio_button"/>
+                </View>
+                <View id="address_column">
+                    <Label text="{address1}" class="profile_text" id="address1" accessibilityValue="address1"/>
+                    <Label text="{address2}" class="profile_text" id="address2" accessibilityValue="address2"/>
+                    <Label text="{city_state_zip}" class="profile_text" id="city_state_zip" accessibilityValue="city_state_zip"/>
+                </View>
+            </View>
+        </View>
+    </TableViewRow>
+</Alloy>

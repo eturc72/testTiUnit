@@ -1,0 +1,205 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for overrides
+
+'#overrides_details_container': {
+},
+
+'#overrides_container': {
+    layout: 'horizontal',
+    top: 48
+},
+
+'#overrides_left_column': {
+    layout: 'vertical',
+    width: '35%'
+},
+
+'#overrides_right_column': {
+    layout: 'vertical',
+    width: '65%',
+    disableBounce: 'true'
+},
+
+'#adjustment_reason_container': {
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    layout: 'horizontal',
+    left: 0
+},
+
+'.manager_authorization_label': {
+    width: '100%',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+    right: 0,
+    top: 20
+},
+
+'#price_container': {
+    layout: 'horizontal',
+    width: 410,
+    height: 100,
+    left: 0
+},
+
+
+'#amount_off_container': {
+    width: 180,
+    layout: 'vertical'
+},
+
+'#amount_off_label': {
+    font: Alloy.Styles.calloutCopyFont,
+    color: Alloy.Styles.color.text.dark,
+    height: Ti.UI.SIZE,
+    left: 0
+},
+
+'#amount_off_text': {
+    width: 169,
+    height: 55,
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_LINE,
+    left: 0,
+    keyboardType: Ti.UI.KEYBOARD_TYPE_NUMBERS_PUNCTUATION,
+    font: Alloy.Styles.textFieldFont,
+    borderColor: Alloy.Styles.color.border.light,
+    borderWidth: 1,
+    backgroundColor: Alloy.Styles.color.background.white,
+    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+    autocorrect: false,
+    paddingLeft: 14,
+    clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS
+},
+
+'#new_price_container': {
+    width: 230,
+    layout: 'vertical',
+    left: 0
+},
+
+'.price_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: '100%'
+},
+
+'.surcharge_container': {
+    top: 10
+},
+
+'.new_price_label': {
+    font: Alloy.Styles.calloutCopyFont,
+    color: Alloy.Styles.color.text.dark,
+    height: Ti.UI.SIZE
+},
+
+'.new_price_calculated_label': {
+    font: Alloy.Styles.calloutFont,
+    color: Alloy.Styles.color.text.dark,
+    height: Ti.UI.SIZE
+},
+
+'.price_label': {
+    left: 0,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    width: '50%'
+},
+
+'.price_value_label': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+    right: 0,
+    width: '50%'
+},
+
+'#error_message_label': {
+    font: Alloy.Styles.errorMessageFont,
+    color: Alloy.Styles.color.text.red,
+    left: 0,
+    width: 400,
+    top: 25,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+
+'#get_manager_authorization_container': {
+    layout: 'vertical',
+    left: 0,
+    width: '100%',
+    height: Ti.UI.SIZE,
+    top: 29
+},
+
+'#enter_manager_authorization': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    top: 29
+},
+
+'#manager_authorization_label': {
+    font: Alloy.Styles.calloutCopyFont,
+    color: Alloy.Styles.color.text.dark,
+    height: Ti.UI.SIZE,
+    left: 0,
+    textid: '_Manager_Authorization'
+},
+
+'.manager_field': {
+    color: Alloy.Styles.color.text.light,
+    font: Alloy.Styles.dialogFieldFont,
+    width: 455,
+    height: 55,
+    borderColor: Alloy.Styles.color.border.light,
+    top: 13,
+    passwordMask: true,
+    paddingLeft: 18,
+    keyboardType: Ti.UI.KEYBOARD_TYPE_NUMBERS_PUNCTUATION,
+    left: 0
+},
+
+'#manager_error': {
+    color: Alloy.Styles.color.text.red,
+    font: Alloy.Styles.calloutCopyFont,
+    visible: true,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    top: 13,
+    height: 80,
+    width: Ti.UI.SIZE,
+    left: 0
+},
+
+'#manager_id': {
+    hintText: L( '_Manager_ID')
+},
+
+'#manager_password': {
+    hintText: L( '_Password')
+},
+
+'#has_manager_approval_container': {
+    layout: 'horizontal',
+    left: 0,
+    height: 0
+},
+
+'#manager_approval_label': {
+    width: Ti.UI.SIZE,
+    font: Alloy.Styles.detailValueFont,
+    color: Alloy.Styles.color.text.mediumdark,
+    textid: '_Manager_Approval_'
+},
+
+'#manager_name_label': {
+    width: Ti.UI.SIZE,
+    font: Alloy.Styles.detailLabelFont,
+    color: Alloy.Styles.accentColor,
+    left: 5
+},
+
+'#new_price_label': {
+    textid: '_New_Price'
+},
+
+'#surcharge_label': {
+    textid: '_Surcharge'
+}

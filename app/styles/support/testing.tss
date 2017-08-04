@@ -1,0 +1,121 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for test tab in admin dashbaord
+
+'#testing_main': {
+    layout: 'horizontal',
+    width: '100%',
+    height: '100%'
+},
+
+'#data_column': {
+    layout: 'vertical',
+    width: '70%',
+    height: '100%'
+},
+
+'#action_column': {
+    layout: 'vertical',
+    width: '28%',
+    height: '100%'
+},
+
+'#clear_results': {
+    left: 0,
+    width: 220,
+    top: 15,
+    bottom: 20,
+    titleid: '_Clear_Results'
+},
+
+'#vertical_border': {
+    width: 2,
+    backgroundColor: Alloy.Styles.color.border.darkest
+},
+
+'.section_class': {
+    top: 20,
+    left: 20,
+    height: Ti.UI.SIZE,
+    layout: 'vertical'
+},
+
+'.title_class': {
+    font: Alloy.Styles.detailLabelFont,
+    left: 0
+},
+
+'.text_class': {
+    font: Alloy.Styles.detailValueFont,
+    left: 4,
+    top: 10,
+    bottom: 10
+},
+
+'#model_tests_title': {
+    font: Alloy.Styles.detailLabelFontSmall,
+    color: Alloy.Styles.color.text.dark,
+    left: 10,
+    top: 5,
+    textid: '_Model_Tests'
+},
+
+'#results_title': {
+    font: Alloy.Styles.detailLabelFont,
+    color: Alloy.Styles.accentColor,
+    textid: '_Testing_Results_'
+},
+
+'#action_title': {
+    textid: '_Actions_',
+    color: Alloy.Styles.accentColor
+},
+
+'#results_text': {
+    textid: '_No_tests_have_been_run'
+},
+
+'#tests_text': {
+    textid: '_TestsText'
+},
+
+'#email_tests_text': {
+    textid: '_EmailTestsText'
+},
+
+'#email_tests': {
+    titleid: '_Email_Test_Results'
+},
+
+'#test_names': {
+    borderWidth: 2,
+    borderColor: Alloy.Styles.selectLists.optionsListBorderColor,
+    borderRadius: 2,
+    width: 250,
+    height: 300,
+    scrollable: true,
+    editable: false,
+    rowHeight: 40,
+    style: Ti.UI.iOS.TableViewStyle.PLAIN
+},
+
+'#test_output': {
+    borderWidth: 2,
+    borderColor: Alloy.Styles.selectLists.optionsListBorderColor,
+    borderRadius: 2,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    width: Ti.UI.FILL,
+    right: 20,
+    height: '85%',
+    scrollable: true,
+    editable: false
+},
+
+'.email_class': {
+    top: 10,
+    layout: 'vertical',
+    font: Alloy.Styles.detailValueFont,
+    left: 20,
+    height: Ti.UI.SIZE,
+    horizontalWrap: true
+}

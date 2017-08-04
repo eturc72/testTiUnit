@@ -1,0 +1,113 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for product price adjustment
+
+'#product_price_adjustment_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.25,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#product_overrides_container': {
+    layout: 'vertical',
+    width: 995,
+    left: 15,
+    height: 507,
+    top: 47,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#product_overrides_header': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: '100%',
+    top: 13
+},
+
+'#product_overrides_label': {
+    font: Alloy.Styles.headlineFont,
+    color: Alloy.Styles.accentColor,
+    left: 255,
+    width: 250,
+    top: 0,
+    textid: '_Price_Overrides'
+},
+
+'#apply_button': {
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    color: Alloy.Styles.buttons.primary.color,
+    width: 146,
+    height: 35,
+    font: Alloy.Styles.buttonFont,
+    left: 170
+},
+
+'#cancel_button': {
+    backgroundImage: Alloy.Styles.secondaryButtonImage,
+    color: Alloy.Styles.buttons.secondary.color,
+    width: 146,
+    height: 35,
+    font: Alloy.Styles.buttonFont,
+    left: 15
+},
+
+'#overrides_container': {
+    layout: 'horizontal',
+    width: '100%'
+},
+
+'#product_container': {
+    layout: 'vertical',
+    width: 175,
+    left: 41,
+    top: 48
+},
+
+'#product_name_label': {
+    font: Alloy.Styles.productFont,
+    width: '100%',
+    left: 0,
+    color: Alloy.Styles.color.text.mediumdark
+},
+
+'#price_container': {
+    layout: 'horizontal',
+    height: 40,
+    width: '100%',
+    left: 0
+},
+
+'#original_price_label': {
+    font: Alloy.Styles.appFont,
+    color: Alloy.Styles.color.text.mediumdark
+},
+
+'#product_image': {
+    width: 175,
+    height: Ti.UI.SIZE,
+    left: 0
+},
+
+'#manager_override_already_exists': {
+    top: 100
+},
+
+'#manager_override_label': {
+    font: Alloy.Styles.subtitleFont,
+    color: Alloy.Styles.color.text.dark,
+    width: 550,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    top: 0,
+    textid: '_A_manager_override_has_already_been_applied__Click_Remove_to_remove_the_override_and_continue_to_the_override_screen_'
+},
+
+'#override_container': {
+    left: 74
+}

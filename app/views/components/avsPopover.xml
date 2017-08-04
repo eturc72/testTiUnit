@@ -1,0 +1,44 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for address verification results popover
+-->
+<Alloy>
+    <Collection id="addresses" instance="true" src="recommendedAddress"/>
+    <Model id="givenAddress" src="recommendedAddress" instance="true"/>
+    <View id="popover_window">
+        <View id="backdrop"/>
+        <View id="popover_container">
+            <View id="header_container">
+                <Label id="main_title" accessibilityValue="main_title_avs"/>
+            </View>
+            <View class="horizontal_separator"/>
+            <View id="column_container">
+                <Label id="subtitle" accessibilityValue="subtitle_avs" class="title_text"/>
+                <View class="horizontal_separator"/>
+                <View id="suggested_addresses_column_container">
+                    <Label id="suggested_addresses_title" accessibilityValue="suggested_addresses_title" class="title_text"/>
+                    <TableView id="suggested_addresses_table" dataCollection="$.addresses" dataTransform="transformAddress" separatorStyle="transparent">
+                        <Require src="components/recommendedShippingAddress"/>
+                    </TableView>
+                </View>
+                <View id="entered_address_column_container">
+                    <Label id="entered_address_title" accessibilityValue="entered_addresses_title" class="title_text"/>
+                    <View id="entered_address_tile">
+                        <View id="radio_button_container">
+                            <ImageView id="radio_button" accessibilityValue="radio_button"/>
+                        </View>
+                        <View id="entered_address_column">
+                            <Label text="{$.givenAddress.address1}" class="profile_text" id="given_address1" accessibilityValue="given_address1"/>
+                            <Label text="{$.givenAddress.address2}" class="profile_text" id="given_address2" accessibilityValue="given_address2"/>
+                            <Label text="{$.givenAddress.city_state_zip}" class="profile_text" id="given_city_state_zip" accessibilityValue="given_city_state_zip"/>
+                        </View>
+                    </View>
+                </View>
+            </View>
+            <View id="button_container">
+                <Button id="cancel_button" titleid="_Cancel" enabled="true" visible="true" accessibilityValue="cancel_button_avs"/>
+                <Button id="continue_button" titleid="_Continue" enabled="true" visible="true" accessibilityValue="continue_button_avs"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

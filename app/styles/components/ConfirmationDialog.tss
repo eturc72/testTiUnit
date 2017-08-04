@@ -1,0 +1,67 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for generic confirmation dialog
+
+'#confirmation_window': {
+    layout: 'absolute',
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#confirmation_container': {
+    layout: 'vertical',
+    width: '50%',
+    height: Ti.UI.SIZE,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#title': {
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.calloutFont,
+    height: Ti.UI.SIZE,
+    top: 20
+},
+
+'#message_section': {
+    layout: 'horizontal',
+    top: 36,
+    left: 50,
+    right: 50,
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE
+},
+
+'#icon': {
+    width: 0,
+    top: 0,
+    height: 0,
+    visible: false
+},
+
+'#message': {
+    color: Alloy.Styles.color.text.mediumdark,
+    font: Alloy.Styles.textFieldFont,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.FILL,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+'#button_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    top: 40,
+    bottom: 20
+},
+
+'.dialog_button': {
+    width: 220
+}

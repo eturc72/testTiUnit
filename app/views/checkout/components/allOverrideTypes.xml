@@ -1,0 +1,24 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for listing all override types
+-->
+<Alloy>
+    <View id="all_override_types">
+        <View id="percent_off_container" class="override_type_row">
+            <ImageView id="percent_radio_image" class="radio_off" accessibilityValue="percent_radio_image"/>
+            <Label class="radio_button_label" accessibilityValue="percent_off_radio_label" id="percent_off_label"/>
+        </View>
+        <View id="amount_off_container" class="override_type_row">
+            <ImageView id="amount_radio_image" class="radio_off" accessibilityValue="amount_radio_image"/>
+            <Label class="radio_button_label" accessibilityValue="amount_off_radio_label" id="amount_off_label"/>
+        </View>
+        <View id="fixed_price_container" class="override_type_row">
+            <ImageView id="fixed_price_radio_image" class="radio_off" accessibilityValue="fixed_price_radio_image"/>
+            <Label class="radio_button_label" accessibilityValue="fixed_price_radio_label" id="fixed_price_label"/>
+        </View>
+        <View id="none_container" class="override_type_row">
+            <ImageView id="none_radio_image" class="radio_on" accessibilityValue="none_radio_image"/>
+            <Label class="radio_button_label" id="none_label" accessibilityValue="none_radio_label"/>
+        </View>
+    </View>
+</Alloy>

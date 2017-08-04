@@ -1,0 +1,126 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for customer address
+
+'.address_contents': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    width: '95%',
+    top: 0,
+    left: 15
+},
+
+'#address_container': {
+    layout: 'vertical',
+    top: 0,
+    left: 5,
+    height: Ti.UI.SIZE,
+    disableBounce: 'true',
+    contentWidth: Ti.UI.SIZE
+},
+
+'#inner_container': {
+    width: 580,
+    height: 580,
+    layout: 'vertical'
+},
+
+'#enter_address_container': {
+    top: 10,
+    left: 20,
+    height: Ti.UI.SIZE
+},
+
+'.field_container': {
+    layout: 'horizontal',
+    width: '100%',
+    left: 20,
+    top: 20,
+    height: 55
+},
+
+'.left_two_column_container': {
+    layout: 'vertical',
+    width: '50%'
+},
+
+'.right_two_column_container': {
+    layout: 'vertical',
+    width: '50%'
+},
+
+'.full_width': {
+    backgroundColor: Alloy.Styles.color.background.medium,
+    height: 50,
+    paddingLeft: 18,
+    left: 0,
+    width: 532,
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.textFieldFont
+},
+
+'.half_width': {
+    paddingLeft: 18,
+    height: 55,
+    left: 0,
+    width: 240,
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_LINE,
+    borderColor: Alloy.Styles.color.border.dark,
+    borderWidth: 1,
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.textFieldFont
+},
+
+'#save_button': {
+    right: 52,
+    width: 240,
+    bottom: 33,
+    top: 15,
+    height: 42,
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    font: Alloy.Styles.buttonFont,
+    color: Alloy.Styles.buttons.primary.color
+},
+
+'#cancel_button': {
+    left: 0,
+    width: 240,
+    bottom: 33,
+    top: 15,
+    height: 42,
+    backgroundImage: Alloy.Styles.secondaryButtonImage,
+    font: Alloy.Styles.buttonFont,
+    color: Alloy.Styles.buttons.secondary.color
+},
+
+'#make_deferred_container': {
+    layout: 'horizontal',
+    width: 275,
+    top: 15,
+    left: 20,
+    height: Ti.UI.SIZE
+},
+
+'#preferred_switch': {
+    width: 85
+},
+
+'#preferred_label': {
+    font: Alloy.Styles.switchLabelFont,
+    width: 170,
+    left: 0,
+    color: Alloy.Styles.color.text.dark,
+    textid: '_Make_Preferred_Address'
+},
+
+'#address_name': {
+    maxLength: 20,
+    hintText: L( '_Nickname')
+},
+
+'#address_error': {
+    font: Alloy.Styles.textFieldFont,
+    color: Alloy.Styles.color.text.red,
+    visible: false,
+    height: 0
+}

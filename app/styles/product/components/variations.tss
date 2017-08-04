@@ -1,0 +1,48 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for PDP variations
+
+'#variations': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    width: '100%',
+    top: 10,
+    left: 0
+},
+
+// These are created/used by the controller
+'.variation_container': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    width: '100%',
+    left: 0,
+    top: 0
+},
+
+'.select_list_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: '100%',
+    left: 0,
+    top: 0
+},
+
+'.error_label': {
+    color: Alloy.Styles.color.text.red,
+    height: 0,
+    width: '100%',
+    left: 0,
+    top: 2,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font: Alloy.Styles.errorMessageFont
+},
+
+'.size_chart_label': {
+    height: 34,
+    width: Ti.UI.SIZE,
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.detailLabelFont,
+    textid: '_View_Size_Chart',
+    left: 20,
+    top: 10
+}

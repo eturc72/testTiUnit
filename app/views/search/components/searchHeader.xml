@@ -1,0 +1,14 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for search header
+-->
+<Alloy>
+    <View id="search_context" zIndex="2">
+        <View id="search_status">
+            <Label id="result_total_products" accessibilityValue="results_total_products"/>
+        </View>
+        <View id="search_refinements"/>
+    </View>
+    <View id="panel_backdrop" visible="false"/>
+    <View id="refinement_panels" visible="false"/>
+</Alloy>

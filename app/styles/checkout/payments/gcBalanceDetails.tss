@@ -1,0 +1,106 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for gift card balance details
+
+'#payment_failure_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#payment_failure_container': {
+    layout: 'vertical',
+    width: 450,
+    left: 287,
+    height: 300,
+    top: 94,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#title': {
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.titleFont,
+    top: 20,
+    textid: '_Payment_Status'
+},
+
+'#message': {
+    font: Alloy.Styles.appFont,
+    color: Alloy.Styles.color.text.mediumdark,
+    top: 20,
+    width: 400,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+'#button_container': {
+    top: 30,
+    layout: 'horizontal',
+    left: 80
+},
+
+'#ok_button': {
+    backgroundImage: Alloy.Styles.buttons.primary.backgroundImage,
+    backgroundDisabledImage: Alloy.Styles.buttons.primary.backgroundDisabledImage,
+    color: Alloy.Styles.buttons.primary.color,
+    width: 150,
+    height: 40,
+    left: 15
+},
+
+'#cancel_button': {
+    backgroundImage: Alloy.Styles.secondaryButtonImage,
+    color: Alloy.Styles.buttons.secondary.color,
+    width: 150,
+    height: 40
+},
+
+'.balance_container': {
+    layout: 'horizontal',
+    left: 45,
+    height: Ti.UI.SIZE
+},
+
+'#current_balance_container': {
+    top: 20
+},
+
+'.balance_label': {
+    textAlign:  Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font: Alloy.Styles.detailValueFont,
+    color: Alloy.Styles.color.text.mediumdark,
+    width: '60%'
+},
+
+'.balance_value': {
+    textAlign:  Ti.UI.TEXT_ALIGNMENT_RIGHT,
+    font: Alloy.Styles.detailValueFont,
+    color: Alloy.Styles.color.text.mediumdark,
+    width: '30%'
+},
+
+'#remaining_balance_container': {
+    top: 10
+},
+
+'#amount_applied_container': {
+    top: 10
+},
+
+'#current_balance_label': {
+    textid: '_Gift_card_balance_'
+},
+
+'#amount_applied_label': {
+    textid: '_Amount_to_be_applied_to_order_'
+},
+
+'#remaining_balance_label': {
+    textid: '_Remaining_gift_card_balance_'
+}

@@ -1,0 +1,30 @@
+// ©2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for a hamburger menu row with image and optional sub label
+
+'#menu_image_row': {
+    layout: 'horizontal'
+},
+
+'#menu_left': {
+    layout: 'vertical',
+    width: 255
+},
+
+'#menu_image': {
+    height: 40,
+    width: 40
+},
+
+'#menu_label': {
+    height: Ti.UI.SIZE,
+    width: '100%',
+    left: 15
+},
+
+'#menu_sublabel': {
+    height: Ti.UI.SIZE,
+    width: '100%',
+    left: 15,
+    font: Alloy.Styles.smallButtonFont
+}

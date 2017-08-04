@@ -1,0 +1,23 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for build info in admin dashboard
+-->
+<Alloy>
+    <View title="Support Dashboard - Info" tabBarHidden="false" navBarHidden="false">
+        <View id="build_info_main">
+            <ScrollView id="data_column">
+                <Require id="data_panel" src="support/components/buildInfoDataColumn" type="view"/>
+            </ScrollView>
+            <View id="vertical_border"/>
+            <View id="action_column">
+                <View id="action_section" class="section_class">
+                    <Label id="action_title" class="title_class" accessibilityValue="action_title"/>
+                    <Label id="cache_text" class="text_class" accessibilityValue="cache_text"/>
+                    <Button id="clear_cache" class="admin_action_button primary_button" onClick="clearCache" accessibilityValue="clear_cache"/>
+                    <Label id="password_text" class="text_class" accessibilityValue="password_text"/>
+                    <Button id="change_store_password" class="admin_action_button primary_button" onClick="changeStorePassword" accessibilityValue="change_store_password"/>
+                </View>
+            </View>
+        </View>
+    </View>
+</Alloy>

@@ -1,0 +1,16 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for bundle PDP tab
+
+'#bundle_product': {
+    layout: 'vertical',
+    width: '100%',
+    height: '100%'
+},
+
+'#bundle_products': {
+    layout: 'vertical',
+    right: 20,
+    height: '70%',
+    showVerticalScrollIndicator: true
+}

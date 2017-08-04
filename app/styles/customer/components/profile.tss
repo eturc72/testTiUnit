@@ -1,0 +1,51 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for the customer profile page
+
+'.profile_container': {
+    top: 25,
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: '95%',
+    left: 20
+},
+
+'#profile_details': {
+    layout: 'vertical',
+    top: 15
+},
+
+'.name_container': {
+    width: 500,
+    height: 50,
+    left: 10,
+    top: 10
+},
+
+'.edit_button': {
+    top: 80,
+    left: 400,
+    width: 118,
+    height: 35,
+    backgroundImage: Alloy.Styles.secondaryButtonImage,
+    font: Alloy.Styles.buttonFont,
+    color: Alloy.Styles.buttons.secondary.color
+},
+
+'#first_name_label': {
+    textid: '_First_Name__'
+},
+
+'#last_name_label': {
+    textid: '_Last_Name__'
+},
+
+'.big_text': {
+    font: Alloy.Styles.calloutCopyFont,
+    color: Alloy.Styles.color.text.mediumdark,
+    left: 0
+},
+
+'.profile_text': {
+    left: 140
+}

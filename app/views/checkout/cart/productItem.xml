@@ -1,0 +1,44 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// View file for product item
+-->
+<Alloy>
+    <Model id="pli" src="productItem" instance="true"/>
+    <View id="product_line_item_container" class="pli_row">
+        <View class="image_container" id="product_image_container">
+            <ImageView id="product_image" accessibilityValue="product_image"/>
+        </View>
+        <View id="product_container">
+            <Label id="product_name" text="{$.pli.product_name}" accessibilityValue="product_name"/>
+            <View id="product_details_container">
+                <View id="product_info_container">
+                    <Label class="product_info_label product_id_label" text="{$.pli.product_id}" accessibilityValue="product_id"/>
+                    <Label class="product_info_label product_id_label" id="option_text" accessibilityValue="option_text"/>
+                    <View id="variation_container"/>
+                    <Label class="product_info_label product_id_label" text="{$.pli.quantity}" accessibilityValue="quantity"/>
+                </View>
+                <View id="product_price_container" if="!hasScaleDown()">
+                    <View id="unit_price_container" class="price_container">
+                        <Label class="product_info_label unit_price_label" text="{$.pli.unit_price}" id="unit_price_label" accessibilityValue="unit_price_label"/>
+                    </View>
+                    <View id="sale_price_container" class="price_container">
+                        <Label class="product_info_label unit_price_label" id="sale_price_label" accessibilityValue="sale_price_label"/>
+                    </View>
+                    <View id="override_price_container" class="price_container">
+                        <Label class="product_info_label unit_price_label" id="override_price_label" text="{$.pli.override_price}" accessibilityValue="override_price_label"/>
+                    </View>
+                    <View id="option_price_container" class="price_container">
+                        <Label class="product_info_label unit_price_label" id="option_price_label" accessibilityValue="option_price_label"/>
+                    </View>
+                    <View id="item_price_container" class="price_container">
+                        <Label class="product_info_label unit_price_label" id="item_price_label" text="{$.pli.item_price}" accessibilityValue="item_price_label"/>
+                    </View>
+                </View>
+            </View>
+            <ScrollView id="price_adjustments_container" if="!hasScaleDown()">
+            </ScrollView>
+            <Label id="message_label"/>
+        </View>
+    </View>
+</Alloy>

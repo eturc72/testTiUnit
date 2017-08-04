@@ -1,0 +1,77 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for customer address tile
+
+'.address_tile': {
+    backgroundImage: Alloy.Styles.customerBorderImage,
+    layout: 'horizontal',
+    height: 146,
+    width: '100%',
+    left: 0,
+    top: 0
+},
+
+'.default_address_column': {
+    left: 0,
+    width: 84,
+    height: Ti.UI.SIZE
+},
+
+'#address_column': {
+    top: 10,
+    layout: 'vertical',
+    width: 360,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'#button_column': {
+    width: Ti.UI.SIZE,
+    right: 60,
+    layout: 'vertical',
+    height: Ti.UI.SIZE
+},
+
+'.profile_text': {
+    left: 0,
+    width: 360,
+    ellipsize: true,
+    wordWrap: false,
+    color: Alloy.Styles.color.text.mediumdark,
+    font: Alloy.Styles.detailValueFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'.big_text': {
+    left: 0,
+    color: Alloy.Styles.color.text.mediumdark,
+    height: 25,
+    width: 360,
+    ellipsize: true,
+    wordWrap: false,
+    font: Alloy.Styles.calloutCopyFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'.link_button': {
+    top: 0,
+    font: Alloy.Styles.buttonFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    backgroundImage: Alloy.Styles.secondaryButtonImage,
+    color: Alloy.Styles.buttons.secondary.color,
+    width: 118,
+    height: 35
+},
+
+'#button_column': {
+    top: 7
+},
+
+'.delete_button': {
+    top: 45,
+    font: Alloy.Styles.buttonFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    backgroundImage: Alloy.Styles.secondaryButtonImage,
+    color: Alloy.Styles.buttons.secondary.color,
+    width: 118,
+    height: 35
+}

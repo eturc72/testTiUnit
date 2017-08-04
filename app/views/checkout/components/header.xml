@@ -1,0 +1,17 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for checkout header
+-->
+<Alloy>
+    <View id="checkout_header">
+        <View id="button_container">
+            <Button id="back_button" accessibilityValue="back_button"/>
+            <Button id="checkout_cart_button" class="checkout_header_button" accessibilityValue="checkout_cart_button"/>
+            <Button id="checkout_address_button" class="checkout_header_button" accessibilityValue="checkout_address_button"/>
+            <Button id="checkout_billing_address_button" class="checkout_header_button" accessibilityValue="checkout_billing_address_button"/>
+            <Button id="checkout_shipping_methods_button" class="checkout_header_button" accessibilityValue="checkout_shipping_methods_button"/>
+            <Button id="checkout_payments_button" class="checkout_header_button" accessibilityValue="checkout_payments_button"/>
+            <Button id="checkout_confirmation_button" class="checkout_header_button" accessibilityValue="checkout_confirmation_button"/>
+        </View>
+    </View>
+</Alloy>

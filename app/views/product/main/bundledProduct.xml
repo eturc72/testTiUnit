@@ -1,0 +1,21 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for the bundled product PDP
+-->
+<Alloy>
+    <View id="bundled_product">
+        <View class="horizontal_container">
+            <ImageView id="product_image" accessibilityValue="product_image"/>
+            <View id="vertical_container">
+                <Label id="name" accessibilityValue="product_name"/>
+                <View class="horizontal_container">
+                    <Label id="quantity_label" class="text" accessibilityValue="quantity_label"/>
+                    <Label id="quantity" class="text" accessibilityValue="quantity"/>
+                </View>
+            </View>
+        </View>
+        <Require id="promotions" src="product/components/promotions"/>
+        <Require id="variations" src="product/components/variations"/>
+        <Require id="options" src="product/components/options"/>
+    </View>
+</Alloy>

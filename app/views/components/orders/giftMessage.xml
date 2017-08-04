@@ -1,0 +1,10 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for gift message
+-->
+<Alloy>
+    <View id="gift_message_container">
+        <Label id="gift_message_label" accessibilityValue="gift_message_label"/>
+        <Label id="gift_message"  accessibilityValue="gift_message"/>
+    </View>
+</Alloy>

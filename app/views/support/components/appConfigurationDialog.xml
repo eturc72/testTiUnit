@@ -1,0 +1,18 @@
+<!--
+// 2017 salesforce.com, inc. All rights reserved.
+// View file for appConfigurationDialog
+-->
+<Alloy>
+    <View id="background_window">
+        <View id="backdrop"/>
+        <View id="container">
+            <Label id="title" accessibilityValue="title" />
+            <ScrollView id="configs_wrapper" >
+                <Require id="info_panel" src="support/components/buildInfoDataColumn" type="view"/>
+            </ScrollView>
+            <View id="buttons_wrapper">
+                <Button id="retry_button" class=" dialog_button primary_button" accessibilityValue="retry_button"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

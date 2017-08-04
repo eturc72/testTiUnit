@@ -1,0 +1,48 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for listing all override types
+
+'.override_type_row': {
+    layout: 'horizontal',
+    width: '100%',
+    height: 60
+},
+
+'.radio_button_label': {
+    font: Alloy.Styles.radioButtonFont,
+    color: Alloy.Styles.color.text.dark
+},
+
+'error_message_label': {
+    font: Alloy.Styles.detailLabelFont,
+    color: Alloy.Styles.color.text.red
+},
+
+'#all_override_types': {
+    layout: 'vertical'
+},
+
+'#percent_off_label': {
+    textid: '_Percentage_Off'
+},
+
+'#amount_off_label': {
+    textid: '_Amount_Off'
+},
+
+'#fixed_price_label': {
+    textid: '_Fixed_Price'
+},
+
+'#none_label': {
+    textid: '_None'
+},
+
+'.radio_off': {
+    image: Alloy.Styles.radioButtonOffImage
+},
+
+'.radio_on': {
+    image: Alloy.Styles.radioButtonOnImage
+}
+

@@ -1,0 +1,101 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for app configuration in admin dashboard
+
+'#app_config_main': {
+    layout: 'horizontal',
+    width: '100%',
+    height: '100%'
+},
+
+'#data_column': {
+    layout: 'vertical',
+    width: '70%',
+    height: '100%',
+    backgroundColor: Alloy.Styles.color.background.light
+},
+
+'#action_column': {
+    layout: 'vertical',
+    width: '28%',
+    contentWidth: '28%',
+    height: '100%'
+},
+
+'#requires_restart': {
+    textid: '___Requires_Logout',
+    width: Ti.UI.FILL,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+'#vertical_border': {
+    width: 2,
+    height: '100%',
+    backgroundColor: Alloy.Styles.color.border.darkest
+},
+
+'.section_class': {
+    top: 15,
+    left: 20,
+    height: Ti.UI.SIZE,
+    layout: 'vertical',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'.title_class': {
+    font: Alloy.Styles.detailLabelFont,
+    color: Alloy.Styles.accentColor,
+    left: 0,
+    bottom: 10
+},
+
+'.text_class': {
+    font: Alloy.Styles.detailValueFont,
+    left: 0
+},
+
+'#action_title': {
+    textid: '_Actions_'
+},
+
+'#email_text': {
+    textid: '_EmailText'
+},
+
+'#email_configs': {
+    titleid: '_Email_Configs'
+},
+
+'#clear_changes_text': {
+    textid: '_ClearChangesText'
+},
+
+'#apply_text': {
+    textid: '_ApplyConfigText'
+},
+
+'#apply_changes': {
+    titleid: '_Apply'
+},
+
+'#clear_changes': {
+    titleid: '_Clear_App_Settings'
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.6,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'.email_class': {
+    top: 10,
+    layout: 'vertical',
+    font: Alloy.Styles.detailValueFont,
+    left: 20,
+    height: Ti.UI.SIZE,
+    horizontalWrap: true
+}

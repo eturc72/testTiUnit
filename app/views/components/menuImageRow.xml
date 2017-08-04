@@ -1,0 +1,13 @@
+<!--
+// ©2017 salesforce.com, inc. All rights reserved.
+// View file for a hamburger menu row with image and optional sub label
+-->
+<Alloy>
+    <TableViewRow id="menu_image_row" class="table_view_row">
+        <View id="menu_left">
+            <Label id="menu_label"/>
+            <Label id="menu_sublabel"/>
+        </View>
+        <ImageView id="menu_image"/>
+    </TableViewRow>
+</Alloy>

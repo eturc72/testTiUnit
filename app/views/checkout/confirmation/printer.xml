@@ -1,0 +1,9 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for printer table
+-->
+<Alloy>
+    <TableViewRow>
+        <Label text="{ip}"/>
+    </TableViewRow>
+</Alloy>

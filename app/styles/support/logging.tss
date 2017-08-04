@@ -1,0 +1,121 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for logs tab view for Admin Dashbaord
+
+'#logging_main': {
+    layout: 'horizontal',
+    width: '100%',
+    height: '100%'
+},
+
+'#console_tail': {
+    width: 800,
+    height: Ti.UI.SIZE,
+    font: Alloy.Styles.lineItemFont
+},
+
+'#console_scrollView': {
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+    borderColor: Alloy.Styles.selectLists.optionsListBorderColor,
+    showVerticalScrollIndicator: true,
+    borderWidth: 2,
+    borderRadius: 2,
+    left: 20,
+    right: 20,
+    bottom: 20
+},
+
+'#data_column': {
+    layout: 'vertical',
+    width: '70%',
+    height: '100%'
+},
+
+'#action_column': {
+    layout: 'vertical',
+    width: '28%',
+    contentWidth: '28%',
+    showVerticalScrollIndicator: true,
+    height: '100%'
+},
+
+'#vertical_border': {
+    width: 2,
+    backgroundColor: Alloy.Styles.color.border.darkest
+},
+
+'#action_title': {
+    textid: '_Actions_',
+    color: Alloy.Styles.accentColor
+},
+
+'.section_class': {
+    top: 15,
+    left: 20,
+    height: Ti.UI.SIZE,
+    layout: 'vertical',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'.title_class': {
+    font: Alloy.Styles.detailLabelFont,
+    left: 4
+},
+
+'.email_class': {
+    font: Alloy.Styles.detailValueFont,
+    left: 20,
+    height: Ti.UI.SIZE,
+    horizontalWrap: true
+},
+
+'.text_class': {
+    font: Alloy.Styles.detailValueFont,
+    left: 4,
+    top: 10,
+    bottom: 10
+},
+
+'#console_text': {
+    textid: '_Last_100_lines_of_console_log',
+    color: Alloy.Styles.accentColor,
+    top: 20,
+    left: 20
+},
+
+'#categories_text': {
+    textid: '_Loggable_Categories'
+},
+
+'#effective_cats': {
+    left: 20
+},
+
+'#effective_categories_text': {
+    textid: '_Effective_Loggable_Categories'
+},
+
+'#email_text': {
+    textid: '_EmailLogText',
+    left: 0
+},
+
+'#runtime_cats': {
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+    left: 0,
+    width: '90%',
+    autocapitalization: false
+},
+
+'#apply_runtime_cats_btn': {
+    titleid: '_Apply'
+},
+
+'#reload_console_btn': {
+    titleid: '_Reload_Console'
+},
+
+'#email_log_btn': {
+    titleid: '_Send_Log_Via_Email'
+}

@@ -1,0 +1,7 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for language selection dropdown
+-->
+<Alloy>
+    <View id="languageSelectionDropDown"/>
+</Alloy>

@@ -1,0 +1,38 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for Admin Dashbaord
+-->
+<Alloy>
+    <View id="support_window">
+        <View id="backdrop"/>
+        <View id="dashboard" class="dashboard">
+            <View id="titlebar">
+                <Label id="title" textid="_Admin_Dashboard" accessibilityValue="dashboard_title"/>
+                <ImageView id="close_icon" onClick="handleClose" accessibilityLabel="dashboard_close_icon"/>
+            </View>
+            <View id="dashboard_container">
+                <Require id="header" src="support/components/header" type="view"/>
+                <View id="header_tabgroup" class="header_tabgroup">
+                    <View id="configuration_tab" class="dashboard_tabs">
+                        <Require id="info_window" src="support/buildInfo" type="view"/>
+                    </View>
+                    <View id="app_config_tab" class="dashboard_tabs header_tab">
+                        <Require id="app_config_window" src="support/appConfig" type="view"/>
+                    </View>
+                    <View id="payment_terminal_tab" class="dashboard_tabs header_tab">
+                        <Require id="payment_terminal_window" src="support/devices" type="view" device="payment_terminal"/>
+                    </View>
+                    <View id="receipt_printer_tab" class="dashboard_tabs header_tab">
+                        <Require id="receipt_printer_window" src="support/devices" type="view" device="printer" if="Alloy.CFG.printer_availability"/>
+                    </View>
+                    <View id="test_tab" class="dashboard_tabs header_tab">
+                        <Require id="testing_window" src="support/testing" type="view"/>
+                    </View>
+                    <View id="logs_tab" class="dashboard_tabs header_tab">
+                        <Require id="logging_window" src="support/logging" type="view"/>
+                    </View>
+                </View><!-- header tab group  -->
+            </View><!-- dashboard_container -->
+        </View>  <!-- View header -->
+    </View>
+</Alloy>

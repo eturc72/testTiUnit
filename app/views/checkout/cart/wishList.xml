@@ -1,0 +1,18 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for wish list
+-->
+<Alloy>
+    <Collection id="customerWishListItems" src="productItem" instance="true"/>
+    <View id="wish_list_products_container" visible='true' if="Alloy.CFG.enable_wish_list">
+        <View id="wish_list_selector_container">
+            <Button id="email_wish_list_button" class="primary_button" accessibilityValue="email_wish_list_button" onClick="showEmailWishListDialog"/>
+        </View>
+        <TableView id="wish_list_products_table" onClick="handleWishListItemClick" dataCollection="$.customerWishListItems" dataTransform="transformWishListPLI">
+            <Require src="checkout/cart/wishListItemRow"/>
+        </TableView>
+        <View id="no_wish_list_products_container">
+            <Label id="no_wish_list_products_label" accessibilityValue="no_wish_list_products_label"/>
+        </View>
+    </View>
+</Alloy>

@@ -1,0 +1,58 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for mega menu
+
+'.container': {
+    top: 105,
+    height: 643,
+    zIndex: 10000,
+    backgroundColor: Alloy.Styles.megaMenu.menuPage.backgroundColor,
+    opacity: 0.95
+},
+
+'.menu_nav_title_bar': {
+    layout: 'horizontal',
+    top: 0,
+    height: 50,
+    backgroundGradient: {
+        type: 'linear',
+        startPoint: {
+            x: '0%',
+            y: '0%'
+        },
+        endPoint: {
+            x: '0%',
+            y: '100%'
+        },
+        colors: [
+            {
+                color: Alloy.Styles.accentColor,
+                offset: 1.0
+            }, {
+                color: Alloy.Styles.accentColor,
+                offset: 0.0
+            }
+        ]
+    }
+},
+
+'.menu_title_btn': {
+    left: 45,
+    top: 5,
+    color: Alloy.Styles.megaMenu.menu.color,
+    font: Alloy.Styles.megaMenu.menu.font
+},
+
+'.menu_pages': {
+    top: 50,
+    scrollingEnabled: false
+},
+
+'.menu_page': {
+    width: Ti.UI.FILL,
+    layout: 'horizontal'
+},
+
+'.menu_double_section': {
+    width: 1024
+}

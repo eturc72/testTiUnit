@@ -1,0 +1,36 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for associate popover from header
+
+'#popover_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.25,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#popover_container': {
+    layout: 'vertical',
+    height: 80,
+    width: 250,
+    backgroundColor: Alloy.Styles.color.background.white,
+    left: '38%',
+    top: 75,
+    borderWidth: 2,
+    borderColor: Alloy.Styles.color.border.lightest
+},
+
+'#logout_button': {
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    color: Alloy.Styles.buttons.primary.color,
+    width: '80%',
+    height: 50,
+    top: 10
+}
+

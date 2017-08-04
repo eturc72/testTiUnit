@@ -1,0 +1,38 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for select widget dropdown
+
+'#hitBox': {
+    top: 10,
+    left: 0
+},
+
+'.select_list_title': {
+    height: 34,
+    left: 10,
+    textAlign: 0,
+    minimumFontSize: 12.8,
+    ellipsize: true,
+    wordWrap: false,
+    width: 180,
+    font: Alloy.Styles.detailValueFont,
+    touchEnabled: false
+},
+
+'.select_list': {
+    layout: 'composite',
+    height: 34,
+    width: 198,
+    borderWidth: 1,
+    borderColor: Alloy.Styles.color.border.light,
+    backgroundColor: Alloy.Styles.selectLists.backgroundColor
+},
+
+'.down_arrow': {
+    image: Alloy.Styles.widgetDownArrowImage,
+    top: '40%',
+    right: 5,
+    width: 13,
+    height: 8,
+    zIndex: 5
+}

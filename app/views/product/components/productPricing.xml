@@ -1,0 +1,12 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for product pricing on PDP
+-->
+<Alloy>
+    <View id="pricing">
+        <View id="list_price_container">
+            <Label id="list_price" accessibilityValue="list_price"/>
+        </View>
+        <Label id="sales_price" accessibilityValue="sales_price"/>
+    </View>
+</Alloy>

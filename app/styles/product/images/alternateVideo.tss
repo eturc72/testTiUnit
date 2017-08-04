@@ -1,0 +1,19 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for alternate video
+
+'#alt_video_container': {
+    borderColor: Alloy.Styles.color.border.medium,
+    right: 10,
+    width: 71,
+    height: 71,
+    top: 10
+},
+
+'#small_video_view': {
+    width: 67,
+    height: Ti.UI.SIZE,
+    top: 2,
+    left: 2,
+    image: Alloy.Styles.videoIconImage
+}

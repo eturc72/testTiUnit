@@ -1,0 +1,19 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for PDP detail header
+-->
+<Alloy>
+    <View id="pdp_header">
+        <Label id="product_name" accessibilityValue="product_name"/>
+        <View id="pdp_info_container">
+            <Require id="product_id" src="product/components/productId"/>
+            <View id="pdp_ratings">
+                <Label id="pdp_rating_label" class="pdp_label_text" accessibilityValue="pdp_rating_label"/>
+                <View id="stars"/>
+            </View>
+        </View>
+        <View id="pricing_container">
+            <Require id="pricing" src="product/components/productPricing"/>
+        </View>
+    </View>
+</Alloy>

@@ -1,0 +1,33 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for customer address
+-->
+<Alloy>
+    <Model id="currentAddress" src="customerAddress" instance="true" />
+    <View class="address_contents" id="customer_address">
+        <Require src="components/block_header" type="view" customLabel="L('_Modify_Address')" id="address_title"/>
+        <Label id="address_error" accessibilityValue="address_error"/>
+        <ScrollView id="address_container">
+            <View id="inner_container">
+                <View class="field_container">
+                    <TextField id="address_name" class="full_width" accessibilityLabel="address_name"/>
+                </View>
+                <View id="enter_address_container">
+                    <Require id="enter_address" src="components/enterAddressDynamic" type="view" customId ="customer" />
+                </View>
+                <View id="make_deferred_container">
+                    <Switch id="preferred_switch" value="off" accessibilityLabel="preferred_switch"/>
+                    <Label id="preferred_label" accessibilityValue="preferred_label"/>
+                </View>
+                <View class="field_container">
+                    <View id="first_name_container" class="left_two_column_container">
+                        <Button id="cancel_button" titleid="_Cancel" accessibilityValue="cancel_address_button"/>
+                    </View>
+                    <View id="last_name_container" class="right_two_column_container">
+                        <Button id="save_button" class="save_button" titleid="_Save" accessibilityValue="save_address_button" />
+                    </View>
+                </View>
+            </View>
+        </ScrollView>
+    </View>
+</Alloy>

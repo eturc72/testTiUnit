@@ -1,0 +1,30 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for product wish list selector dialog
+-->
+<Alloy>
+    <Collection id="currentProductList" src="productLists" instance="true"/>
+    <View id="backdrop">
+        <View id="main_container">
+            <View id="title_container">
+                <Label id="title" accessibilityValue="title"/>
+            </View>
+            <View id="separator_upper" class="horizontalSeparator"/>
+            <View id="list_view_container">
+                <TableView id="list_view" dataCollection="$.currentProductList" dataTransform="transformPLI" onClick="onListSelect">
+                    <TableViewRow listId="{listId}" class="list_title_container">
+                        <View id="row_container" class="row_container">
+                            <Label id="list_title" text="{listName}"/>
+                            <ImageView id="check_box_checked" accessibilityValue="check_box_checked"/>
+                        </View>
+                    </TableViewRow>
+                </TableView>
+            </View>
+            <View id="separator_lower" class="horizontalSeparator"/>
+            <View id="controls_wrapper">
+                <Button id="cancel" onClick="dismiss" class="secondary_button" accessibilityValue="cancel"/>
+                <Button id="apply" onClick="dismiss" class="primary_button" accessibilityValue="apply"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

@@ -1,0 +1,17 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for entered payments
+-->
+<Alloy>
+    <Collection id="payments" src="payment" instance="true"/>
+    <View id="entered_payments" class="entered_payments_container">
+        <View id="entered_payments_label_container">
+            <Label id="entered_payments_label" accessibilityValue="entered_payments_label"/>
+        </View>
+        <View id="payment_details_container">
+            <TableView id="payment_table" dataCollection="$.payments" dataTransform="transformPayments" separatorStyle="transparent" touchEnabled="true">
+                <Require src="checkout/components/paymentSummaryRow"/>
+            </TableView>
+        </View>
+    </View>
+</Alloy>

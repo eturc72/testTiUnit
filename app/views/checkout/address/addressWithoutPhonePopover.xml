@@ -1,0 +1,21 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for phone number dialog if address contains no phone number
+-->
+<Alloy>
+    <View id="popover_window">
+        <View id="backdrop" />
+        <View id="popover_container">
+            <Label id="confirm_title" accessibilityValue="phone_popover_confirm_title"/>
+            <Label id="message" accessibilityValue="phone_popover_confirmation_message"/>
+            <View id="phone_number_container">
+                <TextField id="phone_number" class="text_field" accessibilityLabel="phone_popover_number"/>
+                <Label class="error" id="phone_error" accessibilityValue="phone_popover_error"/>
+            </View>
+            <View id="buttons_container">
+                <Button id="cancel_button" class="secondary_button" accessibilityValue="phone_popover_cancel_button"/>
+                <Button id="confirm_button" class="primary_button" accessibilityValue="phone_popover_confirm_button"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

@@ -1,0 +1,89 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for app settings view component
+
+'#app_settings': {
+    top: 10,
+    bottom: 20,
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    showHorizontalScrollIndicator: true,
+    scrollType: 'vertical'
+},
+
+'.heading_label': {
+    width: Ti.UI.FILL,
+    font: Alloy.Styles.detailTextFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: Alloy.Styles.color.text.mediumdark,
+    height: Ti.UI.SIZE,
+    left: 20,
+    top: 20
+},
+
+'.description_label': {
+    top: 10,
+    font: Alloy.Styles.detailTextFont
+},
+
+'.config_label': {
+    width: '25%',
+    font: Alloy.Styles.detailTextFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+    height: Ti.UI.SIZE,
+    right: 10,
+    paddingLeft: 4
+},
+
+'.star_label': {
+    width: Ti.UI.SIZE,
+    font: Alloy.Styles.titleFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    height: Ti.UI.SIZE,
+    left: 5
+},
+
+
+'.config_value': {
+    height: 34,
+    width: '70%',
+    borderColor:Alloy.Styles.color.border.light,
+    font: Alloy.Styles.detailValueFont,
+    paddingLeft: 15,
+    backgroundDisabledColor: Alloy.Styles.color.background.light,
+    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+    autocorrect: false
+},
+
+'.switch_value': {
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    left: 2,
+    paddingLeft: 4
+},
+
+'.group_view': {
+    top: 5
+},
+
+'.item_view': {
+    top: 20
+},
+
+'.bubble_view': {
+    left: 20,
+    right: 20,
+    height: Ti.UI.SIZE,
+    layout: 'vertical',
+    borderColor: Alloy.Styles.color.border.light,
+    borderRadius: 10,
+    backgroundColor: Alloy.Styles.color.border.white
+},
+
+'.config_view': {
+    top: 10,
+    bottom: 10,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.FILL,
+    layout: 'horizontal'
+}

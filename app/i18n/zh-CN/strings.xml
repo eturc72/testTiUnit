@@ -1,0 +1,787 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="___Requires_Logout" context="adminDashboard.appSettings.info">* 需要退出</string>
+  <string name="__d_Customer" context="customer.customerSearch.header.msg">%d 名客户</string>
+  <string name="__d_Customers" context="customer.customerSearch.header.msg">%d 名客户</string>
+  <string name="__d_item_s__are_available_for_pre_order_" context="productDetails.info">可供预购的商品有 %d 件。</string>
+  <string name="__d_Item_s__In_Stock_" context="productDetails.info">库存 %d 件商品。</string>
+  <string name="__d_minute" context="adminDashboard.appSettings.Sesion Timeout.select">%d 分钟</string>
+  <string name="__d_minutes" context="adminDashboard.appSettings.Sesion Timeout.select">%d 分钟</string>
+  <string name="__d_Product" context="productSearch.header.msg">%d 件产品</string>
+  <string name="__d_Products" context="productSearch.header.msg">%d 个产品</string>
+  <string name="__d_saved_products_retrieved_from_your_cart" context="customerSearch.notification.info">从您的购物车内收回 %d 件已保存产品。</string>
+  <string name="__d_second" context="adminDashboard.appSettings.Sesion Timeout.select">%d 秒</string>
+  <string name="__d_seconds" context="adminDashboard.appSettings.Sesion Timeout.select">%d 秒</string>
+  <string name="__d_Order" context="order.search.header.msg" >%d 个订单</string>
+  <string name="__d_Orders" context="order.search.header.msg" >%d 个订单</string>
+  <string name="__s____s_Surcharge" context="checkout.shippingMethod.info">%s + %s 附加费</string>
+  <string name="__s__" context="label with no info">%s： </string>
+  <string name="__s___s" context="label with info">%s: %s</string>
+  <string name="__s__Change_" context="login.button">%s（更改）</string>
+  <string name="__s_added_to_Wish_List_" context="checkout.cart.cartItems.notification.msg && productDetails.details.notification.msg">“%s”已添加至愿望清单。</string>
+  <string name="__s_added_to_Wish_List__s_" context="checkout.cart.cartItems.notification.msg && productDetails.details.notification.msg">“%s”已添加至愿望清单“%s”。</string>
+  <string name="__s_does_not_have_a_wish_list"  context="productDetails.details.dialog.msg">“%s”没有愿望清单。</string>
+  <string name="__s_off_for___s_" context="checkout.cart.info">用于 “%s” 的 %s 折扣</string>
+  <string name="___s__is_already_logged_in_" context="customer.search.login.alert.msg">“%s”已经登录。</string>
+  <string name="__s_to_go_for___s_" context="checkout.cart.info">%s 用于 “%s”</string>
+  <string name="__s_updated_in_Wish_List_" context="checkout.cart.notification.info && productDetails.notification.info">“%s”已在愿望清单中更新。</string>
+  <string name="__s_updated_in_Wish_List__s_" context="checkout.cart.notification.info && productDetails.notification.info">“%s”已在愿望清单“%s”中更新。</string>
+  <string name="__select_printer_" context="checkout.confirmation.info">&lt;选择打印机&gt;</string>
+  <string name="__Type__LAN" context="startup.notification.msg">类型: LAN</string>
+  <string name="__Type__MOBILE" context="startup.notification.msg">类型: 移动设备</string>
+  <string name="__Type__UNKNOWN" context="startup.notification.msg">类型: 未知</string>
+  <string name="__Type__WIFI" context="startup.notification.msg">类型: WIFI</string>
+  <string name="_1_saved_product_retrieved_from_your_cart" context="customerSearch.customer.notification.msg">从您的购物车中取回 1 件保存的产品。</string>
+  <string name="_A_manager_override_has_already_been_applied__Click_Remove_to_remove_the_override_and_continue_to_the_override_screen_" context="checkout.cart.override.dialog.info">已经应用了经理调整。点击 “移除” 来移除调整并继续调整筛选。</string>
+  <string name="_A_price_override_has_been_applied_to_this_item__Replacing_the_item_will_remove_the_override_" context="productDetails.details.dialog.info" >价格调整已应用于此商品。更换商品会移除调整。</string>
+  <string name="_A_price_override_has_been_applied_to_this_item__Saving_the_item_will_remove_the_override_" context="checkout.cart.dialog.info">价格调整已应用于此商品。保存商品会移除调整。</string>
+  <string name="_A_restart_is_required_" context="adminDashboard.appSettings.notification.msg">需要重启。您必须手动重启应用，才能看到“欢迎”对话框并再次修改设置。</string>
+  <string name="_A_shipping_override_has_been_applied__Changing_shipping_methods_will_remove_the_override_"  context="checkout.cart.ShipMethods.dialog.info">已经应用送货调整。更改送货方法将移除调整。</string>
+  <string name="_A_shipping_override_has_been_applied" context="checkout.cart.ShipMethods.info">已经应用送货调整。</string>
+  <string name="_Accept" context="checkout.confirmation.SignatureDialog.button">接受</string>
+  <string name="_According_to_the_USPS_database___">根据 USPS 数据库，您输入的地址可能有误，或可能缺少关键信息。请选择您要使用的地址版本，也可以取消并编辑地址。</string>
+  <string name="_Account_successfully_created_" context="customer.createCustomer.notification.msg" >已成功创建帐户。</string>
+  <string name="_Actions_" context="adminDashboard.appSettings.heading">操作</string>
+  <string name="_Add_Address"  context="customer.address.enterAddress.title" >添加地址</string>
+  <string name="_Add_All_To_Basket" context="analytics.msg">全部添加到购物篮</string>
+  <string name="_Add_All_to_Cart" context="productDetails.details.button">全部添加到购物车</string>
+  <string name="_Add_New_Address" context="checkout.shippingAddress.button && customer.profile.button && checkout.billingaddress.button">添加新地址</string>
+  <string name="_Add_To_Basket" context="analytics.msg">添加到购物篮</string>
+  <string name="_Add_to_Cart" context="checkout.cart.saveditems.button && productDetails.details.button && checkout.cart.wishlist.button">添加到购物车</string>
+  <string name="_Add_to_Wish_List" context="checkout.cart.saveditems.button && productDetails.details.button && checkout.cart.cartItems.button">添加到愿望清单</string>
+  <string name="_Added_Payment_Device__" context="adminDashboard.devices.adyen.msg">已添加的支付设备： </string>
+  <string name="_Adding_product_to_cart" context="productDetails.details.log.msg">向购物车添加产品</string>
+  <string name="_Address" context="checkout.cart.tabs">地址 </string>
+  <string name="_Address_" context="enterAddress.field.hint.msg">地址*</string>
+  <string name="_Address___s__successfully_deleted_" context="customer.address.enterAddress.notification.msg">已成功删除地址 “%s”。</string>
+  <string name="_Address_successfully_saved_" context="customer.address.enterAddress.notification.msg">已成功保存地址。</string>
+  <string name="_Address_You_Entered" context="addressVerification.dialog.header">您输入的地址</string>
+  <string name="_Addresses" context="customer.tabs">地址</string>
+  <string name="_Adjustment_Reason" context="checkout.cart.override.select && checkout.shipping.override.select">调整原因</string>
+  <string name="_Admin" context="header.button">管理员</string>
+  <string name="_Admin_Dashboard" context="header.admin.title">管理员仪表板</string>
+  <string name="_Adyen_Information" context="adminDashboard.devices.adyen.heading">Adyen 信息</string>
+  <string name="_Adyen_Library_Version__" context="adminDashboard.devices.adyen.msg">Adyen 库版本： </string>
+  <string name="_Alert" context="adminDashboard.devices.dialog.title">警告</string>
+  <string name="_All_Departments" context="categoryselect.button">所有部门</string>
+  <string name="_Amount_Off" context="checkout.cart.override.label && checkout.shipping.override.label">金额折扣</string>
+  <string name="_Amount_off_cannot_be_greater_than_the_base_price" context="checkout.cart.override.error && checkout.shipping.override.error">折扣不能大于基本价。</string>
+  <string name="_Amount_off_must_be_a_number" context="checkout.cart.override.error && checkout.shipping.override.error">折扣必须是数字。</string>
+  <string name="_Amount_to_be_applied_to_order_" context="checkout.cart.payments.dialog.label">应用至订单的金额：</string>
+  <string name="_An_error_occurred_validating_the_device_" context="startup.notification.msg">验证设备时出现错误。</string>
+  <string name="_App_Settings" context="adminDashboard.tabs">应用设置</string>
+  <string name="_Application_Cache_Cleared" context="adminDashboard.configuration.notification.msg">已清除应用缓存</string>
+  <string name="_Application_Information" context="adminDashboard.devices.adyen.heading">应用信息</string>
+  <string name="_Application_Name__" context="adminDashboard.devices.adyen.msg">应用名称： </string>
+  <string name="_Application_settings_applied_" context="adminDashboard.appSettings.notification.msg">已应用应用设置。</string>
+  <string name="_Application_settings_cleared_" context="adminDashboard.appSettings.notification.msg">已清除应用设置。</string>
+  <string name="_Applied_Filters" context="productGrid.filterRefinementPanel.heading">已应用的筛选器</string>
+  <string name="_Apply" context="adminDashboard.appSettings.button">确定</string>
+  <string name="_ApplyConfigText" context="adminDashboard.appSettings.info">点击 “确定” 来执行更改，离开此屏幕则会放弃更改。</string>
+  <string name="_Approve" context="checkout.confirmation.dialog.button">批准</string>
+  <string name="_Approve_Signature" context="checkout.confirmation.dialog.msg">批准签名</string>
+  <string name="_Approved" context="checkout.confirmation.dialog.title">已批准</string>
+  <string name="_Associate" context="header.button">销售员</string>
+  <string name="_Associate_" context="epsonReceipt.msg">销售员：</string>
+  <string name="_Associate_ID" context="login.field.hint.msg">销售员 ID</string>
+  <string name="_Associate_Logged_Out" context="header.notification.msg">销售员已登出</string>
+  <string name="_Associate_Login" context="login.title">销售员登录</string>
+  <string name="_Associate_Login_Successful" context="kiosk.categoryGrid.notification.msg" >销售员登录成功</string>
+  <string name="_Associates" context="salesReports.Ranks.tabs">销售员</string>
+  <string name="_Authentication_error" context="salesReport.error">授权错误</string>
+  <string name="_Authorize" context="login.dialog.button">授权</string>
+  <string name="_Availability_" context="productDetails.details.msg">可供性：</string>
+  <string name="_Back" context="welcomeDialog.button">后退</string>
+  <string name="_Back_Order" context="productDetails.details.msg">延期交货</string>
+  <string name="_Back_Order__d_item_s__" context="productDetails.details.msg">延期交货 %d 个商品。</string>
+  <string name="_Balance_Due__" context="checkout.payments.msg">应付余额: </string>
+  <string name="_Base_URL__" context="adminDashboard.configuration.msg">基准 URL： </string>
+  <string name="_Base_Version__" context="adminDashboard.configuration.msg">基本版本： </string>
+  <string name="_Basket" context="analytics.msg">购物车</string>
+  <string name="_Being_Processed" context="checkout.confirmation.msg">正在处理</string>
+  <string name="_Billing" context="checkout.tabs" >结账</string>
+  <string name="_Billing_Address" context="analytics.msg">账单地址</string>
+  <string name="_Birthday__" context="customer.profile.msg">生日： </string>
+  <string name="_Bluetooth" context="adminDashboard.devices.adyen.radio">蓝牙</string>
+  <string name="_Bad_URL" context="salesReports.error">错误 URL</string>
+  <string name="_Board" context="adminDashboard.devices.adyen.button">登入</string>
+  <string name="_Both_fields_must_have_a_password" context="login.error">这两个字段必须有密码。</string>
+  <string name="_BreadCrumbSeparator" context="productSearch.header.info">></string>
+  <string name="_By_tapping_on__Continue___the_cart_will_be_cleared_and_you_will_logout_the_current_customer_you_are_logged_in_as_" context="customer.search.profile.msg">点击“继续”，购物车将被清空，当前客户将退出。</string>
+  <string name="_CacheText" context="adminDashboard.configuration.msg">删除本地储存的目录和此 iPad 上的产品数据。</string>
+  <string name="_Cancel" context="login.ManagerWindow.button">取消</string>
+  <string name="_Cannot_login_as___s__" context="customer.login.error">无法以 '%s' 登录。</string>
+  <string name="_Cancel_Order" context="checkout.payments.button">取消订单</string>
+  <string name="_Cannot_save_address_" context="customer.enterAddress.error">无法保存地址。</string>
+  <string name="_Cannot_save_billing_address_" context="checkout.billing.enterAddress.error">无法保存账单地址。</string>
+  <string name="_Cannot_save_shipping_address_or_email_" context="checkout.shipping.enterAddress.error">无法保存账单地址或电子邮件。</string>
+  <string name="_Cannot_validate_device" context="adminDashboard.devices.verifone.label">无法验证设备</string>
+  <string name="_Capturing_Data" context="adminDashboard.devices.verifone.header">正在采集数据</string>
+  <string name="_Card_number_entered_is_invalid__Please_cancel_payment_and_try_again_" context="adminDashboard.devices.verifone.msg">提供的信用卡号无效。请取消支付并重试。</string>
+  <string name="_Card_was_declined__Please_try_another_card_" context="checkout.payments.error">卡被拒绝。请重试另一张卡。</string>
+  <string name="_Cart" context="analytics.msg">购物车</string>
+  <string name="_Cart_Tab" context="checkout.tabs">购物车</string>
+  <string name="_Cart_Cleared" context="header.notification.msg">购物车已清空</string>
+  <string name="_Cart_Items___d" context="checkout.cart.tabs">购物车商品：%d</string>
+  <string name="_Change_Password" context="login.dialog.title">更改密码</string>
+  <string name="_Checkout" context="checkout.button">结账</string>
+  <string name="_Check_Configuration" context="adminDashboard.devices.adyen.info">检查配置</string>
+  <string name="_China" context="welcomeDialog.select">中国</string>
+  <string name="_Chinese" context="welcomeDialog.select">中文</string>
+  <string name="_City_" context="enterAddress.select">城市*</string>
+  <string name="_Clear" context="checkout.confirmation.dialog.Button">清除</string>
+  <string name="_Clear_App_Settings" context="adminDashboard.appSettings.button">清除应用设置</string>
+  <string name="_Clear_Cache" context="adminDashboard.configuration.button">清除缓存</string>
+  <string name="_Clear_Cart" context="hamburgermenu.button">清空购物车</string>
+  <string name="_Clear_Results" context="adminDashboard.test.button">清除结果</string>
+  <string name="_ClearChangesText" context="adminDashboard.appSettings.msg">移除设置数据库，并将配置恢复到编码默认值。清除后，启动时将出现欢迎对话框。</string>
+  <string name="_Client_Credentials_Not_Set_Up" context="appStartup.errorDialog.title">客户登录信息没有设置</string>
+  <string name="_Client_ID__" context="adminDashboard.configuration.msg">客户 ID: </string>
+  <string name="_Client_Version__" context="adminDashboard.buildInfo.label">客户端版本： </string>
+  <string name="_Color_" context="productGrid.filterRefinementPanel.msg">颜色：</string>
+  <string name="_Config_Settings_" context="adminDashboard.configuration.heading">配置设置：</string>
+  <string name="_Configuration" context="adminDashboard.tabs">配置</string>
+  <string name="_Configuration_Error" context="startup.error.title">配置错误</string>
+  <string name="_Confirm" context="addressVerification.button">确认</string>
+  <string name="_Confirm_Current_Customer_Logout" context="customer.search.profile.logout.title">确认当前客户退出</string>
+  <string name="_Confirm_Phone_Number" context="checkout.shipping.dialog.label">确认电话号码</string>
+  <string name="_Confirmation" context="checkout.tabs">确认</string>
+  <string name="_Connection_to_payment_device_was_successful_" context="checkout.payments.notification.msg">已成功连接支付设备。</string>
+  <string name="_Console" context="adminDashboard.devices.verifone.label">控制台</string>
+  <string name="_Continue"  context="sessionTimeoutConfirmation.dialog.button">继续</string>
+  <string name="_Could_not_cancel_the_order_" context="associateLogout.cancelOrder.error.msg">无法取消订单。</string>
+  <string name="_Could_not_delete_address___s__" context="customer.address.notification.msg">无法删除地址 “%s”。</string>
+  <string name="_Could_not_find_any_customers_matching" context="customer.error">无法发现任何匹配 “%s” 的客户。</string>
+  <string name="_Could_not_find_any_customers_matching___s__" context="customer.search.error.msg">无法发现任何匹配 “%s” 的客户。</string>
+  <string name="_Could_not_get___s__profile_information" context="customer.error">无法获得 “%s” 的概况信息。</string>
+  <string name="_Could_not_remove_coupon_" context="checkout.cart.notification.msg">无法移除优惠券。</string>
+  <string name="_Could_not_remove_override_" context="checkout.shippingoverride.notification.msg">无法移除调整。</string>
+  <string name="_Could_not_retrieve_order___s__" context="customer.order.error">无法检索订单 “%s”。</string>
+  <string name="_Could_not_retrieve_orders_for_id_or_email___s__" context="order.search.error.msg">无法检索 ID 或电子邮件“%s”的订单。</string>
+  <string name="_Could_not_save_customer_address_data_" context="checkout.address.enterAddress.notification.msg">无法保存客户地址数据。</string>
+  <string name="_Country_" context="enterAddress.field.hint.msg">国家*</string>
+  <string name="_Country__" context="welcomeDialog.field.msg">国家: </string>
+  <string name="_Country_Message_" context="welcomeDialog.msg">要选择实体店，请首先选择国家。</string>
+  <string name="_Coupon_" context="checkout.cart.msg">优惠券 </string>
+  <string name="_Coupon___s__could_not_be_applied_" context="checkout.cart.notification.msg">无法应用优惠券 “%s”。</string>
+  <string name="_Coupon___s__is_already_in_your_cart_" context="checkout.cart.notification.msg">优惠券 “%s” 已在您的购物车里。</string>
+  <string name="_Coupon___s__is_invalid_" context="checkout.cart.notification.msg">优惠券“%s”无效。</string>
+  <string name="_Coupon_Applied_" context="epsonReceipt.msg">使用的优惠券：</string>
+  <string name="_Create" context="customer.createCustomer.dialog.button">创建</string>
+  <string name="_Create_Account" context="customer.createCustomer.dialog.title">创建账户</string>
+  <string name="_Create_Customer" context="hamburgermenu.button">创建客户</string>
+  <string name="_Create_Customer_Title" context="hamburgermenu.createCustomer.alert.dialog.title">创建客户</string>
+  <string name="_Create_New_User" context="analytics.msg">创建新用户</string>
+  <string name="_Create_Order" context="checkout.shippingMethods.button">创建订单</string>
+  <string name="_Create_User" context="analytics.msg">创建用户</string>
+  <string name="_Credit_Card" context="checkout.payments.tabs">信用卡</string>
+  <string name="_Current_Storefront__" context="login.button">当前网店： </string>
+  <string name="_Custom" context="salesReports.tabs">自定义</string>
+  <string name="_Custom_1" context="customer.tabs">自定义 1</string>
+  <string name="_Customer_Address" context="analytics.msg">客户地址</string>
+  <string name="_Customer_Addresses" context="analytics.msg">客户地址</string>
+  <string name="_Customer_address_name___s__is_already_in_use_" context="enterAddress.error">客户地址名 “%s” 已被使用。</string>
+  <string name="_Customer_Details" context="customer.profile.heading">客户详情</string>
+  <string name="_Customer_Edit_Profile" context="analytics.msg">客户编辑概况</string>
+  <string name="_Customer_History" context="analytics.msg">客户历史</string>
+  <string name="_Customer_Login" context="analytics.msg">客户登录</string>
+  <string name="_Customer_must_be_logged_in_to_add_to_wish_list__Please_look_up_customer_" context="productDetails.details.dialog.error">必须是注册客户才能添加到愿望清单。请查找客户。</string>
+  <string name="_Customer_Number__" context="customer.details.msg">客户编号: </string>
+  <string name="_Customer_Profile" context="analytics.msg">客户概况</string>
+  <string name="_Customer_profile_data_successfully_saved_" context="customer.profile.notification.msg">已成功保存客户概况数据。</string>
+  <string name="_Customer_Search" context="analytics.msg">客户搜索</string>
+  <string name="_Customer_Search_Label" context="customer.search.page.title">客户搜索</string>
+  <string name="_Customer_Search_Button" context="header.button && hamburgermenu.button">客户搜索</string>
+  <string name="_Customers_Tab" context="search.tab">客户</string>
+  <string name="_Date_" context="epsonReceipt.msg">日期：</string>
+  <string name="_Date_Ordered_" context="customer.history.msg">订购日期：</string>
+  <string name="_Days_since_last_login__" context="customer.details.msg">上次登录后的天数： </string>
+  <string name="_Days_since_last_visit__" context="customer.details.msg">上次访问后的天数： </string>
+  <string name="_Decline" context="checkout.dialog.button">拒绝</string>
+  <string name="_Delete" context="checkout.cart.button">删除</string>
+  <string name="_Delete_Address" context="customer.address.dialog.title">删除地址</string>
+  <string name="_Delete_Coupon" context="checkout.cart.dialog.title" >删除优惠券</string>
+  <string name="_Delete_Item" context="checkout.cart.dialog.title">删除商品</string>
+  <string name="_Description" context="productDetails.tabs">说明</string>
+  <string name="_Details" context="productDetails.tabs">详情</string>
+  <string name="_Details_for_gift_card_ending_in_" context="checkout.payments.dialog.msg">以下结束日期的礼品卡详情：</string>
+  <string name="_Device_Boarded_Successfully" context="adminDashboard.devices.adyen.notification.msg">设备已成功登入</string>
+  <string name="_Device_Error" context="adminDashboard.devices.adyen.error">设备错误</string>
+  <string name="_Device_Name__" context="adminDashboard.devices.verifone.label">设备名称： </string>
+  <string name="_Device_Information" context="adminDashboard.devices.verifone.label">设备信息</string>
+  <string name="_Device_Version__" context="adminDashboard.devices.adyen.msg">设备版本： </string>
+  <string name="_Device_Platform__" context="adminDashboard.devices.adyen.msg">设备平台： </string>
+  <string name="_Device_Status__" context="adminDashboard.devices.adyen.msg">设备状态： </string>
+  <string name="_Discard_Changes" context="adminDashboard.appSettings.dialog.title">放弃更改</string>
+  <string name="_Disconnected" context="adminDashboard.devices.adyen.info">已断开</string>
+  <string name="_Discount_" context="checkout.orderSummary.msg">折扣:</string>
+  <string name="_Discounts" context="checkout.orderSummary.msg">折扣</string>
+  <string name="_Distance_Unit_" context="adminDashboard.appSettings.Label">距离单位：</string>
+  <string name="_Do_you_really_want_to_delete_this_address_" context="customer.address.dialog.msg">您确定要删除地址 “%s” 吗？</string>
+  <string name="_Do_you_really_want_to_delete_this_coupon_" context="checkout.cart.dialog.msg">您确定要删除优惠券 “%s” 吗？</string>
+  <string name="_Do_you_really_want_to_delete_this_item_" context="checkout.cart.dialog.msg">您确定要删除商品 “%s” 吗？</string>
+  <string name="_DNS_lookup_error___Host_name_cannot_be_resolved_"  context="salesReports.error">DNS 查找错误：无法解析主机名。</string>
+  <string name="_Edit" context="customer.profile.button">编辑</string>
+  <string name="_Edit_Profile" context="customer.profile.editProfile.title">编辑概况</string>
+  <string name="_Effective_Loggable_Categories" context="adminDashboard.logs.Label">有效的可登录分类</string>
+  <string name="_Email" context="checkout.confirmation.dialog.button">电子邮件</string>
+  <string name="_Email__" context="epsonReceipt.msg && customer.msg">电子邮件: </string>
+  <string name="_Email_Address_" context="customer.createCustomer.field.hint.msg && checkout.address.enterAddress.field.hint.msg">电子邮件地址*</string>
+  <string name="_Email_Configs" context="adminDashboard.appSettings.button">发送配置的电子邮件</string>
+  <string name="_Email_Receipt" context="checkout.confirmation.button">发送收据的电子邮件</string>
+  <string name="_Email_Test_Results" context="adminDashboard.tests.button">电子邮件测试结果</string>
+  <string name="_Email_of_configuration_has_been_sent_" context="adminDashboard.sppSettings.notificaiton.msg">已发送配置的电子邮件。</string>
+  <string name="_Email_of_testing_log_has_been_sent_" context="adminDashboard.tests.notificaiton.msg">已发送测试日志的电子邮件。</string>
+  <string name="_Email_of_testing_log_was_not_sent_" context="adminDashboard.tests.notificaiton.msg">未发送测试日志的电子邮件。</string>
+  <string name="_Email_Wish_List" context="checkout.cart.wishList.button">电子邮件发送愿望清单</string>
+  <string name="_Emailing_receipt" context="checkout.confirmation.notificaiton.msg">正在用电子邮件发送收据...</string>
+  <string name="_EmailLogText" context="adminDashboard.logs.msg">将日志发送至服务器的支持电子邮件列表。</string>
+  <string name="_EmailTestsText" context="adminDashboard.tests.msg">将测试结果发送至服务器的支持电子邮件列表。</string>
+  <string name="_EmailText" context="adminDashboard.appSettings.msg">将配置发送至服务器的支持电子邮件列表。</string>
+  <string name="_Encryption_Type__" context="adminDashboard.devices.msg">加密类型： </string>
+  <string name="_End_date_cannot_be_before_start_date_" context="salesReport.Custom.error">结束日期不能早于开始日期。</string>
+  <string name="_End_Session" context="sessionTimeoutConfirmation.dialog.button">结束会话</string>
+  <string name="_End_Session_Message" context="sessionTimeoutConfirmation.dialog.msg">由于没有活动，会话将在 %d 秒内结束。您想继续购物吗？</string>
+  <string name="_Ending_In_" context="epsonReceipt.msg">结束时间：</string>
+  <string name="_English" context="welcomeDialog.select">英语</string>
+  <string name="_Enter_Associate_ID" context="login.dialog.subtitle">输入销售员 ID</string>
+  <string name="_Enter_email_address" context="checkout.shipping.error" >输入电子邮件地址。</string>
+  <string name="_Enter_email_here" context="checkout.shipping.field.hint.msg">在此处输入电子邮件。</string>
+  <string name="_Enter_First_and_Last_Name_or_Email" context="customer.customerSearch.field.hint.msg">输入姓名或电子邮件</string>
+  <string name="_Enter_the_adyen_payment_portal_credentials_" context="adminDashboard.devices.adyen.msg">输入 Adyen 支付门户登录信息。</string>
+  <string name="_Enter_Manager_Credentials" context="login.dialog.subtitle">输入经理登录信息，以处理密码更改。</string>
+  <string name="_Enter_Manager_ID" context="login.dialog.field.hint.msg">输入经理 ID</string>
+  <string name="_Enter_Manager_Password" context="login.dialog.field.hint.msg">输入经理密码</string>
+  <string name="_Enter_New_Password" context="login.dialog.field.hint.msg">输入新密码</string>
+  <string name="_Enter_Order_ID_or_Customer_Email" context="header.search.field.hint.msg">输入订单 ID 或客户电子邮件</string>
+  <string name="_Enter_Promo_Code_for_additional_discounts_" context="checkout.cart.msg">输入促销代码获得更多折扣。</string>
+  <string name="_Enter_Search_Term_or_UPC_Code" context="header.productSearch.field.hint.msg">输入搜索项或 UPC 码</string>
+  <string name="_Enter_your_credentials" context="login.msg">输入您的登录信息　</string>
+  <string name="_Error" context="checkout.payments.dialog.msg">错误</string>
+  <string name="_Error__" context="enterAddress.error">错误： </string>
+  <string name="_Error_applying_credit_card___Please_try_again_" context="checkout.payments.dialog.msg">应用信用卡时发生错误。\n请重试。</string>
+  <string name="_Error_applying_credit_card___The_order_has_not_been_confirmed_on_server_" context="checkout.payments.dialog.msg">应用信用卡时发生错误。\n订单还没有在服务器上确认。</string>
+  <string name="_Error_applying_gift_card___Please_try_again_" context="checkout.payments.dialog.msg">应用礼品卡时发生错误。\n请重试。</string>
+  <string name="_Error_applying_gift_card___The_order_has_not_been_confirmed_on_server_" context="checkout.payments.dialog.msg">应用礼品卡时发生错误。\n订单还没有在服务器上确认。</string>
+  <string name="_Error_cancelling_transaction_with_payment_provider__s" context="checkout.payment.paymentTerminal.errormsg">尝试取消与支付服务提供商的交易时出错。请联系您的主管部门，取消订单编号的支付：%s</string>
+  <string name="_Error_changing_password" context="login.dialog.error">更改密码时发生错误。</string>
+  <string name="_Error_creating_account" context="customer.createCustomer.dialog.error">创建账户时发生错误。</string>
+  <string name="_Error_details_heading" context="salesReports.dialog.error">错误详情和系统配置</string>
+  <string name="_Error_logging_in_associate" context="kiosk.login.error">销售员登录时发生错误。</string>
+  <string name="_Error_logging_in_manager" context="login.dialog.error">经理登录时发生错误。</string>
+  <string name="_Error_in_application" context="Popover.error">应用程序发生错误。</string>
+  <string name="_Error_sending_email" context="checkout.payments.paymentSignature.notification.error && checkout.confirmation.notification.error">发送电子邮件时发生错误。</string>
+  <string name="_Ethernet" context="adminDashboard.devices.adyen.radio">以太网</string>
+  <string name="_EMV_Version__" context="adminDashboard.devices.verifone.msg">EMV 版本： </string>
+  <string name="_Exit" context="kiosk.header.button">退出</string>
+  <string name="_Failure_to_connect_to_host" context="salesReports.error">连接主机失败。</string>
+  <string name="_Failure_to_load_current_customer_product_lists_" context="model.customer.productlist.error.msg">加载当前客户产品列表失败。</string>
+  <string name="_File_requested_does_not_exist_on_the_host" context="salesReports.error">主机上不存在请求的文件。</string>
+  <string name="_Filter" context="productGrid.header.select">筛选器</string>
+  <string name="_Filter_Options" context="productGrid.header.select.title">筛选器选项</string>
+  <string name="_Find_Customer" context="header.button">查找客户</string>
+  <string name="_First_Name" context="customer.editProfile.field.hint.msg">名字</string>
+  <string name="_First_Name__" context="customer.profile.msg">名字: </string>
+  <string name="_First_Name_" context="customer.createCustomer.field.hint.msg">名字*</string>
+  <string name="_Fixed_Price" context="checkout.priceOverride.radio">固定价格</string>
+  <string name="_Fixed_price_must_be_a_number" context="checkout.priceOverride.error">固定价格必须是数字。</string>
+  <string name="_Font_Size" context="epsonPrinter.label">字体大小</string>
+  <string name="_For_low_bandwidth_connections_disable_this_feature_" context="adminDashboard.appSettings.msg">对于低带宽连接，应禁用此功能。</string>
+  <string name="_Forgot_Password" context="login.button">忘记了密码？</string>
+  <string name="_Framework_Revision__" context="adminDashboard.devices.msg">框架版本： </string>
+  <string name="_France" context="welcomeDialog.select">法国</string>
+  <string name="_French" context="welcomeDialog.select">法语</string>
+  <string name="_Free_Shipping_to_this_Store" context="checkout.shippingMethod.Label">免费送货至此实体店</string>
+  <string name="_Free_Shipping_to_the_Store" context="checkout.shippingMethod.Label">免费送货至实体店</string>
+  <string name="_From" context="salesReports.custom.select">从</string>
+  <string name="_German" context="welcomeDialog.select">德语</string>
+  <string name="_Germany" context="welcomeDialog.select">德国</string>
+  <string name="_Gift_Card" context="epsonReceipt.info && checkout.payments.label">礼品卡</string>
+  <string name="_Gift_card_balance_" context="checkout.paments.dialog.msg">礼品卡余额：</string>
+  <string name="_Gift_Message_" context="checkout.payments.msg">礼品留言：</string>
+  <string name="_Hardware_Revision__" context="adminDashboard.devices.msg">硬件版本： </string>
+  <string name="_Hide_Details" context="Popover.Button">隐藏详情</string>
+  <string name="_Hi___s" context="hamburgermenu.header.title">%s，您好！</string>
+  <string name="_History" context="customer.tabs">历史</string>
+  <string name="_Home" context="analytics.msg">主页</string>
+  <string name="_Host__" context="adminDashboard.configuration.msg">主机: </string>
+  <string name="_Hostname" context="adminDashboard.devices.adyen.label">主机名</string>
+  <string name="_How_would_you_like_to_receive_your_receipt_" context="checkout.confirmation.dialog.msg">您想收到收据吗？</string>
+  <string name="_Identify_Payment_Device" context="adminDashboard.devices.adyen.msg">识别支付设备</string>
+  <string name="_Image_not_available" context="product.zoom.dialog.msg">图像不可用</string>
+  <string name="_Image_Zoom_" context="adminDashboard.appSettings.label">图像缩放：</string>
+  <string name="_In_Stock" context="productDetails.details.info">有库存</string>
+  <string name="_Initializing___" context="adminDashboard.devices.adyen.msg">正在初始化...</string>
+  <string name="_Initialized" context="adminDashboard.devices.adyen.msg">已初始化</string>
+  <string name="_Initializing_Application___" context="startup.notification.msg">正在初始化应用...</string>
+  <string name="_Invalid" context="adminDashboard.appSettings.select">无效</string>
+  <string name="_Invalid_Attribute_Combination" context="productDetails.details.info">不适用于此选择组合。</string>
+  <string name="_Invalid_email_address" context="enterAddress.error">无效电子邮件地址</string>
+  <string name="_Invalid_email_address_" context="checkout.address.enterAddress.error">无效电子邮件地址。</string>
+  <string name="_Invalid_phone_number_" context="enterAddress.error">无效电话号码。</string>
+  <string name="_Invalid_zip_code_" context="enterAddress.error">无效邮编。</string>
+  <string name="_Inventory" context="productDetails.tabs">库存</string>
+  <string name="_is_not_a_test_that_can_be_executed_" context="adminDashboard.test.notification.msg"> 不是可执行测试。</string>
+  <string name="_Is_the_billing_address_the_same_as_the_shipping_address_" context="checkout.shippingAddress.dialog.msg">账单地址与送货地址相同吗？</string>
+  <string name="_Is_this_a_gift_" context="checkout.shipMethods.Label">这是礼物吗？</string>
+  <string name="_Item__" context="productDetails.details.msg && customer.order.msg && checkout.cart.msg">商品编号： </string>
+  <string name="_Item___s__is_not_available_in_quantity__d_" context="checkout.cart.msg">商品 “%s” 的供应不够数量 %d。</string>
+  <string name="_Item_added_to_the_cart" context="productDetails.details.notification.msg">商品已添加至购物车。</string>
+  <string name="_Item_could_not_be_added_to_the_cart" context="productDetails.details.notification.msg" >商品无法添加至购物车。</string>
+  <string name="_Item_could_not_be_replaced_in_the_cart" context="productDetails.details.notification.msg">购物车里的商品无法替换。</string>
+  <string name="_Item_could_not_be_updated_in_the_cart" context="productDetails.details.notification.msg">购物车里的商品无法更新。</string>
+  <string name="_Item_Price_" context="checkout.cart.msg">商品价格：</string>
+  <string name="_Item_replaced_in_the_cart" context="productDetails.details.notification.msg">已替换购物车里的商品。</string>
+  <string name="_Item_updated_in_the_cart" context="productDetails.details.notification.msg">已更新购物车里的商品。</string>
+  <string name="_Items_added_to_the_cart" context="productDetails.details.notification.msg">已添加至购物车的商品。</string>
+  <string name="_Items_could_not_be_added_to_the_cart" context="productDetails.details.notification.msg">无法向购物车添加商品。</string>
+  <string name="_Items_could_not_be_replaced_in_the_cart" context="productDetails.details.notification.msg">无法替换购物车里的商品。</string>
+  <string name="_Items_could_not_be_updated_in_the_cart" context="productDetails.details.notification.msg">无法更新购物车里的商品。</string>
+  <string name="_Items_replaced_in_the_cart" context="productDetails.details.notification.msg">已替换购物车里的商品。</string>
+  <string name="_Items_Sold" context="salesReports.tabs">已售商品</string>
+  <string name="_Items_updated_in_the_cart" context="productDetails.details.notification.msg">已更新购物车里的商品。</string>
+  <string name="_Japan" context="welcomeDialog.select">日本</string>
+  <string name="_Japanese" context="welcomeDialog.select">日语</string>
+  <string name="_Kilometer" context="store.msg">公里</string>
+  <string name="_Kilometers" context="adminDashboard.appSettings.select">公里</string>
+  <string name="_Kiosk_Mode_" context="adminDashboard.appSettings.msg">自动服务终端模式：</string>
+  <string name="_Kiosk_Mode_Description_"  context="adminDashboard.appSettings.msg">允许客户无需销售员而自行购物（有限功能）。</string>
+  <string name="_Language"  context="welcomeDialog.field.msg">语言: </string>
+  <string name="_Large"  context="adminDashboard.devices.epson.radio">大</string>
+  <string name="_Last_100_lines_of_console_log"  context="adminDashboard.logs.heading">控制台日志的最后 100 行</string>
+  <string name="_Last_5"  context="productDetails.inventory.Button">前 5 个</string>
+  <string name="_Last_Name" context="customer.editProfile.field.hint.msg">姓氏</string>
+  <string name="_Last_Name__" context="customer.profile.msg">姓氏: </string>
+  <string name="_Last_Name_" context="customer.createCustomer.field.hint.msg">姓氏*</string>
+  <string name="_Light"  context="barcodeScanner.msg">（扫描仪）光线</string>
+  <string name="_List_Price_"  context="checkout.cart.msg">标价：</string>
+  <string name="_Load_Configuration" context="adminDashboard.devices.adyen.msg">加载配置</string>
+  <string name="_Loading_Countries___" context="startup.notification.msg">正在加载国家…</string>
+  <string name="_Locale__" context="adminDashboard.configuration.msg">区域设置： </string>
+  <string name="_Locale_URL__" context="adminDashboard.configuration.msg">区域设置 URL: </string>
+  <string name="_Loggable_Categories" context="adminDashboard.logs.Label">可记录分类</string>
+  <string name="_Logging_In___" context="adminDashboard.devices.adyen.info">正在登录...</string>
+  <string name="_Logging_in_____d_complete___Please_wait_" context="adminDashboard.devices.adyen.info">正在登录... %d 完成。请等待。</string>
+  <string name="_Logging_In" context="adminDashboard.devices.adyen.msg">正在登录</string>
+  <string name="_Logged_In" context="adminDashboard.devices.adyen.msg">已经登录</string>
+  <string name="_Login" context="login.button">登录</string>
+  <string name="_Login__" context="customer.customerDetails.msg">登录名: </string>
+  <string name="_Login_attempt_failed__Re_enter_your_ID_and_password_" context="login.error">登录尝试失败。请重新输入您的 ID 和密码。</string>
+  <string name="_Login_and_Shop_For_Customer" context="customer.createCustomer.check">登录并代表客户购物</string>
+  <string name="_Login_failed_with_an_error_" context="adminDashboard.devices.adyen.error">登录失败，错误是： </string>
+  <string name="_Login_Successful" context="kiosk.login.notification.msg">登录成功</string>
+  <string name="_Login_successful___Loading_Adyen_information." context="kiosk.login.notification.msg">登录成功。正在加载 Adyen 信息......</string>
+  <string name="_LoginAlreadyInUseException" context="createCustomer.error.msg">登录名已被使用。</string>
+  <string name="_Logout" context="adminDashboard.devices.adyen.Button">登出</string>
+  <string name="_Logout_Associate" context="header.select">退出销售员</string>
+  <string name="_Logout_Customer" context="header.button && hamburgermenu.button">退出客户</string>
+  <string name="_Logout_Now" context="adminDashboard.appSettings.dialog.Button">立即退出</string>
+  <string name="_Logout_Required" context="adminDashboard.appSettings.dialog.title">要求退出</string>
+  <string name="_Logout_Required_Text" context="adminDashboard.appSettings.dialog.Button">您所做的更改需要退出应用才能生效。</string>
+  <string name="_Logout_Successful" context="adminDashboard.devices.adyen.notification.msg">成功退出</string>
+  <string name="_Logs" context="adminDashboard.tabs">日志</string>
+  <string name="_Make_Preferred_Address" context="customer.address.enterAddress.radio.msg">提供首选地址</string>
+  <string name="_Manager_Approval_" context="checkout.cart.dialog.msg">经理批准：</string>
+  <string name="_Manager_Authorization" context="checkout.cart.dialog.title">经理授权</string>
+  <string name="_Manager_ID" context="checkout.cart.dialog.field.hint.msg">经理 ID</string>
+  <string name="_Manual_Entry" context="adminDashboard.devices.Button">手动输入</string>
+  <string name="_Manual_Entry__on_" context="checkout.cart.payments.button">手动输入（时间）</string>
+  <string name="_Manufacturer__" context="adminDashboard.devices.msg">生产商: </string>
+  <string name="_Maximum_range_of_90_days_allowed_" context="salesReports.Custom.error">最大允许范围为 90 天。</string>
+  <string name="_Merchant_Account_" context="adminDashboard.devices.adyen.msg">商家账户：</string>
+  <string name="_Merchant_Account__" context="adminDashboard.devices.adyen.msg">商家账户： </string>
+  <string name="_Message__" context="errorPopover.field">留言： </string>
+  <string name="_Method_" context="checkout.shipping.shippingDetails.msg">方式：</string>
+  <string name="_Method___" context="checkout.shipping.shippingDetails.msg">方式：  </string>
+  <string name="_Mile" context="store.msg">英里</string>
+  <string name="_Miles" context="adminDashboard.appSettings.select">英里</string>
+  <string name="_Missing_Phone_Number" context="addressVerification.dialog.error">缺少电话号码</string>
+  <string name="_Model_Tests" context="adminDashboard.tests.header">模型测试</string>
+  <string name="_Model_Number__" context="adminDashboard.devices.msg">型号： </string>
+  <string name="_Modify_Address" context="address.editAddress.title">修改地址</string>
+  <string name="_Month" context="salesReports.tabs">月</string>
+  <string name="_My_Store"  context="salesReports.sideMenu.button">我的实体店</string>
+  <string name="_n_a" context="productDetails.info">不适用</string>
+  <string name="_Network_detected" context="startup.notification.info">已检测到网络。</string>
+  <string name="_Network_is_unavailable" context="notification.error">网络不可用。</string>
+  <string name="_Network_is_now_available" context="notification.info">网络现已可用。</string>
+  <string name="_Network_offline" context="startup.notification.info">网络离线。</string>
+  <string name="_Never" context="customer.info">从不</string>
+  <string name="_New_Price" context="checkout.cart.override.msg">新价格</string>
+  <string name="_Next" context="checkout.address.chooseShipping.button && checkout.address.enterShipping.button">下一步</string>
+  <string name="_Next_5" context="productDetails.inventory.link">后 5 个</string>
+  <string name="_Nickname" context="checkout.address.enterAddress.field.hint && customer.address.field.hint">昵称</string>
+  <string name="_No" context="checkout.billingSame.dialog.button">否</string>
+  <string name="_No_Connection_To_Payment_Device" context="checkout.payments.noPaymentTerminal.title">没有连接支付设备</string>
+  <string name="_No_Connection_To_Payment_Device_Message_Adyen" context="checkout.payments.noPaymentTerminal.info">没有找到连接的支付设备。请确保您的支付设备已开启、连接并准备就绪。该设备应显示 Adyen 徽标、日期和时间、电池电量和蓝牙徽标。如果支付设备屏幕上没有任何显示，则该设备可能处于睡眠状态。按下复选标记按钮以唤醒设备。</string>
+  <string name="_No_Connection_To_Payment_Device_Message_Verifone" context="checkout.payments.noPaymentTerminal.info">没有找到连接的支付设备。请确保您的支付设备已开启、连接并准备就绪。如果支付设备屏幕上没有任何显示，则设备可能没有接通电源。</string>
+  <string name="_No_device_configuration_found_in_config_json_for_device_type_" context="adminDashboard.devices.notification.error">在 config.json 中未发现以下设备类型的设备配置：</string>
+  <string name="_No_device_type_defined__Unable_to_render_view_for_support_dashboard_" context="adminDashboard.devices.notification.error">没有定义的设备类型。无法渲染支持仪表板视图。</string>
+  <string name="_No_results_found_Try_a_new_search_or_click_the_home_button_to_browse_catalog" context="productSearch.info">没有找到结果。\n尝试新搜索，或单击“主页”按钮来浏览目录。</string>
+  <string name="_No_results_found_for___s__Try_a_new_search_or_click_the_home_button_to_browse_catalog" context="productSearch.info">没有找到 “%s” 的结果。\n尝试新搜索，或点击 “主页” 按钮来浏览目录。</string>
+  <string name="_No_Digital_Stores_found_" context="startup.info">没有找到数字网店。</string>
+  <string name="_No_tests_have_been_run" context="adminDashboard.test.info">没有运行测试。</string>
+  <string name="_None" context="checkout.overrides.radio">无</string>
+  <string name="_Not_Boarded" context="adminDashboard.devices.adyen.info">未登入</string>
+  <string name="_Not_Applied" context="checkout.summary.info">未使用</string>
+  <string name="_Not_Implemented_Yet_" context="adminDashboard.logs.notification.info">尚未执行！</string>
+  <string name="_Not_selected" context="adminDashboard.devices.adyen.info">未选择</string>
+  <string name="_No_Value" context="text.msg">---</string>
+  <string name="_OCAPI_Settings_" context="adminDashboard.configuration.msg">OCAPI 设置：</string>
+  <string name="_OK" context="button">确定</string>
+  <string name="_Option_Price_" context="checkout.cart.msg">选项价格：</string>
+  <string name="_Order_created__Payment_pending" context="customer.order.msg">订单已创建，支付暂停</string>
+  <string name="_Order_Date__" context="customer.history.msg">订单日期： </string>
+  <string name="_Order_Details" context="customer.order.heading">订单详情</string>
+  <string name="_Order_Discount_" context="epsonReceipt.msg">订单折扣：</string>
+  <string name="_ORDER_LOCATOR_CODE" context="epsonReceipt.title">订单定位代码</string>
+  <string name="_Order_No_" context="checkout.payments.paymentSignature.msg">订单编号：</string>
+  <string name="_Order_Number_" context="customer.history.msg">订单编号:</string>
+  <string name="_Order_Number__" context="customer.order.msg">订单编号: </string>
+  <string name="_Order_Search_Button" context="hamburgermenu.button">订单搜索</string>
+  <string name="_Order_Search" context="order.search.page.title">订单搜索</string>
+  <string name="_Order_Status_" context="customer.history.msg">订单状态:</string>
+  <string name="_Order_Summary" context="checkout.summary.heading && customer.order.summary.heading">订单摘要</string>
+  <string name="_ORDER_SUMMARY" context="epsonReceipt.title">订单摘要</string>
+  <string name="_Order_Total" context="checkout.summary.msg">订单总计</string>
+  <string name="_Order_Total_" context="customer.history.msg && epsonReceipt.msg">订单总计:</string>
+  <string name="_Orders_Tab" context="search.tab">订单</string>
+  <string name="_Other" context="enterAddress.select">其他</string>
+  <string name="_Other_Views_" context="productDetails.imageZoom.heading">其他视图：</string>
+  <string name="_Override" context="checkout.cart.button">调整</string>
+  <string name="_Override_" context="checkout.cart.msg">调整：</string>
+  <string name="_Page_timeout_occured" context="salesReport.error">页面超时。</string>
+  <string name="_Password" context="login.field.hint">密码</string>
+  <string name="_Password_" context="adminDashboard.devices.adyen.label">密码:</string>
+  <string name="_Password_does_not_meet_minimum_criteria" context="login.error">密码未满足最低标准。</string>
+  <string name="_Password_Successfully_Changed" context="login.msg">已成功更改密码</string>
+  <string name="_Passwords_do_not_match" context="login.error">密码不匹配。</string>
+  <string name="_Pay_for_this_transaction_through_the_web" context="checkout.payments.dialog.msg">通过网络支付这笔交易。要取消该订单，点击 “取消订单” 按钮。</string>
+  <string name="_Pay_Now" context="checkout.payments.button">立即支付</string>
+  <string name="_Pay_Through_Web" context="checkout.payments.dialog.title && analytics.msg">网络支付</string>
+  <string name="_Pay_with_one_card" context="checkout.payments.tabs">一卡支付</string>
+  <string name="_Pay_with_multiple_cards" context="checkout.payments.tabs">多卡支付</string>
+  <string name="_Payment" context="customer.order.summary.heading">付款</string>
+  <string name="_Payment_Approved" context="checkout.payments.title">付款已成功批准。</string>
+  <string name="_Payment_Declined" context="checkout.payments.title">付款已被拒绝。</string>
+  <string name="_Payment_Error" context="checkout.payments.title">出现付款错误。</string>
+  <string name="_PAYMENT_DETAILS" context="epsonReceipt.title">付款详情</string>
+  <string name="_Payment_Device_Already_Registered__" context="adminDashboard.devices.adyen.notification.msg">支付设备已注册： </string>
+  <string name="_Payment_Device_Connected" context="header.notification.info">支付设备已连接。</string>
+  <string name="_Payment_has_been_accepted_and_your_order_is_complete_" context="checkout.payments.paymentSignature.msg">付款已被接受，您的订单已完成。</string>
+  <string name="_Payment_Status" context="checkou.payments.title">付款状态</string>
+  <string name="_Payment_Terminal" context="checkout.payments.noPaymentTerminal.dialog.title">付款终端</string>
+  <string name="_Payment_Terminal_Tab" context="adminDashboard.tabs">付款终端</string>
+  <string name="_Payment_Terminal_Info_Message" context="checkout.payments.msg">点击 “立即支付”，然后刷卡、插入卡，或接受无接触付款。</string>
+  <string name="_Payment_transaction_cancelled_" context="checkout.confirmation.notification.msg">付款交易已取消。</string>
+  <string name="_Payment_transaction_not_finalized_" context="checkout.payments.notification.error">付款交易没有完成。</string>
+  <string name="_Payment_was_already_approved" context="checkout.payments.transactionComplete.msg">付款已被批准。</string>
+  <string name="_Payments" context="checkout.tabs">付款</string>
+  <string name="_Payments_Heading" context="checkout.paymentSummary.heading">付款</string>
+  <string name="_Payments_could_not_be_authorized" context="checkout.payments.notification.error">付款没有被授权</string>
+  <string name="_Percentage_Off" context="checkout.cart.productPriceOverrides.label">折扣率</string>
+  <string name="_Percentage_off_cannot_be_greater_than" context="checkout.cart.productPriceOverrides.error">折扣率不能大于 %d%。</string>
+  <string name="_Percentage_off_cannot_be_greater_than_100_" context="checkout.cart.productPriceOverrides.error">折扣率不能大于 100 %。</string>
+  <string name="_Percentage_off_must_be_a_number" context="checkout.cart.productPriceOverrides.error">折扣率必须是数字。</string>
+  <string name="_Perpetual_Stock" context="productDetails.inventory.msg">有库存</string>
+  <string name="_Phone_" context="checkout.address.dialog.field.hint && enterAddress.field.hint">电话*</string>
+  <string name="_Please_add_the_address_configuration_for_the__s_in_addressConfig_js" context="startup.dialog.error">请将“%s”的地址配置添加至 addressConfig.js</string>
+  <string name="_Please_approve_this_signature_to_complete_the_transaction" context="checkout.confirmation.dialog.msg">请批准此签名，以完成交易。</string>
+  <string name="_Please_contact_your_manager_or_support_" context="salesReports.error">请联系您的经理或支持人员。</string>
+  <string name="_Please_help_us_resolve_the_problem_by_telling_us_what_you_were_doing_" context="errorPopover.dialog.msg">请告诉我们您的操作内容，让我们帮助您解决问题。</string>
+  <string name="_Please_enter_a_number_greater_than_0" context="checkout.cart.productPriceOverride.error">请输入大于 0 的数字。</string>
+  <string name="_Please_enter_a_valid_email_address_" context="checkout.createAccount.error">请输入有效电子邮件地址。</string>
+  <string name="_Please_fill_in_all_the_required_fields_" context="customer.editProfile.notification.error">请填写所有必填字段。</string>
+  <string name="_Please_process_payment_through_the_payment_terminal_" context="checkout.payment.paymentTerminal.msg">请通过支付终端处理付款。</string>
+  <string name="_Please_provide_a_first_name_" context="customer.profile.error">请提供名字。</string>
+  <string name="_Please_provide_a_last_name_" context="customer.profile.error">请提供姓氏。</string>
+  <string name="_Please_provide_a_valid_phone_number_" context="checkout.address.dialog.msg">请提供有效的电话号码。</string>
+  <string name="_Please_provide_your_signature_to_complete_your_transaction" context="checkout.payments.paymentSignature.msg">请提供您的签名，以完成交易。</string>
+  <string name="_Please_reload" context="salesReports.notification.error">请重新载入报告。</string>
+  <string name="_Please_try_the_transaction_again___s" context="checkout.payments.adyen.errormsg">请再次尝试交易。%s</string>
+  <string name="_Please_try_again_in_a_few_minutes_" context="salesReports.notification.error">请在几分钟后重试。</string>
+  <string name="_Possible_Statuses" context="adminDashboard.devices.adyen.msg">可能的状态</string>
+  <string name="_Postal_Code_" context="enterAddress.field.hint.msg">邮政编码*</string>
+  <string name="_Pre_Order" context="productDetails.details.msg">预购</string>
+  <string name="_Pre_Settling" context="adminDashboard.devices.adyen.msg">预存款</string>
+  <string name="_Post_Settling" context="adminDashboard.devices.adyen.msg">后存款</string>
+  <string name="_Previous" context="keyboard.toolbar.button">上一步</string>
+  <string name="_Price" context="checkout.cart.productPriceOverrides.dialog.label">价格</string>
+  <string name="_Price_Override" context="checkout.shippingMethod.button">价格调整</string>
+  <string name="_Price_Override_" context="epsonReceipt.msg">价格调整：</string>
+  <string name="_Price_Override_Pct_Off" context="epsonReceipt.info">折扣价</string>
+  <string name="_Price_Overrides" context="checkout.cart.productPriceAdustments.dialog.title">价格调整</string>
+  <string name="_Print" context="checkout.printerChooser.dialog.button && checkout.payments.paymentSignature.dialog.button">打印</string>
+  <string name="_Print_Receipt" context="checkout.confirmation.button">打印收据</string>
+  <string name="_Printer_" context="checkout.printerChooser.dialog.label">打印机：</string>
+  <string name="_Printer_Language" context="adminDashboard.devices.epson.heading">打印机语言</string>
+  <string name="_Printing_Receipt___" context="epsonReceipt.notification.info">正在打印收据...</string>
+  <string name="_Product_Categories" context="productGrid.header.categoryRefinementPanel.title">产品分类</string>
+  <string name="_Product_Detail" context="analytics.msg">产品详情</string>
+  <string name="_Product_Rating_" context="productDetails.details.label">产品评级：</string>
+  <string name="_Product_Search" context="analytics.msg">产品搜索</string>
+  <string name="_Search_Button" context="header.button && hamburgermenu.button">产品搜索</string>
+  <string name="_Product_View" context="analytics.msg">产品视图</string>
+  <string name="_PRODUCT_SUMMARY" context="epsonReceipt.title">产品摘要</string>
+  <string name="_Products" context="analytics.msg && productGrid.header.msg">产品</string>
+  <string name="_Products_Tab" context="search.tab">产品</string>
+  <string name="_Profile" context="customerSearch.button">概况</string>
+  <string name="_Profile_Tab" context="customer.tabs">概况</string>
+  <string name="_Provide_a_phone_number_for_the_billing_address_" context="checkout.address.dialog.msg">提供账单地址的电话号码。</string>
+  <string name="_Provide_a_phone_number_for_the_shipping_address_" context="checkout.address.dialog.msg">提供送货地址的电话号码。</string>
+  <string name="_Provide_a_phone_number_for_this_order__customer_s_phone_number_shown__" context="checkout.address.dialog.msg">请为此订单提供电话号码（显示的客户电话号码）。</string>
+  <string name="_Provide_a_phone_number_for_this_order__store_phone_number_shown__" context="checkout.address.dialog.msg">请为此订单提供电话号码（显示的实体店电话号码）。</string>
+  <string name="_Provide_country_first_" context="enterAddress.error">请首先提供国家。</string>
+  <string name="_Purchased_Quantity___d" context="checkout.cart.label">已购买数量：%d</string>
+  <string name="_Quantity_" context="checkout.cart.msg && customer.order.msg && productDetails.details.label">数量：</string>
+  <string name="_Quarter" context="salesReports.tabs">季度</string>
+  <string name="_Quick_Stats" context="salesReports.heading">统计概要</string>
+  <string name="_Ranks" context="salesReports.tabs">排名</string>
+  <string name="_Receipt_Printer" context="adminDashboard.tabs">收据打印机</string>
+  <string name="_receipt_promotional_message" context="epsonPrinter.info">感谢光临购物！</string>
+  <string name="_Reason__" context="startup.dialog.label">理由： </string>
+  <string name="_Reason_Code__" context="checkout.payments.dialog.label">理由代码: </string>
+  <string name="_Recommendations" context="productDetails.tabs">推荐</string>
+  <string name="_Recommendations_For_You" context="productDetails.recommendations.heading">为您推荐</string>
+  <string name="_Recommended_Address" context="addressVerification.heading">建议地址</string>
+  <string name="_Register_Payment_Device" context="adminDashboard.devices.adyen.info">注册支付设备</string>
+  <string name="_Registart" context="adminDashboard.devices.verifone.button">Registart</string>
+  <string name="_Registart_Heading" context="adminDashboard.devices.verifone.heading">Registart</string>
+  <string name="_Registart_is_necessary_to_initiate_VSP_encryption_between_server_and_client_" context="adminDashboard.devices.verifone.info">初始化服务器和客户端之间的 VSP 加密需要 Registart。</string>
+  <string name="_Reload_Console" context="adminDashboard.logs.button">重新加载控制台</string>
+  <string name="_Remaining_gift_card_balance_" context="checkout.payments.gcBalanceDetails.dialog.label">剩余礼品卡余额：</string>
+  <string name="_Remove" context="checkout.cart.productPriceAdjustments.button && checkout.shippingMethod.shippingOverrides.button">移除</string>
+  <string name="_RemoveAllEthernetDevices" context="adminDashboard.devices.adyen.button">移除所有以太网设备</string>
+  <string name="_Removed_All_Payment_Devices" context="adminDashboard.devices.adyen.notification.info">已移除所有支付设备</string>
+  <string name="_Repeat_New_Password" context="login.field">重复输入新密码</string>
+  <string name="_Replace_in_Cart" context="productDetails.details.button">在购物车内替换</string>
+  <string name="_Replace_in_Wish_List" context="productDetails.details.link">在愿望清单中替换</string>
+  <string name="_RequiredSymbol" context="adminDashboard.appSettings.info">*</string>
+  <string name="_Reset_Password" context="login.button">重置密码</string>
+  <string name="_Reset_Session" context="header.dialog.title">重置会话</string>
+  <string name="_Reset_Session_Message" context="header.dialog.msg">您确定要终止本次购物会话？</string>
+  <string name="_Restart_App" context="startup.dialog.button">重启应用</string>
+  <string name="_Retry" context="startup.dialog.button">重试</string>
+  <string name="_Retrying_attempt_to_complete_order" context="checkout.payment.paymentTerminal.msg">重试完成订单。</string>
+  <string name="_Return_to_Shopping" context="customer.button">返回购物</string>
+  <string name="_Return_Value_" context="epsonReceipt.msg">退货金额:</string>
+  <string name="_Sales" context="reports.tabs">销售</string>
+  <string name="_Sales_Dashboard" context="hamburgermenu.button">销售仪表板</string>
+  <string name="_Sale_Price_" context="checkout.cart.label">售价：</string>
+  <string name="_Sales_Report_Dashboard_" context="reports.title">销售报告仪表板 (%s)</string>
+  <string name="_Sales_Tax" context="checkout.orderTotalSummary.label">销售税</string>
+  <string name="_Sales_Tax_" context="epsonReceipt.msg && checkout.orderSummary.msg">销售税：</string>
+  <string name="_Same_Address" context="checkout.dialog.title">相同地址</string>
+  <string name="_Save" context="customer.address.button">保存</string>
+  <string name="_Save_Address_to_Profile" context="checkout.address.enterShippingAddress.check">将地址保存至概况</string>
+  <string name="_Save_for_Later" context="checkout.cart.button">稍后保存</string>
+  <string name="_Save_Shipping_Address" context="checkout.createAccount.select">保存送货地址</string>
+  <string name="_Saved_Items__0" context="checkout.cart.tabs">已保存的商品：0</string>
+  <string name="_Saved_Items___d" context="checkout.cart.tabs">已保存的商品：%d</string>
+  <string name="_Scan_for_Devices" context="checkout.payments.noPaymentTerminal.button">扫描查找设备</string>
+  <string name="_Search" context="analytics.msg">搜索</string>
+  <string name="_Search_Distance_" context="adminDashboard.appSettings.label">搜索距离：</string>
+  <string name="_Search_Products" context="header.field">搜索产品</string>
+  <string name="_Search_Results" context="productGrid.categoryRefinementPanel.heading">搜索结果</string>
+  <string name="_Select__s" context="productDetails.details.select">选择 %s</string>
+  <string name="_Select_a_variation_first" context="productDetails.notification.info">请首先选择一个变量。</string>
+  <string name="_Select_Country" context="startup.dialog.msg">选择国家</string>
+  <string name="_Select_Country_and_Language" context="login.dialog.title">选择国家和语言</string>
+  <string name="_Select_Language" context="startup.dialog.msg">选择语言</string>
+  <string name="_Select_Option" context="adminDashboard.appSettings.select">选择选项</string>
+  <string name="_Select_Store_ID" context="startup.dialog.select">选择实体店 ID</string>
+  <string name="_Select_Store_ID_to_connect_to_and_then_retry_" context="startup.dialog.info">选择实体店 ID 以连接，并稍后重试。</string>
+  <string name="_Select_Wish_List" context="checkout.cart.wishList.select">选择愿望清单</string>
+  <string name="_Selecting_Create_Order_will_reserve_your_inventory" context="checkout.shipMethod.info">选择 “创建订单” 将保存您的库存。</string>
+  <string name="_Selecting_the_device_pairs_the_device_with_the_EA_application__If_the_device_status_does_not_change_to__Initializing__when_the_device_is_selected__suspend___resume_the_device_" context="adminDashboard.devices.adyen.info">选择设备会将此设备与 Endless Aisle 应用程序配对。选择设备后，如果设备状态没有变为“正在初始化”，应暂停并恢复设备。</string>
+  <string name="_Send" context="checkout.cart.emailCollectorDialog.button">发送</string>
+  <string name="_Send_Log_Via_Email" context="adminDashboard.logs.button">发送日志的电子邮件</string>
+  <string name="_Sending_console_logs_to_server" context="adminDashboard.logs.notification.info">正将控制台日志发送至服务器...</string>
+  <string name="_Serial_Number__"  context="adminDashboard.devices.verifone.label">序列号： </string>
+  <string name="_Server_call_failed__Please_try_again_" context="notification.error">服务器调用失败。请重试。</string>
+  <string name="_Server_Version__" context="adminDashboard.buildInfo.label">服务器版本： </string>
+  <string name="_Server_Supported_Version__" context="adminDashboard.buildInfo.label">服务器支持客户端版本： </string>
+  <string name="_Server_Supported_Versions__" context="adminDashboard.buildInfo.label">服务器支持客户端版本： </string>
+  <string name="_Session_Timeout_" context="adminDashboard.appSettings.label">会话超时：</string>
+  <string name="_Settings_related_to_Store_Inventory_" context="adminDashboard.appSettings.description">产品详情 “库存” 选项卡上与实体店库存相关的设置。</string>
+  <string name="_Ship_Methods" context="checkout.tabs">送货方式</string>
+  <string name="_Ship_To_This_Store" context="checkout.address.chooseShippingAddress.label">送货至此实体店</string>
+  <string name="_Shipping" context="checkout.tabs.">送货</string>
+  <string name="_Shipping_" context="customer.order.summary.msg">送货：</string>
+  <string name="_Shipping_Address" context="analytics.msg">送货地址</string>
+  <string name="_Shipping_Details" context="checkout.shippingSummary.heading && customer.order.summary.heading">送货详细信息</string>
+  <string name="_SHIPPING_DETAILS" context="epsonReceipt.title">送货详细信息</string>
+  <string name="_Shipping_Discount" context="checkout.orderTotalSummary.label">运费折扣</string>
+  <string name="_Shipping_Discount_" context="customer.order.summary.msg">运费折扣：</string>
+  <string name="_Shipping_Method_" context="epsonReceipt.msg">送货方式:</string>
+  <string name="_Shipping_Methods" context="analytics.msg">送货方式</string>
+  <string name="_Shipping_Overrides" context="checkout.shippingMethod.shippingOverrides.info">运费调整</string>
+  <string name="_Shop_For" context="customerSearch.button">代表客户购物</string>
+  <string name="_Show_Details" context="errorPopover.button">显示详情</string>
+  <string name="_Signature" context="checkout.payments.paymentSignature.title">签名</string>
+  <string name="_Simulate_Payments_" context="adminDashboard.appSettings.label">模拟付款：</string>
+  <string name="_Site_URL__" context="adminDashboard.configuration.msg">站点 URL： </string>
+  <string name="_Skip" context="checkout.createAccount.button">跳过</string>
+  <string name="_Small" context="adminDashboard.devices.epson.radio">小</string>
+  <string name="_Sorry__you_don_t_have_permissions_for_this_request" context="adminDashboard.error">对不起，您没有该请求的权限。</string>
+  <string name="_Sorting_Options" context="productGrid.header.sortOptionsPanel.header">排序选项</string>
+  <string name="_Starting_test_execution__" context="adminDashboard.test.notification.info">开始执行测试： </string>
+  <string name="_State_" context="enterAddress.field">州*</string>
+  <string name="_Status__" context="customer.order.msg">状态: </string>
+  <string name="_Step_1__Configuration" context="adminDashboard.devices.adyen.description">第 1 步: 配置</string>
+  <string name="_Step_2__Login_to_Adyen_Portal" context="adminDashboard.devices.adyen.description">第 2 步:登录 Adyen 门户</string>
+  <string name="_Step_3__Select_Device_" context="adminDashboard.devices.adyen.description">第 3 步：选择设备并载入</string>
+  <string name="_Stopped" context="adminDashboard.devices.adyen.info">已停止</string>
+  <string name="_Stopped__Device_not_paired_with_App_Initializing__Device_paired_with_App__awaiting_login_Not_Boarded__App_logged_into_adyen__device_not_registered_Initialized__Ready_for_Use" context="adminDashboard.devices.adyen.description">已停止：设备没有和应用配对。\n正在初始化：设备与应用配对，等待登录。\n没有登入：应用登录 Adyen；设备没有注册。\n 断开连接：设备已注册；无法连接。\n已初始化：准备使用。</string>
+  <string name="_Store" context="analytics.msg">实体店</string>
+  <string name="_Store_password_incorrect" context="appStartup.errorDialog.title">实体店密码错误</string>
+  <string name="_Stores" context="salesReports.tabs">实体店</string>
+  <string name="_Store_ID_" context="adminDashboard.appSettings.label && welcomeDialog.label && epsonReceipt.msg">实体店 ID：</string>
+  <string name="_STORE_INVENTORY" context="adminDashboard.appSettings.heading">实体店库存</string>
+  <string name="_Store_Configuration" context="adminDashboard.devices.adyen.info">实体店配置</string>
+  <string name="_Storefront_Settings_" context="adminDashboard.configuration.label">网店设置：</string>
+  <string name="_Subcategories_of" context="productGrid.header.categoryRefinement.header">子分类</string>
+  <string name="_Subnet" context="adminDashboard.devices.epson.heading">子网</string>
+  <string name="_Subtotal" context="checkout.orderTotalSummary.info">小计</string>
+  <string name="_Subtotal_" context="epsonReceipt.msg && customer.order.summary.msg">小计:</string>
+  <string name="_Success" context="login.info">成功</string>
+  <string name="_Supported_Currencies__" context="adminDashboard.devices.adyen.msg">支持的货币： </string>
+  <string name="_Supported_Payment_Methods__" context="adminDashboard.devices.adyen.msg">支持的付款方式： </string>
+  <string name="_Surcharge" context="checkout.cart.productPriceOverrides.info">附加费</string>
+  <string name="_Swipe_Card" context="adminDashboard.devices.verifone.button">刷卡</string>
+  <string name="_Test" context="adminDashboard.test.button">测试</string>
+  <string name="_Test_Tab" context="adminDashboard.tabs">测试</string>
+  <string name="_Test_currently_in_progress" context="adminDashboard.tests.info">目前正在进行的测试</string>
+  <string name="_Test_Payment_Device_Connection" context="checkout.payments.noPaymentTerminal.button">测试连接</string>
+  <string name="_Testing_Results_" context="adminDashboard.tests.info">测试结果：</string>
+  <string name="_TestsText" context="adminDashboard.tests.info">模型测试将测试与 Demandware 平台的连接性。选择要执行的模型测试。</string>
+  <string name="_Thank_You_" context="checkout.payments.paymentSignature.info">谢谢！</string>
+  <string name="_The_amount_of_time_before_the_application_logs_out_the_associate_" context="adminDashboard.appSettings.description">应用登出销售员之前的时间量。</string>
+  <string name="_The_associate_ID_is_required" context="login.error">必须提供销售员 ID。</string>
+  <string name="_The_client_credentials_are_not_set_up_correctly__Please_contact_your_admininstrator_to_fix_this_problem_" context="appstartup.error.msg">客户登录信息没有正确设置。请联系管理员修复此问题。</string>
+  <string name="_The_current_customer_needs_to_be_logged_out_before_creating_a_new_one__Tap_on__Continue__to_logout_the_customer_and_create_a_new_customer_" context="hamburgermenu.createCustomer.alert.dialog.msg">需要先退出当前客户才能创建新客户。点击“继续”以退出客户，并创建新客户。</string>
+  <string name="_The_customer_needs_to_be_logged_out_before_you_can_continue__Please_try_again_" context="notify.error">需要先退出客户才能继续。请重试。</string>
+  <string name="_The_expected_in_stock_date_is__s_" context="productDetails.details.info">期望的库存日期是 %s。</string>
+  <string name="_The_Gift_Card_is_not_recognized_by_the_gift_card_processor__Please_try_again_or_choose_a_different_payment_method_" context="checkout.payments.error">礼品卡处理器没有识别礼品卡。请重试，或是选择不同的付款方式。</string>
+  <string name="_The_manager_ID_and_Password_are_required" context="login.error">需要提供经理 ID 和密码。</string>
+  <string name="_The_password_for_the_store_is_incorrect__Please_contact_your_admininstrator_to_fix_this_problem_" context="appstartup.error.msg">实体店密码不正确，或客户 ID 没有正确配置。请联系管理员修复此问题。</string>
+  <string name="_The_order_needs_to_be_cancelled_before_you_can_continue__Please_try_again_" context="confirmation.dialog.error">需要先取消订单才能继续。请重试。</string>
+  <string name="_The_remaining_items_are_available_for_pre_order_" context="productDetails.details.info">其余商品可以预购。</string>
+  <string name="_The_remaining_items_are_available_on_back_order_" context="productDetails.details.info">其余商品用于欠交订单。</string>
+  <string name="_The_remaining_items_are_currently_not_available__Please_adjust_the_quantity_" context="productDetails.details.info">目前无法提供其余商品。请调整数量。</string>
+  <string name="_The_request_timed_out_" context="confirmation.dialog.title">请求超时。</string>
+  <string name="_The_sales_report_failed_to_load__The_following_error_was_returned_from_the_server_" context="salesReports.error">销售报告加载失败。从服务器返回以下错误。</string>
+  <string name="_The_store_id_to_connect_to_at_startup_" context="adminDashboard.appSettings.description">开始时连接的实体店 ID。</string>
+  <string name="_There_are_no_items_in_your_cart_" context="checkout.cart.info">您的购物车里没有商品。</string>
+  <string name="_There_are_no_items_in_this_wish_list" context="checkout.cart.wishList.info">此愿望清单里没有商品。</string>
+  <string name="_There_are_no_orders_" context="customer.history.info">没有订单。</string>
+  <string name="_There_are_no_recommendations_for_this_product_" context="productDetails.recommendations.info">没有此产品的推荐。</string>
+  <string name="_There_are_no_saved_addresses_" context="checkout.address.chooseShippingAddress.info && customer.addresses.info">没有保存的地址。</string>
+  <string name="_There_are_no_saved_items_" context="checkout.cart.info">没有保存的商品。</string>
+  <string name="_There_is_no_store_availability_information_for_this_product_" context="productDetails.inventory.info">没有此产品的实体店库存情况信息。</string>
+  <string name="_There_is_no_corresponding_key_for_the_value___s__in_countryConfig" context="startup.error">countryConfig 中没有该值的对应键\'%s\'。</string>
+  <string name="_There_was_a_problem_clearing_the_cart__Please_try_again_" context="confirmation.dialog.error">清空购物车时出现问题。请重试。</string>
+  <string name="_This_associate_does_not_have_permission_to_log_on" context="login.error">此销售员没有登录的权限。</string>
+  <string name="_This_field_is_required_" context="enterAddress.error">此字段为必填项。</string>
+  <string name="_This_item_is_currently_not_available_" context="productDetails.details.info">目前无法提供此商品。</string>
+  <string name="_This_manager_is_not_allowed_to_change_passwords" context="login.error">此经理无权更改密码。</string>
+  <string name="_This_manager_is_not_allowed_to_do_overrides" context="checkout.cart.productPriveOverrides.error">此经理无权执行追加。</string>
+  <string name="_This_transaction_has_already_been_cancelled_" context="checkout.dialog.error">此交易已被取消。</string>
+  <string name="_This_transaction_has_been_cancelled_and_payment_cannot_be_applied_" context="checkout.dialog.error">此交易已被取消，并且无法应用付款。</string>
+  <string name="_This_version_of_iOS_is_not_supported___Please_upgrade_to_a_supported_version_" context="startup.dialog.msg">此 iOS 版本不受支持。请升级到受支持的版本。</string>
+  <string name="_Timeout__" context="adminDashboard.configuration.label">超时： </string>
+  <string name="_To" context="salesReports.datePickers.header">发送至</string>
+  <string name="_Today" context="salesReports.tabs">今天</string>
+  <string name="_Token_Not_Valid" context="adminDashboard.devices.adyen.info">令牌无效</string>
+  <string name="_Token_Valid" context="adminDashboard.devices.adyen.info">令牌有效</string>
+  <string name="_Total_" context="customer.order.summary.msg">总计: </string>
+  <string name="_Touch_Screen_to_Begin" context="splashscreen.button">轻触屏幕\n以开始</string>
+  <string name="_Trigger_a_solicited_swipe__to_test_basic_functionality_" context="adminDashboard.devices.verifone.description">触发请求刷卡，以测试基本功能。</string>
+  <string name="_Unable_to_add_item_to_the_cart" context="productDetails.details.notification.error">无法将商品添加到购物车。</string>
+  <string name="_Unable_to_add_items_to_the_cart" context="productDetails.details.notification.error">无法将商品添加到购物车。</string>
+  <string name="_Unable_to_apply_a_product_price_override" context="checkout.cart.productPriceAdjustments.notification.error">无法应用产品价格调整。</string>
+  <string name="_Unable_to_apply_a_shipping_price_override" context="checkout.shippingMethod.shippingOverrides.notification.error">无法应用运费价格调整。</string>
+  <string name="_Unable_to_cancel_order_" context="confirmation.dialog.title">无法取消订单。</string>
+  <string name="_Unable_to_capture_signature_" context="checkout.confirmation.notification.msg">无法获取签名。请重试另一张卡。</string>
+  <string name="_Unable_to_clear_the_cart_" context="confirmation.dialog.title">无法清空购物车。</string>
+  <string name="_Unable_to_complete_order__Retry_" context="">无法完成此订单。您要重试还是取消？</string>
+  <string name="_Unable_to_connect_to_a_network_" context="startup.dialog.error">无法连接到网络。</string>
+  <string name="_Unable_to_connect_to_payment_device_" context="checkout.payments.noPaymentTerminal.dialog.error">无法连接到支付设备。</string>
+  <string name="_Unable_to_connect_to_storefront_" context="startup.dialog.error">无法连接到网店。</string>
+  <string name="_Unable_to_create_account_" context="createAccount.error">无法创建账户。</string>
+  <string name="_Unable_to_create_order_" context="checkout.dialog.error">无法创建此订单。</string>
+  <string name="_Unable_to_load___s__" context="startup.dialog.error && adminDashboard.appSettings.dialog.error">无法加载 “%s”。</string>
+  <string name="_Unable_to_load_application_settings_" context="startup.dialog.error">无法加载应用设置。</string>
+  <string name="_Unable_to_login_kiosk_user_" context="startup.dialog.error">无法登录自助服务用户。\n\n请联系您的管理员。</string>
+  <string name="_Unable_to_open_product_override_dialog_" context="override.dialog.error">无法打开产品调整对话。</string>
+  <string name="_Unable_to_logout_customer_" context="dialog.error.title">无法登出客户。</string>
+  <string name="_Unable_to_registart_device_" context="notify.error">无法 registart 设备。</string>
+  <string name="_Unable_to_remove_product_price_override" context="checkout.cart.productPriceAdjument.notification.error">无法移除产品价格调整。</string>
+  <string name="_Unable_to_save_item_" context="notify.error">无法保存商品。</string>
+  <string name="_Unable_to_search_customers_" context="dialog.error">无法搜索客户。</string>
+  <string name="_Unable_to_search_orders_" context="dialog.error">无法搜索订单。</string>
+  <string name="_Unable_to_search_products_" context="dialog.error">无法搜索产品。</string>
+  <string name="_Unable_to_set_the_gift_message_" context="giftmessage.error">无法保存礼券消息。</string>
+  <string name="_Unable_to_start_the_application" context="startup.dialog.title">无法启动应用。</string>
+  <string name="_Unable_to_validate_application_settings_" context="startup.dialog.error">无法验证应用设置。</string>
+  <string name="_Unknown_Availability" context="productDetails.inventory.info">未知库存情况</string>
+  <string name="_Unknown_error_occured" context="salesReports.error">发生未知的错误。</string>
+  <string name="_Unknown_Stock_Level" context="productDetails.inventory.info">未知的库存水平</string>
+  <string name="_Unsorted" context="productGrid.header.select">未排序</string>
+  <string name="_Update_Address_in_Profile" context="checkout.address.check">更新概况中的地址</string>
+  <string name="_URL_contains_an_unsupported_scheme" context="salesReports.error">URL 包含不支持的方案。</string>
+  <string name="_Used_for_development_" context="adminDashboard.appSettings.description">在开发期间，这可以不使用卡就测试支付流程。</string>
+  <string name="_Username_" context="adminDashboard.devices.adyen.label">用户名: </string>
+  <string name="_Username__" context="adminDashboard.devices.adyen.msg">用户名: </string>
+  <string name="_Users" context="analytics.msg">用户</string>
+  <string name="_United_States" context="welcomeDialog.select">美国</string>
+  <string name="_VALID_DEVICE" context="adminDashboard.devices.verifone.info">有效设备</string>
+  <string name="_Validating_Devices___" context="startup.notification.info">正在验证设备...</string>
+  <string name="_Validating_Network___" context="startup.notification.info">正在验证网络...</string>
+  <string name="_Validating_Settings___" context="startup.notification.info">正在验证设置...</string>
+  <string name="_Validating_Storefront___" context="startup.notification.info">正在验证网店...</string>
+  <string name="_VERIFY_YOUR_ADDRESS" context="addressVerification.title">验证您的地址</string>
+  <string name="_Versions_" context="adminDashboard.buildInfo.label">版本：</string>
+  <string name="_Version_Mismatch" context="dialog.error.title">版本不匹配</string>
+  <string name="_Version_Mismatch_Error" context="error.msg">您连接的服务器不支持此客户端版本。请更新您的应用。\n\n客户端版本：%s\n 服务器版本：%s\n 支持的版本：%s\n</string>
+  <string name="_Version_Information" context="adminDashboard.devices.verifone.label">版本信息</string>
+  <string name="_Verifying_Token" context="adminDashboard.devices.adyen.info">正在验证令牌</string>
+  <string name="_View_Customer_Profile" context="header.customer.button">查看客户概况</string>
+  <string name="_View_Size_Chart" context="productDetails.details.link">查看尺码表</string>
+  <string name="_VSP_Version__" context="adminDashboard.devices.verifone.label">VSP 版本： </string>
+  <string name="_Waiting_for_Adyen_Info____" context="adminDashboard.devices.adyen.info">等待 Adyen 信息...</string>
+  <string name="_Waiting_for_device_information___" context="adminDashboard.devices.verifone.info">等待设备信息...</string>
+  <string name="_We_were_unable_to_validate_your_address___" context="addressVerification.info">我们无法验证您的地址。如果您确定以下地址有效，请点击 “继续”，否则您可以点击 “取消” 并编辑您的地址。</string>
+  <string name="_WEB_ORDER" context="epsonReceipt.title">网络订单</string>
+  <string name="_Web_Order_Number___" context="epsonReceipt.msg">网络订单编号： </string>
+  <string name="_Week" context="salesReports.tabs">周</string>
+  <string name="_Welcome_Kiosk_Message_" context="welcomeDialog.info">如果设备要被设置为自动服务终端，则启用自动服务终端模式。</string>
+  <string name="_Welcome_Message_" context="welcomeDialog.info">要开始应用，请选择一个实体店。</string>
+  <string name="_Welcome_Message_change_later" context="welcomeDialog.info">要稍后更改设置，应使用管理员仪表板。</string>
+  <string name="_Welcome_to_Endless_Aisle" context="welcomeDialog.title">欢迎使用 Endless Aisle</string>
+  <string name="_Wish_List_Title" context="wishlist.title">愿望清单</string>
+  <string name="_Wish_List" context="checkout.cart.tabs">愿望清单</string>
+  <string name="_Wish_List_Button" context="hamburgermenu.button">愿望清单</string>
+  <string name="_Wish_List___d" context="checkout.cart.tabs">愿望清单：%d</string>
+  <string name="_Would_you_like_to_create_a_new_account_" context="checkout.confirmation.createAccount.msg">您想创建新账户？</string>
+  <string name="_XPI_Version__" context="adminDashboard.devices.verifone.label">XPI 版本： </string>
+  <string name="_Yes" context="checkout.billingSame.dialog.button">是</string>
+  <string name="_You_are_editing_an_address__Are_you_sure_you_want_to_discard_the_changes_" context="customer.editAddress.dialog.info">您正在编辑地址。您确定要放弃更改？</string>
+  <string name="_You_are_adding_an_address__Are_you_sure_you_want_to_discard_the_changes_" context="customer.editAddress.dialog.info">您正在编辑地址。您确定要放弃更改？</string>
+  <string name="_You_have_modified_settings__Are_you_sure_you_want_to_discard_the_changes_" context="adminDashboard.appSettings.dialog.info">您已修改设置。您确定要放弃更改？</string>
+  <string name="_You_have__d_characters_left_out_of_250" context="checkout.shippingMethod.info">您还剩余 %d 个字符，字符限定在 250 个以内。</string>
+  <string name="_You_must_provide_a_hostname_" context="adminDashboard.devices.adyen.msg">您必须提供主机名。</string>
+  <string name="_You_must_provide_either_a_search_term_or_UPC_code_for_a_product_search_" context="search.dialog.product.msg">您必须为产品搜索提供搜索项或 UPC 码。</string>
+  <string name="_You_must_provide_either_a_first_last_name_or_an_email_for_a_customer_search_" context="customerSearch.info">您必须提供名字/姓氏，供客户搜索使用。</string>
+  <string name="_You_must_provide_either_an_order_ID_or_a_customer_email_for_an_order_search_" context="search.dialog.order.msg">您必须为订单搜索提供订单 ID 或客户电子邮件。</string>
+  <string name="_You_must_provide_employee_code_and_pin_" context="login.info && kioskManager.login.info">您必须提供员工代码和密码。</string>
+  <string name="_You_must_provide_manager_code_and_pin_" context="checkout.cart.overrides.info && adminDashboard.info">您必须提供经理代码和密码。</string>
+  <string name="_Your_Wish_List__s_has_been_emailed_" context="checkout.cart.wishList.info">您的愿望清单“%s”已通过电子邮件发送。</string>
+  <string name="_Your_Wish_List_has_been_emailed_" context="checkout.cart.wishList.info">您的愿望清单已通过电子邮件发送。</string>
+  <string name="_Your_email_failed_to_be_sent__Please_try_again_later_" context="checkout.cart.wishList.error">您的电子邮件发送失败。请稍后再试。</string>
+  <string name="_Your_receipt_has_been_emailed" context="checkout.payments.dialog.msg">您的收据已通过电子邮件发送。</string>
+</resources>

@@ -1,0 +1,33 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for order totals
+-->
+<Alloy>
+    <Model src="baskets" id="basket" instance="true"/>
+    <View id="order_totals_container">
+        <View id="order_subtotal_details" class="order_summary_row">
+            <Label class="order_summary_left order_summary_label" accessibilityValue="subtotal_label" id="subtotal_label"/>
+            <Label  class="order_summary_right order_summary_value" accessibilityValue="subtotal_value" id="subtotal_value"/>
+        </View>
+        <View id="order_discount_details" class="order_summary_row">
+            <Label class="order_summary_left order_summary_label" id="discounts_label" accessibilityValue="discounts_label" id="discounts_label"/>
+            <Label  class="order_summary_right order_summary_red order_summary_value" id="discounts_value" accessibilityValue="discounts_value"/>
+        </View>
+        <View id="shipping_details" class="order_summary_row">
+            <Label class="order_summary_left order_summary_label" accessibilityValue="shipping_label" id="shipping_label"/>
+            <Label  id="shipping_total" class="order_summary_right order_summary_value" accessibilityValue="shipping_total"/>
+        </View>
+        <View id="shipping_discount_details" class="order_summary_row">
+            <Label id="shipping_discount_label" class="order_summary_left order_summary_label" accessibilityValue="shipping_discount_label"/>
+            <Label  id="shipping_discount" class="order_summary_right order_summary_red order_summary_value" accessibilityValue="shipping_discount"/>
+        </View>
+        <View id="sales_tax_details" class="order_summary_row">
+            <Label class="order_summary_left order_summary_label" accessibilityValue="sales_tax_label" id="sales_tax_label"/>
+            <Label  class="order_summary_right order_summary_value" accessibilityValue="sales_tax_total" id="sales_tax_total"/>
+        </View>
+        <View id="order_total_details" class="order_total_details">
+            <Label id="order_total_label" class="order_summary_left order_summary_label order_total_label" accessibilityValue="order_total_label"/>
+            <Label  class="order_summary_right order_total_value" accessibilityValue="order_total_value" id="order_total_value"/>
+        </View>
+    </View>
+</Alloy>

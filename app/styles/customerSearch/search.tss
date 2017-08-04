@@ -1,0 +1,95 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for the customer search
+
+'#search': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.25,
+    backgroundColor: Alloy.Styles.color.background.black,
+    zIndex: 100
+},
+
+'#search_contents': {
+    left: 94,
+    right: 94,
+    top: 76,
+    layout: 'vertical',
+    height: 250,
+    opacity: 0.95,
+    backgroundColor: Alloy.Styles.color.background.white,
+    zIndex: 101
+},
+
+'.title_text': {
+    font: Alloy.Styles.calloutCopyFont,
+    color: Alloy.Styles.color.text.dark
+},
+
+'#customer_header_container': {
+    layout: 'horizontal',
+    top: 50,
+    left: 89,
+    height: Ti.UI.SIZE
+},
+
+'#search_form_container': {
+    height: Ti.UI.SIZE,
+    layout: 'horizontal',
+    left: 89
+},
+
+'#search_results_container': {
+    layout: 'vertical',
+    left: 50,
+    right: 50,
+    top: 10,
+    height: Ti.UI.FILL
+},
+
+'#search_textfield': {
+    borderColor: Alloy.Styles.color.border.dark,
+    borderWidth: 1,
+    color: Alloy.Styles.color.text.dark,
+    backgroundColor: Alloy.Styles.color.background.white,
+    backgroundImage: Alloy.Styles.magnifierImage,
+    width: 480,
+    top: 10,
+    font: Alloy.Styles.dialogFieldFont,
+    paddingLeft: 50,
+    height: 55,
+    clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+    keyboardType: Ti.UI.KEYBOARD_TYPE_EMAIL,
+    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+    returnKeyType: Ti.UI.RETURNKEY_SEARCH,
+    autocorrect: false,
+    hintText: L( '_Enter_First_and_Last_Name_or_Email')
+},
+
+'#search_button': {
+    width: 156,
+    right: 0,
+    left: 15,
+    top: 10,
+    height: 55,
+    paddingLeft: 20,
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    font: Alloy.Styles.bigButtonFont,
+    color: Alloy.Styles.buttons.primary.color
+},
+
+'.error': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font: Alloy.Styles.headlineFont,
+    color: Alloy.Styles.color.text.red
+},
+
+'#customer_lookup_label': {
+    textid: '_Customer_Look_up'
+}

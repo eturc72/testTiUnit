@@ -1,0 +1,20 @@
+<!--
+// 2017 salesforce.com, inc. All rights reserved.
+// View file for buildInfoDataColumn
+-->
+<Alloy>
+	<View id="container">
+	    <View id="app_uuid_section" class="section_class">
+            <Label id="app_uuid_title" class="title_class" accessibilityValue="app_uuid_title"/>
+            <Label id="app_uuid_text" class="text_class" accessibilityValue="app_uuid_text"/>
+        </View>
+        <View id="version_section" class="section_class">
+            <Label id="version_title" class="title_class" accessibilityValue="version_title"/>
+            <Label id="build_version" class="text_class no_value" accessibilityValue="build_version"/>
+        </View>
+        <View id="config_section" class="section_class">
+            <Label id="config_title" class="title_class" accessibilityValue="config_title"/>
+            <Label id="config_text" class="text_class no_value" accessibilityValue="config_text"/>
+        </View>
+    </View>
+</Alloy>

@@ -1,0 +1,10 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for notify growl
+-->
+<Alloy>
+    <View id="growl_popover_container">
+        <Label id="growl_label" accessibilityValue="growl_label"/>
+        <View id="close_button"/>
+    </View>
+</Alloy>

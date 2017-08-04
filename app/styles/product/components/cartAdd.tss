@@ -1,0 +1,72 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for add to cart button and availability
+
+'#cart_add': {
+    height: Ti.UI.SIZE,
+    width: '100%',
+    layout: 'vertical',
+    left: 0
+},
+
+'#quantity_row': {
+    width: '100%',
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    top: 10
+},
+
+'#web_availability_footer_row': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: '100%',
+    horizontalWrap: false,
+    top: 15
+},
+
+'#availability_message': {
+    height: Ti.UI.SIZE,
+    width: Ti.UI.FILL,  // fill to the right of the message label
+    left: 15,
+    right: 15,
+    font: Alloy.Styles.detailLabelFont,
+    color: Alloy.Styles.color.text.dark
+},
+
+'#availability_message_label': {
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    left: 25,
+    font: Alloy.Styles.detailValueFont,
+    color: Alloy.Styles.color.text.mediumdark,
+    textid: '_Availability_'
+},
+
+'#add_to_cart_btn': {
+    titleid: '_Add_to_Cart',
+    width: 163,
+    height: 35,
+    left: 0,
+    font: Alloy.Styles.buttonFont
+},
+
+'#quantity_label': {
+    textid: '_Quantity_',
+    font: Alloy.Styles.sectionTitleFont,
+    color: Alloy.Styles.color.text.mediumdark
+},
+
+'#quantity_container': {
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    layout: 'horizontal',
+    left: 10
+},
+
+'.add_to_product_list_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    top: 19,
+    left: 0
+}

@@ -1,0 +1,23 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for customer result row
+-->
+<Alloy>
+    <TableViewRow id="customer_result_row">
+        <View id="customer_result_row_container">
+            <View id="name_address">
+                <Label id="name_label" text="{name}" accessibilityValue="name"/>
+                <Label id="address_display" accessibilityValue="address_display" />
+            </View>
+            <View id="email_phone">
+                <Label class="label_text" id="email_label" text="{email}" accessibilityValue="email"/>
+                <Label class="label_text" text="{phone}" accessibilityValue="phone"/>
+            </View>
+            <View id="button_view" layout="vertical">
+                <Button class="profile_button" titleid="_Profile" id="profile_button" accessibilityValue="profile_button"/>
+                <Button class="table_button" titleid="_Shop_For" id="login_button" accessibilityValue="shop_for_button"/>
+            </View>
+        </View>
+    </TableViewRow>
+</Alloy>
+

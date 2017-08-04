@@ -1,0 +1,45 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for overrides
+-->
+<Alloy>
+    <View id="overrides_details_container">
+        <View id="overrides_container">
+            <View id="overrides_left_column">
+                <Require src="checkout/components/allOverrideTypes" id="override_types" type="view"/>
+            </View>
+            <View id="overrides_right_column">
+                <View id="price_container">
+                    <View id="amount_off_container">
+                        <Label id="amount_off_label" accessibilityValue="amount_off_label"/>
+                        <TextField id="amount_off_text" accessibilityLabel="amount_off_text"/>
+                    </View>
+                    <View id="new_price_container">
+                        <View id="new_price" class="price_container">
+                            <Label id="new_price_label" class="new_price_label price_label" accessibilityValue="new_price_label"/>
+                            <Label id="new_price_calculated" class="new_price_calculated_label price_value_label" accessibilityValue="new_price_calculated"/>
+                        </View>
+                        <View id="surcharge" visible="false" class="price_container surcharge_container">
+                            <Label id="surcharge_label" class="new_price_label price_label" accessibilityValue="surcharge_label"/>
+                            <Label id="surcharge_price" class="new_price_label price_value_label" accessibilityValue="surcharge_price"/>
+                        </View>
+                    </View>
+                </View>
+                <View id="adjustment_reason_container"/>
+                <View id="get_manager_authorization_container">
+                    <Label id="manager_authorization_label" accessibilityValue="manager_authorization_label"/>
+                </View>
+                <View id="has_manager_approval_container" visible='false'>
+                    <Label id="manager_approval_label" accessibilityValue="manager_approval_label"/>
+                    <Label id="manager_name_label" accessibilityValue="manager_name_label"/>
+                </View>
+                <Label id="error_message_label" accessibilityValue="error_message_label" visible="false"/>
+            </View>
+        </View>
+    </View>
+    <View id="enter_manager_authorization" visible='false'>
+        <TextField id="manager_id" class="manager_field" accessibilityLabel="manager_id"/>
+        <TextField id="manager_password" class="manager_field" accessibilityLabel="manager_password"/>
+        <Label id="manager_error" accessibilityValue="manager_error"/>
+    </View>
+</Alloy>

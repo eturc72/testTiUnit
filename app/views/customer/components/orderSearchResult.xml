@@ -1,0 +1,34 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for order search results
+-->
+<Alloy>
+    <Collection id="orders" src="customerOrderHistory" instance="true"/>
+    <View id="search_results">
+        <View class="customer_results_header">
+            <Button id="breadcrumbs_back_button" accessibilityLabel="breadcrumbs_back_button" class="breadcrumbs_back_button"/>
+            <View class="vertical_separator"/>
+            <Label id="search_results_count" accessibilityValue="search_results_count"/>
+        </View>
+        <View id="padding_one"/>
+        <View id="results_contents" class="results_contents">
+            <View id="lookup_window">
+                <Label id="order_lookup_label" accessibilityValue="order_lookup_label"/>
+                <View id="search_form_container" class="search_form_container">
+                    <TextField id="search_textfield" accessibilityLabel="order_search_textfield"/>
+                    <View id="padding_two"/>
+                    <Button id="search_button"  accessibilityLabel="search_order_button"/>
+                </View>
+                <View id="search_results_container" class="search_results_container">
+                    <Label id="results_error" class="error" accessibilityLabel="results_error"/>
+                </View>
+            </View>
+            <View id="line_separator"/>
+            <View id="results_table_container">
+                <TableView id="history_container" dataCollection="$.orders" dataTransform="transformOrder" dataFilter="filterOrders" separatorStyle="transparent">
+                    <Require src="customer/components/historyResultRow"/>
+                </TableView>
+            </View>
+        </View>
+    </View>
+</Alloy>

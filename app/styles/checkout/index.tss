@@ -1,0 +1,75 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for checkout
+
+'#checkout_container': {
+    layout: 'horizontal',
+    bottom: 0,
+    top: 55
+},
+
+'#header_container': {
+    height: 40
+},
+
+'#order_summary_label': {
+    color: Alloy.Styles.color.text.dark,
+    width: 340,
+    height: 40,
+    backgroundColor: Alloy.Styles.color.background.medium,
+    font: Alloy.Styles.detailLabelFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    borderWidth: 1,
+    borderColor: Alloy.Styles.color.border.medium,
+    textid: '_Order_Summary'
+},
+
+'.checkout_tabs': {
+    backgroundColor: Alloy.Styles.tabs.backgroundColorEnabled,
+    font: Alloy.Styles.tabFont,
+    width: '100%',
+    bottom: 0
+},
+
+'#checkout_tab_group': {
+    top: 0,
+    bottom: 0,
+    left: 0,
+    width: '100%'
+},
+
+'#left_column': {
+    layout: 'vertical',
+    width: 690,
+    left: 0,
+    height: '100%',
+    top: 0,
+    bottom: 0
+},
+
+'#right_column': {
+    layout: 'vertical',
+    width: 330,
+    left: 0,
+    top: 0
+},
+
+'#divider': {
+    top: 0,
+    width: 4,
+    backgroundImage: Alloy.Styles.leftShadowImage,
+    zIndex: 3,
+    height: '100%',
+    backgroundColor: 'transparent'
+},
+
+'#checkout_button': {
+    left: 24,
+    width: 280,
+    height: 42,
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    backgroundDisabledColor: Alloy.Styles.buttons.primary.color,
+    color: Alloy.Styles.buttons.primary.color,
+    top: 620,
+    titleid: '_Checkout'
+}

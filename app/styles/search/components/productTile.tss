@@ -1,0 +1,84 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for product tiles
+
+'#productTile': {
+    layout: 'absolute',
+    width: 217,
+    height: 271,
+    backgroundColor: Alloy.Styles.color.background.light,
+    borderColor: Alloy.Styles.color.border.lightest,
+    top: 31,
+    left: 31,
+    borderWidth: 1
+},
+
+'#tile_caption': {
+    bottom: 0,
+    backgroundColor: Alloy.Styles.color.background.light,
+    width: '100%',
+    height: 55,
+    layout: 'vertical'
+},
+
+'#tile_name': {
+    height: '50%',
+    left: 10,
+    color: Alloy.Styles.color.text.mediumdark,
+    font: Alloy.Styles.productFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    top: 3
+},
+
+'.price_container': {
+    layout: 'horizontal',
+    width: Ti.UI.SIZE,
+    top: 0,
+    left: 10
+},
+
+'#swatch_container': {
+    layout: 'absolute',
+    width: 150,
+    top: 0,
+    right: 10
+},
+
+'.list_price': {
+    height: '50%',
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.detailTextFont,
+    width: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'.list_price_container': {
+    left: 0,
+    height: '50%',
+    width: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'#tile_list_price': {
+    height: '50%',
+    color: Alloy.Styles.color.text.medium,
+    font: Alloy.Styles.detailTextFont,
+    width: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'#tile_image': {
+    width: 209,
+    top: 3,
+    left: 3,
+    borderColor: Alloy.Styles.color.border.lightest,
+    backgroundColor: Alloy.Styles.color.background.white,
+    borderWidth: 1
+},
+
+'#ratings_container': {
+    layout: 'horizontal',
+    width: Ti.UI.SIZE,
+    top: 2,
+    right: 10
+}

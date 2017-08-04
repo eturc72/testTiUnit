@@ -1,0 +1,50 @@
+// ©2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for unavailable product line item row in the store pickup popover
+
+"#product_item_row": {
+    layout: 'vertical',
+    selectionStyle: Ti.UI.iOS.TableViewCellSelectionStyle.NONE,
+    height: Ti.UI.SIZE
+},
+
+'#product_line_item_container': {
+    top: 10,
+    height: 210,
+    width: 400
+},
+
+'#item_container': {
+    height: Ti.UI.SIZE,
+    width: '100%',
+    layout: 'horizontal',
+    left: 0,
+    top: 30
+},
+
+
+'#edit_delete_button_container': {
+    bottom: 10,
+    right: 5,
+    height: 58,
+    width: 70
+},
+
+'.round_button': {
+    height: 55,
+    width: 55
+},
+
+'#delete_button': {
+    backgroundImage: Alloy.Styles.deleteButtonIcon,
+    right: 10
+},
+
+'#stock_availability_label':{
+    width: '100%',
+    height: 25,
+    textAlign: 'center',
+    top: 0,
+    color: Alloy.Styles.color.text.red,
+    font: Alloy.Styles.appBoldFont
+}

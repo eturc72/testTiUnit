@@ -1,0 +1,10 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for order product details
+-->
+<Alloy>
+    <Collection id="productLineItems" src="productItem" instance="true"/>
+    <TableView id="pli_table" dataCollection="$.productLineItems" dataTransform="transformPLI">
+        <Require src="checkout/cart/productItemRow"/>
+    </TableView>
+</Alloy>

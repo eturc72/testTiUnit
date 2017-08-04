@@ -1,0 +1,165 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for address verification results popover
+
+'#popover_window': {
+    backgroundColor: 'transparent'
+},
+
+'#backdrop': {
+    top: 20,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.25,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#popover_container': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    width: 750,
+    backgroundColor: Alloy.Styles.color.background.white,
+    left: 127,
+    top: 85,
+    borderWidth: 2,
+    borderColor: Alloy.Styles.color.border.lightest
+},
+
+'.horizontal_separator': {
+    height: 1,
+    backgroundColor: Alloy.Styles.color.background.dark,
+    width: '100%',
+    left: 0
+},
+
+'#header_container': {
+    layout: 'horizontal',
+    height: 40,
+    top: 20,
+    left: 60,
+    width: '100%'
+},
+
+'#main_title': {
+    textid: '_VERIFY_YOUR_ADDRESS',
+    height: Ti.UI.SIZE,
+    width: '85%',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font: Alloy.Styles.titleFont,
+    color: Alloy.Styles.color.text.darkest
+},
+
+'#column_container': {
+    width: 630,
+    height: 439,
+    left: 60,
+    bottom: 20,
+    layout: 'horizontal'
+},
+
+'#subtitle': {
+    height: 150
+},
+
+'#suggested_addresses_column_container': {
+    layout: 'vertical',
+    top: 5,
+    bottom: 0,
+    width: '50%'
+},
+
+'#suggested_addresses_title': {
+    textid: '_Recommended_Address'
+},
+
+'#suggested_addresses_table': {
+    layout: 'vertical',
+    top: 10,
+    bottom: 0
+},
+
+'#entered_address_column_container': {
+    layout: 'vertical',
+    top: 5,
+    width: '50%',
+    height: Ti.UI.SIZE
+},
+
+'#entered_address_title': {
+    textid: '_Address_You_Entered'
+},
+
+'#entered_address_tile': {
+    layout: 'horizontal',
+    height: 60,
+    width: '100%',
+    left: 0,
+    top: 20
+},
+
+'#radio_button_container': {
+    left: 0,
+    width: 20,
+    height: Ti.UI.SIZE,
+    top: 2
+},
+
+'#radio_button': {
+    image: Alloy.Styles.radioButtonOffImage
+},
+
+'#entered_address_column': {
+    left: 20,
+    layout: 'vertical',
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    top: 0
+},
+
+'#button_container': {
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    top: 20,
+    bottom: 20,
+    layout: 'horizontal'
+},
+
+'#cancel_button': {
+    backgroundImage: Alloy.Styles.secondaryButtonImage,
+    backgroundDisabledColor: Alloy.Styles.color.background.medium,
+    color: Alloy.Styles.buttons.secondary.color,
+    font: Alloy.Styles.buttonMediumFont,
+    width: 228,
+    height: 42
+},
+
+'#continue_button': {
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    backgroundDisabledColor: Alloy.Styles.color.background.medium,
+    color: Alloy.Styles.buttons.primary.color,
+    font: Alloy.Styles.buttonMediumFont,
+    width: 228,
+    left: 10,
+    height: 42
+},
+
+// class definitions
+'.title_text': {
+    height: Ti.UI.SIZE,
+    width: '100%',
+    font: Alloy.Styles.detailValueFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.darkest
+},
+
+'.profile_text': {
+    left: 0,
+    height: 20,
+    ellipsize: true,
+    wordWrap: false,
+    font: Alloy.Styles.detailValueFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}
+

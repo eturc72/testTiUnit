@@ -1,0 +1,8 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+-->
+
+<resources>
+    <string name="appname" context="home.icon">Endless Aisle</string>
+    <string name="NSCameraUsageDescription" context="dialog.msg">我们可以使用摄像头扫描条形码吗？</string>
+</resources>

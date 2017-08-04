@@ -1,0 +1,10 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for enter address dynamic form
+
+'#address_window': {
+    width: '100%',
+    layout: 'vertical',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    height: Ti.UI.SIZE
+}

@@ -1,0 +1,50 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for main app header
+-->
+<Alloy>
+    <View id="header">
+        <View id="backdrop" visible="false"/>
+        <View id="navigation_container">
+            <View id="header_tab_container" class="header_tab_container" >
+                <Button id="hamburger_menu" accessibilityValue="hamburger_menu" onClick="showHideHamburgerMenu"/>
+                <ImageView id="home_icon" onClick="handleHomeClick" accessibilityValue="home_icon" />
+                <ImageView class="vertical_divider" accessibilityValue="vertical_divider_1"/>
+                <ImageView class="vertical_divider" accessibilityValue="vertical_divider_2" width="10"/>
+                <ImageView id="payment_device_icon" onClick="handlePaymentDeviceClick" accessibilityValue="payment_device_icon" visible="false"/>
+                <ImageView class="vertical_divider" accessibilityValue="vertical_divider_3" width="2"/>
+                <View id="product_search_container" onClick="handleProductSearchClick" accessibilityValue="product_search_container">
+                    <Label id="product_search_icon" accessibilityValue="product_search_icon"/>
+                    <Label id="product_search_query" class="header_label" accessibilityValue="product_search_query"/>
+                </View>
+            </View>
+            <ImageView class="vertical_divider" accessibilityValue="vertical_divider_4"/>
+            <View id="modal_control_container">
+                <View id="associate_logout_container">
+                    <View id="associate_logout_button" onClick="handleAssociateLogoutClick">
+                        <ImageView id="associate_icon" accessibilityValue="associate_icon"/>
+                        <Label id="associate_label" class="header_label" accessibilityValue="associate_label"/>
+                    </View>
+                </View>
+                <ImageView class="vertical_divider" accessibilityValue="vertical_divider_5"/>
+                <View id="customer_shopfor_container">
+                    <View id="customer_lookup" class="customer_container" onClick="handleCustomerSearchClick">
+                        <ImageView id="customer_lookup_icon" accessibilityValue="customer_lookup_icon"/>
+                        <Label id="customer_lookup_label" class="header_label customer_label" accessibilityValue="customer_lookup_label"/>
+                    </View>
+                    <View id="logged_in_customer_container" class="customer_container" onClick="handleCustomerLabelClick">
+                        <ImageView id="customer_icon_loggedIn" accessibilityValue="customer_icon_loggedIn"/>
+                        <Label id="customer_label" class="header_label customer_label" accessibilityValue="customer_label"/>
+                    </View>
+                </View>
+            </View>
+            <View id="wish_list_container" class="wish_list_container">
+                <Button id="wish_list_button" accessibilityValue="wish_list_button" onClick="handleWishListClick"/>
+            </View>
+            <View id="cart_container" class="cart_container" onClick="handleCartClick">
+                <Label id="product_items_count" accessibilityValue="product_items_count"/>
+                <Label id="cart_label" accessibilityValue="cart_label"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

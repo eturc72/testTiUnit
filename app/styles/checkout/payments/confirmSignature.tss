@@ -1,0 +1,74 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for confirm signature
+
+'#confirm_signature_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+// This is put on top of paymentTerminal so we don't need a black background and opacity
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768
+},
+
+'#signature_container': {
+    layout: 'vertical',
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#padding_container': {
+    layout: 'vertical',
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    left: 50,
+    right: 50
+},
+
+'#signature_label': {
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.calloutFont,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    top: 20,
+    textid: '_Approve_Signature'
+},
+
+'#signature_explanation_label': {
+    color: Alloy.Styles.color.text.mediumdark,
+    font: Alloy.Styles.textFieldFont,
+    top: 36,
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    textid: '_Please_approve_this_signature_to_complete_the_transaction'
+},
+
+'#signature_view': {
+    top: 20,
+    height: 150,
+    width: Ti.UI.SIZE,
+    borderWidth: 1,
+    borderColor: Alloy.Styles.color.border.darker
+},
+
+'#signature_button_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    top: 20,
+    bottom: 20
+},
+
+'#decline_button': {
+    titleid: '_Decline'
+},
+
+'#accept_button': {
+    titleid: '_Approve',
+    left: 20
+}

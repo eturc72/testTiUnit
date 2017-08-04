@@ -1,0 +1,15 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for main application index
+
+'#appIndex': {
+    top: 0,
+    left: 0,
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL
+},
+
+'.tab_container': {
+    top: 20,
+    zIndex: 0
+}

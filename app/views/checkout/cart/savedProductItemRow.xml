@@ -1,0 +1,18 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for saved product item row
+-->
+<Alloy>
+    <TableViewRow contains_product_image="true" product_id="{row_id}" id="productItemRowTable">
+        <View id="product_line_item_container" class="pli_row" contains_product_image="true">
+            <Require src="checkout/cart/productItem" id="product_item"/>
+            <View id="button_container">
+                <View id="edit_delete_button_container">
+                    <Button  id="delete_button" class="round_button" accessibilityLabel="delete_button"/>
+                </View>
+                <Button titleid="_Add_to_Cart" id="add_button" class="button not_top_button" accessibilityValue="add_button"/>
+                <Button id="more_menu_button" class="button not_top_button" accessibilityValue="menu_button"/>
+            </View>
+        </View>
+    </TableViewRow>
+</Alloy>

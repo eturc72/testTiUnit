@@ -1,0 +1,32 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for test tab in admin dashbaord
+-->
+<Alloy>
+    <View tabBarHidden="false" navBarHidden="false">
+        <View id="testing_main">
+            <View id="data_column">
+                <View id="version_section" class="section_class">
+                    <Label id="results_title" class="title_class" accessibilityValue="results_title"/>
+                    <TextArea id="test_output" accessibilityValue="test_output"/>
+                    <Button id="clear_results" class="admin_action_button primary_button" onClick="clearOutput" accessibilityValue="clear_results"/>
+                </View>
+            </View>
+            <View id="vertical_border"/>
+            <View id="action_column">
+                <View id="action_section" class="section_class">
+                    <Label id="action_title" class="title_class" accessibilityValue="action_title"/>
+                    <Label id="tests_text" class="text_class" accessibilityValue="tests_text"/>
+                    <Label id="model_tests_title" accessibilityValue="model_tests_title">
+                    </Label>
+                    <TableView id="test_names" />
+                </View>
+                <View id="email_section" class="section_class">
+                    <Label id="email_tests_text" class="text_class" accessibilityValue="email_tests_text"/>
+                    <TextField id="email_address" class="email_class" accessibilityLabel="email_address"/>
+                    <Button id="email_tests" class="admin_action_button primary_button" onClick="emailTests" accessibilityValue="email_tests"/>
+                </View>
+            </View>
+        </View>
+    </View>
+</Alloy>

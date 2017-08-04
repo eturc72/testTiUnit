@@ -1,0 +1,20 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for add to cart button and availability
+-->
+<Alloy>
+    <View id="cart_add">
+        <View id="quantity_row">
+            <Label id="quantity_label" accessibilityValue="product_quantity_label"/>
+            <View id="quantity_container"/>
+        </View>
+        <View id="web_availability_footer_row">
+            <Button id="add_to_cart_btn" class="primary_button" accessibilityValue="add_to_cart_btn"/>
+            <Label id="availability_message_label" accessibilityValue="availability_message_label"/>
+            <Label id="availability_message" accessibilityValue="availability_message"/>
+        </View>
+        <View id="add_to_product_list_container" if="Alloy.CFG.enable_wish_list" class="add_to_product_list_container">
+            <Require id="add_to_wish_list_button" src="product/components/addToWishList"/>
+        </View>
+    </View>
+</Alloy>

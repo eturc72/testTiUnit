@@ -1,0 +1,9 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for category grid
+
+'#categoryGrid': {
+    backgroundColor: Alloy.Styles.color.background.white,
+    top: 0,
+    layout: 'absolute'
+}

@@ -1,0 +1,22 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for coupon rows
+-->
+<Alloy>
+    <TableViewRow id="coupon_row" class="coupon_row">
+        <View id="coupon_line_item_container">
+            <View class="image_column" id="image_column">
+                <Button id="delete_coupon_button" accessibilityValue="delete_coupon_button"/>
+            </View>
+            <View id="right_column">
+                <View id="title_code_container">
+                    <Label class="bold_text" text="{title}" id="title_label" accessibilityValue="title_label"/>
+                    <Label class="normal_text" text="{coupon_code}" id="coupon_code_label" accessibilityValue="coupon_code_label"/>
+                </View>
+                <View id="description_container">
+                    <Label class="normal_text" text="{description}" id="description_label" accessibilityValue="description_label"/>
+                </View>
+            </View>
+        </View>
+    </TableViewRow>
+</Alloy>

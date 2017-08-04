@@ -1,0 +1,24 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for error reporting dialog
+-->
+<Alloy>
+    <View id="popover_window">
+        <View id="backdrop"/>
+        <View id="popover_container">
+            <Label id="error_title" accessibilityValue="error_confirm_title"/>
+            <Label id="describe_text_heading" class="text_heading" accessibilityValue="describe_text_heading"/>
+            <TextArea id="describe_text_message" class="text_message border" accessibilityValue="error_describe_text"/>
+            <View id="error_details">
+                <Label id="error_text_heading" class="text_heading" accessibilityValue="error_text_heading"/>
+                <ScrollView id="error_scroll_container" class="border" >
+                    <Label id="error_text_message" class="text_message" accessibilityValue="error_message"/>
+                </ScrollView>
+            </View>
+            <View id="button_container">
+                <Button id="details_button" class="secondary_button" accessibilityValue="error_details_button"/>
+                <Button id="ok_button" class="primary_button" accessibilityValue="error_ok_button"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

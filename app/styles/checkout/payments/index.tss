@@ -1,0 +1,233 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for payments
+
+'#payments': {
+    layout: 'vertical'
+},
+
+'#selectorRow': {
+    layout: 'horizontal',
+    width: '100%',
+    height: 51,
+    top: 10
+},
+
+'#one_card_button': {
+    left: 170,
+    top: 12,
+    width: 180,
+    height: 27,
+    color: Alloy.Styles.buttons.primary.color,
+    font: Alloy.Styles.smallButtonFont,
+    backgroundImage: Alloy.Styles.buttonLeftOnImage,
+    titleid: '_Pay_with_one_card'
+},
+
+'#multiple_cards_button': {
+    top: 12,
+    width: 180,
+    height: 27,
+    color: Alloy.Styles.buttons.primary.color,
+    font: Alloy.Styles.smallButtonFont,
+    backgroundImage: Alloy.Styles.buttonRightOffImage,
+    titleid: '_Pay_with_multiple_cards'
+},
+
+'#balance_due_container': {
+    layout: 'horizontal',
+    left: 210,
+    top: 12,
+    height: Ti.UI.SIZE
+},
+
+'#balance_due_label': {
+    font: Alloy.Styles.titleFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    textid: '_Balance_Due__'
+},
+
+'#balance_due': {
+    font: Alloy.Styles.titleFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    left: 10
+},
+
+'#payment_types_container': {
+    layout: 'horizontal',
+    left: 140,
+    top: 8,
+    height: Ti.UI.SIZE
+},
+
+'.payment_type_button': {
+    width: 200,
+    height: 46,
+    backgroundImage: Alloy.Styles.creditCardButtonUpImage,
+    backgroundFocusedImage: Alloy.Styles.creditCardButtonDownImage,
+    backgroundSelectedImage: Alloy.Styles.creditCardButtonDownImage,
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.buttonMediumFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+'#credit_card_button': {
+    textid: '_Credit_Card'
+},
+
+'#gift_card_button': {
+    textid: '_Gift_Card',
+    left: 24
+},
+
+'#tender_amount_container': {
+    top: 26,
+    left: 100,
+    width: 500,
+    height: 60,
+    borderWidth: 1,
+    borderColor: Alloy.Styles.color.border.lighter,
+    layout: 'horizontal'
+},
+
+'#currency_label': {
+    font: Alloy.Styles.registerReadoutFont,
+    color: Alloy.Styles.color.text.dark,
+    text: Alloy.CFG.currencySymbol,
+    left: 7
+},
+
+'#number_entered': {
+    font: Alloy.Styles.registerReadoutFont,
+    color: Alloy.Styles.color.text.dark,
+    width: '92%',
+    right: 0,
+    left: 10,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT
+},
+
+'#number_entry_container': {
+    layout: 'horizontal',
+    left: 101,
+    height: Ti.UI.SIZE,
+    top: 15
+},
+
+'.button_row': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    left: 0
+},
+
+'.number_entry_button': {
+    width: 109,
+    height: 55,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: Alloy.Styles.color.text.dark,
+    backgroundImage: Alloy.Styles.calcNumberButtonUpImage,
+    backgroundFocusedImage: Alloy.Styles.calcNumberButtonDownImage,
+    backgroundSelectedImage: Alloy.Styles.calcNumberButtonDownImage,
+    font: Alloy.Styles.registerButtonFont
+},
+
+'#cancel_order_button': {
+    width: 129,
+    height: 55,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: Alloy.Styles.accentColor,
+    backgroundImage: Alloy.Styles.calcNumberButtonUpImage,
+    backgroundFocusedImage: Alloy.Styles.calcNumberButtonUpImage,
+    backgroundSelectedImage: Alloy.Styles.calcNumberButtonUpImage,
+    font: Alloy.Styles.buttonFont,
+    left: 0,
+    top: 25,
+    titleid: '_Cancel_Order'
+},
+
+'.not_first_button_in_row': {
+    left: 15
+},
+
+'#delete_button': {
+    width: 233,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    backgroundImage: Alloy.Styles.backspaceButtonUpImage,
+    backgroundFocusedImage: Alloy.Styles.backspaceButtonDownImage,
+    backgroundSelectedImage: Alloy.Styles.backspaceButtonDownImage
+},
+
+'.second_row': {
+    top: 25
+},
+
+'#numbers': {
+    layout: 'vertical',
+    width: '62%',
+    height: Ti.UI.SIZE,
+    top: 0
+},
+
+'#keypadButtons': {
+    layout: 'vertical',
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    top: 0,
+    left: 7
+},
+
+'#swipe_card_in_keypad': {
+    left: 0,
+    height: 215,
+    width: 129,
+    backgroundImage: Alloy.Styles.enterButtonUpImage,
+    backgroundFocusedImage:  Alloy.Styles.enterButtonDownImage,
+    backgroundSelectedImage:  Alloy.Styles.enterButtonDownImage,
+    color: Alloy.Styles.color.text.white,
+    font: Alloy.Styles.buttonFont,
+    top: 0,
+    titleid: '_Pay_Now'
+},
+
+'#just_swipe_container': {
+    layout: 'vertical',
+    top: 10,
+    height: Ti.UI.SIZE,
+    left: 55
+},
+
+'#swipe_no_keypad': {
+    height: 90,
+    width: 583,
+    backgroundImage: Alloy.Styles.enterButtonUpImage,
+    backgroundFocusedImage:  Alloy.Styles.enterButtonDownImage,
+    backgroundSelectedImage:  Alloy.Styles.enterButtonDownImage,
+    color: Alloy.Styles.color.text.white,
+    font: Alloy.Styles.bigButtonFont,
+    titleid: '_Pay_Now',
+    left: 0
+},
+
+'#cancel_no_keypad': {
+    height: 45,
+    width: 583,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: Alloy.Styles.accentColor,
+    backgroundImage: Alloy.Styles.calcNumberButtonUpImage,
+    backgroundFocusedImage: Alloy.Styles.calcNumberButtonUpImage,
+    backgroundSelectedImage: Alloy.Styles.calcNumberButtonUpImage,
+    font: Alloy.Styles.buttonFont,
+    titleid: '_Cancel_Order',
+    top: 15,
+    left: 0
+},
+
+'#payment_message_label': {
+    font: Alloy.Styles.detailLabelFont,
+    color: Alloy.Styles.color.text.red,
+    top: 50,
+    width: '100%',
+    height: Ti.UI.SIZE,
+    left: 0,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    textid: '_Payment_Terminal_Info_Message'
+}

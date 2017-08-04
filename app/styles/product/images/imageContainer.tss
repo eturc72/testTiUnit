@@ -1,0 +1,67 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for the image container
+
+'#color_container': {
+    layout: 'horizontal'
+},
+
+'#image_view': {
+    width: 350,
+    height: 350,
+    top: 25,
+    left: 25
+},
+
+'#large_image_container': {
+    borderColor: Alloy.Styles.color.border.medium
+},
+
+'#large_image_view': {
+    top: 2,
+    left: 2,
+    right: 2,
+    bottom: 2,
+    regular_size: true
+},
+
+'#pdp_video_player': {
+    top: 2,
+    left: 2,
+    right: 2,
+    bottom: 2,
+    mediaControlStyle: Ti.Media.VIDEO_CONTROL_EMBEDDED,
+    autoplay: false,
+    visible: false
+},
+
+'#alt_container': {
+    layout: 'horizontal',
+    width: 350,
+    top: 0,
+    left: 25,
+    height: 370
+},
+
+'#alt_scroll_container': {
+    layout: 'vertical',
+    top: 5,
+    left: 0,
+    height: 300
+},
+
+'#video_play_button': {
+    backgroundImage:Alloy.Styles.videoPlayButtonImage,
+    viewShadowColor:Alloy.Styles.color.background.black ,
+    viewShadowOffset: {
+        x: 0,
+        y: 0
+    },
+    viewShadowRadius: 0,
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    borderWidth: 3,
+    borderColor:Alloy.Styles.color.background.black,
+    visible: false
+}

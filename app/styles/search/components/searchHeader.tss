@@ -1,0 +1,54 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for search header
+
+'#search_context': {
+    backgroundColor: Alloy.Styles.color.background.medium,
+    color: Alloy.Styles.color.text.darkest,
+    layout: 'absolute',
+    height: 50,
+    top: 55,
+    zIndex: 2
+},
+
+'#panel_backdrop': {
+    layout: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+    backgroundColor: Alloy.Styles.color.background.black,
+    opacity: 0.02,
+    zIndex: 1
+},
+
+'#refinement_panels': {
+    layout: 'absolute',
+    top: 105,
+    left: 0,
+    bottom: 0,
+    right: 0,
+    backgroundColor: Alloy.Styles.color.background.transparent,
+    opacity: 0.95,
+    zIndex: 100
+},
+
+'#search_status': {
+    layout: 'horizontal',
+    height: 50,
+    top: 0
+},
+
+'#result_total_products': {
+    font:Alloy.Styles.detailTextFont,
+    left: 20,
+    top: 14
+},
+
+'#search_refinements': {
+    layout: 'horizontal',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+    height: 44,
+    top: 7,
+    left: 238
+}

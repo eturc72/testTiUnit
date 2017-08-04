@@ -1,0 +1,16 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for sorting options panel
+-->
+<Alloy>
+    <View class="sortingOptionsPanel">
+        <View class="vertical_shadow_separator_left"/>
+        <TableView id="sortingOptionsTable">
+            <HeaderView>
+                <View id="sortingOptionsTableHeader">
+                    <Label id="sortingOptionsTableHeaderLabel" accessibilityValue="sorting_options_header_label" textid="_Sorting_Options"/>
+                </View>
+            </HeaderView>
+        </TableView>
+    </View>
+</Alloy>

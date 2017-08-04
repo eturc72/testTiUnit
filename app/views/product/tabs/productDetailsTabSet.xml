@@ -1,0 +1,11 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for product set PDP tab
+-->
+<Alloy>
+    <View id="set_product">
+        <Require id="promotions" src="product/components/promotions"/>
+        <ScrollView id="set_products">
+        </ScrollView>
+    </View>
+</Alloy>

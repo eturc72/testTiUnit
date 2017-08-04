@@ -1,0 +1,10 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for images
+-->
+<Alloy>
+    <View id="images">
+        <!-- scrollable view of images for each color variant -->
+        <ScrollableView id="pdp_image_scroller"/>
+    </View>
+</Alloy>

@@ -1,0 +1,20 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for the customer profile page
+-->
+<Alloy>
+    <Model src="customer" />
+    <View class="profile_container" id="customer_profile">
+        <View layout="vertical" id="profile_details" top="15">
+            <View id="first_name_container" class="name_container">
+                <Label id="first_name_label" class="big_text" accessibilityValue="first_name_label"/>
+                <Label id="first_name_text" text="{customer.first_name}" class="profile_text" accessibilityValue="first_name_text"/>
+            </View>
+            <View id="last_name_container" class="name_container">
+                <Label id="last_name_label" class="big_text" accessibilityValue="last_name_label"/>
+                <Label id="last_name_text" text="{customer.last_name}" class="profile_text" accessibilityValue="last_name_text"/>
+            </View>
+            <Button id="edit_button" class="edit_button" titleid="_Edit" accessibilityValue="edit_profile_button"/>
+        </View>
+    </View>
+</Alloy>

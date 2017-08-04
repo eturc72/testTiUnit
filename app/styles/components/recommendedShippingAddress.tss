@@ -1,0 +1,51 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for a recommended shipping address
+
+'#recommendedShippingAddress': {
+    selectionStyle: Ti.UI.iOS.TableViewCellSelectionStyle.NONE
+},
+
+'#address_container': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    top: 0
+},
+
+// address_tile (class)
+'#address_tile': {
+    layout: 'horizontal',
+    height: 60,
+    width: '100%',
+    left: 0,
+    top: 10
+},
+
+// default_address_row
+'#radio_button_container': {
+    left: 0,
+    width: 20,
+    height: Ti.UI.SIZE,
+    top: 2
+},
+
+'#radio_button': {
+    image: Alloy.Styles.radioButtonOffImage
+},
+
+'#address_column': {
+    left: 20,
+    layout: 'vertical',
+    width: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    top: 0
+},
+
+'.profile_text': {
+    left: 0,
+    height: 20,
+    ellipsize: true,
+    wordWrap: false,
+    font: Alloy.Styles.detailValueFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}

@@ -1,0 +1,28 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for the customer order details page
+-->
+<Alloy>
+    <Model id="customerOrder" src="baskets" instance="true"/>
+    <Collection id="productLineItems" src="productItem" instance="true" />
+    <View id="customer_order">
+        <View id="backdrop"/>
+        <View id="customer_order_container">
+            <View id="order_left_column">
+                <View class="subheader_container">
+                    <Label id="order_details_label" class="subheader" accessibilityValue="subheader"/>
+                </View>
+                <Require id="order_header" src="components/orders/orderHeader"/>
+                <View class="horizontal_separator"/>
+                <Require id="order_product_details" src="components/orders/orderProductDetails"/>
+            </View>
+            <View id="vertical_separator" class="vertical_separator"/>
+            <View id="order_right_column">
+                <Label id="subheader"/>
+                <Require id="order_summary" src="checkout/components/orderTotalSummary"/>
+                <Require id="shipping_details" src="checkout/components/shippingSummary"/>
+                <Require id="payment_details_view" src="checkout/components/paymentSummary"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

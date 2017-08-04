@@ -1,0 +1,82 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for order header
+
+'#order_header_container': {
+    layout: 'horizontal',
+    left: 28,
+    height: Ti.UI.SIZE,
+    top: 30,
+    width: '100%'
+},
+
+'#order_summary_container': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    width: '60%',
+    top: 0
+},
+
+'#order_button_container': {
+    layout: 'vertical',
+    width: '40%',
+    right: 0,
+    top: 0,
+    height: Ti.UI.SIZE,
+    visible: false
+},
+
+'.labelled_text': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE
+},
+
+'.label_title': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    bottom: 0,
+    font: Alloy.Styles.detailValueFont
+},
+
+'.text_data': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    bottom: 0,
+    font: Alloy.Styles.detailLabelFont
+},
+
+'.text_big_data': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    bottom: 0,
+    font: Alloy.Styles.calloutCopyFont
+},
+
+'.receipt_button': {
+    backgroundImage: Alloy.Styles.secondaryButtonImage,
+    color: Alloy.Styles.buttons.primary.color,
+    width: 150,
+    height: 35,
+    font: Alloy.Styles.smallButtonFont,
+    right: 50
+},
+
+'#print_button': {
+    top: 8
+},
+
+'#pos_cancel_button': {
+    top: 8
+},
+
+'#date_label': {
+    textid: '_Order_Date__'
+},
+
+'#status_label': {
+    textid: '_Status__'
+},
+
+'#number_label': {
+    textid: '_Order_Number__'
+}

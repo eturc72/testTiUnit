@@ -1,0 +1,37 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for mega menu page
+
+'.menu_category_container': {
+    top: 10,
+    width: Ti.UI.FILL,
+    layout: 'horizontal'
+},
+
+'.menu_category': {
+    width: 204
+},
+
+'#menu_subhead_container': {
+    top: 0,
+    height: 35,
+    left: 0,
+    width: Ti.UI.FILL,
+    layout: 'horizontal'
+},
+
+'#menu_subhead': {
+    top: 0,
+    left: 20,
+    height: 40,
+    width: 240,
+    color: Alloy.Styles.megaMenu.menuPage.font,
+    font: Alloy.Styles.megaMenu.menuPage.font,
+    width: Ti.UI.SIZE
+},
+
+'.menu_column_container': {
+    top: 50,
+    layout: 'horizontal',
+    width: Ti.UI.SIZE
+}

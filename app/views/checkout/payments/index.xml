@@ -1,0 +1,57 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for payments
+-->
+
+<Alloy>
+    <View id="payments">
+        <View id="selectorRow">
+            <Button id="one_card_button" accessibilityValue="one_card_button"/>
+            <Button id="multiple_cards_button" accessibilityValue="multiple_cards_button"/>
+        </View>
+        <View id="balance_due_container">
+            <Label id="balance_due_label" accessibilityValue="balance_due_label"/>
+            <Label id="balance_due" accessibilityValue="balance_due"/>
+        </View>
+        <View layout = "horizontal" id="payment_types_container">
+            <Label id="credit_card_button" class="payment_type_button" accessibilityValue="credit_card_button"/>
+            <Label id="gift_card_button" class="payment_type_button" accessibilityValue="gift_card_button" />
+        </View>
+        <View id="tender_amount_container" visible="false">
+            <Label id="currency_label" accessibilityValue="currency_label"/>
+            <Label text="" id="number_entered" accessibilityValue="number_entered"/>
+        </View>
+        <View id="number_entry_container" visible="false">
+            <View id="numbers">
+                <View class="button_row" id="top_row">
+                    <Button title="7" class="number_entry_button" id="seven_button" accessibilityValue="seven_button"/>
+                    <Button title="8" class="not_first_button_in_row number_entry_button" id="eight_button" accessibilityValue="eight_button"/>
+                    <Button title="9" class="not_first_button_in_row number_entry_button" id="nine_button" accessibilityValue="nine_button"/>
+                </View>
+                <View class="button_row second_row" id="second_row">
+                    <Button title="4" class="number_entry_button" id="four_button" accessibilityValue="four_button"/>
+                    <Button title="5" class="not_first_button_in_row number_entry_button" id="five_button" accessibilityValue="five_button"/>
+                    <Button title="6" class="not_first_button_in_row number_entry_button" id="six_button" accessibilityValue="six_button"/>
+                </View>
+                <View class="button_row second_row" id="third_row">
+                    <Button title="1" class="number_entry_button" id="one_button" accessibilityValue="one_button"/>
+                    <Button title="2" class="not_first_button_in_row number_entry_button" id="two_button" accessibilityValue="two_button"/>
+                    <Button title="3" class="not_first_button_in_row number_entry_button" id="three_button" accessibilityValue="three_button"/>
+                </View>
+                <View class="button_row second_row" id="fourth_row">
+                    <Button title="0" class="number_entry_button" id="zero_button" accessibilityValue="zero_button"/>
+                    <Button class="number_entry_button not_first_button_in_row" id="delete_button" accessibilityValue="delete_button"/>
+                </View>
+            </View>
+            <View id="keypadButtons">
+                <Button id="swipe_card_in_keypad" accessibilityValue="swipe_card_in_keypad"/>
+                <Button id="cancel_order_button" accessibilityValue="cancel_order_button"/>
+            </View>
+        </View>
+        <View id="just_swipe_container">
+            <Button id="swipe_no_keypad" accessibilityValue="swipe_no_keypad"/>
+            <Button id="cancel_no_keypad" accessibilityValue="cancel_no_keypad"/>
+        </View>
+        <Label id="payment_message_label" accessibilityValue="payment_terminal_message"/>
+    </View>
+</Alloy>

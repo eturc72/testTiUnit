@@ -1,0 +1,83 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for product wish list selector dialog
+
+'#title': {
+    color: Alloy.Styles.accentColor,
+    top: 15,
+    font: Alloy.Styles.bigButtonFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    textid: '_Select_Wish_List'
+},
+
+'#list_title': {
+    left: 10,
+    right: 40
+},
+
+'#check_box_checked': {
+    right: 10,
+    height: 30,
+    width: 30,
+    image: Alloy.Styles.checkBoxImageWhite,
+    visible: false
+},
+
+'#backdrop': {
+    backgroundColor: Alloy.Styles.color.background.transparentBlack30Percent
+},
+
+'.horizontalSeparator': {
+    backgroundColor: Alloy.Styles.accentColor,
+    width: Ti.UI.FILL,
+    height: 1,
+    top: 0
+},
+
+'#main_container': {
+    height: 400,
+    width: 500,
+    backgroundColor: Alloy.Styles.color.background.white,
+    layout: 'vertical'
+},
+
+'#list_view_container': {
+    top: 0,
+    height: 270
+},
+
+'#title_container': {
+    top: 0,
+    height: 60,
+    width: 320,
+    backgroundColor: Alloy.Styles.color.background.white,
+    layout: 'vertical'
+},
+
+'.list_title_container': {
+    height: 50,
+    backgroundColor: 'white',
+    selectedBackgroundColor: Alloy.Styles.color.background.white,
+    backgroundSelectedColor: Alloy.Styles.color.background.white
+},
+
+'#controls_wrapper': {
+    top: 15,
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    bottom: 15
+},
+
+'#list_view': {
+    backgroundColor: 'white'
+},
+
+'#cancel': {
+    titleid: '_Cancel'
+},
+
+'#apply': {
+    titleid: '_Apply',
+    left: 20
+}

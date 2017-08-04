@@ -1,0 +1,8 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for dropdown on select widgets
+
+'.container': {
+    borderWidth: Alloy.Styles.selectLists.borderWidth,
+    borderColor: Alloy.Styles.selectLists.borderColor
+}

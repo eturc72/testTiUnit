@@ -1,0 +1,13 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for PDP variation attribute swatches
+-->
+<Alloy>
+    <View id="attribute_container">
+        <View id="titleContainer">
+            <Label id="attribute_name" accessibilityValue="attribute_name"/>
+            <Label id="attribute_value" accessibilityValue="attribute_value"/>
+        </View>
+        <View id="swatch_list"/>
+    </View>
+</Alloy>

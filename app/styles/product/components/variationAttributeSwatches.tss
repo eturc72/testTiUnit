@@ -1,0 +1,63 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for PDP variation attribute swatches
+
+'#attribute_container': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    width: '100%',
+    top: 3
+},
+
+'#titleContainer': {
+    layout: 'horizontal',
+    width: '100%',
+    height: Ti.UI.SIZE
+},
+
+'#attribute_value': {
+    font: Alloy.Styles.detailValueFont,
+    color: Alloy.Styles.color.text.mediumdark,
+    width: '75%',
+    left: 5
+},
+
+'#attribute_name': {
+    width: Ti.UI.SIZE,
+    left: 0,
+    font: Alloy.Styles.detailLabelFont,
+    color: Alloy.Styles.color.text.mediumdark
+},
+
+'#swatch_list': {
+    layout: 'horizontal',
+    width: '100%',
+    height: Ti.UI.SIZE,
+    left: 0,
+    top: 8
+},
+
+// Used in the controller file with Ti.UI.create
+'.swatch_container': {
+    top: 3,
+    right: 15,
+    width: 40,
+    height: 40
+},
+
+'.swatch_button': {
+    left: 2,
+    right: 2,
+    top: 2,
+    bottom: 2,
+    width: 36,
+    height: 36,
+    touchEnabled: true,
+    zIndex: 1
+},
+
+'.swatch_label': {
+    font: Alloy.Styles.buttonFont,
+    touchEnabled : true
+}
+

@@ -1,0 +1,17 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for mega menu page
+-->
+<Alloy>
+    <Collection id="subCategories" src="category" instance="true"/>
+    <View class="menu_category_container" dataCollection="$.subCategories" id="menu_category_container">
+        <View class="menu_category" id="menu_category">
+            <View id="menu_subhead_container">
+                <Label id="menu_subhead" text="{name}" categoryid="{id}"/>
+            </View>
+            <View class="menu_column_container">
+                <Require src="components/megaMenuLeaf"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

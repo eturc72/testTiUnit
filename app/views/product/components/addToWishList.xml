@@ -1,0 +1,7 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for add to wish list on PDP
+-->
+<Alloy>
+    <Button id="add_to_wish_list"  accessibilityValue="add_to_wish_list" onClick="onAddToWishListClick"/>
+</Alloy>

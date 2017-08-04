@@ -1,0 +1,166 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for welcome dialog at startup
+
+'#popover_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.25,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#popover_container': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    // set the top so that when the dialog adds the kiosk mode the top doesn't change, but the bottom expands down. Top based on the full window size being centered.
+    top: 200,
+    width: '65%',
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#welcome_title': {
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.titleFont,
+    height: Ti.UI.SIZE,
+    top: 20
+},
+
+'#welcome_message': {
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.dialogFont,
+    height: Ti.UI.SIZE,
+    top: 30,
+    left: 50,
+    right: 50,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    width: Ti.UI.FILL
+},
+
+'#change_settings': {
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.dialogFont,
+    height: Ti.UI.SIZE,
+    top: 0,
+    bottom: 30,
+    left: 50,
+    right: 50,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    width: Ti.UI.FILL
+},
+
+'#kiosk_message': {
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.dialogFont,
+    height: 0,
+    top: 0,
+    left: 50,
+    right: 50,
+    visible: false,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    width: Ti.UI.FILL
+},
+
+'#startup_config': {
+    layout: 'vertical',
+    top: 0,
+    left: 0,
+    right: 0,
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE
+},
+
+'#country_message': {
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.dialogFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP,
+    textid: '_Country_Message_',
+    width: Ti.UI.FILL,
+    height: 50,
+    bottom: 1
+},
+
+'#country_config': {
+    layout: 'vertical',
+    top: 0,
+    left: 0,
+    right: 0,
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE
+},
+
+'#language_config': {
+    layout: 'vertical',
+    top: 0,
+    left: 0,
+    right: 0,
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE
+},
+
+'#kiosk_config': {
+    layout: 'vertical',
+    top: 0,
+    visible: false,
+    width: Ti.UI.SIZE,
+    height: 0
+},
+
+'#ok_button': {
+    titleid: '_Continue',
+    left: 20
+},
+
+'#back_button': {
+    titleid: '_Back'
+},
+
+'#next_button': {
+    top: 17,
+    bottom: 17,
+    titleid: '_Next'
+},
+
+'#country_label': {
+    textid: '_Country__',
+    bottom: 14
+},
+
+'#country_dropdown': {
+    left: 50,
+    right: 70,
+    layout: 'horizontal',
+    width: Ti.UI.FILL,
+    height: 42
+},
+
+'#country_view': {
+    left: 13
+},
+
+'#language_label': {
+    textid: '_Language',
+    bottom: 14
+},
+
+'#language_dropdown': {
+    top: 10,
+    left: 50,
+    right: 70,
+    layout: 'horizontal',
+    width: Ti.UI.FILL,
+    height: 42
+},
+
+'#welcome_button_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    bottom: 20
+}

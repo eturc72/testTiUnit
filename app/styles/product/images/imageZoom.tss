@@ -1,0 +1,146 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for image zoom
+
+'#imageZoom': {
+    layout: 'absolute',
+    backgroundColor: Alloy.Styles.color.background.transparent,
+    zIndex: 101
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black,
+    zIndex: 102
+},
+
+'#zoom_container': {
+    layout: 'absolute',
+    backgroundColor: Alloy.Styles.color.background.white,
+    width: '93%',
+    height: '91%',
+    zIndex: 103
+},
+
+'#swatches_container': {
+    layout: 'absolute',
+    height: 240,
+    top: 0,
+    right: 0
+},
+
+'#alt_images_container': {
+    height: Ti.UI.FILL,
+    bottom: 0,
+    layout: 'absolute'
+},
+
+'#detail_image_container': {
+    contentWidth: 1,
+    contentHeight: 1,
+    height: 700,
+    width: 700,
+    oldZoom: '1',
+    minZoomScale: '1.0',
+    maxZoomScale: '2.0',
+    showVerticalScrollIndicator: true,
+    showHorizontalScrollIndicator: true,
+    layout: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    oldZoom: 1
+},
+
+'#vertical_separator': {
+    left: 700,
+    width: 2
+},
+
+'.alt_box': {
+    layout: 'horizontal',
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE,
+    top: 0
+},
+
+'#control_column': {
+    width: 230,
+    left: 720,
+    height: Ti.UI.SIZE,
+    top: 46,
+    right: 0,
+    layout: 'vertical',
+    scrollingEnabled: true,
+    showVerticalScrollIndicator: true
+},
+
+'#close_button': {
+    width: 30,
+    height: 31,
+    right: 15,
+    top: 15,
+    zIndex: 1,
+    backgroundImage: Alloy.Styles.clearTextImage
+},
+
+'#detail_image': {
+    height: 700,
+    width: Ti.UI.SIZE
+},
+
+'#color_label': {
+    textid: '_Color_',
+    font: Alloy.Styles.detailLabelFont,
+    color: Alloy.Styles.color.text.mediumdark,
+    visible: false
+},
+
+'#color_name': {
+    font: Alloy.Styles.detailValueFont,
+    color: Alloy.Styles.color.text.mediumdark,
+    left: 5
+},
+
+'.label_container': {
+    width: Ti.UI.FILL,
+    height: Ti.UI.SIZE,
+    layout: 'horizontal'
+},
+
+'#other_views_label': {
+    textid: '_Other_Views_',
+    font: Alloy.Styles.detailLabelFont,
+    color: Alloy.Styles.color.text.mediumdark,
+    width: 210
+},
+
+// items created/used in controller
+'.swatch_container_view': {
+    top: 12,
+    right: 12,
+    width: 40,
+    height: 40
+},
+
+'.swatch_image_view': {
+    width: 36,
+    height: 36
+},
+
+'.alt_view_container': {
+    top: 12,
+    right: 12,
+    width: 78,
+    height: 78
+},
+
+'.alt_image_view': {
+    width: Ti.UI.SIZE,
+    height: 74
+}

@@ -1,0 +1,49 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for choosing a shipping or billing address.
+
+'#shipping_window': {
+    layout: 'vertical',
+    top: 0,
+    width: Ti.UI.SIZE,
+    height:Ti.UI.SIZE
+},
+
+'#address_contents': {
+    layout: 'vertical',
+    height: 460,
+    width: 600,
+    top: 30,
+    left: 78
+},
+
+'#address_container': {
+    layout: 'vertical',
+    height: Ti.UI.FILL
+},
+
+'#button_container': {
+    layout: 'horizontal',
+    height: 50,
+    left: 78,
+    top: 20
+},
+
+'#add_address_button': {
+    width: 228,
+    height: 42,
+    titleid: '_Add_New_Address'
+},
+
+'#next_button': {
+    width: 228,
+    left: 26,
+    height: 42,
+    titleid: '_Next'
+},
+
+'#no_addresses': {
+    height: 0,
+    width: Ti.UI.SIZE,
+    visible: false
+}

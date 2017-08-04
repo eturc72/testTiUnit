@@ -1,0 +1,137 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for search popover
+
+'#search': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#search_tab': {
+    height: 65,
+    borderColor: Alloy.Styles.color.border.searchViewGray,
+    borderWidth: 1,
+    width: '94%',
+    left: '3%',
+    layout: 'horizontal'
+},
+
+'.tab': {
+    width: '24.9%',
+    backgroundColor: Alloy.Styles.accentColor
+},
+
+'.tab_label': {
+    color: Alloy.Styles.color.text.searchViewGray,
+    font: Alloy.Styles.unselectedTabFont,
+    height: '100%',
+    width: '100%',
+    top: 0,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    backgroundColor: Alloy.Styles.color.background.transparentBlack30Percent
+},
+
+'.contents': {
+    left: 94,
+    right: 94,
+    top: 76,
+    layout: 'vertical',
+    height: 270
+},
+
+'#search_field': {
+    backgroundImage: Alloy.Styles.longMagnifierImage,
+    backgroundColor: Alloy.Styles.color.background.white,
+    color: Alloy.Styles.color.text.dark,
+    left: 0,
+    width: '100%',
+    font: Alloy.Styles.dialogFieldFont,
+    maxLength: 50,
+    paddingLeft: 90,
+    returnKeyType: Ti.UI.RETURNKEY_SEARCH,
+    clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+    keyboardType: Ti.UI.KEYBOARD_TYPE_EMAIL,
+    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+    autocorrect: false,
+    height: 64,
+    hintText: L( '_Enter_Search_Term_or_UPC_Code')
+},
+
+'#search_button': {
+    width: '20%',
+    right: '3%',
+    top: 25,
+    height: 55,
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    color: Alloy.Styles.buttons.primary.color,
+    font: Alloy.Styles.bigButtonFont,
+    titleid: '_Search'
+},
+
+'#message': {
+    left: '3%',
+    width: '70%',
+    top: 25,
+    height: Ti.UI.SIZE,
+    color: Alloy.Styles.color.text.red,
+    font: Alloy.Styles.calloutFontMedium,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'#landing': {
+    top: 20,
+    layout: 'vertical',
+    height: Ti.UI.SIZE
+},
+
+'#text_field_wrapper': {
+    layout: 'horizontal',
+    width: '94%',
+    height: 64,
+    top: -1,
+    left: '3%',
+    borderColor: Alloy.Styles.color.border.searchViewGray
+},
+
+'.or_label': {
+    color: Alloy.Styles.color.text.dark,
+    top: 20,
+    font: Alloy.Styles.headlineFont
+},
+
+'#scan_button': {
+    color: Alloy.Styles.buttons.primary.color,
+    top: 20,
+    height: 55,
+    width: 269,
+    bottom: 34,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    font: Alloy.Styles.bigButtonFont
+},
+
+'#product_search': {
+    titleid: '_Products_Tab'
+},
+
+'#customer_search': {
+    titleid: '_Customers_Tab'
+},
+
+'#order_search': {
+    titleid: '_Orders_Tab'
+},
+
+'.bar_code_scanner': {
+    backgroundImage: Alloy.Styles.searchScannerIcon,
+    accessibilityLabel: 'bar_code_scanner',
+    height: '80%',
+    width: '10.9%',
+    bubbleParent: false,
+    left: '2%'
+}

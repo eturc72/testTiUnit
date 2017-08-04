@@ -1,0 +1,28 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for PDP store details
+-->
+<Alloy>
+    <TableViewRow id="store_row_table">
+        <View id="store_detail_container">
+            <View id="store_detail_content_row">
+                <View id="store_container_left" class="store_container">
+                    <Label id="store_name" class="store_label_strong" text="{name}" accessibilityValue="store_name"/>
+                    <Label id="store_address1" class="store_label" text="{address1}" accessibilityValue="store_address1"/>
+                    <Label id="store_city_state_postal_code" class="store_label" text="{city_state_postal_code}" accessibilityValue="store_city_state_postal_code"/>
+                    <Label id="store_phone" class="store_label" text="{phone}" accessibilityValue="store_phone"/>
+                    <Label id="store_distance_text" class="store_label" text="{distance_text}" accessibilityValue="store_distance_text"/>
+                </View>
+                <View id="store_container_middle" class="store_container">
+                    <Label id="store_hours" class="store_label" text="{store_hours}" accessibilityValue="store_hours"/>
+                    <Label id="store_events" class="store_label_strong" text="{store_events}" accessibilityValue="store_events"/>
+                </View>
+                <View id="store_container_right" class="store_container">
+                    <Label id="store_availability" class="store_label_strong" text="{availability_message}" color="{availability_color}" accessibilityValue="store_availability"/>
+                    <Label id="store_availability_stock_level" class="store_label_strong" text="{availability_stock_level}" color="{availability_color}" accessibilityValue="store_availability_stock_level"/>
+                </View>
+            </View>
+            <View id="line" class="horizontal_separator"/>
+        </View>
+    </TableViewRow>
+</Alloy>

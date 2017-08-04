@@ -1,0 +1,105 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// This file contains user specific settings for the application. All configuration changes
+// should be made in this file so that all customized configuration is in one place. If a
+// configuration setting is not in this file, copy it from one of the other files in the config
+// directory into this file. Keeping a single file with all custom configuration allows for
+// support to replicate your configuration settings by using your user.js file.
+
+// Update: Some configuration settings have been moved into the Business Manager and removed from
+// these configuration files.  These new settings are either set at a global (Custom Site Preferences)
+// or store (Store custom attribute) level.
+// To change a global setting:
+//   - Select the site that EA connects to
+//   - Merchant Tools -> Site Preferences -> Custom Preferences
+//   - Select an Endless Aisle grouping you would like to change
+//   - Change the setting from the default value and click Apply
+// To change a store setting:
+//   - Select the site that EA connects to
+//   - Merchant Tools -> Online Marketing -> Stores
+//   - Select the store you want to set configurations on
+//   - See the Digital Store section
+//   - These settings are also available at the global level and
+//     are set as overrides so there are no default values
+// The global and store settings will be loaded before and after login in EA.
+// Store settings will override global settings.
+// By adding the configuration to the Business Manager this allows configuration changes
+// after deployment and does not require a rebuild of the application.
+// Note: If you have some settings in user.js that have been removed from the configuration files
+// they will be overriden by the defaults set in Business Manager.
+// For more information on Business Manager configurations see the EA Implementation Guide.
+
+module.exports = {
+    // The storefront host the EA application should connect to.
+    storefront_host : '<insert-hostname-here.demandware.net>',
+    // The storefront homepage url, update with your site name.
+    storefront_home : '/on/demandware.store/Sites-SiteGenesis-Site',
+    storefront : {
+        // The storefront site url, update with your site name.
+        site_url : '/on/demandware.store/Sites-SiteGenesis-Site'
+    },
+    ocapi : {
+        // The OCAPI site request url, update with your site name.
+        site_url : '/s/SiteGenesis',
+        // The customer's given ocapi client_id.
+        client_id : 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+    },
+    devices : {
+        // The payment terminal, either 'verifoneDevice', 'adyenDevice', or 'webDevice'.
+        // If using ‘webDevice’ be sure to set payment_entry from main.js to 'web'.
+        payment_terminal_module : 'verifoneDevice'
+    },
+    // If using pay through web you need to set to 'web' as well as set the devices.payment_terminal_module to 'webDevice'
+    payment_entry : 'default',
+
+    // If want to add another country, this is the sample code.
+    countryConfig : {
+        US : {
+            ocapi : {
+                site_url : '/s/SiteGenesis'
+            },
+            storefront : {
+                site_url : '/on/demandware.store/Sites-SiteGenesis-Site'
+            },
+            languagesSupported : ['en', 'fr', 'zh-CN', 'ja', 'de'], //This definition of these languages is in languageConfig
+            displayName : 'United States', //This string needs to be in strings.xml file.
+            value : 'US', // This value has to be unique, should have a corresponding entry in addressConfig.js and should match the key
+            appCurrency : 'USD' //This value is for which currency you want to shop in. The definiton of this currency is in currencyConfig
+        },
+        IT : {
+            ocapi : {
+                site_url : '/s/SiteGenesis'
+            },
+            storefront : {
+                site_url : '/on/demandware.store/Sites-SiteGenesis-Site'
+            },
+            languagesSupported : ['en', 'fr', 'zh-CN', 'ja', 'de'], //This definition of these languages is in languageConfig
+            displayName : 'Italy', //This string needs to be in strings.xml file.
+            value : 'IT', // This value has to be unique, should have a corresponding entry in addressConfig.js and should match the key
+            appCurrency : 'EUR' //This value is for which currency you want to shop in. The definiton of this currency is in currencyConfig
+        },
+        FR : {
+            ocapi : {
+                site_url : '/s/FrenchGenesis'
+            },
+            storefront : {
+                site_url : '/on/demandware.store/Sites-FrenchGenesis-Site'
+            },
+            languagesSupported : ['en', 'fr', 'zh-CN', 'ja', 'de'], //This definition of these languages is in language config
+            displayName : 'France', //This string needs to be in strings.xml file.
+            value : 'FR', // This value has to be unique, should have a corresponding entry in addressConfig.js and should match the key
+            appCurrency : 'EUR' //This value is for which currency you want to shop in. The definiton of this currency is in currencyConfig
+        },
+        JP : {
+            ocapi : {
+                site_url : '/s/JapanGenesis'
+            },
+            storefront : {
+                site_url : '/on/demandware.store/Sites-JapanGenesis-Site'
+            },
+            languagesSupported : ['en', 'fr', 'zh-CN', 'ja', 'de'], //This definition of these languages is in language config
+            displayName : 'Japan', //This string needs to be in strings.xml file.
+            value : 'JP', // This value has to be unique, should have a corresponding entry in addressConfig.js and should match the key
+            appCurrency : 'JPY' //This value is for which currency you want to shop in. The definiton of this currency is in currencyConfig
+        }
+    }
+};

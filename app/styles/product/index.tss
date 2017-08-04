@@ -1,0 +1,11 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for PDP
+
+'#product_detail_window': {
+    top: 55
+},
+
+'#product_detail_container': {
+    layout: 'horizontal'
+}

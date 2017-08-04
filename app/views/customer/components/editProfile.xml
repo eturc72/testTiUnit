@@ -1,0 +1,23 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for the edit customer profile page
+-->
+<Alloy>
+    <View class="profile_contents" id="edit_customer_profile">
+        <Require src="components/block_header" type="view" customLabel="L('_Edit_Profile')"/>
+        <View layout="vertical">
+            <View class="field_container">
+                <View id="first_name_container" class="left_two_column_container">
+                    <TextField class="half_width" id="customer_profile_first_name" value="{customer.first_name}" accessibilityLabel="customer_profile_first_name"/>
+                    <Label class="error_text" id="first_name_error" accessibilityValue="first_name_error"/>
+                </View>
+                <View id="last_name_container" class="right_two_column_container">
+                    <TextField class="half_width" id="customer_profile_last_name" value="{customer.last_name}" accessibilityLabel="customer_profile_last_name"/>
+                    <Label class="error_text" id="last_name_error" accessibilityValue="last_name_error"/>
+                </View>
+            </View>
+            <Button id="save_button" class="save_button" titleid="_Save" accessibilityValue="save_profile_button"/>
+            <Button id="cancel_button" class="cancel_button" titleid="_Cancel" accessibilityValue="cancel_profile_button"/>
+        </View>
+    </View>
+</Alloy>

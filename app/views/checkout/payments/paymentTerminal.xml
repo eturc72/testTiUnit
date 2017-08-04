@@ -1,0 +1,18 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for payment terminal dialog
+-->
+<Alloy>
+    <View id="payment_terminal_window">
+        <View id="backdrop"/>
+        <View id="payment_terminal_container">
+            <ImageView id="payment_image" accessibilityLabel="payment_image"/>
+            <Label id="payment_terminal_label" accessibilityValue="payment_terminal_label"/>
+            <View id="button_container">
+                <Button id="cancel_button" class="secondary_button" accessibilityValue="payment_cancel_button"/>
+                <Button id="manual_entry_button" class="primary_button" accessibilityValue="manual_entry_button"/>
+                <Button id="retry_button" class="primary_button" accessibilityValue="retry_button"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

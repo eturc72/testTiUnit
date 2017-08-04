@@ -1,0 +1,64 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for coupon rows
+
+'.coupon_row': {
+    height: Ti.UI.SIZE,
+    right: 0,
+    top: 0,
+    width: 320,
+    layout: 'vertical',
+    selectionStyle: Ti.UI.iOS.TableViewCellSelectionStyle.NONE
+},
+
+'#coupon_line_item_container': {
+    layout: 'horizontal',
+    left: 0,
+    top: 0,
+    height: 65,
+    width: 320
+},
+
+'#right_column': {
+    left: 0,
+    top: 0,
+    width: 260,
+    layout: 'vertical'
+},
+
+'.bold_text': {
+    top: 0,
+    font: Alloy.Styles.detailLabelFont
+},
+
+'.normal_text': {
+    top: 0,
+    left: 5,
+    font: Alloy.Styles.detailValueFont
+},
+
+'.image_column': {
+    left: 0,
+    top: 0,
+    height: 40,
+    width: 60,
+    layout: 'horizontal'
+},
+
+'#delete_coupon_button': {
+    backgroundImage: Alloy.Styles.closeButtonGrayImage,
+    top: 2,
+    left: 10,
+    width: 32,
+    height: 32
+},
+
+'#description_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE
+},
+
+'#title_code_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE
+}

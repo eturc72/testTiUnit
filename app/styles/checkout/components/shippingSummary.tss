@@ -1,0 +1,109 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for basket shipping details
+
+'.shipping_address_container': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    left: 0,
+    top: 0
+},
+
+'.name_label': {
+    font: Alloy.Styles.detailLabelFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    height: Ti.UI.SIZE,
+    width: '90%',
+    ellipsize: false,
+    wordWrap: true,
+    left: 20,
+    top: 10
+},
+
+'#phone': {
+    font: Alloy.Styles.sectionTitleFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    left: 20,
+    top: 5
+},
+
+'#email_address_label': {
+    font: Alloy.Styles.sectionTitleFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    left: 20,
+    top: 5
+},
+
+'.shipping_method_details_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    left: 20,
+    top: 10
+},
+
+'#method_label': {
+    font: Alloy.Styles.detailLabelFont,
+    textid: '_Method_'
+},
+
+'.shipping_type_label': {
+    font: Alloy.Styles.detailLabelFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    left: 5
+},
+
+'#shipping_details_label_container': {
+    backgroundColor: Alloy.Styles.color.background.medium,
+    borderWidth: 1,
+    borderColor: Alloy.Styles.color.border.darker,
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: 30,
+    layout: 'horizontal'
+},
+
+'#shipping_details_label': {
+    color: Alloy.Styles.accentColor,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    top: 2,
+    width: '100%',
+    font: Alloy.Styles.smallAccentFont,
+    left: 23,
+    height: 28,
+    textid: '_Shipping_Details'
+},
+
+'#gift_message_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    left: 20,
+    top: 10,
+    visible: false
+},
+
+'#gift_message_label': {
+    font: Alloy.Styles.detailLabelFont,
+    textid: '_Gift_Message_'
+},
+
+'#gift_message': {
+    ellipsize: true,
+    width: '50%',
+    height: 20
+},
+
+'#address_display': {
+    font: Alloy.Styles.sectionTitleFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    left: 20,
+    top: 10
+}
+

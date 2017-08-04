@@ -1,0 +1,116 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for error reporting dialog
+
+'#popover_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.25,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#popover_container': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    top: 76,
+    width: 650,
+    backgroundColor: Alloy.Styles.color.background.white,
+    borderWidth: 2,
+    borderColor: Alloy.Styles.color.border.lightest
+},
+
+'#error_title': {
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.titleFont,
+    height: Ti.UI.SIZE,
+    top: 20,
+    left: 20,
+    right: 20,
+    width: Ti.UI.FILL,
+    textid: '_Error_in_application'
+},
+
+'#describe_text_heading': {
+    textid: '_Please_help_us_resolve_the_problem_by_telling_us_what_you_were_doing_',
+    height: Ti.UI.SIZE,
+    top: 20
+},
+
+'#error_details': {
+    top: 0,
+    layout: 'vertical',
+    width: Ti.UI.FILL,
+    // These will change in the controller based on Show/Hide button
+    height: 0,
+    visible: false
+},
+
+'#error_text_heading': {
+    textid: '_Error_details_heading',
+    top: 20,
+    height: Ti.UI.SIZE
+},
+
+'.text_heading': {
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.appFont,
+    left: 20,
+    right: 20,
+    width: Ti.UI.FILL
+},
+
+'#describe_text_message': {
+    height: 80,
+    top: 10,
+    left: 20,
+    right: 20
+},
+
+'#error_scroll_container': {
+    left: 20,
+    right: 20,
+    top: 10,
+    height: 200,
+    width: Ti.UI.FILL
+},
+
+'#error_text_message': {
+    top: 10,
+    height: Ti.UI.SIZE,
+    left: 8
+},
+
+'.text_message': {
+    width: Ti.UI.FILL,
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.detailTextFont,
+    paddingLeft: 8
+},
+
+'.border': {
+    borderColor: Alloy.Styles.color.border.light,
+    borderWidth: 1
+},
+
+'#button_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    top: 40,
+    bottom: 20
+},
+
+'#details_button': {
+    titleid: '_Show_Details'
+},
+
+'#ok_button': {
+    titleid: '_OK',
+    left: 20
+}

@@ -1,0 +1,23 @@
+<!--
+// ©2017 salesforce.com, inc. All rights reserved.
+// View file for alternate shipping options
+-->
+<Alloy>
+    <View id="container">
+        <View id="picker_container" >
+            <View id="ship_to_address_wrapper" class="shipping_option_wrapper">
+                <ImageView id="ship_to_address_checkbox" class="shipping_option_checkbox checked_option" accessibilityValue="ship_to_address_checkbox" />
+                <Label id="ship_to_address_label" class="shipping_option_label" accessibilityValue="ship_to_address_label" />
+            </View>
+            <View id="ship_to_current_store_wrapper" class="shipping_option_wrapper" if="isShipToCurrentStoreEnabled()">
+                <ImageView id="ship_to_current_store_checkbox" class="shipping_option_checkbox unchecked_option" accessibilityValue="ship_to_current_store_checkbox" />
+                <Label id="ship_to_current_store_label" class="shipping_option_label" accessibilityValue="ship_to_current_store_label" />
+            </View>
+            <View id="dif_store_pickup_wrapper" class="shipping_option_wrapper" if="isDifferentStorePickupEnabled()">
+                <ImageView id="dif_store_pickup_checkbox" class="shipping_option_checkbox unchecked_option" accessibilityValue="dif_store_pickup_checkbox" />
+                <Label id="dif_store_pickup_label" class="shipping_option_label" accessibilityValue="dif_store_pickup_label" />
+            </View>
+        </View>
+        <View id="separator" />
+    </View>
+</Alloy>

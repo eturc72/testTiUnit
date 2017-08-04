@@ -1,0 +1,28 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for gift message
+
+'#gift_message_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    left: 20,
+    top: 5,
+    visible: false
+},
+
+'#gift_message_label': {
+    font: Alloy.Styles.detailLabelFont,
+    textid: '_Gift_Message_',
+    color: Alloy.Styles.color.text.mediumdark
+},
+
+'#gift_message': {
+    ellipsize: true,
+    width: '50%',
+    height: 20,
+    font: Alloy.Styles.detailLabelFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    left: 5
+}

@@ -1,0 +1,348 @@
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for sales reports
+
+'.salesReportDashboardContainer': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'.backdrop': {
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+    opacity: 0.25,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'.dashboard': {
+    top: 20,
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+    backgroundColor: Alloy.Styles.color.background.lightGray
+},
+
+'.activityIndicatorBackdrop': {
+    width: 0,
+    height: 0,
+    backgroundColor: Alloy.Styles.color.background.transparentBlack30Percent,
+    opacity: 0
+},
+
+'.activityIndicator': {
+    style: Ti.UI.ActivityIndicatorStyle.BIG
+},
+
+'.titlebar': {
+    top: 0,
+    height: 40,
+    backgroundColor: Alloy.Styles.accentColor,
+    visible: true
+},
+
+'.dashTitle': {
+    color: Alloy.Styles.accentColor,
+    top: 15,
+    font: Alloy.Styles.bigButtonFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+'.dashboardTitle': {
+    color: Alloy.Styles.color.text.white,
+    backgroundColor: Alloy.Styles.accentColor,
+    font: Alloy.Styles.detailLabelFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+'.verticalSeparator': {
+    backgroundColor: Alloy.Styles.accentColor,
+    width: 1,
+    height: Ti.UI.FILL
+},
+
+'.horizontalSeparator': {
+    backgroundColor: Alloy.Styles.accentColor,
+    width: Ti.UI.FILL,
+    height: 1
+},
+
+'.separator_left': {
+    left: 0
+},
+
+'.separator_right': {
+    right: 0
+},
+
+'.separator_bottom': {
+    bottom: 0
+},
+
+'.separator_top': {
+    top: 0
+},
+
+'.sidePanel': {
+    top: 40,
+    left: 0,
+    width: '30%',
+    height: Ti.UI.FILL,
+    backgroundColor: Alloy.Styles.color.background.lightGray
+},
+
+'.chartArea': {
+    top: 40,
+    right: 0,
+    width: '100%',
+    height: Ti.UI.FILL,
+    backgroundColor: Alloy.Styles.color.background.lightGray
+},
+
+'.chartControlPanel': {
+    top: '3%',
+    left: '2%',
+    height: '14%',
+    width: '70%',
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'.chartContainer': {
+    top: '20%',
+    left: '2%',
+    layout: 'vertical',
+    height: '78%',
+    width: '70%',
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'.quickStatPanel': {
+    top: '3%',
+    right: '2%',
+    height: '95%',
+    width: '24%',
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'.chartPanel': {
+    height: Ti.UI.FILL,
+    width: Ti.UI.FILL,
+    layout: 'vertical'
+},
+
+'.chartView': {
+    left: 0,
+    height: Ti.UI.FILL,
+    width: '50%'
+},
+
+'.chart': {
+    top: 0,
+    willHandleTouches: false,
+    hideLoadIndicator: true
+},
+
+'.shadow': {
+    viewShadowColor: Alloy.Styles.shadowGrayColor,
+    viewShadowOffset: {
+        x: 0,
+        y: 0
+    },
+    viewShadowRadius: 2
+},
+
+'.cbutton': {
+    height: Ti.UI.FILL,
+    width: '20%',
+    bubbleParent: true,
+    font: Alloy.Styles.bigButtonFont,
+    borderColor: Alloy.Styles.accentColor,
+    color: Alloy.Styles.accentColor,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'.controlButtons': {
+    top: 0,
+    layout: 'horizontal',
+    height: '55%'
+},
+
+'.quickStatsContainer': {
+    top: 51,
+    allowsSelection: false,
+    width: Ti.UI.FILL,
+    separatorColor: Alloy.Styles.color.background.transparent
+},
+
+'.scrollableViewControl': {
+    layout: 'horizontal',
+    backgroundColor: Alloy.Styles.accentColor,
+    top: 0,
+    height: '8%'
+},
+
+'.scrollableViewControlButton': {
+    left: 0,
+    width: '33.33%',
+    borderColor: Alloy.Styles.accentColor,
+    color: Alloy.Styles.accentColor,
+    backgroundColor: Alloy.Styles.color.background.white,
+    font: Alloy.Styles.buttonFont,
+    bubbleParent: true,
+    height: Ti.UI.FILL
+},
+
+'.dateFilterInfoView': {
+    top: 52,
+    width: Ti.UI.FILL,
+    height: '45%'
+},
+
+'.dateInfo': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    height: Ti.UI.FILL,
+    font: Alloy.Styles.detailLabelFont
+},
+
+'.hamburgerMenu': {
+    left: 5,
+    width: '4%',
+    height: '95%',
+    backgroundImage: Alloy.Styles.viewListIconWhite,
+    backgroundSelectedImage: Alloy.Styles.viewListIconBlack,
+    backgroundColor: Alloy.Styles.accentColor
+},
+
+'.disableArea': {
+    width: '100%',
+    height: '100%',
+    backgroundColor: Alloy.Styles.color.background.transparentBlack30Percent
+},
+
+'.enableArea': {
+    width: '0%',
+    height: '0%',
+    backgroundColor: Alloy.Styles.color.background.transparentBlack30Percent
+},
+
+'.assocTable': {
+    top: 0,
+    separatorColor: Alloy.Styles.accentColor,
+    backgroundColor: Alloy.Styles.color.background.lightGray
+},
+
+'.rankViewControlContainer': {
+    top: 0,
+    height: '10%'
+},
+
+'.rankViewControlButton': {
+    left: 0,
+    width: '49.99%',
+    borderColor: Alloy.Styles.accentColor,
+    color: Alloy.Styles.accentColor,
+    backgroundColor: Alloy.Styles.color.background.white,
+    font: Alloy.Styles.buttonFont,
+    bubbleParent: true,
+    height: Ti.UI.FILL
+},
+
+'.rankViewControl': {
+    width: '50%',
+    height: '80%',
+    layout: 'horizontal'
+},
+
+'.sbuttonSelected': {
+    color: Alloy.Styles.color.text.white,
+    backgroundColor: Alloy.Styles.accentColor
+},
+
+'.reloadButton': {
+    viewShadowColor: Alloy.Styles.accentColor,
+    viewShadowOffset: {
+        x: 0,
+        y: 0
+    },
+    viewShadowRadius: 2,
+    right: 10,
+    bottom: 10,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundImage: Alloy.Styles.refreshImageWhite,
+    backgroundSelectedImage: Alloy.Styles.refreshImageBlack,
+    borderWidth: 3,
+    borderColor: Alloy.Styles.accentColor
+},
+
+'.rankViewChart[if=Alloy.Models.associate.hasStoreLevelSalesReportsPrivileges()]': {
+    top: '10.5%'
+},
+
+'.rankViewChart[if=!Alloy.Models.associate.hasStoreLevelSalesReportsPrivileges()]': {
+    top: 0
+},
+
+'.closeIcon': {
+    backgroundImage: Alloy.Styles.clearTextImage,
+    right: 5
+},
+
+'.scrollableWebViewContainer': {
+    top: 0,
+    scrollingEnabled: false
+},
+
+'.errorMsg': {
+    font: Alloy.Styles.errorMessageFont,
+    color: Alloy.Styles.color.text.dark,
+    opacity: 0,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#quick_stat_panel_title': {
+    textid: '_Quick_Stats'
+},
+
+'#associates_ranking': {
+    titleid: '_Associates'
+},
+
+'#stores_ranking': {
+    titleid: '_Stores'
+},
+
+'#today': {
+    titleid: '_Today'
+},
+
+'#week': {
+    titleid: '_Week'
+},
+
+'#month': {
+    titleid: '_Month'
+},
+
+'#quarter': {
+    titleid: '_Quarter'
+},
+
+'#custom_date': {
+    titleid: '_Custom'
+},
+
+'#sales_web_view_control': {
+    titleid: '_Sales'
+},
+
+'#items_sold_view_control': {
+    titleid: '_Items_Sold'
+},
+
+'#ranks_web_view_control': {
+    titleid: '_Ranks'
+},
+
+'.qPanelTitleSeparator': {
+    top: 50
+}

@@ -1,0 +1,229 @@
+// ©2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for different store pickup form
+
+'#container': {
+    top: 0,
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE
+},
+
+'#address_form_container': {
+    showVerticalScrollIndicator: true,
+    width: '100%',
+    layout: 'vertical',
+    top: 15,
+    disableBounce: true,
+    height: 0,
+    visible: false
+},
+
+'#store_selector_container':{
+    width: Ti.UI.SIZE,
+    layout: 'vertical',
+    top: 15,
+    height: '96%'
+},
+'.address_container': {
+    top: 20,
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    width: 532
+},
+
+'#postal_code_form_container':{
+    top: 5
+},
+
+'#store_picker_container': {
+    backgroundColor: Alloy.Styles.color.background.white,
+    width: '100%',
+    top: 10,
+    height: Ti.UI.SIZE,
+    layout: 'vertical'
+},
+
+'#store_list_container': {
+    top: 0,
+    width: 490,
+    height: 380,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#footer_wrapper': {
+    height: 0,
+    width: 490,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#footer_indicator_wrapper': {
+    height: 50,
+    width: 490,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#footer_indicator': {
+    style: Ti.UI.ActivityIndicatorStyle.DARK
+},
+
+'.button_container': {
+    top: 10,
+    height: 60,
+    width: 532
+},
+
+'#next_button_wrapper': {
+    layout: 'vertical',
+    right: 0,
+    top: 0,
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE
+},
+
+'#address_form_button_wrapper':{
+    top: 0,
+    height: Ti.UI.SIZE,
+    width: '100%'
+}
+
+'#address_form_button_container':{
+    top: 25
+},
+
+'#store_selected_next_button': {
+    top: 3,
+    left: 0,
+    enabled: true,
+    titleid: '_Next'
+},
+
+'#address_form_next_button': {
+    top: 3,
+    right: 0,
+    titleid: '_Next'
+},
+
+'#address_form_previous_button': {
+    top: 3,
+    left: 0,
+    titleid: '_Go_Back',
+    width: 160
+},
+
+'#no_result_container':{
+    top: 10,
+    width: 532,
+    height: 0,
+    visible: false
+},
+
+'#no_result':{
+    textid: '_No_stores_found',
+    width: '100%',
+    font: Alloy.Styles.messageFont,
+    textAlign: 'center'
+},
+
+'#unavailable_items_popover': {
+    backgroundColor: Alloy.Styles.color.background.white,
+    arrowDirection: Ti.UI.iPad.POPOVER_ARROW_DIRECTION_LEFT
+},
+
+'#unavailable_items_list': {
+    backgroundColor: Alloy.Styles.color.background.white,
+    rowSeparatorInsets: {
+        left: 1,
+        right: 1
+    },
+    top: 0,
+    height: 300,
+    width: 400,
+    separatorColor: Alloy.Styles.color.background.darkGray
+},
+
+'.full_wrapper': {
+    left: 0,
+    top: 15,
+    height: 50,
+    width: Ti.UI.SIZE
+},
+
+'.full_container': {
+    left: 0,
+    top: 0,
+    height: Ti.UI.SiZE,
+    width: 532,
+    layout: 'vertical'
+},
+
+
+'#search_fields': {
+    left: '2%',
+    width: '30%',
+    layout: null,
+    height: 50
+},
+
+'#postal_code_fields': {
+    left: 0,
+    width: '66%'
+},
+'#postal_code': {
+    left: 0,
+    width: '100%',
+    required: true,
+    hasSpecificOnBlurValidationFunction: true,
+    hintTextid: '_Enter_zip_code_for_store_pickup',
+    autocorrect: false,
+    clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ALWAYS,
+    returnKeyType: Ti.UI.RETURNKEY_SEARCH,
+    originalBorderColor: Alloy.Styles.color.border.dark,
+    originalBackgroundColor: Alloy.Styles.color.background.white,
+    borderColor: Alloy.Styles.color.border.dark,
+    backgroundColor: Alloy.Styles.color.background.white,
+    borderWidth: 1,
+    borderRadius: 2,
+    font: Alloy.Styles.textFieldFont,
+    paddingLeft: 18,
+    maxLength: 50,
+    color: Alloy.Styles.color.text.darkest,
+    height: 50
+},
+'#search_button': {
+    titleid: '_Search',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: Alloy.Styles.buttons.primary.color,
+    disabledColor: Alloy.Styles.buttons.primary.disabledColor,
+    backgroundImage: Alloy.Styles.buttons.primary.backgroundImage,
+    backgroundDisabledImage: Alloy.Styles.buttons.primary.backgroundDisabledImage,
+    height: 40,
+    width: '96%',
+    left: '2%'
+},
+
+'#postal_code_title_label': {
+    color: Alloy.Styles.color.text.dark,
+    font: Alloy.Styles.detailTextFont,
+    width: '100%',
+    left: 0,
+    top: 5,
+    height: 20,
+    textid: '_Search_stores_by_zip_code_below',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'#postal_code_error':{
+    color: Alloy.Styles.color.text.red,
+    height: 0,
+    width: '100%',
+    left: 0,
+    top: 2,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font: Alloy.Styles.errorMessageFont
+},
+
+'#postal_code_fields_container': {
+    top: 0,
+    layout: 'horizontal',
+    width: '100%'
+},

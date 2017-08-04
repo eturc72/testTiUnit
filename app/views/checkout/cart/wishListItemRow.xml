@@ -1,0 +1,18 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for wish list item row
+-->
+<Alloy>
+    <TableViewRow contains_product_image="true" product_id="{row_id}" id="product_list_item_row_table">
+        <View id="product_list_item_container" class="pli_row" contains_product_image="true">
+            <Require src="checkout/cart/productItem" id="product_list_item"/>
+            <View id="button_container">
+                <View id="edit_delete_button_container">
+                    <Button id="edit_button" class="round_button" accessibilityValue="edit_button"/>
+                    <Button id="delete_button" class="round_button" accessibilityValue="delete_button"/>
+                </View>
+                <Button id="add_to_cart_button" class="button not_top_button" accessibilityValue="add_button"/>
+            </View>
+        </View>
+    </TableViewRow>
+</Alloy>

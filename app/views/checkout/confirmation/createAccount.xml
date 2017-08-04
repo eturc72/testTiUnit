@@ -1,0 +1,27 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for create account
+-->
+<Alloy>
+    <ScrollView id="create_account_window">
+        <View id="backdrop"/>
+        <View id="create_account_container">
+            <View id="create_account_header">
+                <Button id="skip_button" class="secondary_button" accessibilityValue="skip_button"/>
+                <Label id="create_account_header_label" accessibilityValue="create_account_header_label"/>
+                <Button id="create_button" class="primary_button" accessibilityValue="create_button"/>
+            </View>
+            <View id="create_account_details_container" >
+                <Label id="create_account_question_label" accessibilityValue="create_account_question_label"/>
+                <TextField id="first_name" class="create_account_text" accessibilityLabel="first_name"/>
+                <TextField id="last_name" class="create_account_text" accessibilityLabel="last_name"/>
+                <TextField id="email" class="create_account_text" accessibilityLabel="email"/>
+                <View id="save_address_container">
+                    <Switch id="save_address_switch" accessibilityLabel="login_customer_switch"/>
+                    <Label id="save_address_label" accessibilityValue="save_address_label"/>
+                </View>
+                <Label id="error_message" accessibilityValue="error_message"/>
+            </View>
+        </View>
+    </ScrollView>
+</Alloy>

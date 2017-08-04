@@ -1,0 +1,13 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for medium swatch refinement
+-->
+<Alloy>
+    <TableViewSection id="mediumSwatchRefinement">
+        <HeaderView>
+            <View id="mediumSwatchRefinementHeader">
+                <Label id="mediumSwatchRefinementHeaderLabel" accessibilityValue="medium_swatch_refinement_header_label"/>
+            </View>
+        </HeaderView>
+    </TableViewSection>
+</Alloy>

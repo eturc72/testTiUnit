@@ -1,0 +1,31 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for image zoom
+-->
+<Alloy>
+    <View id="imageZoom">
+        <View id="backdrop"/>
+        <View id="zoom_container">
+            <Button id="close_button" accessibilityLabel="zoom_close_button"/>
+            <ScrollView id="detail_image_container" >
+                <ImageView id="detail_image" accessibilityValue="detail_image"/>
+            </ScrollView>
+            <View id="vertical_separator" class="vertical_separator"/>
+            <View id="control_column">
+                <View class="label_container">
+                    <Label id="color_label" accessibilityValue="zoom_color_label"/>
+                    <Label id="color_name" accessibilityValue="zoom_color_name"/>
+                </View>
+                <ScrollView id="swatches_container">
+                    <View id="alt_swatches_box" class="alt_box"/>
+                </ScrollView>
+                <View class="label_container">
+                    <Label id="other_views_label" accessibilityValue="other_views_label"/>
+                </View>
+                <ScrollView id="alt_images_container">
+                    <View id="alt_center_box" class="alt_box"/>
+                </ScrollView>
+            </View>
+        </View>
+    </View>
+</Alloy>

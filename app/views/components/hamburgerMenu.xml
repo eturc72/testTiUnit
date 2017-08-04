@@ -1,0 +1,26 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for hamburger menu
+-->
+<Alloy>
+    <View id="container" class="container" onClick="showHideHamburgerMenu">
+        <View id="side_bar_wrapper">
+            <TableView id="side_bar" onSingletap="handleMenuSelect">
+                <HeaderView>
+                    <View id="menu_header">
+                        <Label id="associate_salute_msg" accessibilityValue="associate_salute_msg"/>
+                        <Button id="associate_logout" onSingletap="onAssociateLogoutClick"  accessibilityValue="associate_logout"/>
+                    </View>
+                </HeaderView>
+                <FooterView>
+                    <View id="footer_view"/>
+                </FooterView>
+            </TableView>
+            <View id="admin_dashboard_wrapper">
+                <View class="separator"/>
+                <Button id="admin_dashboard" onSingletap="handleAdminDashboardButtonClick" accessibilityValue="admin_dashboard"/>
+                <View class="separator"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

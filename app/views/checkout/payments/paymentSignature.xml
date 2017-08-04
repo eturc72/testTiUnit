@@ -1,0 +1,35 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for payment signature
+-->
+<Alloy>
+    <Collection id="printerList" instance="true" src="printer"/>
+    <View id="payment_signature_window">
+        <View id="backdrop"/>
+        <View id="payment_container">
+            <View id="contents" class="main_contents" visible="false">
+                <Require id="prompt_signature" hideCancel="true" src="checkout/payments/promptSignature"/>
+            </View>
+            <View id="receipt_question_container" class="main_contents" visible="true">
+                <View id="payment_confirmation_container">
+                    <Label id="thank_you_label" accessibilityValue="thank_you_label"/>
+                    <Label id="payment_confirmation_line1" class="payment_confirmation_label" accessibilityValue="payment_confirmation_line1"/>
+                    <Label id="order_no" class="payment_confirmation_label" accessibilityValue="order_no"/>
+                </View>
+                <Label id="divider" accessibilityValue="divider"/>
+                <View id="question_container">
+                    <Label id="receipt_question_label" accessibilityValue="receipt_question_label"/>
+                    <View id="button_container">
+                        <View id="email_button_container">
+                            <Button id="email_button" class="receipt_button secondary_button" accessibilityValue="signature_email_button"/>
+                        </View>
+                        <View id="print_container">
+                            <Button id="print_button" class="receipt_button secondary_button" accessibilityValue="signature_print_button"/>
+                            <Require id="printer_chooser" src="checkout/confirmation/printerChooser"/>
+                        </View>
+                    </View>
+                </View>
+            </View>
+        </View>
+    </View>
+</Alloy>

@@ -1,0 +1,72 @@
+// ©2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for store pickup table view row
+
+'#store_row': {
+    height: 120,
+    width: '100%',
+    borderWidth: 1,
+    touchEnabled: false,
+    selectionStyle: Ti.UI.iOS.TableViewCellSelectionStyle.NONE
+},
+
+'#store_detail_content': {
+    height: 120,
+    width: '50%',
+    layout: 'vertical',
+    left: 0
+},
+
+'.store_info': {
+    textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+    left: 20,
+    top: 5,
+    height: Ti.UI.SIZE,
+    font: Alloy.Styles.sectionTitleFont
+},
+
+'#store_address': {
+    color: Alloy.Styles.color.text.mediumdark,
+    top: 8
+},
+
+'#store_distance': {
+    color: Alloy.Styles.color.text.green
+},
+
+'#basket_availability_wrapper': {
+    height: 120,
+    width: '50%',
+    right: 0
+},
+
+'#unavailability_message': {
+    color: Alloy.Styles.color.text.red,
+    font: Alloy.Styles.appBoldFont,
+    right: 40
+},
+
+'.checkbox': {
+    height: 25,
+    width: 25,
+    right: 65
+},
+
+'.checked_option': {
+    image: Alloy.Styles.roundCheckboxDarkGray,
+    checked: true
+},
+
+'.unchecked_option': {
+    image: Alloy.Styles.unselectedRoundCheckboxDarkGray,
+    checked: false
+},
+
+'#unavailable_basket_button': {
+    right: 10,
+    style: Ti.UI.iOS.SystemButton.DISCLOSURE,
+    tintColor: Alloy.Styles.color.border.red,
+    borderColor: Alloy.Styles.color.background.transparent,
+    backgroundColor: Alloy.Styles.color.background.transparent
+    
+}

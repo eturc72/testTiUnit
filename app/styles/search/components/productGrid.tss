@@ -1,0 +1,17 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for product grid
+
+'#search_context': {
+    backgroundColor: Alloy.Styles.color.background.medium
+},
+
+'#productGrid': {
+    layout: 'absolute',
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#productGridContainer': {
+    layout: 'absolute',
+    top: 0
+}

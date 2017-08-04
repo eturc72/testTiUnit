@@ -1,0 +1,12 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for mega menu leaf
+-->
+<Alloy>
+    <Collection id="leafCategories" src="category" instance="true"/>
+    <View id="leaf_container" class="menu_column" dataCollection="$.leafCategories">
+        <View class="menu_leaf_container" >
+            <Label id="_{id}" categoryid="{id}" class="menu_leaf" text="{name}" accessibilityValue="menu_leaf"/>
+        </View>
+    </View>
+</Alloy>

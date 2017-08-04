@@ -1,0 +1,44 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for product detail base controller
+-->
+<Alloy>
+    <View id="product_order_details_view">
+        <View id="left_column">
+            <View id="breadcrumb_bar">
+                <Button id="breadcrumbs_back_button" accessibilityLabel="breadcrumbs_back_button"/>
+                <View class="vertical_separator"/>
+            </View>
+            <!-- primary images -->
+            <Require id="primary_images" src="product/images/images"/>
+        </View>
+        <View id="vertical_shadow_separator_left"/>
+        <View id="right_column">
+            <!-- data bind list of buttons -->
+            <View id="pdp_tab_buttons" >
+                <Button id="details_button" class="tab_button" associatedView="pdp_details_tab" includePdpHeader="yes" accessibilityValue="pdp_details_tab_button" />
+                <View class="vertical_separator"/>
+                <Button id="description_button" class="tab_button" associatedView="pdp_description_tab" includePdpHeader="yes" accessibilityValue="pdp_description_tab_button" />
+                <View id="recommendations_separator" class="vertical_separator"/>
+                <Button id="recommendations_button" class="tab_button" associatedSeparator="recommendations_separator" associatedView="pdp_recommendations_tab" accessibilityValue="pdp_recommendations_tab_button" />
+                <View id="store_availability_separator" class="vertical_separator" visible="false"/>
+                <Button id="store_availability_button" class="tab_button" associatedSeparator="store_availability_separator" associatedView="pdp_store_availability_tab" accessibilityValue="pdp_store_availability_tab_button" />
+            </View>
+            <!-- container for all tabs -->
+            <View id="tab_page_container">
+                <!-- depending on product type the pdp_header and options tab will be created accordingly-->
+                <View id="pdp_header"/>
+                <View id="pdp_details_tab" class="tab_view"/>
+                <View id="pdp_description_tab"  class="height_zero tab_view">
+                    <Require id="product_description" src="product/tabs/description"/>
+                </View>
+                <View id="pdp_recommendations_tab" class="height_zero tab_view">
+                    <Require id="recommendations_container" src="product/tabs/recommendations"/>
+                </View>
+                <View id="pdp_store_availability_tab" class="height_zero tab_view">
+                    <Require id="store_availability_container" src="product/tabs/storeAvailability"/>
+                </View>
+            </View>
+        </View>
+    </View>
+</Alloy>

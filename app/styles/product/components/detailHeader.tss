@@ -1,0 +1,79 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for PDP detail header
+
+'#pdp_header': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    left: 7
+},
+
+'#product_name': {
+    width: '100%',
+    height: Ti.UI.SIZE,
+    font: Alloy.Styles.featuredProductFont,
+    top: 20,
+    color: Alloy.Styles.color.text.darkest
+},
+
+'#pdp_info_container': {
+    layout: 'absolute',
+    height: Ti.UI.SIZE,
+    width: '100%',
+    top: 10
+},
+
+'#pricing_container': {
+    layout: 'absolute',
+    height: Ti.UI.SIZE,
+    width: '100%'
+},
+
+'.pdp_label_text': {
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.detailTextFont,
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE
+},
+
+'#product_id': {
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.detailTextFont,
+    width: 240,
+    left: 3,
+    ellipsize: true,
+    height: Ti.UI.SIZE
+},
+
+'#pdp_product_id': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    left: 0
+},
+
+'#stars': {
+    width: Ti.UI.SIZE,
+    height: Ti.UI.SIZE,
+    layout: 'horizontal'
+},
+
+'.star_image': {
+    width: 20,
+    height: 20
+},
+
+'#pdp_ratings': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    left: 320
+},
+
+'#pdp_info_text': {
+    textid: '_Item__'
+},
+
+'#pdp_rating_label': {
+    textid: '_Product_Rating_'
+}

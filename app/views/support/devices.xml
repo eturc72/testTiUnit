@@ -1,0 +1,13 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for device related tabs in admin dashboard
+-->
+<Alloy>
+    <View title="Support Dashboard - Devices" tabBarHidden="false" navBarHidden="false">
+        <View id="devices_main">
+            <View id="data_column"/>
+            <View id="vertical_border"/>
+            <View id="action_column"/>
+        </View>
+    </View>
+</Alloy>

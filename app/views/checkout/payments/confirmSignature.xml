@@ -1,0 +1,20 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for confirm signature
+-->
+<Alloy>
+    <View id="confirm_signature_window">
+        <View id="backdrop"/>
+        <View id="signature_container">
+            <View id="padding_container">
+                <Label id="signature_label" accessibilityValue="signature_label"/>
+                <Label id="signature_explanation_label" accessibilityValue="signature_explanation_label"/>
+                <ImageView id="signature_view" accessibilityValue="signature_view" />
+                <View id="signature_button_container">
+                    <Button id="decline_button" class="secondary_button" accessibilityValue="decline_button"/>
+                    <Button id="accept_button" class="primary_button" accessibilityValue="accept_button"/>
+                </View>
+            </View>
+        </View>
+    </View>
+</Alloy>

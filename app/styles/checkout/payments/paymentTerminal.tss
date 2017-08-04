@@ -1,0 +1,63 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for payment terminal dialog
+
+'#payment_terminal_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#payment_terminal_container': {
+    layout: 'vertical',
+    width: '50%',
+    height: Ti.UI.SIZE,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#payment_image': {
+    image: 'images/checkout/paymentTerminal.png',
+    height: 40,
+    width: 40,
+    top: 20
+},
+
+'#payment_terminal_label': {
+    top: 20,
+    font: Alloy.Styles.tabFont,
+    color: Alloy.Styles.color.text.medium,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    width: '90%',
+    textid: '_Please_process_payment_through_the_payment_terminal_'
+},
+
+'#button_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    top: 40,
+    bottom: 20
+},
+
+'#cancel_button': {
+    titleid: '_Cancel'
+},
+
+'#manual_entry_button': {
+    titleid: '_Manual_Entry',
+    left: 10
+},
+
+'#retry_button': {
+    titleid: '_Retry',
+    left: 10,
+    width: 0,
+    visible: false
+}

@@ -1,0 +1,10 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for product id display
+-->
+<Alloy>
+    <View id="pdp_product_id">
+        <Label id="product_id_label" class="pdp_label_text" accessibilityValue="pdp_info_text" />
+        <Label id="product_id" class="pdp_label_text" accessibilityValue="product_id" />
+    </View>
+</Alloy>

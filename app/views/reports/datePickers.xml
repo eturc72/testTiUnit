@@ -1,0 +1,33 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for date picker in reports
+-->
+<Alloy>
+    <View class="outterContainer" id="outterContainer">
+        <View id="container" class="container">
+            <View class="pickerContainer" id="picker_container">
+                <View class="dateFromWrapper pickerWrapper shadow" id="date_from_wrapper">
+                    <View class="titleView" id="title_view_from">
+                        <Label class="title" id="title_from" accessibilityValue="title_from"/>
+                        <View id="seperator_date_from" class="horizontalSeparator"/>
+                    </View>
+                    <Picker id="date_from" accessibilityValue="date_from" type="Titanium.UI.PICKER_TYPE_DATE"  useSpinner="true"/>
+                </View>
+                <View class="dateToWrapper pickerWrapper shadow" id="date_to_wrapper">
+                    <View class="titleView" id="title_view_to">
+                        <Label class="title" id="title_to" accessibilityValue="title_to"/>
+                        <View id="seperator_date_to" class="horizontalSeparator"/>
+                    </View>
+                    <Picker id="date_to" accessibilityValue="date_to" type="Titanium.UI.PICKER_TYPE_DATE" useSpinner="true"/>
+                </View>
+            </View>
+            <View class="controlsWrapper" id="controls_wrapper">
+                <Button id="cancel" class="cbutton shadow" accessibilityValue="date_cancel"/>
+                <Button id="go" class="cbutton shadow" accessibilityValue="date_go"/>
+            </View>
+            <View id="date_range_msg_container">
+                <Label id="date_range_msg" class="dateRangeMsg" accessibilityValue="date_range_msg"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

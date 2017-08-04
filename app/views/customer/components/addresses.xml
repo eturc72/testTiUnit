@@ -1,0 +1,19 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for the customer addresses page
+-->
+<Alloy>
+    <Collection id="customerAddresses" src="customerAddress" instance="true" />
+    <View id="addresses_contents" class="addresses_contents">
+        <View id="new_address_row" class="new_address_row">
+            <Button titleid="_Add_New_Address" class="new_address_button" id="new_address_button" accessibilityValue="new_address_button"/>
+        </View>
+        <View height="1" width="100%" backgroundColor="#dddddd" class="horizontal_bar"/>
+        <Label id="no_addresses"/>
+        <View height="750" id="addresses_container">
+            <ScrollView id="address_list" dataCollection="$.customerAddresses" dataTransform="transformAddress">
+                <Require src="customer/components/addressTile" type="view"/>
+            </ScrollView>
+        </View>
+    </View>
+</Alloy>

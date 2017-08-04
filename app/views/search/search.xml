@@ -1,0 +1,31 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for search popover
+-->
+<Alloy>
+    <View class="search">
+        <View id="backdrop" />
+        <View class="contents" id="contents"  >
+            <View id="landing" >
+                <View id="search_tab">
+                    <View class="tab">
+                        <Button id="product_search" accessibilityValue="product_search" class="tab_label" onClick="handleTabSelect"/>
+                    </View>
+                    <View class="tab" if="!isKioskMode()">
+                        <Button id="customer_search" accessibilityValue="customer_search" class="tab_label" onClick="handleTabSelect"/>
+                    </View>
+                    <View class="tab" if="allowOrderSearchTab()">
+                        <Button id="order_search" accessibilityValue="order_search" class="tab_label" onClick="handleTabSelect"/>
+                    </View>
+                </View>
+                <View id="text_field_wrapper">
+                    <TextField id="search_field" accessibilityLabel="search_field"/>
+                </View>
+            </View>
+            <View id="search_msg_button_wrapper">
+                <Button id="search_button" accessibilityValue="search_button"/>
+                <Label id="message" accessibilityValue="search_results_error"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

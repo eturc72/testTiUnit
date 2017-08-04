@@ -1,0 +1,11 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for the confirmation window
+-->
+<Alloy>
+    <View id="confirmation_container">
+        <Require src="components/orders/orderHeader" id="order_header"/>
+        <View id="separator"/>
+        <Require src="components/orders/orderProductDetails" id="order_product_details"/>
+    </View>
+</Alloy>

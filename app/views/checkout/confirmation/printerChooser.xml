@@ -1,0 +1,18 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for printer choosing
+-->
+<Alloy>
+    <Collection id="printerList" instance="true" src="printer"/>
+    <View id="printer_chooser_container">
+        <View id="printer_label_container">
+            <Label id="print_label"/>
+            <Label id="chosen_printer_label"/>
+        </View>
+        <TableView id="printer_table" dataCollection="$.printerList">
+            <TableViewRow id="printer_table_row">
+                <Label id="printer_list_item" text="{ip}"/>
+            </TableViewRow>
+        </TableView>
+    </View>
+</Alloy>

@@ -1,0 +1,34 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for main application index
+-->
+<Alloy>
+    <Model src="customer" />
+    <Model src="associate" />
+    <Model src="baskets" />
+    <Model src="category" />
+    <Model src="product" />
+    <Model src="productSearch" />
+    <Window class="tabgroup">
+        <Require id="header" src="components/header" type="view" />
+        <Require id="hamburger_menu" src="components/hamburgerMenu" type="view" />
+        <View id="product_search_tab" class="tab_container">
+            <Require id="product_search" src="search/index" type="view" />
+        </View>
+        <View id="product_detail_tab" class="tab_container" visible='false'>
+            <Require id="product_index" src="product/index" type="view" />
+        </View>
+        <View id="customer_search_tab" class="tab_container" visible='false'>
+            <Require id="customer_results" src="customerSearch/index" type="view" />
+        </View>
+        <View id="customer_tab" class="tab_container" visible='false'>
+            <Require id="customer_tabset" src="customer/index" type="view" />
+        </View>
+        <View id="cart_tab" class="tab_container" visible='false'>
+            <Require id="cart" src="checkout/index" type="view" />
+        </View>
+        <View id="order_tab" class="tab_container" visible='false'>
+            <Require id="order_results" src="customer/components/orderSearchResult" type="view"/>
+        </View>
+    </Window>
+</Alloy>

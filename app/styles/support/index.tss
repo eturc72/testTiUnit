@@ -1,0 +1,127 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for Admin Dashbaord
+
+'#support_window': {
+    zIndex: 101,
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#title': {
+    color: Alloy.Styles.color.text.white,
+    width: '95%',
+    height: 55,
+    top: 0,
+    backgroundColor: Alloy.Styles.accentColor,
+    font: Alloy.Styles.detailLabelFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+'#dashboard_container': {
+    layout: 'horizontal',
+    top: 0,
+    height: Ti.UI.FILL,
+    visible: false
+},
+
+'#close_icon': {
+    image: Alloy.Styles.clearTextImage,
+    right: 0,
+    top: 12
+},
+
+'#titlebar': {
+    height: 55,
+    layout: 'horizontal',
+    backgroundColor: Alloy.Styles.accentColor,
+    visible: false
+},
+
+'#left_column': {
+    layout: 'vertical',
+    width: 688,
+    left: 0,
+    height: Ti.UI.FILL,
+    top: 0
+},
+
+'#right_column': {
+    layout: 'vertical',
+    width: 332,
+    left: 0,
+    top: 0
+},
+
+'#divider': {
+    backgroundColor: Alloy.Styles.color.background.medium,
+    width: 3,
+    height: Ti.UI.FILL,
+    top: 0,
+    left: 0
+},
+
+'.dashboard_tabs': {
+    backgroundColor: Alloy.Styles.tabs.backgroundColorEnabled,
+    font: Alloy.Styles.tabFont,
+    width: 148,
+    top: 0,
+    left: 0,
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+    visible: true,
+    enabled: true
+},
+
+'.header_tabgroup': {
+    top: 0,
+    left: 0,
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+    layout: 'absolute'
+},
+
+'#configuration_tab': {
+    top: 0,
+    left: 0,
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+    visible: true,
+    enabled: true
+},
+
+'.header_tab': {
+    top: 0,
+    left: 0,
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+    visible: false,
+    enabled: false
+},
+
+'#info_window': {
+    top: 0,
+    left: 0,
+    width: 200,
+    height: 200
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: Ti.UI.FILL,
+    height: Ti.UI.FILL,
+    opacity: 0.25,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'.dashboard': {
+    layout: 'vertical',
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#header': {
+    height: 40,
+    backgroundColor: Alloy.Styles.color.background.medium,
+    layout: 'horizontal'
+}
+

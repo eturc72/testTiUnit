@@ -1,0 +1,9 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for alternate video
+-->
+<Alloy>
+    <View id="alt_video_container">
+        <ImageView id="small_video_view" accessibilityValue="small_video_view" />
+    </View>
+</Alloy>

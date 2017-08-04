@@ -1,0 +1,15 @@
+<!--
+// ©2017 salesforce.com, inc. All rights reserved.
+// View file for google address suggestions
+-->
+<Alloy>
+    <Collection src="autocompleteAddressList" id="addressSugesstions" instance="true"/>
+    <View id="address_autocomplete_view">
+        <Button id="dismiss_suggestion_button" onClick="dismissSuggestions" class="closeIcon" accessibilityLabel="close_icon"/>
+        <TableView dataCollection="$.addressSugesstions" id="address_sugestions_table">
+            <TableViewRow id="address_sugestions_table_row" onClick="getAddressDetails">
+                <Label id="address_suggestion_label">{description}</Label>
+            </TableViewRow>
+        </TableView>
+    </View>
+</Alloy>

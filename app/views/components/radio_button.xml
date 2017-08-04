@@ -1,0 +1,10 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for radio_button
+// This component simulates a radio button using images and state
+-->
+<Alloy>
+    <View class="radio_button">
+        <ImageView id="radio_button_image" accessibilityValue="radio_button_image" />
+    </View>
+</Alloy>

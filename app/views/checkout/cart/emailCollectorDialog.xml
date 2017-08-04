@@ -1,0 +1,20 @@
+<!--
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+// View file for generic emailCollectorDialog
+-->
+<Alloy>
+    <View id="container_window">
+        <View id="backdrop"/>
+        <View id="main_container">
+            <Label id="title"/>
+            <TextField id='email_address' accessibilityLabel='email_address' onReturn="validateEmailAddress"/>
+            <View id="error_container">
+                <Label id="email_error" accessibilityValue="email_error"/>
+            </View>
+            <View id="button_container">
+                <Button id="cancel_button" class="secondary_button" onClick="dismiss" accessibilityValue="confirmation_cancel_button"/>
+                <Button id="send_button" class="primary_button" onClick="validateEmailAddress" accessibilityValue="confirmation_ok_button"/>
+            </View>
+        </View>
+    </View>
+</Alloy>

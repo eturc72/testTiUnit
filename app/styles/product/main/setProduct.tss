@@ -1,0 +1,32 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for set product PDP
+
+'#set_product': {
+    height: Ti.UI.SIZE,
+    layout: 'vertical',
+    top: 10
+},
+
+'#horizontal_container': {
+    height: Ti.UI.SIZE,
+    layout: 'horizontal'
+},
+
+'#vertical_container': {
+    height: Ti.UI.SIZE,
+    layout: 'vertical'
+},
+
+'#product_image': {
+    top: 5,
+    right: 10,
+    height: 75,
+    width: 75
+},
+
+'#name': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    left: 0,
+    font: Alloy.Styles.productCalloutFont
+}

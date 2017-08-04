@@ -1,0 +1,13 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for category tile
+-->
+<Alloy>
+    <View id="categoryTile" onClick="onCategoryClick">
+        <!-- onClick is workaround for click event not propogating to parent for STR-3174/AC-4385 -->
+        <ImageView id="tile_image" onClick="onCategoryClick" accessibilityValue="tile_image" />
+        <View id="name_container">
+            <Label id="tile_name" />
+        </View>
+    </View>
+</Alloy>

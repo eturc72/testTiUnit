@@ -1,0 +1,81 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for generic emailCollectorDialog
+
+'#container_window': {
+    layout: 'absolute',
+    backgroundColor: Alloy.Styles.color.background.transparent
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#main_container': {
+    layout: 'vertical',
+    top: 50,
+    width: '50%',
+    height:Ti.UI.SIZE,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#title': {
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.calloutFont,
+    height: Ti.UI.SIZE,
+    top: 20,
+    textid: '_Email_Wish_List'
+},
+
+'#error_container': {
+    width: '90%',
+    height: 20,
+    top: 10
+},
+
+'#email_error': {
+    color: Alloy.Styles.color.text.red,
+    height: 18,
+    width: '100%',
+    left: 0,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font: Alloy.Styles.errorMessageFont
+},
+
+'#email_address': {
+    maxLength: 50,
+    backgroundColor: Alloy.Styles.color.background.medium,
+    disabledBackgroundColor: Alloy.Styles.color.background.light,
+    height: 50,
+    top: 30,
+    width: '90%',
+    color: Alloy.Styles.color.text.darkest,
+    disabledColor: Alloy.Styles.color.text.light,
+    font: Alloy.Styles.textFieldFont,
+    paddingLeft: 18,
+    autocorrect: false,
+    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+    keyboardType: Ti.UI.KEYBOARD_TYPE_EMAIL
+},
+
+'#button_container': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: Ti.UI.SIZE,
+    top: 40,
+    bottom: 20
+},
+
+'#send_button': {
+    titleid: '_Send',
+    left: 20
+},
+
+'#cancel_button': {
+    titleid: '_Cancel'
+}

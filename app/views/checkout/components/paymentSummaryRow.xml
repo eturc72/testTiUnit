@@ -1,0 +1,13 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for payment summary
+-->
+<Alloy>
+    <TableViewRow id ="payment_table">
+        <View id="payment_container">
+            <Label id="gift_card_label" text="{payment}" accessibilityValue="gift_card_label"/>
+            <Label id="gift_card_amount_label" text="{amount}" accessibilityValue="gift_card_amount_label"/>
+            <Button id="delete_button" accessibilityValue="delete_payment_button"/>
+        </View>
+    </TableViewRow>
+</Alloy>

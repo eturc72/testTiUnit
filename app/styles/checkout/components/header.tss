@@ -1,0 +1,65 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for checkout header
+
+'#checkout_header': {
+    layout: 'horizontal',
+    height: 40,
+    top: 0,
+    left: 0,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#button_container': {
+    layout: 'horizontal',
+    width: '100%',
+    left: 0
+},
+
+'#back_button': {
+    top: 0,
+    width: 40,
+    height: 40,
+    style: Ti.UI.iOS.SystemButtonStyle.PLAIN,
+    image: Alloy.Styles.backButtonImage,
+    borderWidth: 1,
+    borderColor: Alloy.Styles.color.border.medium
+},
+
+'.checkout_header_button': {
+    top: 0,
+    width: 130,
+    height: 40,
+    color: Alloy.Styles.color.text.dark,
+    selectedColor: Alloy.Styles.color.text.dark,
+    disabledColor: Alloy.Styles.color.text.light,
+    font: Alloy.Styles.detailLabelFont,
+    style: Ti.UI.iOS.SystemButtonStyle.PLAIN,
+    backgroundColor: Alloy.Styles.color.background.medium,
+    borderWidth: 1,
+    borderColor: Alloy.Styles.color.border.medium
+},
+
+'#checkout_cart_button': {
+    titleid: '_Cart_Tab'
+},
+
+'#checkout_address_button': {
+    titleid: '_Shipping'
+},
+
+'#checkout_billing_address_button': {
+    titleid: '_Billing'
+},
+
+'#checkout_shipping_methods_button': {
+    titleid: '_Ship_Methods'
+},
+
+'#checkout_payments_button': {
+    titleid: '_Payments'
+},
+
+'#checkout_confirmation_button': {
+    titleid: '_Confirmation'
+}

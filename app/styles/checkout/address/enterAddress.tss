@@ -1,0 +1,121 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for entering a shipping or billing address
+
+'#address_window':{
+    top: 0,
+    width: Ti.UI.SIZE,
+    height:Ti.UI.SIZE
+},
+
+'.text_field': {
+    backgroundColor: Alloy.Styles.color.background.medium,
+    height: 50
+},
+
+'.email_address': {
+    hintText: L( '_Email_Address_'),
+    width: 532,
+    top: 15,
+    left: 0,
+    keyboardType: Ti.UI.KEYBOARD_TYPE_EMAIL,
+    paddingLeft: 18,
+    autocorrect: false,
+    autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+    font: Alloy.Styles.textFieldFont,
+    returnKeyType:Ti.UI.RETURNKEY_DONE
+},
+
+'#address_container': {
+    width: '100%',
+    layout: 'vertical',
+    textAlign:Ti.UI.TEXT_ALIGNMENT_LEFT,
+    left: 75,
+    top: 20,
+    disableBounce: 'true'
+},
+
+'.nickname_text_field': {
+    maxLength: 20,
+    paddingLeft: 18,
+    width: 532,
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.textFieldFont,
+    left: 0,
+    autocorrect: false,
+    hintText: L( '_Nickname')
+},
+
+'#address_error': {
+    font: Alloy.Styles.textFieldFont,
+    color: Alloy.Styles.color.text.red,
+    visible: false,
+    height: 0,
+    left: 0,
+    bottom: 5
+},
+
+'#enter_address_container': {
+    top: 15,
+    layout: 'vertical',
+    height: Ti.UI.SIZE
+},
+
+'#next_container': {
+    layout: 'horizontal',
+    width: 532,
+    top: 7,
+    left: 0,
+    height: 100
+},
+
+'#save_address_book_container': {
+    layout: 'horizontal',
+    width: 275,
+    height: Ti.UI.SIZE
+},
+
+'#address_book_switch': {
+    width: 85,
+    value: 0
+},
+
+'#save_address_label': {
+    font: Alloy.Styles.switchLabelFont,
+    width: 175,
+    left: 0,
+    color: Alloy.Styles.color.text.medium,
+    textid: '_Save_Address_to_Profile'
+},
+
+'#next_button': {
+    left: 29,
+    top: 0
+},
+
+'.button': {
+    width: 228,
+    height: 42
+},
+
+'#customer_action_container': {
+    layout: 'vertical',
+    top: 5,
+    width: 275,
+    height: 200
+},
+
+'#back_to_address_button': {
+    top: 20,
+    left: 0
+},
+
+'.error_label': {
+    color: Alloy.Styles.color.text.red,
+    height: 18,
+    width: '100%',
+    left: 0,
+    top: 2,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font: Alloy.Styles.errorMessageFont
+}

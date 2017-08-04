@@ -1,0 +1,93 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for hamburger menu
+
+'.container': {
+    top: 20,
+    width: 0,
+    height: 0,
+    backgroundColor: Alloy.Styles.color.background.transparentBlack30Percent,
+    visible: false
+},
+
+'#menu_header': {
+    backgroundColor: Alloy.Styles.color.background.lightGray,
+    height: 170,
+    layout: 'vertical'
+},
+
+'#associate_logout': {
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    color: Alloy.Styles.buttons.primary.color,
+    width: '80%',
+    height: 50,
+    top: 10,
+    titleid: '_Logout',
+    bottom: 20,
+    bubbleParent: false
+},
+
+'#associate_salute_msg': {
+    top: 10,
+    font: Alloy.Styles.messageFont,
+    color: Alloy.Styles.color.text.black,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    height: 80,
+    width: '80%'
+},
+
+'#side_bar_wrapper': {
+    width: '30%',
+    left: '-30%',
+    top: 0,
+    backgroundColor: Alloy.Styles.color.background.white,
+    layout: 'vertical',
+    height: '100%'
+},
+
+'#side_bar': {
+    selectedBackgroundColor: Alloy.Styles.color.background.lightGray,
+    color: Alloy.Styles.color.text.black,
+    separatorColor: Alloy.Styles.accentColor,
+    top: 0,
+    height: 685,
+    bubbleParent: false
+},
+
+'#admin_dashboard_wrapper': {
+    top: 1,
+    height: 62,
+    layout: 'vertical',
+    bubbleParent: false
+},
+
+'#admin_dashboard': {
+    top: 0,
+    width: '100%',
+    height: 60,
+    color: Alloy.Styles.color.text.black,
+    font: Alloy.Styles.buttonFont,
+    titleid: '_Admin_Dashboard',
+    backgroundSelectedImage: Alloy.Styles.primaryButtonImage
+},
+
+'.table_view_row': {
+    height: 60,
+    width: '100%',
+    selectedBackgroundColor: Alloy.Styles.color.background.lightGray,
+    // selected color and color need to be the same because the menuImageRow has subviews and cannot update the selected color from the original color
+    color: Alloy.Styles.color.text.black,
+    selectedColor: Alloy.Styles.color.text.black,
+    font: Alloy.Styles.buttonFont
+},
+
+'.separator': {
+    height: 1,
+    backgroundColor: Alloy.Styles.accentColor,
+    top: 0
+},
+
+'#footer_view': {
+    backgroundColor: Alloy.Styles.color.background.white,
+    height: 0
+}

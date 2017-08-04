@@ -1,0 +1,236 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for associate login
+
+'#associate_login_window': {
+    opacity: 0.0
+},
+
+'.contents': {
+    top: 22,
+    width: 465,
+    height: 600,
+    borderWidth: 1,
+    borderColor: Alloy.Styles.color.border.dark,
+    layout: 'vertical',
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'.title': {
+    textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+    font: Alloy.Styles.titleFont,
+    color: Alloy.Styles.color.text.dark,
+    width: 260,
+    top: 26
+},
+
+'.subtitle': {
+    color: Alloy.Styles.color.text.medium,
+    font: Alloy.Styles.appFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_TOP,
+    width: 260,
+    height: 50,
+    bottom: 1
+},
+
+'.buttons': {
+    layout: 'horizontal',
+    height: 63
+},
+
+'.button': {
+    height: 55,
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+    font: Alloy.Styles.bigButtonFont,
+    color: Alloy.Styles.buttons.primary.color
+},
+
+'.textfield': {
+    passwordMask: true,
+    color: Alloy.Styles.color.text.dark,
+    borderColor: Alloy.Styles.color.border.light,
+    borderWidth: 1,
+    keyboardType: Ti.UI.KEYBOARD_TYPE_NUMBERS_PUNCTUATION,
+    returnKeyType: Ti.UI.RETURNKEY_GO,
+    left: 32,
+    bottom: 15,
+    width: 400,
+    font: Alloy.Styles.dialogFieldFont,
+    paddingLeft: 18,
+    height: 55
+},
+
+'.cancel_button': {
+    left: 32,
+    width: 195,
+    bottom: 8,
+    titleid: '_Cancel',
+    font: Alloy.Styles.tabFont,
+    backgroundImage: Alloy.Styles.secondaryButtonImage
+},
+
+'.error_label': {
+    color: Alloy.Styles.color.text.red,
+    font: Alloy.Styles.calloutCopyFont,
+    visible: false,
+    height: 0,
+    textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+    width: 320,
+    bottom: 10,
+    textid: '_Login_attempt_failed__Re_enter_your_ID_and_password_'
+},
+
+'#employee_code': {
+    hintText: L( '_Associate_ID')
+},
+
+'#employee_pin': {
+    hintText: L( '_Password'),
+    bottom: 0
+},
+
+'#assoc_code': {
+    hintText: L( '_Associate_ID')
+},
+
+'#password': {
+    hintText: L( '_Enter_New_Password')
+},
+
+'#password_verify': {
+    hintText: L( '_Repeat_New_Password')
+},
+
+'#login_button': {
+    left: 32,
+    width: 400,
+    bottom: 8,
+    titleid: '_Login'
+},
+
+'#country_apply_button': {
+    left: 10,
+    width: 195,
+    bottom: 8,
+    font: Alloy.Styles.tabFont,
+    titleid: '_Apply'
+},
+
+'#assoc_button': {
+    left: 10,
+    width: 195,
+    bottom: 8,
+    font: Alloy.Styles.tabFont,
+    titleid: '_Reset_Password'
+},
+
+'#assoc_button_container': {
+    top: 30
+},
+
+'#new_password_button': {
+    left: 10,
+    width: 195,
+    bottom: 8,
+    font: Alloy.Styles.tabFont,
+    titleid: '_Change_Password'
+},
+
+'#success_ok_button': {
+    left: 32,
+    width: 400,
+    bottom: 8,
+    top: 80,
+    font: Alloy.Styles.tabFont,
+    titleid: '_OK'
+},
+
+'#login_title': {
+    textid: '_Associate_Login'
+},
+
+'#login_subtitle_label': {
+    textid: '_Enter_your_credentials'
+},
+
+'#assoc_title': {
+    textid: '_Change_Password'
+},
+
+'#assoc_subtitle_label': {
+    textid: '_Enter_Associate_ID'
+},
+
+'#new_password_title': {
+    textid: '_Change_Password'
+},
+
+'#new_password_subtitle_label': {
+    textid: '_Enter_New_Password'
+},
+
+'#success_title': {
+    textid: '_Success'
+},
+
+'#success_subtitle_label': {
+    textid: '_Password_Successfully_Changed',
+    top: 83
+},
+
+'#forgot_password_label': {
+    textid: '_Forgot_Password',
+    textAlign:Ti.UI.TEXT_ALIGNMENT_RIGHT,
+    right: 36,
+    font: Alloy.Styles.detailValueFont,
+    color: Alloy.Styles.accentColor,
+    width: Ti.UI.SIZE,
+    top: 10,
+    bottom: 10
+},
+
+'#change_country_label': {
+    textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+    font: Alloy.Styles.detailValueFont,
+    color: Alloy.Styles.accentColor,
+    width: Ti.UI.SIZE,
+    top: 0,
+    bottom: 10
+},
+
+'#storefront_label': {
+    textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+    font: Alloy.Styles.detailValueFont,
+    color: Alloy.Styles.color.text.medium,
+    width: Ti.UI.SIZE,
+    top: 0,
+    bottom: 10
+},
+
+'#country_label': {
+    textid: '_Select_Country_and_Language'
+},
+
+'#country_view': {
+    left: 32,
+    width: 400,
+    paddingLeft: 18,
+    top: 60,
+    height: 55
+},
+
+'#language_view': {
+    left: 32,
+    width: 400,
+    paddingLeft: 18,
+    height: 55
+},
+
+'#storefront_view': {
+    layout: 'horizontal',
+    height: 40,
+    left: 80
+}
+

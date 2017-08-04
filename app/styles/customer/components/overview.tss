@@ -1,0 +1,76 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for the customer overview page
+
+'#overview_contents': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: '95%',
+    left: 20
+},
+
+'.profile_container': {
+    layout: 'vertical',
+    top: 0,
+    left: 0,
+    height: Ti.UI.SIZE,
+    width: '40%',
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'.tabs_container': {
+    layout: 'vertical',
+    top: 0,
+    right: 0,
+    width: '623',
+    borderColor: Alloy.Styles.color.border.light,
+    borderWidth: 3,
+    height: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'.profile_info': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    left: 40
+},
+
+'.profile_name_view': {
+    layout: 'horizontal',
+    height: 60
+},
+
+'.profile_text': {
+    left: 0,
+    top: 20,
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.calloutFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'.regular_text': {
+    left: 0,
+    top: 10,
+    color: Alloy.Styles.color.text.darkest,
+    font: Alloy.Styles.appFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'#shop_label': {
+    width: '90%',
+    backgroundColor: Alloy.Styles.accentColor,
+    color: Alloy.Styles.buttons.primary.color,
+    font: Alloy.Styles.bigButtonFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    top: 450,
+    left: 0,
+    bottom: 20
+},
+
+'#address_list': {
+    layout: 'vertical',
+    showHorizontalIndicator: 'false',
+    showVerticalIndicator: 'true',
+    contentHeight: Ti.UI.SIZE
+}

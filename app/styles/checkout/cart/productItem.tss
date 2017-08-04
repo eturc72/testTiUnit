@@ -1,0 +1,100 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for product item
+
+'.pli_row': {
+    layout: 'horizontal',
+    width: 470,
+    height: 148
+},
+
+
+'#product_container': {
+    layout: 'vertical',
+    width: 302,
+    left: 10,
+    top: 0
+},
+
+'#product_details_container': {
+    layout: 'horizontal',
+    width: 302,
+    top: 5,
+    height: 82
+},
+
+'#variation_container': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE
+},
+
+'.product_id_label': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    left: 0,
+    height: Ti.UI.SIZE
+},
+
+'#product_info_container': {
+    layout: 'vertical',
+    width: 151,
+    top: 0
+},
+
+'#product_name': {
+    font: Alloy.Styles.productFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    left: 0
+},
+
+'.product_info_label': {
+    font: Alloy.Styles.lineItemFont,
+    color: Alloy.Styles.color.text.mediumdark
+},
+
+'.image_container': {
+    width: 148,
+    height: 148,
+    top: 0
+},
+
+'#product_image': {
+    height: '100%',
+    top: 0
+},
+
+'#product_price_container': {
+    layout: 'vertical',
+    width: 151,
+    right: 0
+},
+
+'.unit_price_label': {
+    right: 0,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+    width: 151
+},
+
+
+'.price_container': {
+    height: Ti.UI.SIZE,
+    right: 0
+},
+
+'#item_price_container': {
+    top: 10
+},
+
+'#price_adjustments_container': {
+    layout: 'vertical',
+    width: '100%',
+    height: 20
+},
+
+'#message_label': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    left: 0,
+    font: Alloy.Styles.lineItemFont,
+    color: Alloy.Styles.color.text.mediumdark,
+    height: Ti.UI.SIZE
+}

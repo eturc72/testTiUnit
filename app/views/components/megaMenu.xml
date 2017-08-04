@@ -1,0 +1,19 @@
+<!--
+// ©2015-2017 salesforce.com, inc. All rights reserved.
+// View file for mega menu
+-->
+<Alloy>
+    <Collection id="topCategories" src="category" instance="true" />
+    <View class="container">
+        <View id="top_nav_area" class="menu_nav_title_bar" dataCollection="$.topCategories" dataTransform="transformCategory">
+            <Button category_id="{safeID}" title="{name}" class="menu_title_btn" accessibilityValue="menu_title_btn"/>
+        </View>
+        <ScrollableView id="menu_pages" class="menu_pages" dataCollection="$.topCategories" dataTransform="transformCategory">
+            <View category_id="{safePageID}" class="menu_page">
+                <View category_id="{safeSectionID}" class="menu_double_section">
+                    <Require category_id="{safeMenuPageID}" src="components/megaMenuPage"/>
+                </View>
+            </View>
+        </ScrollableView>
+    </View>
+</Alloy>

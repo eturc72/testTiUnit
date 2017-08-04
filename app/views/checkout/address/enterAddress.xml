@@ -1,0 +1,28 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for entering a shipping or billing address
+-->
+<Alloy>
+    <View id="address_window">
+        <ScrollView showVerticalScrollIndicator="true" id="address_container">
+            <Label id="address_error" accessibilityLabel="address_error"/>
+            <TextField id="nickname_text_field" class="nickname_text_field text_field" accessibilityLabel="nickname_text_field"/>
+            <View id="enter_address_container">
+                <Require id="enter_address_dynamic" src="components/enterAddressDynamic" type="view"/>
+            </View>
+            <TextField class="email_address text_field" id="email_address" accessibilityLabel="email_address"/>
+            <Label class="error_label" id="email_error" accessibilityLabel="email_error"/>
+            <View id="next_container">
+                <View id="customer_action_container">
+                    <View id="save_address_book_container" >
+                        <Switch id="address_book_switch" accessibilityLabel="address_book_switch"/>
+                        <Label id="save_address_label" accessibilityValue="save_address_label"/>
+                    </View>
+                    <Button id="back_to_address_button" class="button secondary_button" accessibilityValue="back_to_address_button" titleid="_Cancel"/>
+                </View>
+                <!-- accessibilityValue is set in the controller for this button -->
+                <Button id="next_button" class="button primary_button" titleid="_Next"/>
+            </View>
+        </ScrollView>
+    </View>
+</Alloy>

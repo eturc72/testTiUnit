@@ -1,0 +1,17 @@
+// ©2016-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for product set PDP tab
+
+'#set_product': {
+    layout: 'vertical',
+    width: '100%',
+    height: '100%'
+},
+
+'#set_products': {
+    layout: 'vertical',
+    right: 20,
+    height: '100%',
+    showVerticalScrollIndicator: true
+}
+

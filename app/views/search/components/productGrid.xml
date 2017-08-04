@@ -1,0 +1,9 @@
+<!--
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+// View file for product grid
+-->
+<Alloy>
+    <View>
+        <View id="productGridContainer" class="grid_page"/>
+    </View>
+</Alloy>

@@ -1,0 +1,75 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for a customer address
+
+'#customer_address': {
+    selectionStyle: Ti.UI.iOS.TableViewCellSelectionStyle.NONE,
+    backgroundImage: Alloy.Styles.customerBorderImage
+},
+
+'#address_container': {
+    layout: 'vertical',
+    height: Ti.UI.SIZE,
+    top: 10
+},
+
+// address_tile (class)
+'#address_tile': {
+    layout: 'horizontal',
+    height: 120,
+    width: '100%',
+    left: 0,
+    top: 0
+},
+
+// default_address_row
+'#radio_button_container': {
+    left: 0,
+    width: 20,
+    height: Ti.UI.SIZE,
+    top: 10
+},
+
+'#radio_button': {
+    image: Alloy.Styles.radioButtonOffImage
+},
+
+'#address_column': {
+    left: 20,
+    layout: 'vertical',
+    width: 400,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    top: 0
+},
+
+'.profile_text': {
+    left: 0,
+    width: 400,
+    ellipsize: true,
+    wordWrap: false,
+    font: Alloy.Styles.detailValueFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'.big_text': {
+    left: 0,
+    color: Alloy.Styles.color.text.mediumdark,
+    width: 400,
+    height: 25,
+    ellipsize: true,
+    wordWrap: false,
+    font: Alloy.Styles.calloutCopyFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+
+'#button_column': {
+    layout: 'vertical',
+    width: 150
+},
+
+'#edit_button': {
+    width: 100,
+    height: 28,
+    titleid: '_Edit',
+    top: 10
+}

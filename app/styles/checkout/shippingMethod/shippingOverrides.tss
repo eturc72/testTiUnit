@@ -1,0 +1,77 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for shipping overrides
+
+'#shipping_overrides_window': {
+    backgroundColor: Alloy.Styles.color.background.transparent,
+    zIndex: 101
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#shipping_overrides_container': {
+    layout: 'vertical',
+    width: 785,
+    left: 120,
+    height: 507,
+    top: 47,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#shipping_overrides_header': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE,
+    width: '100%',
+    top: 13
+},
+
+'#shipping_overrides_label': {
+    font: Alloy.Styles.headlineFont,
+    color: Alloy.Styles.accentColor,
+    left: 125,
+    width: 290,
+    top: 0,
+    textid: '_Shipping_Overrides'
+},
+
+'#apply_button': {
+    backgroundImage: Alloy.Styles.primaryButtonImage,
+    color: Alloy.Styles.buttons.primary.color,
+    width: 146,
+    height: 35,
+    font: Alloy.Styles.buttonFont,
+    left: 50
+},
+
+'#cancel_button': {
+    backgroundImage: Alloy.Styles.secondaryButtonImage,
+    color: Alloy.Styles.buttons.secondary.color,
+    width: 146,
+    left: 15,
+    height: 35,
+    font: Alloy.Styles.buttonFont
+},
+
+'#show_overrides': {
+    left: 43
+},
+
+'#manager_override_already_exists': {
+    top: 100
+},
+
+'#manager_override_label': {
+    font: Alloy.Styles.subtitleFont,
+    color: Alloy.Styles.color.text.dark,
+    width: 450,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    top: 0,
+    textid: '_A_manager_override_has_already_been_applied__Click_Remove_to_remove_the_override_and_continue_to_the_override_screen_'
+}

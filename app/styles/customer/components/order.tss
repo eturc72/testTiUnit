@@ -1,0 +1,110 @@
+// ©2013-2017 salesforce.com, inc. All rights reserved.
+
+// TSS file for the customer order details page
+
+'#customer_order': {
+    backgroundColor: Alloy.Styles.color.background.transparent,
+    zIndex: 101
+},
+
+'#backdrop': {
+    top: 0,
+    left: 0,
+    width: 1024,
+    height: 768,
+    opacity: 0.55,
+    backgroundColor: Alloy.Styles.color.background.black
+},
+
+'#customer_order_container': {
+    width: 887,
+    height: 697,
+    left: 69,
+    top: 47,
+    backgroundColor: Alloy.Styles.color.background.white
+},
+
+'#order_left_column': {
+    layout: 'vertical',
+    width: 610,
+    height: Ti.UI.FILL,
+    left: 0,
+    top: 0
+},
+
+'#vertical_separator': {
+    right: 276
+},
+
+'#order_right_column': {
+    layout: 'vertical',
+    backgroundColor: Alloy.Styles.color.background.white,
+    width: 275,
+    right: 0,
+    height: Ti.UI.SIZE,
+    borderWidth: 0
+},
+
+'#order_header_container': {
+    layout: 'vertical',
+    left: 28,
+    height: Ti.UI.SIZE
+},
+
+'.labelled_text': {
+    layout: 'horizontal',
+    height: Ti.UI.SIZE
+},
+
+'.label_title': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    bottom: 0,
+    font: Alloy.Styles.detailValueFont
+},
+
+'.text_data': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    bottom: 0,
+    font: Alloy.Styles.detailLabelFont
+},
+
+'.text_big_data': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    color: Alloy.Styles.color.text.mediumdark,
+    bottom: 0,
+    font: Alloy.Styles.calloutFont
+},
+
+'.subheader_container': {
+    backgroundImage: Alloy.Styles.upperLowerBorderImage,
+    height: 40,
+    width: '100%',
+    backgroundColor: Alloy.Styles.color.background.medium
+},
+
+'.subheader': {
+    textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    left: 12,
+    top: 11,
+    color: Alloy.Styles.accentColor,
+    font: Alloy.Styles.calloutCopyFont
+},
+
+'#order_details_label': {
+    font: Alloy.Styles.smallAccentFont,
+    textid: '_Order_Details'
+},
+
+'#subheader': {
+    color: Alloy.Styles.color.text.dark,
+    width: 340,
+    height: 40,
+    backgroundColor: Alloy.Styles.color.background.medium,
+    font: Alloy.Styles.detailLabelFont,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    borderWidth: 1,
+    borderColor: Alloy.Styles.color.border.medium,
+    textid: '_Order_Summary'
+}
