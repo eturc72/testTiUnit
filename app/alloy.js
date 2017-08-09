@@ -284,3 +284,10 @@ Alloy.Globals.consoleLog = [];
 Alloy.Globals.runtimeLoggableCategories = [];
 
 swissArmyUtils.redirectConsoleLogToFile();
+
+module.exports = {notify:notify,
+ucfirst:ucfirst,
+getFullControllerPath:getFullControllerPath,
+supportLog:supportLog,
+allowAppSleep:allowAppSleep,
+setRuntimeLoggableCategories:setRuntimeLoggableCategories};
