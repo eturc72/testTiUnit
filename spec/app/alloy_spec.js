@@ -137,5 +137,50 @@ describe('app/alloy.js', function() {
         });
     });
 
+    describe("getLoggableCategories", function(){
+        var categories = new Array('Test1:Test1a:Test1b', 'Test2', 'Test3');
+        var categoriesProcessed = new Array('Test2', 'Test3');
+        var categories1 = new Array('TestA', 'TestB:TestB1:TestB2', 'TestC');
+        var categories1Processed = new Array('TestA', 'TestC');
+        //beforeAll(function(){
+            //Alloy.Globals.runtimeLoggableCategories =
+        //});
+        it("should set loggableCategories to Alloy.Globals.runtimeLoggableCategories", function(){
+            Alloy.Globals.runtimeLoggableCategories = categories;
+            Alloy.CFG.loggableCategories = categories1;
+            var result = controllerUnderTest.getLoggableCategories();
+            expect(result.loggableCategories).toEqual(categoriesProcessed);
+            expect(result.loggableSubcategories).toEqual({ Test1: [ [ 'Test1a', 'Test1b' ] ] });
+        });
+         it("should set loggableCategories to Alloy.CFG.loggableCategories", function(){
+            Alloy.Globals.runtimeLoggableCategories = undefined;
+            Alloy.CFG.loggableCategories = categories1;
+            var result = controllerUnderTest.getLoggableCategories();
+            expect(result.loggableCategories).toEqual(categories1Processed);
+            expect(result.loggableSubcategories).toEqual({ TestB: [ [ 'TestB1', 'TestB2' ] ] });
+        });
+    });
 
+    describe("removeAllChildren", function(){
+        var view = {
+            //getChildren: sinon.stub().returns([{getChildren: sinon.stub(), remove: sinon.stub()}]),
+            getChildren: function(){
+            return [{getChildren: sinon.stub(), remove: sinon.stub()}]
+            },
+            remove: sinon.stub()
+        };
+        beforeAll(function(){
+
+            //spyOn(view, 'getChildren');
+            //spyOn(view, 'remove');
+            controllerUnderTest.removeAllChildren(view);
+        });
+        it("should remove all children from a view", function(){
+        //expect(true).toEqual(true)
+
+            expect(view.getChildren).toHaveBeenCalled;
+            expect(view.remove.callCount).toHaveBeenCalled;
+        });
+    });
 });
+
