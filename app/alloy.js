@@ -145,6 +145,7 @@ Alloy.Globals.resetCookies = function() {
 };
 
 Alloy.Styles = require('alloy/styles/' + Alloy.CFG.theme).styles;
+
 Alloy.Animations = {
     bounce : Ti.UI.createAnimation({
         transform : Ti.UI.create2DMatrix().scale(0.9, 0.9),
