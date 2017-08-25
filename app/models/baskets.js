@@ -2403,4 +2403,3 @@ exports.definition = {
         return Collection;
     }
 };
-

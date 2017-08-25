@@ -1,5 +1,7 @@
 sinon = require('sinon');
 Backbone = require('backbone');
+var AssociatedModel = require('./backbone-associations').AssociatedModel;
+Backbone.Model = AssociatedModel;
 _ = require('underscore');
 _.mixin(require('./underscore.deferred'));
 

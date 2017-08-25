@@ -34,6 +34,7 @@ describe('app/controllers/associate/login.js', function() {
     };
 
     $ = require('tiunit/mockcontroller').createControllerMock('app/controllers/associate/login.js');
+
     $ = _.extend($, {
         '__controllerPath': 'path',
         'employee_code': _.extend(addRemoveEventListener, {
@@ -185,6 +186,7 @@ describe('app/controllers/associate/login.js', function() {
     Alloy.eventDispatcher = {
         trigger: sinon.stub()
     }
+
     var controllerUnderTest = proxyquire('../../../../app/controllers/associate/login.js', stub);
 
     describe('init', function() {
@@ -194,7 +196,6 @@ describe('app/controllers/associate/login.js', function() {
 
         beforeAll(function() {
             Alloy.CFG.countrySelected = 'us';
-
             Alloy.CFG.login_change_country_link = true;
             Alloy.createController = createController;
             controllerUnderTest.init({
