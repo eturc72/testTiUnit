@@ -58,6 +58,7 @@ if (Alloy.CFG.login_change_country_link) {
 if (EAUtils.isSymbolBasedLanguage()) {
     $.success_subtitle_label.setFont(Alloy.Styles.detailValueFont);
 } else {
+
     $.success_subtitle_label.setFont(Alloy.Styles.appFont);
 }
 
@@ -569,7 +570,7 @@ function resetLoginForm() {
     }
 
     if (manager && manager.isLoggedIn()) {
-        manager.logout().fail(function() {
+        manager.logout().fail(function(model) {
             if (model.get('httpStatus') != 200 && model.get('fault')) {
                 logger.info(model.get('fault').message);
             } else {
@@ -661,3 +662,26 @@ function resetError(error_label, subtitle_label) {
     subtitle_label.setHeight(50);
 }
 
+if(Alloy.UNIT_TEST){
+    module.exports = {
+        init: init,
+        deinit: deinit,
+        onCountryChange: onCountryChange,
+        onLanguageChange: onLanguageChange,
+        onCountryApplyClick: onCountryApplyClick,
+        onChangeCountryClick: onChangeCountryClick,
+        updateLabels: updateLabels,
+        showCountrySelector: showCountrySelector,
+        showPasswordChangedSuccessfully: showPasswordChangedSuccessfully,
+        doLogin: doLogin,
+        validatePassword: validatePassword,
+        changePassword: changePassword,
+        getAssociateId: getAssociateId,
+        getNewPassword: getNewPassword,
+        validateAssociateExists: validateAssociateExists,
+        doForgotPassword: doForgotPassword,
+        resetLoginForm: resetLoginForm,
+        renderError: renderError,
+        resetError: resetError
+    }
+}

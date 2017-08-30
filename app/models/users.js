@@ -185,3 +185,7 @@ exports.definition = {
         return Model;
     }
 };
+
+if(Alloy.UNIT_TEST){
+    exports.successFunction = successFunction;
+}
