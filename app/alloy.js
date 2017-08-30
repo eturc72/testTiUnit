@@ -290,4 +290,7 @@ ucfirst:ucfirst,
 getFullControllerPath:getFullControllerPath,
 supportLog:supportLog,
 allowAppSleep:allowAppSleep,
-setRuntimeLoggableCategories:setRuntimeLoggableCategories};
+setRuntimeLoggableCategories:setRuntimeLoggableCategories,
+getLoggableCategories:getLoggableCategories,
+removeAllChildren:removeAllChildren,
+notify:notify};

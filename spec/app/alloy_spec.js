@@ -182,5 +182,9 @@ describe('app/alloy.js', function() {
             expect(view.remove.callCount).toHaveBeenCalled;
         });
     });
+
+    describe("notify", function(){
+
+    });
 });
 
